@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>CardioAnalytics - 追踪Apple Health的11项心脏健康指标 | iOS应用</title>
+    <meta name="description" content="全面的心血管和活动能力追踪应用。监测心率、血压、HRV、SpO₂、ECG、VO₂ Max、步行指标等。注重隐私的iOS应用，集成HealthKit。">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="心脏分析, 心脏健康追踪, 血压应用, 心率变异性, VO2 max追踪器, ECG应用, 心房颤动, 心血管健康, Apple Health, HealthKit">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/zh/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-10T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cardio.analyticszone.app/zh/">
+    <meta property="og:title" content="CardioAnalytics - 追踪Apple Health的11项心脏健康指标 | iOS应用">
+    <meta property="og:description" content="全面的心血管和活动能力追踪应用。监测心率、血压、HRV、SpO₂、ECG、VO₂ Max、步行指标等。注重隐私的iOS应用，集成HealthKit。">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/zh/">
+    <meta name="twitter:title" content="CardioAnalytics - 追踪Apple Health的11项心脏健康指标 | iOS应用">
+    <meta name="twitter:description" content="全面的心血管和活动能力追踪应用。监测心率、血压、HRV、SpO₂、ECG、VO₂ Max、步行指标等。注重隐私的iOS应用，集成HealthKit。">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CardioAnalytics - Comprehensive Heart Health Tracking | iOS App",
+      "url": "https://cardio.analyticszone.app",
+      "logo": "https://cardio.analyticszone.app/assets/images/logo.png",
+      "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.",
+      "author": "Arno Health",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "info@onmedic.com"
+      }
+    }
+    </script>
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CardioAnalytics",
+      "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Monitor heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max, walking metrics and more. Privacy-first iOS app with HealthKit integration.",
+      "url": "https://cardio.analyticszone.app",
+      "applicationCategory": ["HealthApplication", "MedicalApplication"],
+      "operatingSystem": "iOS",
+      "softwareVersion": "Latest",
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      },
+      "downloadUrl": "https://apps.apple.com/app/cardioanalytics",
+      "featureList": [
+        "11 cardiovascular and mobility metrics tracking",
+        "Heart rate monitoring (resting, walking, current)",
+        "Blood pressure tracking with AHA categories",
+        "Heart rate variability (HRV) analysis",
+        "Oxygen saturation (SpO₂) monitoring",
+        "Weight and BMI tracking",
+        "ECG and atrial fibrillation detection",
+        "VO₂ Max cardio fitness tracking",
+        "Walking speed (sixth vital sign)",
+        "Walking asymmetry and gait analysis",
+        "Stair ascent speed monitoring",
+        "Medication adherence tracking",
+        "Evidence-based health alerts",
+        "Symptom and care hub logging",
+        "HealthKit integration with background sync",
+        "Privacy by design - all data on-device",
+        "Shareable PDF and CSV reports"
+      ]
+    }
+    </script>
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "CardioAnalytics - 追踪Apple Health的11项心脏健康指标 | iOS应用",
+      "description": "全面的心血管和活动能力追踪应用。监测心率、血压、HRV、SpO₂、ECG、VO₂ Max、步行指标等。注重隐私的iOS应用，集成HealthKit。",
+      "url": "https://cardio.analyticszone.app/zh/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Cardiovascular Health Monitoring"
+      }
+    }
+    </script>
+
+    
+
+    
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">跳到内容</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/zh/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/zh/"
+                           
+                           aria-current="">
+                            首页
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            应用
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/zh/features/"
+                                   
+                                   aria-current="">
+                                    功能
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/how-it-works/"
+                                   
+                                   aria-current="">
+                                    如何运作
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/privacy/"
+                                   
+                                   aria-current="">
+                                    隐私
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            科学
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/zh/heart-rate/"
+                                   
+                                   aria-current="">
+                                    心率
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    血压
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/hrv/"
+                                   
+                                   aria-current="">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/spo2/"
+                                   
+                                   aria-current="">
+                                    血氧饱和度
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    体重与BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG与心房颤动
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/walking-speed/"
+                                   
+                                   aria-current="">
+                                    步行速度
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    步态不对称
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/stair-speed/"
+                                   
+                                   aria-current="">
+                                    爬楼速度
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/healthkit/"
+                                   
+                                   aria-current="">
+                                    HealthKit集成
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/references/"
+                                   
+                                   aria-current="">
+                                    参考文献
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/zh/support/"
+                           
+                           aria-current="">
+                            支持
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="选择语言">
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="zh" selected>
+                        中文
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="切换菜单" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- CardioAnalytics Landing Page -->
+
+<!-- Hero Section -->
+<section class="app-hero">
+  <div class="container">
+    <div class="app-hero-content">
+      <div class="app-hero-text">
+        <div class="app-hero-badge">
+          <span>❤️</span>
+          <span>全面心脏健康追踪</span>
+        </div>
+        <h1>自信追踪您的心脏健康</h1>
+        <p class="app-hero-subtitle">
+          监测来自 Apple Health 的 11 项心血管和活动能力指标。追踪心率、血压、HRV、SpO₂、ECG、VO₂ Max 等。
+          隐私优先的 iOS 应用，所有数据均在设备上处理。
+        </p>
+        <div class="app-hero-cta">
+          <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+            在 App Store 下载
+          </a>
+          <a href="/zh/features/" class="btn btn-large btn-secondary">
+            探索功能
+          </a>
+        </div>
+        <p class="mt-6 text-sm-muted disclaimer-note">
+          ⚠️ CardioAnalytics 不提供医学诊断。请始终咨询合格的临床医生。
+        </p>
+      </div>
+      <div class="app-hero-mockup">
+        <div class="mockup-phone">
+          <!-- Placeholder for app screenshot -->
+          <div class="placeholder-screenshot" style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%); height: 600px; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+            CardioAnalytics 仪表板
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Metrics Overview -->
+<section id="metrics" class="metrics-overview">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">11 项综合指标</div>
+      <h2 class="section-title">全面的心血管与活动能力追踪</h2>
+      <p class="section-subtitle">来自 Apple HealthKit 的所有心脏健康和活动能力数据的统一仪表板</p>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-icon">❤️</div>
+        <h3><a href="/zh/heart-rate/">心率</a></h3>
+        <p>监测静息、步行和当前心率，显示正常范围指标（60-100 bpm）。检测心动过缓和心动过速模式。</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🩺</div>
+        <h3><a href="/zh/blood-pressure/">血压</a></h3>
+        <p>追踪收缩压和舒张压读数，采用 AHA 分类标准。监测高血压风险和整体心血管健康。</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">📊</div>
+        <h3><a href="/zh/hrv/">心率变异性</a></h3>
+        <p>追踪 SDNN 和 RMSSD 指标以评估压力水平和心血管健康。低 HRV 与较差的健康结果相关。</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🫁</div>
+        <h3><a href="/zh/spo2/">血氧饱和度</a></h3>
+        <p>监测 SpO₂ 水平，显示正常范围指标（95-100%）。接收低氧血症警报并追踪呼吸和心血管健康。</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">⚖️</div>
+        <h3><a href="/zh/weight-bmi/">体重与 BMI</a></h3>
+        <p>追踪体重和 BMI，显示健康范围指标（18.5-24.9 kg/m²）。随时间监测心血管风险因素。</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">📈</div>
+        <h3><a href="/zh/ecg-afib/">ECG 与房颤</a></h3>
+        <p>存储经 FDA 批准的 Apple Watch ECG 记录。追踪房颤负荷和不规则脉搏通知，灵敏度和特异性达 95%。</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🏃</div>
+        <h3><a href="/zh/vo2max/">VO₂ Max</a></h3>
+        <p>监测您的心肺适能，这是死亡风险的有力预测指标。追踪趋势并分析训练区间。</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🚶</div>
+        <h3><a href="/zh/walking-speed/">步行速度</a></h3>
+        <p>追踪功能性健康的"第六生命体征"。步行速度 &lt;0.8 m/s 表示风险较高。随时间监测您的功能性能力。</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">⚖️</div>
+        <h3><a href="/zh/walking-asymmetry/">步态不对称</a></h3>
+        <p>使用经过验证的 Apple 活动能力指标评估步态平衡和跌倒风险，进行全面的功能性健康监测。</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🪜</div>
+        <h3><a href="/zh/stair-speed/">爬楼梯速度</a></h3>
+        <p>通过爬楼梯指标监测功能性能力和腿部力量。及早检测有意义的活动能力下降。</p>
+      </div>
+      <div class="metric-card metric-card-highlight">
+        <div class="metric-icon">🔗</div>
+        <h3><a href="/zh/healthkit/">HealthKit 集成</a></h3>
+        <p>体验与 Apple Health 的无缝同步。自动后台更新、高效数据查询和回写功能。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Features Section -->
+<section id="features" class="app-features">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">功能</div>
+      <h2 class="section-title">心脏健康追踪所需的一切</h2>
+      <p class="section-subtitle">为患者赋能而设计的专业级心血管分析工具</p>
+    </div>
+    <div class="app-features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-dashboard"></use>
+          </svg>
+        </div>
+        <h3>个性化仪表板</h3>
+        <p>在一个视图中查看所有 11 项指标。清晰的趋势、指南范围和个性化阈值。一目了然地监测变化。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-pill"></use>
+          </svg>
+        </div>
+        <h3>药物追踪</h3>
+        <p>记录剂量或同步 HealthKit 药物。追踪依从率。可视化与血压、心率、HRV 和体重的相关性。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-alert"></use>
+          </svg>
+        </div>
+        <h3>循证警报</h3>
+        <p>阈值与 AHA、Mayo Clinic、Cleveland Clinic 保持一致。根据您的临床医生建议进行个性化。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-clipboard"></use>
+          </svg>
+        </div>
+        <h3>症状与护理中心</h3>
+        <p>记录症状及严重程度。追踪护理目标和医疗预约。为您的医生导出专业报告。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-shield"></use>
+          </svg>
+        </div>
+        <h3>隐私设计</h3>
+        <p>精细的 HealthKit 授权。所有数据本地存储在您的设备上。您决定分享什么。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-export"></use>
+          </svg>
+        </div>
+        <h3>可分享报告</h3>
+        <p>为您的临床医生导出专业 PDF 或 CSV。一份文档包含完整健康历史。</p>
+      </div>
+    </div>
+    <div class="cta-center">
+      <a href="/zh/features/" class="btn btn-large btn-primary">
+        了解更多功能
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">工作原理</div>
+      <h2 class="section-title">无缝 HealthKit 集成</h2>
+      <p class="section-subtitle">自动与 Apple Health 同步，轻松进行心血管监测</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>授权 HealthKit</h3>
+        <p>授予从 Apple Health 读取心血管指标的权限。精细控制共享哪些数据类型。</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>自动后台同步</h3>
+        <p>CardioAnalytics 使用锚定查询和后台交付来获取最新数据，而不会耗尽电池。</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>追踪趋势并获取警报</h3>
+        <p>监测趋势、接收循证警报、记录药物和症状，并与您的临床医生分享报告。</p>
+      </div>
+    </div>
+    <div class="cta-center mt-8">
+      <a href="/zh/how-it-works/" class="btn btn-large btn-secondary">
+        了解更多关于 HealthKit 同步
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Science-Backed Section -->
+<section class="science-backed">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">科学</div>
+      <h2 class="section-title">循证心血管指标</h2>
+      <p class="section-subtitle">所有指标均由同行评审研究和临床指南支持</p>
+    </div>
+    <div class="science-grid">
+      <div class="science-card">
+        <h4>临床指南</h4>
+        <p>AHA 血压分类、Mayo Clinic 心率/SpO₂ 范围、Cleveland Clinic HRV 研究。</p>
+      </div>
+      <div class="science-card">
+        <h4>同行评审研究</h4>
+        <p>NEJM Apple Heart Study、JACC AF 荟萃分析、PLOS ONE VO₂ 验证、JAMA 步态速度研究。</p>
+      </div>
+      <div class="science-card">
+        <h4>FDA 批准设备</h4>
+        <p>Apple Watch ECG 和不规则心律通知已获 FDA 批准用于房颤检测。</p>
+      </div>
+    </div>
+    <div class="cta-center mt-8">
+      <a href="/zh/references/" class="btn btn-large btn-secondary">
+        查看完整参考文献
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>立即掌控您的心脏健康</h2>
+      <p>下载 CardioAnalytics，通过全面、隐私优先的追踪监测您的心血管健康。所有心脏健康数据集中于一处。</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        在 App Store 下载
+      </a>
+      <p class="disclaimer-note mt-4">
+        ⚠️ CardioAnalytics 不提供医学诊断或治疗。请始终咨询合格的临床医生以获取医疗建议。
+      </p>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">首页</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. 版权所有
+            </p>
+            <ul class="footer-links">
+                <li><a href="/zh/privacy/">隐私</a></li>
+                <li><a href="/zh/terms/">条款</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>本网站使用Cookie以改善您的体验。</p>
+            <a href="/zh/privacy/" class="text-sm">了解更多</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">拒绝</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">接受</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

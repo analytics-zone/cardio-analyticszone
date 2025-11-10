@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>血氧饱和度(SpO₂)追踪 - 低氧血症检测 | CardioAnalytics</title>
+    <meta name="description" content="追踪Apple Watch的血氧饱和度水平。正常范围95-100%，&lt;90%时提醒（低氧血症）。监测呼吸和心血管健康。">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="血氧饱和度, SpO2追踪, 低氧血症, 脉搏血氧仪, 呼吸健康, Apple Watch血氧">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/zh/spo2/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-10T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/zh/spo2/">
+    <meta property="og:title" content="血氧饱和度(SpO₂)追踪 - 低氧血症检测 | CardioAnalytics">
+    <meta property="og:description" content="追踪Apple Watch的血氧饱和度水平。正常范围95-100%，&lt;90%时提醒（低氧血症）。监测呼吸和心血管健康。">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/zh/spo2/">
+    <meta name="twitter:title" content="血氧饱和度(SpO₂)追踪 - 低氧血症检测 | CardioAnalytics">
+    <meta name="twitter:description" content="追踪Apple Watch的血氧饱和度水平。正常范围95-100%，&lt;90%时提醒（低氧血症）。监测呼吸和心血管健康。">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/spo2/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/spo2/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/spo2/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/spo2/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/spo2/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/spo2/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/spo2/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/spo2/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "血氧饱和度(SpO₂)追踪 - 低氧血症检测 | CardioAnalytics",
+      "description": "追踪Apple Watch的血氧饱和度水平。正常范围95-100%，&lt;90%时提醒（低氧血症）。监测呼吸和心血管健康。",
+      "url": "https://cardio.analyticszone.app/zh/spo2/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      }
+    }
+    </script>
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">跳到内容</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/zh/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/zh/"
+                           
+                           aria-current="">
+                            首页
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            应用
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/zh/features/"
+                                   
+                                   aria-current="">
+                                    功能
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/how-it-works/"
+                                   
+                                   aria-current="">
+                                    如何运作
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/privacy/"
+                                   
+                                   aria-current="">
+                                    隐私
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            科学
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/zh/heart-rate/"
+                                   
+                                   aria-current="">
+                                    心率
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    血压
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/hrv/"
+                                   
+                                   aria-current="">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/spo2/"
+                                   class="active"
+                                   aria-current="page">
+                                    血氧饱和度
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    体重与BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG与心房颤动
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/walking-speed/"
+                                   
+                                   aria-current="">
+                                    步行速度
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    步态不对称
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/stair-speed/"
+                                   
+                                   aria-current="">
+                                    爬楼速度
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/healthkit/"
+                                   
+                                   aria-current="">
+                                    HealthKit集成
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/zh/references/"
+                                   
+                                   aria-current="">
+                                    参考文献
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/zh/support/"
+                           
+                           aria-current="">
+                            支持
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="选择语言">
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="zh" selected>
+                        中文
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="切换菜单" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- Oxygen Saturation (SpO₂) Science Page -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>血氧饱和度 (SpO₂)</h1>
+    <p class="lead">监测血氧水平以评估呼吸和心血管健康</p>
+  </div>
+</section>
+
+<!-- What It Is -->
+<section class="content-section">
+  <div class="container">
+    <h2>什么是血氧饱和度？</h2>
+    <p>血氧饱和度 (SpO₂) 是指您血液中携带氧气的血红蛋白百分比。它通过脉搏血氧测定法测量（通常通过 Apple Watch 或专用设备）。</p>
+
+    <p>SpO₂ 读数为 98% 表示您的 98% 血红蛋白分子饱和了氧气。</p>
+  </div>
+</section>
+
+<!-- Why It Matters -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>为什么血氧饱和度很重要</h2>
+    <p>SpO₂ 反映了您的肺部氧合血液的能力以及氧气向组织输送的效率：</p>
+    <ul class="feature-list">
+      <li>指示呼吸和心血管功能</li>
+      <li>可以早期检测低氧血症（低血氧）</li>
+      <li>对于监测慢性肺部疾病（慢性阻塞性肺病、哮喘）很重要</li>
+      <li>夜间测量时可以指示睡眠呼吸暂停</li>
+      <li>对高海拔适应监测有用</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Typical Ranges -->
+<section class="content-section">
+  <div class="container">
+    <h2>血氧饱和度范围</h2>
+
+    <div class="range-card">
+      <h3>正常范围</h3>
+      <p><strong>95-100%</strong> - 大多数健康成年人的正常血氧饱和度</p>
+    </div>
+
+    <div class="range-card mt-6 bg-warning">
+      <h3>低氧血症（低氧）</h3>
+      <p><strong>&lt;90%</strong> - 需要医疗关注的低氧水平（<a href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" target="_blank" rel="noopener">Mayo Clinic</a>）</p>
+      <p>持续低于 90% 的读数表示低氧血症，应由临床医生评估。</p>
+    </div>
+
+    <div class="range-card mt-6">
+      <h3>特殊考虑</h3>
+      <ul class="feature-list">
+        <li><strong>慢性肺部疾病</strong> - 基线 SpO₂ 可能为 88-92%（咨询临床医生了解目标范围）</li>
+        <li><strong>高海拔</strong> - SpO₂ 在高海拔自然下降（例如，8,000-10,000 英尺时为 90-95%）</li>
+        <li><strong>睡眠期间</strong> - 暂时降至 88-90% 可能是正常的；持续低值可能表示睡眠呼吸暂停</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- How CardioAnalytics Uses It -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>CardioAnalytics 如何使用 SpO₂ 数据</h2>
+    <ul class="feature-list">
+      <li><strong>显示 SpO₂ 趋势</strong> - 随时间跟踪血氧饱和度（每日、每周、每月）</li>
+      <li><strong>持续低值警报</strong> - 读数持续低于 90% 时发出警告</li>
+      <li><strong>夜间监测</strong> - 识别夜间去饱和模式（可能的睡眠呼吸暂停）</li>
+      <li><strong>优雅降级</strong> - 如果您的设备不记录 SpO₂，该卡片会自动隐藏</li>
+    </ul>
+
+    <p class="note">⚠️ <strong>并非所有设备都支持 SpO₂：</strong>Apple Watch Series 6 及更高版本支持血氧测量。旧型号没有此数据。</p>
+  </div>
+</section>
+
+<!-- HealthKit Integration -->
+<section class="content-section">
+  <div class="container">
+    <h2>HealthKit 数据类型</h2>
+    <p>CardioAnalytics 使用此标识符从 Apple HealthKit 读取 SpO₂ 数据：</p>
+    <ul class="feature-list">
+      <li><code>oxygenSaturation</code> - 血氧饱和度，分数形式（0.0-1.0，显示为百分比）（<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation" target="_blank" rel="noopener">Apple Docs</a>）</li>
+    </ul>
+
+    <p class="mt-6"><a href="/zh/healthkit/" class="btn btn-secondary">了解更多关于 HealthKit 集成</a></p>
+  </div>
+</section>
+
+<!-- Measurement Tips -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>准确测量 SpO₂ 的提示</h2>
+    <ul class="feature-list">
+      <li><strong>温暖的手</strong> - 冷手指可能影响准确性</li>
+      <li><strong>保持静止</strong> - 运动可能干扰读数</li>
+      <li><strong>去除指甲油</strong> - 可能干扰脉搏血氧传感器</li>
+      <li><strong>手表佩戴合适</strong> - Apple Watch 应在手腕上紧密但舒适</li>
+      <li><strong>手臂放松</strong> - 将手臂放在心脏水平，放松地放在桌子上</li>
+    </ul>
+  </div>
+</section>
+
+<!-- References -->
+<section class="content-section">
+  <div class="container">
+    <h2>科学参考文献</h2>
+    <ol class="references-list">
+      <li>Mayo Clinic. <em>Low blood oxygen (hypoxemia).</em> <a href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" target="_blank" rel="noopener">https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930</a></li>
+    </ol>
+    <p><a href="/zh/references/" class="btn btn-secondary">查看所有参考文献</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>使用 CardioAnalytics 跟踪您的血氧饱和度</h2>
+      <p>监测 SpO₂ 趋势并在持续低氧水平时接收警报。</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        在 App Store 下载
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">首页</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. 版权所有
+            </p>
+            <ul class="footer-links">
+                <li><a href="/zh/privacy/">隐私</a></li>
+                <li><a href="/zh/terms/">条款</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>本网站使用Cookie以改善您的体验。</p>
+            <a href="/zh/privacy/" class="text-sm">了解更多</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">拒绝</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">接受</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>
