@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ca" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Com Funciona CardioAnalytics - Sincronització HealthKit i Actualitzacions en Segon Pla</title>
+    <meta name="description" content="Descobreix com CardioAnalytics es sincronitza amb Apple HealthKit per a dades cardiovasculars en temps real, actualitzacions en segon pla i capacitats d&#39;escriptura. Processament de dades centrat en la privacitat.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="integració HealthKit, sincronització en segon pla, privacitat de dades de salut, sincronització Apple Watch, seguiment de dades cardiovasculars">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/ca/how-it-works/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-10T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/ca/how-it-works/">
+    <meta property="og:title" content="Com Funciona CardioAnalytics - Sincronització HealthKit i Actualitzacions en Segon Pla">
+    <meta property="og:description" content="Descobreix com CardioAnalytics es sincronitza amb Apple HealthKit per a dades cardiovasculars en temps real, actualitzacions en segon pla i capacitats d&#39;escriptura. Processament de dades centrat en la privacitat.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="ca_ES">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/ca/how-it-works/">
+    <meta name="twitter:title" content="Com Funciona CardioAnalytics - Sincronització HealthKit i Actualitzacions en Segon Pla">
+    <meta name="twitter:description" content="Descobreix com CardioAnalytics es sincronitza amb Apple HealthKit per a dades cardiovasculars en temps real, actualitzacions en segon pla i capacitats d&#39;escriptura. Processament de dades centrat en la privacitat.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/how-it-works/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/how-it-works/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/how-it-works/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/how-it-works/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/how-it-works/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/how-it-works/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Saltar al contingut</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/ca/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ca/"
+                           
+                           aria-current="">
+                            Inici
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            App
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ca/features/"
+                                   
+                                   aria-current="">
+                                    Funcionalitats
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/how-it-works/"
+                                   class="active"
+                                   aria-current="page">
+                                    Com Funciona
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/privacy/"
+                                   
+                                   aria-current="">
+                                    Privacitat
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Ciència
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ca/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Freqüència Cardíaca
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Pressió Arterial
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/hrv/"
+                                   
+                                   aria-current="">
+                                    VFC (HRV)
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/spo2/"
+                                   
+                                   aria-current="">
+                                    Saturació d&#39;Oxigen
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Pes i IMC
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG i Fibril·lació Auricular
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Velocitat de Caminar
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Asimetria de Caminar
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Velocitat en Escales
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/healthkit/"
+                                   
+                                   aria-current="">
+                                    Integració HealthKit
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/references/"
+                                   
+                                   aria-current="">
+                                    Referències
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ca/support/"
+                           
+                           aria-current="">
+                            Suport
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Seleccionar idioma">
+                    
+                    <option value="ca" selected>
+                        Català
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Alternar menú" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- Com Funciona CardioAnalytics -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Com Funciona CardioAnalytics</h1>
+    <p class="lead">Integració perfecta amb HealthKit per a sincronització automàtica de dades cardiovasculars amb privacitat i control complets</p>
+  </div>
+</section>
+
+<!-- Resum -->
+<section class="content-section">
+  <div class="container">
+    <h2>Resum de Sincronització amb HealthKit</h2>
+    <p>CardioAnalytics s'integra amb Apple HealthKit per importar i seguir automàticament 11 mètriques cardiovasculars i de mobilitat. Tot el processament de dades passa localment al vostre iPhone sense càrregues al núvol ni servidors externs.</p>
+
+    <div class="steps-grid mt-8">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Autoritza l'Accés a HealthKit</h3>
+        <p>Concedeix permís per llegir tipus de dades específics d'Apple Health. Tries exactament quines mètriques compartir amb control granular.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Sincronització Automàtica en Segon Pla</h3>
+        <p>CardioAnalytics utilitza HKAnchoredObjectQuery amb lliurament en segon pla per obtenir dades noves sense esgotar la bateria.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Processament Local i Alertes</h3>
+        <p>Totes les mètriques es processen al dispositiu. Rep alertes basades en evidència, segueix tendències i exporta informes quan vulguis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tipus de Dades Utilitzats -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Tipus de Dades de HealthKit</h2>
+    <p>CardioAnalytics utilitza identificadors oficials d'Apple HealthKit per a totes les mètriques cardiovasculars i de mobilitat:</p>
+
+    <div class="data-types-grid">
+      <div class="data-type-card">
+        <h4>Mètriques de Freqüència Cardíaca</h4>
+        <ul>
+          <li><code>HKQuantityTypeIdentifier.heartRate</code> - Freqüència cardíaca actual (batecs/min)</li>
+          <li><code>restingHeartRate</code> - Línia base de FC en repòs (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+          <li><code>walkingHeartRateAverage</code> - FC mitjana durant caminar</li>
+        </ul>
+      </div>
+
+      <div class="data-type-card">
+        <h4>Mètriques Cardiovasculars</h4>
+        <ul>
+          <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Lectures de PA parellades (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+          <li><code>heartRateVariabilitySDNN</code> - Variabilitat VFC global</li>
+          <li><code>heartRateVariabilityRMSSD</code> - To vagal a curt termini (on estigui disponible)</li>
+          <li><code>oxygenSaturation</code> - SpO₂ com a fracció (mostrat com a %) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+        </ul>
+      </div>
+
+      <div class="data-type-card">
+        <h4>Composició Corporal</h4>
+        <ul>
+          <li><code>bodyMass</code> - Pes en kg</li>
+          <li>IMC calculat a partir d'alçada i pes</li>
+        </ul>
+      </div>
+
+      <div class="data-type-card">
+        <h4>ECG i Fibril·lació Auricular</h4>
+        <ul>
+          <li><code>electrocardiogramType</code> - Enregistraments d'ECG amb <code>HKElectrocardiogram.Classification</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+          <li><code>atrialFibrillationBurden</code> - Percentatge de càrrega de FA (on estigui disponible) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+        </ul>
+      </div>
+
+      <div class="data-type-card">
+        <h4>Condició Física i Mobilitat</h4>
+        <ul>
+          <li><code>vo2Max</code> - Condició física cardio (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+          <li><code>walkingSpeed</code> - Velocitat de caminar constant mitjana (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+          <li><code>walkingAsymmetryPercentage</code> - % de desequilibri de marxa (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingasymmetrypercentage" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+          <li><code>stairAscentSpeed</code> - Velocitat de pujar escales (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/stairascentspeed" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Patrons de Sincronització en Segon Pla -->
+<section class="content-section">
+  <div class="container">
+    <h2>Tecnologia de Sincronització en Segon Pla</h2>
+    <p>CardioAnalytics utilitza els patrons recomanats d'Apple per a una sincronització de dades eficient i que respecta la bateria:</p>
+
+    <h3>Consultes d'Objectes Ancorats</h3>
+    <p><code>HKAnchoredObjectQuery</code> habilita la sincronització delta - només obtenint dades noves o modificades des de l'última sincronització (<a href="https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery" target="_blank" rel="noopener">Documentació Apple</a>).</p>
+
+    <div class="code-example">
+      <pre><code>// Exemple: Consulta ancorada per sincronització delta eficient
+let query = HKAnchoredObjectQuery(
+    type: heartRateType,
+    predicate: nil,
+    anchor: lastAnchor,
+    limit: HKObjectQueryNoLimit
+) { (query, samples, deletedObjects, newAnchor, error) in
+    // Processa només mostres noves/canviades
+    self.processSamples(samples)
+    self.lastAnchor = newAnchor
+}</code></pre>
+    </div>
+
+    <h3 class="mt-8">Lliurament en Segon Pla</h3>
+    <p><code>HKHealthStore.enableBackgroundDelivery</code> permet a HealthKit despertar l'app quan hi ha dades noves disponibles (<a href="https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery%28for%3Afrequency%3AwithCompletion%3A%29" target="_blank" rel="noopener">Documentació Apple</a>).</p>
+
+    <ul class="feature-list">
+      <li><strong>Actualitzacions immediates</strong> - Dades cardiovasculars fresques sense actualització manual</li>
+      <li><strong>Eficient amb la bateria</strong> - Despertades gestionades pel sistema minimitzen el consum d'energia</li>
+      <li><strong>Lliurament fiable</strong> - Funciona fins i tot quan l'app està tancada</li>
+    </ul>
+
+    <p class="note">📱 <strong>Dret requerit:</strong> <code>com.apple.developer.healthkit.background-delivery</code> (<a href="https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.healthkit.background-delivery" target="_blank" rel="noopener">Documentació</a>)</p>
+  </div>
+</section>
+
+<!-- Capacitats d'Escriptura -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Escriptura a HealthKit</h2>
+    <p>Les dades introduïdes per l'usuari (pes, pressió arterial) es poden escriure de tornada a HealthKit per mantenir consistència en totes les apps i dispositius de salut.</p>
+
+    <ul class="feature-list">
+      <li><strong>Registre de salut unificat</strong> - Les dades introduïdes a CardioAnalytics apareixen a Apple Health</li>
+      <li><strong>Visibilitat del metge</strong> - Els metges que utilitzen sistemes connectats a HealthKit veuen registres consistents</li>
+      <li><strong>Compatibilitat entre apps</strong> - Altres apps de salut poden accedir a les teves entrades de CardioAnalytics</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Privacitat i Permisos -->
+<section class="content-section">
+  <div class="container">
+    <h2>Privacitat i Permisos Granulars</h2>
+    <p>Tu controles exactament a quins tipus de dades pot accedir CardioAnalytics. L'autorització de HealthKit és granular - aprova o denega cada mètrica individualment.</p>
+
+    <h3>El que CardioAnalytics NO FA:</h3>
+    <ul class="feature-list">
+      <li>❌ Sense càrregues al núvol - totes les dades es queden al teu dispositiu</li>
+      <li>❌ Sense servidors externs - sense transmissió de dades a tercers</li>
+      <li>❌ Sense compte necessari - sense recopilació de correu electrònic, nom d'usuari o informació personal</li>
+      <li>❌ Sense seguiment ni analítiques - no sabem qui ets ni com utilitzes l'app</li>
+    </ul>
+
+    <h3 class="mt-6">El que Tu Controles:</h3>
+    <ul class="feature-list">
+      <li>✅ Tria quines mètriques compartir (p. ex., comparteix FC però no pes)</li>
+      <li>✅ Revoca permisos en qualsevol moment a Configuració iOS → Privacitat → Salut</li>
+      <li>✅ Exporta informes només quan decideixis compartir amb el teu metge</li>
+      <li>✅ Esborra totes les dades de l'app en qualsevol moment desinstal·lant-la</li>
+    </ul>
+
+    <p><a href="/ca/privacy/" class="btn btn-secondary">Llegir la Política de Privacitat Completa</a></p>
+  </div>
+</section>
+
+<!-- Compatibilitat de Dispositius -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Compatibilitat de Dispositius</h2>
+    <p>CardioAnalytics funciona amb qualsevol dispositiu o app que escrigui a Apple HealthKit:</p>
+
+    <div class="compatibility-grid">
+      <div class="compatibility-card">
+        <h4>Apple Watch</h4>
+        <p>Freqüència cardíaca, VFC, SpO₂, ECG, VO₂ Max, mètriques de caminar, velocitat en escales</p>
+      </div>
+      <div class="compatibility-card">
+        <h4>Monitors de PA Connectats</h4>
+        <p>Braçalets de pressió arterial Bluetooth (Omron, Withings, QardioArm, etc.)</p>
+      </div>
+      <div class="compatibility-card">
+        <h4>Bàscules Intel·ligents</h4>
+        <p>Pes i IMC de bàscules connectades (Withings, Fitbit Aria, etc.)</p>
+      </div>
+      <div class="compatibility-card">
+        <h4>Entrades Manuals</h4>
+        <p>Afegeix PA, pes o altres mètriques directament a l'app Apple Health</p>
+      </div>
+      <div class="compatibility-card">
+        <h4>Altres Rastrejadors de Condició Física</h4>
+        <p>Qualsevol dispositiu que sincronitzi freqüència cardíaca o dades de condició física amb HealthKit</p>
+      </div>
+      <div class="compatibility-card">
+        <h4>Dispositius Mèdics</h4>
+        <p>Dispositius aprovats per la FDA amb integració HealthKit</p>
+      </div>
+    </div>
+
+    <p class="note">💡 <strong>Mètriques que falten?</strong> Si el teu dispositiu no registra certes mètriques (p. ex., SpO₂ en rellotges antics), CardioAnalytics amaga automàticament aquestes targetes.</p>
+  </div>
+</section>
+
+<!-- Secció CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Comença a Sincronitzar les Teves Dades de Salut Avui</h2>
+      <p>Descarrega CardioAnalytics i connecta't amb Apple HealthKit per a monitoratge cardiovascular automàtic.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Descarregar a l'App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Inici</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Tots els drets reservats
+            </p>
+            <ul class="footer-links">
+                <li><a href="/ca/privacy/">Privacitat</a></li>
+                <li><a href="/ca/terms/">Termes</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Aquest lloc web utilitza cookies per millorar la vostra experiència.</p>
+            <a href="/ca/privacy/" class="text-sm">Saber-ne més</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Rebutjar</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Acceptar</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

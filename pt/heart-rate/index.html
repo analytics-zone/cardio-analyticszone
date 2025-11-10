@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Monitorização de Frequência Cardíaca - FC em Repouso, ao Caminhar e Atual | CardioAnalytics</title>
+    <meta name="description" content="Acompanhe a frequência cardíaca em repouso, ao caminhar e atual do Apple Watch. Compreenda os intervalos normais (60-100 bpm), detete bradicardia e taquicardia com limiares personalizados.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="monitorização frequência cardíaca, frequência cardíaca repouso, frequência cardíaca ao caminhar, bradicardia, taquicardia, monitorização saúde cardíaca">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/pt/heart-rate/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-10T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/pt/heart-rate/">
+    <meta property="og:title" content="Monitorização de Frequência Cardíaca - FC em Repouso, ao Caminhar e Atual | CardioAnalytics">
+    <meta property="og:description" content="Acompanhe a frequência cardíaca em repouso, ao caminhar e atual do Apple Watch. Compreenda os intervalos normais (60-100 bpm), detete bradicardia e taquicardia com limiares personalizados.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/pt/heart-rate/">
+    <meta name="twitter:title" content="Monitorização de Frequência Cardíaca - FC em Repouso, ao Caminhar e Atual | CardioAnalytics">
+    <meta name="twitter:description" content="Acompanhe a frequência cardíaca em repouso, ao caminhar e atual do Apple Watch. Compreenda os intervalos normais (60-100 bpm), detete bradicardia e taquicardia com limiares personalizados.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/heart-rate/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/heart-rate/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/heart-rate/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/heart-rate/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/heart-rate/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/heart-rate/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Monitorização de Frequência Cardíaca - FC em Repouso, ao Caminhar e Atual | CardioAnalytics",
+      "description": "Acompanhe a frequência cardíaca em repouso, ao caminhar e atual do Apple Watch. Compreenda os intervalos normais (60-100 bpm), detete bradicardia e taquicardia com limiares personalizados.",
+      "url": "https://cardio.analyticszone.app/pt/heart-rate/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      }
+    }
+    </script>
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Saltar para o conteúdo</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/pt/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/pt/"
+                           
+                           aria-current="">
+                            Início
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            App
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/pt/features/"
+                                   
+                                   aria-current="">
+                                    Funcionalidades
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Como Funciona
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/privacy/"
+                                   
+                                   aria-current="">
+                                    Privacidade
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Ciência
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/pt/heart-rate/"
+                                   class="active"
+                                   aria-current="page">
+                                    Frequência Cardíaca
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Pressão Arterial
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/hrv/"
+                                   
+                                   aria-current="">
+                                    VFC (HRV)
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/spo2/"
+                                   
+                                   aria-current="">
+                                    Saturação de Oxigénio
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Peso e IMC
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG e Fibrilhação Auricular
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Velocidade de Marcha
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Assimetria de Marcha
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Velocidade em Escadas
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/healthkit/"
+                                   
+                                   aria-current="">
+                                    Integração HealthKit
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pt/references/"
+                                   
+                                   aria-current="">
+                                    Referências
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/pt/support/"
+                           
+                           aria-current="">
+                            Suporte
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Selecionar idioma">
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="pt" selected>
+                        Português
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Alternar menu" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- Heart Rate Science Page -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Monitorização da Frequência Cardíaca</h1>
+    <p class="lead">Monitorize a frequência cardíaca em repouso, ao caminhar e atual para avaliação da saúde cardiovascular</p>
+  </div>
+</section>
+
+<!-- What It Is -->
+<section class="content-section">
+  <div class="container">
+    <h2>O Que é a Frequência Cardíaca?</h2>
+    <p>A frequência cardíaca é o número de vezes que o seu coração bate por minuto (bpm). É medida em diferentes níveis de atividade:</p>
+    <ul class="feature-list">
+      <li><strong>Frequência Cardíaca em Repouso</strong> - Medida quando completamente em repouso, idealmente de manhã antes de sair da cama</li>
+      <li><strong>Frequência Cardíaca ao Caminhar</strong> - Frequência cardíaca média durante atividade de caminhada constante</li>
+      <li><strong>Frequência Cardíaca Atual</strong> - Medição em tempo real em qualquer momento</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Why It Matters -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Por Que a Frequência Cardíaca É Importante</h2>
+    <p>A frequência cardíaca em repouso é um marcador geral de aptidão cardiovascular e saúde geral:</p>
+    <ul class="feature-list">
+      <li>Frequência cardíaca em repouso mais baixa frequentemente indica melhor aptidão cardiovascular</li>
+      <li>Frequência cardíaca em repouso elevada pode sinalizar stress, doença ou problemas cardiovasculares</li>
+      <li>Mudanças na frequência cardíaca em repouso podem indicar alterações no nível de aptidão física ou estado de saúde</li>
+      <li>Frequência cardíaca ao caminhar ajuda a avaliar a resposta cardiovascular a atividade leve</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Typical Ranges -->
+<section class="content-section">
+  <div class="container">
+    <h2>Intervalos Típicos de Frequência Cardíaca</h2>
+
+    <div class="range-card">
+      <h3>Frequência Cardíaca em Repouso (Adultos)</h3>
+      <p><strong>Intervalo normal: 60-100 bpm</strong> (<a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979" target="_blank" rel="noopener">Mayo Clinic</a>)</p>
+      <ul>
+        <li><strong>&lt;60 bpm</strong> - Bradicardia (pode ser normal em atletas, mas consulte clínico se sintomático)</li>
+        <li><strong>60-100 bpm</strong> - Intervalo normal para adultos</li>
+        <li><strong>&gt;100 bpm</strong> - Taquicardia (consulte clínico, especialmente se persistente)</li>
+      </ul>
+    </div>
+
+    <div class="range-card mt-6">
+      <h3>Fatores Que Afetam a Frequência Cardíaca</h3>
+      <ul class="feature-list">
+        <li>Idade - a frequência cardíaca em repouso geralmente diminui com a idade</li>
+        <li>Nível de aptidão física - atletas treinados frequentemente têm frequência cardíaca em repouso mais baixa (40-60 bpm)</li>
+        <li>Medicamentos - beta bloqueadores e outros medicamentos afetam a frequência cardíaca</li>
+        <li>Temperatura - o calor pode elevar a frequência cardíaca</li>
+        <li>Emoções e stress - ansiedade aumenta a frequência cardíaca</li>
+        <li>Cafeína e estimulantes - aumentam a frequência cardíaca temporariamente</li>
+        <li>Desidratação - pode elevar a frequência cardíaca</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- How CardioAnalytics Uses It -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Como o CardioAnalytics Usa Dados de Frequência Cardíaca</h2>
+    <ul class="feature-list">
+      <li><strong>Traça tendências de frequência cardíaca em repouso e ao caminhar</strong> - Visualize mudanças ao longo do tempo (dias, semanas, meses)</li>
+      <li><strong>Assinala bradicardia/taquicardia persistente</strong> - Alertas baseados em limiares personalizados</li>
+      <li><strong>Compara com intervalos de referência</strong> - Indicadores de intervalo normal da Mayo Clinic (60-100 bpm)</li>
+      <li><strong>Correlações de medicamentos</strong> - Veja como os medicamentos (por exemplo, beta bloqueadores) afetam a sua frequência cardíaca</li>
+      <li><strong>Correlações de sintomas</strong> - Registe sintomas e identifique padrões com mudanças na frequência cardíaca</li>
+    </ul>
+
+    <p class="note">📊 <strong>Acompanhe tendências, não leituras únicas:</strong> A frequência cardíaca em repouso varia de dia para dia. Concentre-se em padrões de longo prazo em vez de medições isoladas.</p>
+  </div>
+</section>
+
+<!-- HealthKit Integration -->
+<section class="content-section">
+  <div class="container">
+    <h2>Tipos de Dados do HealthKit</h2>
+    <p>O CardioAnalytics lê dados de frequência cardíaca do Apple HealthKit usando estes identificadores:</p>
+    <ul class="feature-list">
+      <li><code>HKQuantityTypeIdentifier.heartRate</code> - Frequência cardíaca atual (batimentos/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>restingHeartRate</code> - Linha de base de frequência cardíaca em repouso (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>walkingHeartRateAverage</code> - Frequência cardíaca média ao caminhar (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+
+    <p class="mt-6"><a href="/pt/healthkit/" class="btn btn-secondary">Saiba Mais Sobre a Integração com HealthKit</a></p>
+  </div>
+</section>
+
+<!-- References -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Referências Científicas</h2>
+    <ol class="references-list">
+      <li>Mayo Clinic. <em>What's a normal resting heart rate?</em> <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979" target="_blank" rel="noopener">https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979</a></li>
+    </ol>
+    <p><a href="/pt/references/" class="btn btn-secondary">Ver Todas as Referências</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Acompanhe a Sua Frequência Cardíaca com o CardioAnalytics</h2>
+      <p>Monitorize a frequência cardíaca em repouso, ao caminhar e atual com alertas baseados em evidência e análise de tendências.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Transferir na App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Início</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Todos os direitos reservados
+            </p>
+            <ul class="footer-links">
+                <li><a href="/pt/privacy/">Privacidade</a></li>
+                <li><a href="/pt/terms/">Termos</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Este site utiliza cookies para melhorar a sua experiência.</p>
+            <a href="/pt/privacy/" class="text-sm">Saber mais</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Recusar</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Aceitar</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

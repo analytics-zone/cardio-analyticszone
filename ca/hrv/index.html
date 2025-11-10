@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ca" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Variabilitat de la Freqüència Cardíaca (VFC) - Seguiment SDNN i RMSSD | CardioAnalytics</title>
+    <meta name="description" content="Monitoritza mètriques de VFC (SDNN, RMSSD) per avaluar la salut cardiovascular i els nivells d&#39;estrès. VFC baixa vinculada a pitjors resultats de salut. Segueix tendències nocturnes.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="variabilitat freqüència cardíaca, seguiment VFC, SDNN, RMSSD, to vagal, monitorització estrès, salut cardiovascular">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/ca/hrv/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-10T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/ca/hrv/">
+    <meta property="og:title" content="Variabilitat de la Freqüència Cardíaca (VFC) - Seguiment SDNN i RMSSD | CardioAnalytics">
+    <meta property="og:description" content="Monitoritza mètriques de VFC (SDNN, RMSSD) per avaluar la salut cardiovascular i els nivells d&#39;estrès. VFC baixa vinculada a pitjors resultats de salut. Segueix tendències nocturnes.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="ca_ES">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/ca/hrv/">
+    <meta name="twitter:title" content="Variabilitat de la Freqüència Cardíaca (VFC) - Seguiment SDNN i RMSSD | CardioAnalytics">
+    <meta name="twitter:description" content="Monitoritza mètriques de VFC (SDNN, RMSSD) per avaluar la salut cardiovascular i els nivells d&#39;estrès. VFC baixa vinculada a pitjors resultats de salut. Segueix tendències nocturnes.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/hrv/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/hrv/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/hrv/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/hrv/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/hrv/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/hrv/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Variabilitat de la Freqüència Cardíaca (VFC) - Seguiment SDNN i RMSSD | CardioAnalytics",
+      "description": "Monitoritza mètriques de VFC (SDNN, RMSSD) per avaluar la salut cardiovascular i els nivells d&#39;estrès. VFC baixa vinculada a pitjors resultats de salut. Segueix tendències nocturnes.",
+      "url": "https://cardio.analyticszone.app/ca/hrv/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      }
+    }
+    </script>
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Saltar al contingut</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/ca/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ca/"
+                           
+                           aria-current="">
+                            Inici
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            App
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ca/features/"
+                                   
+                                   aria-current="">
+                                    Funcionalitats
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Com Funciona
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/privacy/"
+                                   
+                                   aria-current="">
+                                    Privacitat
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Ciència
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ca/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Freqüència Cardíaca
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Pressió Arterial
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/hrv/"
+                                   class="active"
+                                   aria-current="page">
+                                    VFC (HRV)
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/spo2/"
+                                   
+                                   aria-current="">
+                                    Saturació d&#39;Oxigen
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Pes i IMC
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG i Fibril·lació Auricular
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Velocitat de Caminar
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Asimetria de Caminar
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Velocitat en Escales
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/healthkit/"
+                                   
+                                   aria-current="">
+                                    Integració HealthKit
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/references/"
+                                   
+                                   aria-current="">
+                                    Referències
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ca/support/"
+                           
+                           aria-current="">
+                            Suport
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Seleccionar idioma">
+                    
+                    <option value="ca" selected>
+                        Català
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Alternar menú" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- Pàgina de Ciència de Variabilitat de la Freqüència Cardíaca (VFC) -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Variabilitat de la Freqüència Cardíaca (VFC)</h1>
+    <p class="lead">Monitoritza les mètriques SDNN i RMSSD per avaluar la salut cardiovascular i els nivells d'estrès</p>
+  </div>
+</section>
+
+<!-- Què és -->
+<section class="content-section">
+  <div class="container">
+    <h2>Què és la Variabilitat de la Freqüència Cardíaca?</h2>
+    <p>La Variabilitat de la Freqüència Cardíaca (VFC) mesura la variació en el temps entre batecs consecutius del cor. És un marcador de la funció del sistema nerviós autònom i la salut cardiovascular general.</p>
+
+    <h3 class="mt-6">Mètriques de VFC:</h3>
+    <ul class="feature-list">
+      <li><strong>SDNN (Desviació Estàndard dels Intervals NN)</strong> - Mesura la VFC global. Reflecteix l'activitat total del sistema nerviós autònom.</li>
+      <li><strong>RMSSD (Arrel Quadrada de la Mitjana dels Quadrats de Diferències Successives)</strong> - Mesura la VFC a curto termini. Reflecteix principalment el to parasimpàtic (vagal).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Per què és important -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Per què és Important la VFC</h2>
+    <p><strong>Una VFC baixa està vinculada a pitjors resultats de salut i augment de l'estrès</strong> (<a href="https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv" target="_blank" rel="noopener">Cleveland Clinic</a>):</p>
+    <ul class="feature-list">
+      <li>Una VFC més baixa indica una capacitat reduïda per adaptar-se a l'estrès</li>
+      <li>Associada amb un risc augmentat de malaltia cardiovascular</li>
+      <li>Pot indicar sobreentrenament, malaltia o estrès crònic</li>
+      <li>Una VFC més alta generalment indica millor forma física cardiovascular i resiliència</li>
+    </ul>
+
+    <p class="note">📊 <strong>La VFC és altament individual:</strong> Centra't en les teves tendències personals en lloc de valors absoluts. Compara la VFC d'avui amb la teva pròpia línia base.</p>
+  </div>
+</section>
+
+<!-- Rangs típics -->
+<section class="content-section">
+  <div class="container">
+    <h2>Interpretació dels Valors de VFC</h2>
+    <p>La VFC varia àmpliament entre individus segons l'edat, la forma física, la genètica i altres factors. No hi ha un rang "normal" únic, però patrons generals:</p>
+
+    <div class="range-card">
+      <h3>SDNN</h3>
+      <ul>
+        <li><strong>&gt;100 ms</strong> - VFC excel·lent</li>
+        <li><strong>50-100 ms</strong> - VFC bona</li>
+        <li><strong>20-50 ms</strong> - VFC acceptable</li>
+        <li><strong>&lt;20 ms</strong> - VFC baixa (pot indicar problemes de salut)</li>
+      </ul>
+    </div>
+
+    <div class="range-card mt-6">
+      <h3>RMSSD</h3>
+      <ul>
+        <li><strong>&gt;50 ms</strong> - VFC a curt termini excel·lent</li>
+        <li><strong>30-50 ms</strong> - VFC a curt termini bona</li>
+        <li><strong>15-30 ms</strong> - VFC a curt termini acceptable</li>
+        <li><strong>&lt;15 ms</strong> - VFC a curt termini baixa</li>
+      </ul>
+    </div>
+
+    <p class="note mt-6">⚠️ <strong>Utilitza la línia base personal:</strong> La teva VFC pot ser naturalment més alta o més baixa que aquests rangs. El que més importa és seguir els canvis respecte a la teva pròpia línia base.</p>
+  </div>
+</section>
+
+<!-- Factors que afecten la VFC -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Factors que Afecten la VFC</h2>
+    <ul class="feature-list">
+      <li><strong>Edat</strong> - La VFC generalment disminueix amb l'edat</li>
+      <li><strong>Nivell de forma física</strong> - Els atletes solen tenir una VFC més alta</li>
+      <li><strong>Estrès</strong> - L'estrès físic o mental redueix la VFC</li>
+      <li><strong>Qualitat del son</strong> - Un son deficient redueix la VFC</li>
+      <li><strong>Alcohol</strong> - El consum redueix la VFC durant 12-24 hores</li>
+      <li><strong>Malaltia</strong> - Les infeccions i malalties disminueixen la VFC</li>
+      <li><strong>Deshidratació</strong> - Pot reduir la VFC</li>
+      <li><strong>Sobreentrenament</strong> - L'exercici excessiu sense recuperació redueix la VFC</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Com ho utilitza CardioAnalytics -->
+<section class="content-section">
+  <div class="container">
+    <h2>Com Utilitza CardioAnalytics les Dades de VFC</h2>
+    <ul class="feature-list">
+      <li><strong>Mostra tendències de VFC nocturnes</strong> - L'Apple Watch normalment registra la VFC durant el son</li>
+      <li><strong>Marca valors inusualment baixos</strong> - Alertes quan la VFC cau significativament per sota de la teva línia base</li>
+      <li><strong>Anàlisi de tendències a llarg termini</strong> - Segueix els canvis de VFC durant setmanes i mesos</li>
+      <li><strong>Correlacions amb medicaments</strong> - Veu com els medicaments afecten la funció autònoma</li>
+      <li><strong>Correlacions amb símptomes</strong> - Identifica patrons entre VFC baixa i símptomes</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Integració HealthKit -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Tipus de Dades de HealthKit</h2>
+    <p>CardioAnalytics llegeix les dades de VFC d'Apple HealthKit utilitzant aquests identificadors:</p>
+    <ul class="feature-list">
+      <li><code>heartRateVariabilitySDNN</code> - VFC global (SDNN en mil·lisegons) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+      <li><code>heartRateVariabilityRMSSD</code> - To vagal a curt termini (RMSSD en ms, quan estigui disponible) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+    </ul>
+
+    <p class="mt-6"><a href="/ca/healthkit/" class="btn btn-secondary">Més Informació sobre la Integració HealthKit</a></p>
+  </div>
+</section>
+
+<!-- Referències -->
+<section class="content-section">
+  <div class="container">
+    <h2>Referències Científiques</h2>
+    <ol class="references-list">
+      <li>Cleveland Clinic. <em>Heart Rate Variability (HRV): What It Is and How You Can Improve It.</em> <a href="https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv" target="_blank" rel="noopener">https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv</a></li>
+    </ol>
+    <p><a href="/ca/references/" class="btn btn-secondary">Veure Totes les Referències</a></p>
+  </div>
+</section>
+
+<!-- Secció CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Segueix la Teva VFC amb CardioAnalytics</h2>
+      <p>Monitoritza tendències de variabilitat de la freqüència cardíaca per avaluar nivells d'estrès i salut cardiovascular.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Descarregar a l'App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Inici</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Tots els drets reservats
+            </p>
+            <ul class="footer-links">
+                <li><a href="/ca/privacy/">Privacitat</a></li>
+                <li><a href="/ca/terms/">Termes</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Aquest lloc web utilitza cookies per millorar la vostra experiència.</p>
+            <a href="/ca/privacy/" class="text-sm">Saber-ne més</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Rebutjar</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Acceptar</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

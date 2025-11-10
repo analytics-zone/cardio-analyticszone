@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>CardioAnalytics - Seguimiento de 11 Métricas de Salud Cardíaca desde Apple Health | App iOS</title>
+    <meta name="description" content="App integral de seguimiento cardiovascular y movilidad. Monitoriza frecuencia cardíaca, presión arterial, VFC, SpO₂, ECG, VO₂ Max, métricas de marcha y más. App iOS con privacidad garantizada e integración HealthKit.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="análisis cardio, seguimiento salud cardíaca, app presión arterial, variabilidad frecuencia cardíaca, rastreador VO2 max, app ECG, fibrilación auricular, salud cardiovascular, Apple Health, HealthKit">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/es/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-10T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cardio.analyticszone.app/es/">
+    <meta property="og:title" content="CardioAnalytics - Seguimiento de 11 Métricas de Salud Cardíaca desde Apple Health | App iOS">
+    <meta property="og:description" content="App integral de seguimiento cardiovascular y movilidad. Monitoriza frecuencia cardíaca, presión arterial, VFC, SpO₂, ECG, VO₂ Max, métricas de marcha y más. App iOS con privacidad garantizada e integración HealthKit.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/es/">
+    <meta name="twitter:title" content="CardioAnalytics - Seguimiento de 11 Métricas de Salud Cardíaca desde Apple Health | App iOS">
+    <meta name="twitter:description" content="App integral de seguimiento cardiovascular y movilidad. Monitoriza frecuencia cardíaca, presión arterial, VFC, SpO₂, ECG, VO₂ Max, métricas de marcha y más. App iOS con privacidad garantizada e integración HealthKit.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CardioAnalytics - Comprehensive Heart Health Tracking | iOS App",
+      "url": "https://cardio.analyticszone.app",
+      "logo": "https://cardio.analyticszone.app/assets/images/logo.png",
+      "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.",
+      "author": "Arno Health",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "info@onmedic.com"
+      }
+    }
+    </script>
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CardioAnalytics",
+      "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Monitor heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max, walking metrics and more. Privacy-first iOS app with HealthKit integration.",
+      "url": "https://cardio.analyticszone.app",
+      "applicationCategory": ["HealthApplication", "MedicalApplication"],
+      "operatingSystem": "iOS",
+      "softwareVersion": "Latest",
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      },
+      "downloadUrl": "https://apps.apple.com/app/cardioanalytics",
+      "featureList": [
+        "11 cardiovascular and mobility metrics tracking",
+        "Heart rate monitoring (resting, walking, current)",
+        "Blood pressure tracking with AHA categories",
+        "Heart rate variability (HRV) analysis",
+        "Oxygen saturation (SpO₂) monitoring",
+        "Weight and BMI tracking",
+        "ECG and atrial fibrillation detection",
+        "VO₂ Max cardio fitness tracking",
+        "Walking speed (sixth vital sign)",
+        "Walking asymmetry and gait analysis",
+        "Stair ascent speed monitoring",
+        "Medication adherence tracking",
+        "Evidence-based health alerts",
+        "Symptom and care hub logging",
+        "HealthKit integration with background sync",
+        "Privacy by design - all data on-device",
+        "Shareable PDF and CSV reports"
+      ]
+    }
+    </script>
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "CardioAnalytics - Seguimiento de 11 Métricas de Salud Cardíaca desde Apple Health | App iOS",
+      "description": "App integral de seguimiento cardiovascular y movilidad. Monitoriza frecuencia cardíaca, presión arterial, VFC, SpO₂, ECG, VO₂ Max, métricas de marcha y más. App iOS con privacidad garantizada e integración HealthKit.",
+      "url": "https://cardio.analyticszone.app/es/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Cardiovascular Health Monitoring"
+      }
+    }
+    </script>
+
+    
+
+    
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Saltar al contenido</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/es/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/es/"
+                           
+                           aria-current="">
+                            Inicio
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            App
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/es/features/"
+                                   
+                                   aria-current="">
+                                    Funcionalidades
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Cómo Funciona
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/privacy/"
+                                   
+                                   aria-current="">
+                                    Privacidad
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Ciencia
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/es/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Frecuencia Cardíaca
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Presión Arterial
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/hrv/"
+                                   
+                                   aria-current="">
+                                    VFC (HRV)
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/spo2/"
+                                   
+                                   aria-current="">
+                                    Saturación de Oxígeno
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Peso e IMC
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG y Fibrilación Auricular
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Velocidad al Caminar
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Asimetría al Caminar
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Velocidad en Escaleras
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/healthkit/"
+                                   
+                                   aria-current="">
+                                    Integración HealthKit
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/es/references/"
+                                   
+                                   aria-current="">
+                                    Referencias
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/es/support/"
+                           
+                           aria-current="">
+                            Soporte
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Seleccionar idioma">
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" selected>
+                        Español
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Alternar menú" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- Página Principal de CardioAnalytics -->
+
+<!-- Sección Hero -->
+<section class="app-hero">
+  <div class="container">
+    <div class="app-hero-content">
+      <div class="app-hero-text">
+        <div class="app-hero-badge">
+          <span>❤️</span>
+          <span>Seguimiento Integral de Salud Cardíaca</span>
+        </div>
+        <h1>Monitoriza Tu Salud Cardíaca con Confianza</h1>
+        <p class="app-hero-subtitle">
+          Monitoriza 11 métricas cardiovasculares y de movilidad desde Apple Health. Seguimiento de frecuencia cardíaca, presión arterial, VFC, SpO₂, ECG, VO₂ Max y más.
+          App iOS con privacidad prioritaria y procesamiento completo de datos en el dispositivo.
+        </p>
+        <div class="app-hero-cta">
+          <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+            Descargar en App Store
+          </a>
+          <a href="/es/features/" class="btn btn-large btn-secondary">
+            Explorar Funcionalidades
+          </a>
+        </div>
+        <p class="mt-6 text-sm-muted disclaimer-note">
+          ⚠️ CardioAnalytics no proporciona diagnóstico médico. Siempre consulte a un profesional sanitario cualificado.
+        </p>
+      </div>
+      <div class="app-hero-mockup">
+        <div class="mockup-phone">
+          <!-- Placeholder para captura de pantalla de la app -->
+          <div class="placeholder-screenshot" style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%); height: 600px; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+            Panel CardioAnalytics
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Resumen de Métricas Clave -->
+<section id="metrics" class="metrics-overview">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">11 Métricas Integrales</div>
+      <h2 class="section-title">Seguimiento Completo Cardiovascular y de Movilidad</h2>
+      <p class="section-subtitle">Panel unificado para todos tus datos de salud cardíaca y movilidad desde Apple HealthKit</p>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-icon">❤️</div>
+        <h3><a href="/es/heart-rate/">Frecuencia Cardíaca</a></h3>
+        <p>Frecuencia cardíaca en reposo, caminando y actual. Rango normal 60-100 lpm. Detecta bradicardia y taquicardia.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🩺</div>
+        <h3><a href="/es/blood-pressure/">Presión Arterial</a></h3>
+        <p>Seguimiento de sistólica/diastólica con categorías AHA. Monitoriza el riesgo de hipertensión y salud cardiovascular.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">📊</div>
+        <h3><a href="/es/hrv/">Variabilidad de Frecuencia Cardíaca</a></h3>
+        <p>Métricas SDNN y RMSSD. Evalúa niveles de estrés y salud cardiovascular. VFC baja vinculada a peores resultados.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🫁</div>
+        <h3><a href="/es/spo2/">Saturación de Oxígeno</a></h3>
+        <p>Monitorización de SpO₂ (95-100% normal). Alertas de hipoxemia. Seguimiento de salud respiratoria y cardiovascular.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">⚖️</div>
+        <h3><a href="/es/weight-bmi/">Peso e IMC</a></h3>
+        <p>Seguimiento de peso corporal e IMC (18.5-24.9 rango saludable). Monitoriza factores de riesgo cardiovascular.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">📈</div>
+        <h3><a href="/es/ecg-afib/">ECG y Fibrilación Auricular</a></h3>
+        <p>ECG del Apple Watch aprobado por FDA. Seguimiento de carga de FA y alertas de pulso irregular. 95% sensibilidad/especificidad.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🏃</div>
+        <h3><a href="/es/vo2max/">VO₂ Max</a></h3>
+        <p>Marcador de condición física cardio. Potente predictor de riesgo de mortalidad. Seguimiento de tendencias y zonas de entrenamiento.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🚶</div>
+        <h3><a href="/es/walking-speed/">Velocidad al Caminar</a></h3>
+        <p>El "sexto signo vital". <0.8 m/s indica mayor riesgo. Monitoriza capacidad funcional.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">⚖️</div>
+        <h3><a href="/es/walking-asymmetry/">Asimetría al Caminar</a></h3>
+        <p>Evaluación de balance de marcha y riesgo de caídas. Métricas de Movilidad de Apple para salud funcional.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🪜</div>
+        <h3><a href="/es/stair-speed/">Velocidad de Ascenso en Escaleras</a></h3>
+        <p>Indicador de capacidad funcional y potencia de piernas. Seguimiento de descensos significativos en movilidad.</p>
+      </div>
+      <div class="metric-card metric-card-highlight">
+        <div class="metric-icon">🔗</div>
+        <h3><a href="/es/healthkit/">Integración HealthKit</a></h3>
+        <p>Sincronización sin interrupciones con Apple Health. Actualizaciones en segundo plano, consultas ancladas, capacidades de escritura.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Funcionalidades Clave -->
+<section id="features" class="app-features">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Funcionalidades</div>
+      <h2 class="section-title">Todo lo que Necesitas para el Seguimiento de Salud Cardíaca</h2>
+      <p class="section-subtitle">Análisis cardiovascular de grado profesional diseñado para el empoderamiento del paciente</p>
+    </div>
+    <div class="app-features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-dashboard"></use>
+          </svg>
+        </div>
+        <h3>Panel Personalizado</h3>
+        <p>Las 11 métricas en una sola vista. Tendencias claras, rangos de guías clínicas y umbrales personalizados. Monitoriza cambios de un vistazo.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-pill"></use>
+          </svg>
+        </div>
+        <h3>Seguimiento de Medicación</h3>
+        <p>Registra dosis o sincroniza Medicamentos de HealthKit. Seguimiento de tasas de adherencia. Visualiza correlaciones con PA, FC, VFC y peso.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-alert"></use>
+          </svg>
+        </div>
+        <h3>Alertas Basadas en Evidencia</h3>
+        <p>Umbrales alineados con AHA, Mayo Clinic, Cleveland Clinic. Personaliza según el consejo de tu médico.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-clipboard"></use>
+          </svg>
+        </div>
+        <h3>Centro de Síntomas y Cuidados</h3>
+        <p>Registra síntomas con severidad. Seguimiento de objetivos de cuidado y citas médicas. Exporta informes profesionales para tu médico.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-shield"></use>
+          </svg>
+        </div>
+        <h3>Privacidad por Diseño</h3>
+        <p>Autorización granular de HealthKit. Todos los datos almacenados localmente en tu dispositivo. Tú decides qué compartir.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-export"></use>
+          </svg>
+        </div>
+        <h3>Informes Compartibles</h3>
+        <p>Exporta PDFs o CSVs profesionales para tu médico. Historial completo de salud en un solo documento.</p>
+      </div>
+    </div>
+    <div class="cta-center">
+      <a href="/es/features/" class="btn btn-large btn-primary">
+        Más Información sobre Funcionalidades
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Cómo Funciona -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Cómo Funciona</div>
+      <h2 class="section-title">Integración Perfecta con HealthKit</h2>
+      <p class="section-subtitle">Sincronización automática con Apple Health para monitorización cardiovascular sin esfuerzo</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Autorizar HealthKit</h3>
+        <p>Otorga permiso para leer métricas cardiovasculares de Apple Health. Control granular sobre qué tipos de datos compartir.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Sincronización Automática en Segundo Plano</h3>
+        <p>CardioAnalytics usa consultas ancladas y entrega en segundo plano para datos frescos sin agotar la batería.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Seguimiento de Tendencias y Recibe Alertas</h3>
+        <p>Monitoriza tendencias, recibe alertas basadas en evidencia, registra medicamentos y síntomas, y comparte informes con tu médico.</p>
+      </div>
+    </div>
+    <div class="cta-center mt-8">
+      <a href="/es/how-it-works/" class="btn btn-large btn-secondary">
+        Más Información sobre Sincronización HealthKit
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Respaldado por la Ciencia -->
+<section class="science-backed">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Ciencia</div>
+      <h2 class="section-title">Métricas Cardiovasculares Basadas en Evidencia</h2>
+      <p class="section-subtitle">Todas las métricas respaldadas por investigación revisada por pares y guías clínicas</p>
+    </div>
+    <div class="science-grid">
+      <div class="science-card">
+        <h4>Guías Clínicas</h4>
+        <p>Categorías de presión arterial AHA, rangos FC/SpO₂ de Mayo Clinic, investigación VFC de Cleveland Clinic.</p>
+      </div>
+      <div class="science-card">
+        <h4>Investigación Revisada por Pares</h4>
+        <p>Estudio Apple Heart NEJM, metaanálisis FA JACC, validación VO₂ PLOS ONE, estudios velocidad marcha JAMA.</p>
+      </div>
+      <div class="science-card">
+        <h4>Dispositivos Aprobados por FDA</h4>
+        <p>ECG del Apple Watch y notificaciones de ritmo irregular aprobados por FDA para detección de FA.</p>
+      </div>
+    </div>
+    <div class="cta-center mt-8">
+      <a href="/es/references/" class="btn btn-large btn-secondary">
+        Ver Referencias Completas
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Sección CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Comienza a Monitorizar Tu Salud Cardíaca Hoy</h2>
+      <p>Descarga CardioAnalytics y toma el control de tu salud cardiovascular con seguimiento que prioriza la privacidad.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Descargar en App Store
+      </a>
+      <p class="disclaimer-note mt-4">
+        ⚠️ CardioAnalytics no proporciona diagnóstico ni tratamiento médico. Siempre consulte a un profesional sanitario cualificado para consejo médico.
+      </p>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Inicio</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Todos los derechos reservados
+            </p>
+            <ul class="footer-links">
+                <li><a href="/es/privacy/">Privacidad</a></li>
+                <li><a href="/es/terms/">Términos</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Este sitio web utiliza cookies para mejorar su experiencia.</p>
+            <a href="/es/privacy/" class="text-sm">Más información</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Rechazar</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Aceptar</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

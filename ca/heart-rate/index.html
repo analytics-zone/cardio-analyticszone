@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ca" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Seguiment de Freqüència Cardíaca - FC en Repòs, Caminant i Actual | CardioAnalytics</title>
+    <meta name="description" content="Segueix la freqüència cardíaca en repòs, caminant i actual des de l&#39;Apple Watch. Comprèn els rangs normals (60-100 lpm), detecta bradicàrdia i taquicàrdia amb llindars personalitzats.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="seguiment freqüència cardíaca, freqüència cardíaca en repòs, freqüència cardíaca caminant, bradicàrdia, taquicàrdia, monitorització salut cardíaca">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/ca/heart-rate/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-10T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/ca/heart-rate/">
+    <meta property="og:title" content="Seguiment de Freqüència Cardíaca - FC en Repòs, Caminant i Actual | CardioAnalytics">
+    <meta property="og:description" content="Segueix la freqüència cardíaca en repòs, caminant i actual des de l&#39;Apple Watch. Comprèn els rangs normals (60-100 lpm), detecta bradicàrdia i taquicàrdia amb llindars personalitzats.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="ca_ES">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/ca/heart-rate/">
+    <meta name="twitter:title" content="Seguiment de Freqüència Cardíaca - FC en Repòs, Caminant i Actual | CardioAnalytics">
+    <meta name="twitter:description" content="Segueix la freqüència cardíaca en repòs, caminant i actual des de l&#39;Apple Watch. Comprèn els rangs normals (60-100 lpm), detecta bradicàrdia i taquicàrdia amb llindars personalitzats.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/heart-rate/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/heart-rate/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/heart-rate/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/heart-rate/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/heart-rate/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/heart-rate/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Seguiment de Freqüència Cardíaca - FC en Repòs, Caminant i Actual | CardioAnalytics",
+      "description": "Segueix la freqüència cardíaca en repòs, caminant i actual des de l&#39;Apple Watch. Comprèn els rangs normals (60-100 lpm), detecta bradicàrdia i taquicàrdia amb llindars personalitzats.",
+      "url": "https://cardio.analyticszone.app/ca/heart-rate/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      }
+    }
+    </script>
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Saltar al contingut</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/ca/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ca/"
+                           
+                           aria-current="">
+                            Inici
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            App
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ca/features/"
+                                   
+                                   aria-current="">
+                                    Funcionalitats
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Com Funciona
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/privacy/"
+                                   
+                                   aria-current="">
+                                    Privacitat
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Ciència
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ca/heart-rate/"
+                                   class="active"
+                                   aria-current="page">
+                                    Freqüència Cardíaca
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Pressió Arterial
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/hrv/"
+                                   
+                                   aria-current="">
+                                    VFC (HRV)
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/spo2/"
+                                   
+                                   aria-current="">
+                                    Saturació d&#39;Oxigen
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Pes i IMC
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG i Fibril·lació Auricular
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Velocitat de Caminar
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Asimetria de Caminar
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Velocitat en Escales
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/healthkit/"
+                                   
+                                   aria-current="">
+                                    Integració HealthKit
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ca/references/"
+                                   
+                                   aria-current="">
+                                    Referències
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ca/support/"
+                           
+                           aria-current="">
+                            Suport
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Seleccionar idioma">
+                    
+                    <option value="ca" selected>
+                        Català
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Alternar menú" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- Pàgina de Ciència de Freqüència Cardíaca -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Seguiment de Freqüència Cardíaca</h1>
+    <p class="lead">Monitoritza la freqüència cardíaca en repòs, caminant i actual per a l'avaluació de la salut cardiovascular</p>
+  </div>
+</section>
+
+<!-- Què és -->
+<section class="content-section">
+  <div class="container">
+    <h2>Què és la Freqüència Cardíaca?</h2>
+    <p>La freqüència cardíaca és el nombre de vegades que el cor batega per minut (lpm). Es mesura a diferents nivells d'activitat:</p>
+    <ul class="feature-list">
+      <li><strong>Freqüència Cardíaca en Repòs</strong> - Mesurada quan estàs completament en repòs, idealment al matí abans de llevar-te del llit</li>
+      <li><strong>Freqüència Cardíaca Caminant</strong> - Freqüència cardíaca mitjana durant una activitat de caminar constant</li>
+      <li><strong>Freqüència Cardíaca Actual</strong> - Mesura en temps real en qualsevol moment donat</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Per què és important -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Per què és Important la Freqüència Cardíaca</h2>
+    <p>La freqüència cardíaca en repòs és un marcador general de la forma física cardiovascular i la salut general:</p>
+    <ul class="feature-list">
+      <li>Una FC en repòs més baixa sovint indica una millor forma física cardiovascular</li>
+      <li>Una FC en repòs elevada pot indicar estrès, malaltia o problemes cardiovasculars</li>
+      <li>Els canvis en la FC en repòs poden indicar canvis en el nivell de forma física o estat de salut</li>
+      <li>La FC caminant ajuda a avaluar la resposta cardiovascular a l'activitat suau</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Rangs típics -->
+<section class="content-section">
+  <div class="container">
+    <h2>Rangs Típics de Freqüència Cardíaca</h2>
+
+    <div class="range-card">
+      <h3>Freqüència Cardíaca en Repòs (Adults)</h3>
+      <p><strong>Rang normal: 60-100 lpm</strong> (<a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979" target="_blank" rel="noopener">Mayo Clinic</a>)</p>
+      <ul>
+        <li><strong>&lt;60 lpm</strong> - Bradicàrdia (pot ser normal en atletes, però consulteu el metge si teniu símptomes)</li>
+        <li><strong>60-100 lpm</strong> - Rang normal per a adults</li>
+        <li><strong>&gt;100 lpm</strong> - Taquicàrdia (consulteu el metge, especialment si és persistent)</li>
+      </ul>
+    </div>
+
+    <div class="range-card mt-6">
+      <h3>Factors que Afecten la Freqüència Cardíaca</h3>
+      <ul class="feature-list">
+        <li>Edat - la FC en repòs generalment disminueix amb l'edat</li>
+        <li>Nivell de forma física - els atletes entrenats sovint tenen una FC en repòs més baixa (40-60 lpm)</li>
+        <li>Medicaments - els betablocadors i altres fàrmacs afecten la FC</li>
+        <li>Temperatura - la calor pot elevar la FC</li>
+        <li>Emocions i estrès - l'ansietat augmenta la FC</li>
+        <li>Cafeïna i estimulants - augmenten la FC temporalment</li>
+        <li>Deshidratació - pot elevar la FC</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Com ho utilitza CardioAnalytics -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Com Utilitza CardioAnalytics les Dades de Freqüència Cardíaca</h2>
+    <ul class="feature-list">
+      <li><strong>Gràfics de tendències de FC en repòs i caminant</strong> - Visualitza els canvis al llarg del temps (dies, setmanes, mesos)</li>
+      <li><strong>Marca bradicàrdia/taquicàrdia persistent</strong> - Alertes basades en llindars personalitzats</li>
+      <li><strong>Compara amb rangs de guies</strong> - Indicadors de rang normal de Mayo Clinic (60-100 lpm)</li>
+      <li><strong>Correlacions amb medicaments</strong> - Veu com els medicaments (p. ex., betablocadors) afecten la teva freqüència cardíaca</li>
+      <li><strong>Correlacions amb símptomes</strong> - Registra símptomes i identifica patrons amb canvis de FC</li>
+    </ul>
+
+    <p class="note">📊 <strong>Segueix tendències, no lectures individuals:</strong> La FC en repòs varia dia a dia. Centra't en patrons a llarg termini en lloc de mesures aïllades.</p>
+  </div>
+</section>
+
+<!-- Integració HealthKit -->
+<section class="content-section">
+  <div class="container">
+    <h2>Tipus de Dades de HealthKit</h2>
+    <p>CardioAnalytics llegeix les dades de freqüència cardíaca d'Apple HealthKit utilitzant aquests identificadors:</p>
+    <ul class="feature-list">
+      <li><code>HKQuantityTypeIdentifier.heartRate</code> - Freqüència cardíaca actual (batecs/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+      <li><code>restingHeartRate</code> - Línia base de freqüència cardíaca en repòs (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+      <li><code>walkingHeartRateAverage</code> - FC mitjana durant caminar (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Documentació Apple</a>)</li>
+    </ul>
+
+    <p class="mt-6"><a href="/ca/healthkit/" class="btn btn-secondary">Més Informació sobre la Integració HealthKit</a></p>
+  </div>
+</section>
+
+<!-- Referències -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Referències Científiques</h2>
+    <ol class="references-list">
+      <li>Mayo Clinic. <em>What's a normal resting heart rate?</em> <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979" target="_blank" rel="noopener">https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979</a></li>
+    </ol>
+    <p><a href="/ca/references/" class="btn btn-secondary">Veure Totes les Referències</a></p>
+  </div>
+</section>
+
+<!-- Secció CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Segueix la Teva Freqüència Cardíaca amb CardioAnalytics</h2>
+      <p>Monitoritza la freqüència cardíaca en repòs, caminant i actual amb alertes basades en evidència i anàlisi de tendències.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Descarregar a l'App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Inici</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Tots els drets reservats
+            </p>
+            <ul class="footer-links">
+                <li><a href="/ca/privacy/">Privacitat</a></li>
+                <li><a href="/ca/terms/">Termes</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Aquest lloc web utilitza cookies per millorar la vostra experiència.</p>
+            <a href="/ca/privacy/" class="text-sm">Saber-ne més</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Rebutjar</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Acceptar</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

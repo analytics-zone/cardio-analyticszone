@@ -20,7 +20,7 @@
     
     
     <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-    <meta property="article:modified_time" content="2025-11-09T14:30:00Z">
+    <meta property="article:modified_time" content="2025-11-10T14:30:00Z">
     <meta property="article:author" content="Arno Health">
     
 
@@ -49,6 +49,12 @@
     <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/healthkit/">
     
     <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/healthkit/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/healthkit/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/healthkit/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/healthkit/">
     
     <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/healthkit/">
 
@@ -294,6 +300,18 @@
                         English
                     </option>
                     
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
                 </select>
             </nav>
 
@@ -392,7 +410,7 @@
     <h2>Background Sync Patterns</h2>
 
     <h3>Anchored Object Queries</h3>
-    <p><code>HKAnchoredObjectQuery</code> enables delta synchronization - only fetching new or modified data since the last sync (<a href="https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery" target="_blank" rel="noopener">Apple Docs</a>).</p>
+    <p><code>HKAnchoredObjectQuery</code> enables delta synchronization, fetching only new or modified data since the last sync (<a href="https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery" target="_blank" rel="noopener">Apple Docs</a>).</p>
 
     <ul class="feature-list">
       <li><strong>Efficient battery usage</strong> - Only fetches changed data, not entire datasets</li>
@@ -401,7 +419,7 @@
     </ul>
 
     <h3 class="mt-8">Background Delivery</h3>
-    <p><code>HKHealthStore.enableBackgroundDelivery</code> allows HealthKit to wake the app when new data is available (<a href="https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery%28for%3Afrequency%3AwithCompletion%3A%29" target="_blank" rel="noopener">Apple Docs</a>).</p>
+    <p><code>HKHealthStore.enableBackgroundDelivery</code> allows HealthKit to automatically wake the app when new data becomes available (<a href="https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery%28for%3Afrequency%3AwithCompletion%3A%29" target="_blank" rel="noopener">Apple Docs</a>).</p>
 
     <ul class="feature-list">
       <li><strong>Immediate updates</strong> - Fresh cardiovascular data without manual refresh</li>
@@ -480,6 +498,18 @@
                     
                     <li>
                         <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
                     </li>
                     
                 </ul>
