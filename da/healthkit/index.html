@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>HealthKit Integration - Baggrund Synkronisering &amp; Datatyper | CardioAnalytics</title>
+    <meta name="description" content="Omfattende guide til CardioAnalytics HealthKit integration. 11 datatyper, forankrede forespørgsler, baggrunds levering, skriveadgang muligheder.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="HealthKit integration, Apple Health sync, baggrunds levering, sundhedsdatatyper, HKAnchoredObjectQuery">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/da/healthkit/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-10T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/da/healthkit/">
+    <meta property="og:title" content="HealthKit Integration - Baggrund Synkronisering &amp; Datatyper | CardioAnalytics">
+    <meta property="og:description" content="Omfattende guide til CardioAnalytics HealthKit integration. 11 datatyper, forankrede forespørgsler, baggrunds levering, skriveadgang muligheder.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="da_DK">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/da/healthkit/">
+    <meta name="twitter:title" content="HealthKit Integration - Baggrund Synkronisering &amp; Datatyper | CardioAnalytics">
+    <meta name="twitter:description" content="Omfattende guide til CardioAnalytics HealthKit integration. 11 datatyper, forankrede forespørgsler, baggrunds levering, skriveadgang muligheder.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/healthkit/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/healthkit/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/healthkit/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/healthkit/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/healthkit/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/healthkit/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/healthkit/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/healthkit/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/healthkit/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/healthkit/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Spring til indhold</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/da/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/da/"
+                           
+                           aria-current="">
+                            Hjem
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            App
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/da/features/"
+                                   
+                                   aria-current="">
+                                    Funktioner
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Sådan Virker Det
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/privacy/"
+                                   
+                                   aria-current="">
+                                    Privatliv
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Videnskab
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/da/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Hjertefrekvens
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Blodtryk
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/hrv/"
+                                   
+                                   aria-current="">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/spo2/"
+                                   
+                                   aria-current="">
+                                    Iltmætning
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Vægt &amp; BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    EKG &amp; Atrieflimren
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Ganghastighed
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Gangasymmetri
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Trappehastighed
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/healthkit/"
+                                   class="active"
+                                   aria-current="page">
+                                    HealthKit Integration
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/da/references/"
+                                   
+                                   aria-current="">
+                                    Referencer
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/da/support/"
+                           
+                           aria-current="">
+                            Support
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Vælg sprog">
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="da" selected>
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Skift menu" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- HealthKit Integration Page -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>HealthKit integration</h1>
+    <p class="lead">Komplet teknisk reference for CardioAnalytics HealthKit datatyper og synkroniseringsmønstre</p>
+  </div>
+</section>
+
+<!-- Overview -->
+<section class="content-section">
+  <div class="container">
+    <h2>HealthKit datatyper der bruges</h2>
+    <p>CardioAnalytics læser 11 kardiovaskulære og mobilitetsmålinger fra Apple HealthKit ved hjælp af førstepartidentifikatorer:</p>
+  </div>
+</section>
+
+<!-- Heart Rate Metrics -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h3>Hjertefrekvens målinger</h3>
+    <ul class="feature-list">
+      <li><code>HKQuantityTypeIdentifier.heartRate</code> - Aktuel hjertefrekvens (slag/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>restingHeartRate</code> - Hvilepuls baseline (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>walkingHeartRateAverage</code> - Gennemsnitlig puls under gang</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Cardiovascular Metrics -->
+<section class="content-section">
+  <div class="container">
+    <h3>Kardiovaskulære målinger</h3>
+    <ul class="feature-list">
+      <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Parrede blodtryksmålinger med korrelation (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>heartRateVariabilitySDNN</code> - Samlet HRV variabilitet (SDNN i millisekunder)</li>
+      <li><code>heartRateVariabilityRMSSD</code> - Kortvarig vagal tonus (RMSSD i ms, hvor tilgængeligt)</li>
+      <li><code>oxygenSaturation</code> - SpO₂ som brøkdel (0,0-1,0, vist som %) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Body Composition -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h3>Kropssammensætning</h3>
+    <ul class="feature-list">
+      <li><code>bodyMass</code> - Vægt i kg</li>
+      <li><code>height</code> - Højde i meter (bruges til at beregne BMI)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ECG & AF -->
+<section class="content-section">
+  <div class="container">
+    <h3>EKG & atrieflimren</h3>
+    <ul class="feature-list">
+      <li><code>electrocardiogramType</code> - EKG-optagelser med <code>HKElectrocardiogram.Classification</code> inklusiv <code>.atrialFibrillation</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>atrialFibrillationBurden</code> - AF burden-procent (hvor tilgængeligt, watchOS 9+) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Fitness & Mobility -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h3>Fitness- og mobilitetsmålinger</h3>
+    <ul class="feature-list">
+      <li><code>vo2Max</code> - Maksimal iltoptagelse (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>walkingSpeed</code> - Gennemsnitlig stabil ganghastighed (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>walkingAsymmetryPercentage</code> - Gangbalance-ubalance-procent (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingasymmetrypercentage" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>stairAscentSpeed</code> - Trappeklattringshastighed (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/stairascentspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Background Sync Patterns -->
+<section class="content-section">
+  <div class="container">
+    <h2>Baggrunds-synkroniseringsmønstre</h2>
+
+    <h3>Forankrede objektforespørgsler</h3>
+    <p><code>HKAnchoredObjectQuery</code> muliggør delta-synkronisering, henter kun nye eller ændrede data siden sidste synkronisering (<a href="https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery" target="_blank" rel="noopener">Apple Docs</a>).</p>
+
+    <ul class="feature-list">
+      <li><strong>Effektiv batteriforbrug</strong> - Henter kun ændrede data, ikke hele datasæt</li>
+      <li><strong>Vedvarende anker</strong> - Gemmer sidste synkroniseringspunkt for at genoptage efter app-genstart</li>
+      <li><strong>Håndterer sletninger</strong> - Modtager slettede prøver for nøjagtig synkronisering</li>
+    </ul>
+
+    <h3 class="mt-8">Baggrunds-levering</h3>
+    <p><code>HKHealthStore.enableBackgroundDelivery</code> tillader HealthKit automatisk at vække appen når nye data bliver tilgængelige (<a href="https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery%28for%3Afrequency%3AwithCompletion%3A%29" target="_blank" rel="noopener">Apple Docs</a>).</p>
+
+    <ul class="feature-list">
+      <li><strong>Øjeblikkelige opdateringer</strong> - Friske kardiovaskulære data uden manuel opdatering</li>
+      <li><strong>Batterieffektiv</strong> - Systemstyrede opvågninger minimerer strømforbrug</li>
+      <li><strong>Pålidelig levering</strong> - Virker selv når appen er lukket</li>
+    </ul>
+
+    <p class="note">📱 <strong>Påkrævet rettighed:</strong> <code>com.apple.developer.healthkit.background-delivery</code> (<a href="https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.healthkit.background-delivery" target="_blank" rel="noopener">Docs</a>)</p>
+  </div>
+</section>
+
+<!-- Write-Back -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Skriv-tilbage muligheder</h2>
+    <p>Brugerindtastede data (vægt, blodtryk) kan skrives tilbage til HealthKit for konsistens på tværs af alle sundhedsapps og enheder.</p>
+
+    <ul class="feature-list">
+      <li><strong>Samlet sundhedsjournal</strong> - Data indtastet i CardioAnalytics vises i Apple Health</li>
+      <li><strong>Klinikersynlighed</strong> - Læger der bruger HealthKit-tilsluttede systemer ser konsistente journaler</li>
+      <li><strong>Tværgående app-kompatibilitet</strong> - Andre sundhedsapps kan få adgang til dine CardioAnalytics indtastninger</li>
+      <li><strong>Enhedsattribution</strong> - HealthKit sporer hvilken app/enhed der optog hver prøve</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Privacy & Permissions -->
+<section class="content-section">
+  <div class="container">
+    <h2>Privatliv & detaljerede tilladelser</h2>
+    <p>HealthKit autorisation er detaljeret - brugere godkender eller afviser hver datatype individuelt. CardioAnalytics respekterer alle tilladelsebeslutninger:</p>
+
+    <ul class="feature-list">
+      <li><strong>Detaljerede læse-/skrivetilladelser</strong> - Bruger vælger hvilke målinger der skal deles</li>
+      <li><strong>Ingen adgang til uautoriserede typer</strong> - HealthKit håndhæver tilladelsesgrænser</li>
+      <li><strong>Kan tilbagekaldes når som helst</strong> - Brugere kan ændre tilladelser i iOS Indstillinger → Privatliv → Sundhed</li>
+      <li><strong>Ingen server-transmission</strong> - Alle data forbliver på enheden; HealthKit autorisation giver ikke server-adgang</li>
+    </ul>
+
+    <p><a href="/da/privacy/" class="btn btn-secondary mt-6">Læs fuld privatlivspolitik</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Oplev problemfri HealthKit integration</h2>
+      <p>Download CardioAnalytics og forbind med Apple HealthKit til automatisk kardiovaskulær monitorering.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Download på App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Hjem</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Alle rettigheder forbeholdes
+            </p>
+            <ul class="footer-links">
+                <li><a href="/da/privacy/">Privatliv</a></li>
+                <li><a href="/da/terms/">Vilkår</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Denne hjemmeside bruger cookies for at forbedre din oplevelse.</p>
+            <a href="/da/privacy/" class="text-sm">Læs mere</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Afvis</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Acceptér</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

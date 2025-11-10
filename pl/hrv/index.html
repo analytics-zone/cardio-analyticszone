@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Zmienność rytmu serca (HRV) - Śledzenie SDNN i RMSSD | CardioAnalytics</title>
+    <meta name="description" content="Monitoruj wskaźniki HRV (SDNN, RMSSD) w celu oceny zdrowia sercowo-naczyniowego i poziomu stresu. Niskie HRV związane z gorszymi wynikami zdrowotnymi. Śledź nocne trendy.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="zmienność rytmu serca, śledzenie HRV, SDNN, RMSSD, napięcie błędne, monitorowanie stresu, zdrowie sercowo-naczyniowe">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/pl/hrv/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-10T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/pl/hrv/">
+    <meta property="og:title" content="Zmienność rytmu serca (HRV) - Śledzenie SDNN i RMSSD | CardioAnalytics">
+    <meta property="og:description" content="Monitoruj wskaźniki HRV (SDNN, RMSSD) w celu oceny zdrowia sercowo-naczyniowego i poziomu stresu. Niskie HRV związane z gorszymi wynikami zdrowotnymi. Śledź nocne trendy.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/pl/hrv/">
+    <meta name="twitter:title" content="Zmienność rytmu serca (HRV) - Śledzenie SDNN i RMSSD | CardioAnalytics">
+    <meta name="twitter:description" content="Monitoruj wskaźniki HRV (SDNN, RMSSD) w celu oceny zdrowia sercowo-naczyniowego i poziomu stresu. Niskie HRV związane z gorszymi wynikami zdrowotnymi. Śledź nocne trendy.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/hrv/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/hrv/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/hrv/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/hrv/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/hrv/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/hrv/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/hrv/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/hrv/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/hrv/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/hrv/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Zmienność rytmu serca (HRV) - Śledzenie SDNN i RMSSD | CardioAnalytics",
+      "description": "Monitoruj wskaźniki HRV (SDNN, RMSSD) w celu oceny zdrowia sercowo-naczyniowego i poziomu stresu. Niskie HRV związane z gorszymi wynikami zdrowotnymi. Śledź nocne trendy.",
+      "url": "https://cardio.analyticszone.app/pl/hrv/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      }
+    }
+    </script>
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Przejdź do treści</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/pl/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/pl/"
+                           
+                           aria-current="">
+                            Strona Główna
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Aplikacja
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/pl/features/"
+                                   
+                                   aria-current="">
+                                    Funkcje
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Jak to działa
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/privacy/"
+                                   
+                                   aria-current="">
+                                    Prywatność
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Nauka
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/pl/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Tętno
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Ciśnienie krwi
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/hrv/"
+                                   class="active"
+                                   aria-current="page">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/spo2/"
+                                   
+                                   aria-current="">
+                                    Saturacja tlenu
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Waga i BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    EKG i migotanie przedsionków
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Prędkość chodu
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Asymetria chodu
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Prędkość wchodzenia po schodach
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/healthkit/"
+                                   
+                                   aria-current="">
+                                    Integracja HealthKit
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/pl/references/"
+                                   
+                                   aria-current="">
+                                    Bibliografia
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/pl/support/"
+                           
+                           aria-current="">
+                            Wsparcie
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Wybierz język">
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="pl" selected>
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Przełącz menu" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- Heart Rate Variability (HRV) Science Page -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Zmienność rytmu serca (HRV)</h1>
+    <p class="lead">Monitoruj metryki SDNN i RMSSD dla oceny zdrowia sercowo-naczyniowego i poziomów stresu</p>
+  </div>
+</section>
+
+<!-- What It Is -->
+<section class="content-section">
+  <div class="container">
+    <h2>Co to jest zmienność rytmu serca?</h2>
+    <p>Zmienność rytmu serca (HRV) mierzy zmienność czasu między kolejnymi uderzeniami serca. Jest wskaźnikiem funkcji autonomicznego układu nerwowego i ogólnego zdrowia sercowo-naczyniowego.</p>
+
+    <h3 class="mt-6">Metryki HRV:</h3>
+    <ul class="feature-list">
+      <li><strong>SDNN (Standard Deviation of NN intervals)</strong> - Mierzy ogólne HRV. Odzwierciedla całkowitą aktywność autonomicznego układu nerwowego.</li>
+      <li><strong>RMSSD (Root Mean Square of Successive Differences)</strong> - Mierzy krótkoterminowe HRV. Odzwierciedla głównie napięcie przywspółczulne (nerwu błędnego).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Why It Matters -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Dlaczego HRV ma znaczenie</h2>
+    <p><strong>Niskie HRV jest związane z gorszymi wynikami zdrowotnymi i zwiększonym stresem</strong> (<a href="https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv" target="_blank" rel="noopener">Cleveland Clinic</a>):</p>
+    <ul class="feature-list">
+      <li>Niższe HRV wskazuje na zmniejszoną zdolność adaptacji do stresu</li>
+      <li>Związane ze zwiększonym ryzykiem chorób sercowo-naczyniowych</li>
+      <li>Może wskazywać na przetrenowanie, chorobę lub chroniczny stres</li>
+      <li>Wyższe HRV generalnie wskazuje na lepszą sprawność sercowo-naczyniową i odporność</li>
+    </ul>
+
+    <p class="note">📊 <strong>HRV jest wysoce indywidualne:</strong> Skup się na swoich osobistych trendach, a nie wartościach bezwzględnych. Porównuj dzisiejsze HRV z własną wartością bazową.</p>
+  </div>
+</section>
+
+<!-- Typical Ranges -->
+<section class="content-section">
+  <div class="container">
+    <h2>Interpretacja wartości HRV</h2>
+    <p>HRV różni się znacznie między osobami w zależności od wieku, sprawności, genetyki i innych czynników. Nie ma jednego "prawidłowego" zakresu, ale ogólne wzorce:</p>
+
+    <div class="range-card">
+      <h3>SDNN</h3>
+      <ul>
+        <li><strong>&gt;100 ms</strong> - Doskonałe HRV</li>
+        <li><strong>50-100 ms</strong> - Dobre HRV</li>
+        <li><strong>20-50 ms</strong> - Zadowalające HRV</li>
+        <li><strong>&lt;20 ms</strong> - Niskie HRV (może wskazywać na problemy zdrowotne)</li>
+      </ul>
+    </div>
+
+    <div class="range-card mt-6">
+      <h3>RMSSD</h3>
+      <ul>
+        <li><strong>&gt;50 ms</strong> - Doskonałe krótkoterminowe HRV</li>
+        <li><strong>30-50 ms</strong> - Dobre krótkoterminowe HRV</li>
+        <li><strong>15-30 ms</strong> - Zadowalające krótkoterminowe HRV</li>
+        <li><strong>&lt;15 ms</strong> - Niskie krótkoterminowe HRV</li>
+      </ul>
+    </div>
+
+    <p class="note mt-6">⚠️ <strong>Używaj osobistej wartości bazowej:</strong> Twoje HRV może naturalnie być wyższe lub niższe niż te zakresy. Najważniejsze jest śledzenie zmian od własnej wartości bazowej.</p>
+  </div>
+</section>
+
+<!-- Factors Affecting HRV -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Czynniki wpływające na HRV</h2>
+    <ul class="feature-list">
+      <li><strong>Wiek</strong> - HRV generalnie maleje z wiekiem</li>
+      <li><strong>Poziom sprawności</strong> - Sportowcy zwykle mają wyższe HRV</li>
+      <li><strong>Stres</strong> - Stres fizyczny lub psychiczny obniża HRV</li>
+      <li><strong>Jakość snu</strong> - Słaby sen zmniejsza HRV</li>
+      <li><strong>Alkohol</strong> - Spożycie obniża HRV przez 12-24 godziny</li>
+      <li><strong>Choroba</strong> - Infekcje i choroby zmniejszają HRV</li>
+      <li><strong>Odwodnienie</strong> - Może obniżyć HRV</li>
+      <li><strong>Przetrenowanie</strong> - Nadmierny wysiłek bez regeneracji obniża HRV</li>
+    </ul>
+  </div>
+</section>
+
+<!-- How CardioAnalytics Uses It -->
+<section class="content-section">
+  <div class="container">
+    <h2>Jak CardioAnalytics wykorzystuje dane HRV</h2>
+    <ul class="feature-list">
+      <li><strong>Wyświetla nocne trendy HRV</strong> - Apple Watch zazwyczaj rejestruje HRV podczas snu</li>
+      <li><strong>Oznacza nienormalnie niskie wartości</strong> - Alerty, gdy HRV spada znacznie poniżej Twojej wartości bazowej</li>
+      <li><strong>Długoterminowa analiza trendów</strong> - Śledź zmiany HRV w tygodniach i miesiącach</li>
+      <li><strong>Korelacje z lekami</strong> - Zobacz, jak leki wpływają na funkcję autonomiczną</li>
+      <li><strong>Korelacje z objawami</strong> - Identyfikuj wzorce między niskim HRV a objawami</li>
+    </ul>
+  </div>
+</section>
+
+<!-- HealthKit Integration -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Typy danych HealthKit</h2>
+    <p>CardioAnalytics odczytuje dane HRV z Apple HealthKit przy użyciu tych identyfikatorów:</p>
+    <ul class="feature-list">
+      <li><code>heartRateVariabilitySDNN</code> - Ogólne HRV (SDNN w milisekundach) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>heartRateVariabilityRMSSD</code> - Krótkoterminowe napięcie nerwu błędnego (RMSSD w ms, gdzie dostępne) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+
+    <p class="mt-6"><a href="/pl/healthkit/" class="btn btn-secondary">Dowiedz się więcej o integracji z HealthKit</a></p>
+  </div>
+</section>
+
+<!-- References -->
+<section class="content-section">
+  <div class="container">
+    <h2>Referencje naukowe</h2>
+    <ol class="references-list">
+      <li>Cleveland Clinic. <em>Heart Rate Variability (HRV): What It Is and How You Can Improve It.</em> <a href="https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv" target="_blank" rel="noopener">https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv</a></li>
+    </ol>
+    <p><a href="/pl/references/" class="btn btn-secondary">Zobacz wszystkie referencje</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Śledź swoje HRV z CardioAnalytics</h2>
+      <p>Monitoruj trendy zmienności rytmu serca dla oceny poziomu stresu i zdrowia sercowo-naczyniowego.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Pobierz z App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Strona Główna</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Wszelkie prawa zastrzeżone
+            </p>
+            <ul class="footer-links">
+                <li><a href="/pl/privacy/">Prywatność</a></li>
+                <li><a href="/pl/terms/">Warunki</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Ta strona wykorzystuje pliki cookie, aby poprawić jakość korzystania z niej.</p>
+            <a href="/pl/privacy/" class="text-sm">Dowiedz się więcej</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Odrzuć</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Akceptuj</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>
