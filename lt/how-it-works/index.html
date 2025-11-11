@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="lt" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Kaip veikia CardioAnalytics - HealthKit sinchronizacija ir foniniai atnaujinimai</title>
+    <meta name="description" content="Sužinokite, kaip CardioAnalytics sinchronizuojasi su Apple HealthKit realaus laiko širdies ir kraujagyslių duomenims, foniniams atnaujinimams ir rašymo galimybėms. Privatumu pagrįstas duomenų apdorojimas.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="HealthKit integracija, foninė sinchronizacija, sveikatos duomenų privatumas, Apple Watch sinchronizacija, širdies ir kraujagyslių duomenų stebėjimas">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/lt/how-it-works/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-11T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/lt/how-it-works/">
+    <meta property="og:title" content="Kaip veikia CardioAnalytics - HealthKit sinchronizacija ir foniniai atnaujinimai">
+    <meta property="og:description" content="Sužinokite, kaip CardioAnalytics sinchronizuojasi su Apple HealthKit realaus laiko širdies ir kraujagyslių duomenims, foniniams atnaujinimams ir rašymo galimybėms. Privatumu pagrįstas duomenų apdorojimas.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="lt_LT">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/lt/how-it-works/">
+    <meta name="twitter:title" content="Kaip veikia CardioAnalytics - HealthKit sinchronizacija ir foniniai atnaujinimai">
+    <meta name="twitter:description" content="Sužinokite, kaip CardioAnalytics sinchronizuojasi su Apple HealthKit realaus laiko širdies ir kraujagyslių duomenims, foniniams atnaujinimams ir rašymo galimybėms. Privatumu pagrįstas duomenų apdorojimas.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/how-it-works/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/how-it-works/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/how-it-works/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/how-it-works/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/how-it-works/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/how-it-works/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/how-it-works/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/how-it-works/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/how-it-works/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/how-it-works/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/how-it-works/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/how-it-works/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/how-it-works/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/how-it-works/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/how-it-works/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/how-it-works/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/how-it-works/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/how-it-works/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/how-it-works/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/how-it-works/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/how-it-works/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/how-it-works/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/how-it-works/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/how-it-works/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/how-it-works/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/how-it-works/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/how-it-works/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/how-it-works/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/how-it-works/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/how-it-works/">
+    
+    <link rel="alternate" hreflang="no" href="https://cardio.analyticszone.app/no/how-it-works/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/how-it-works/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/how-it-works/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/how-it-works/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/how-it-works/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/how-it-works/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/how-it-works/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/how-it-works/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/how-it-works/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/how-it-works/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/how-it-works/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/how-it-works/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/how-it-works/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/how-it-works/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/how-it-works/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/how-it-works/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/how-it-works/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Pereiti prie turinio</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/lt/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/lt/"
+                           
+                           aria-current="">
+                            Pagrindinis
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Programa
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/lt/features/"
+                                   
+                                   aria-current="">
+                                    Funkcijos
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/how-it-works/"
+                                   class="active"
+                                   aria-current="page">
+                                    Kaip tai veikia
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/privacy/"
+                                   
+                                   aria-current="">
+                                    Privatumas
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Mokslas
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/lt/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Širdies ritmas
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Kraujospūdis
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/hrv/"
+                                   
+                                   aria-current="">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/spo2/"
+                                   
+                                   aria-current="">
+                                    Deguonies prisotinimas
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Svoris ir KMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    EKG ir prieširdžių virpėjimas
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Ėjimo greitis
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Ėjimo asimetrija
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Laiptų kopimo greitis
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/healthkit/"
+                                   
+                                   aria-current="">
+                                    HealthKit integracija
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/lt/references/"
+                                   
+                                   aria-current="">
+                                    Nuorodos
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/lt/support/"
+                           
+                           aria-current="">
+                            Pagalba
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Pasirinkti kalbą">
+                    
+                    <option value="af" >
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" >
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" >
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" >
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" >
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" >
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" >
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" >
+                        한국어
+                    </option>
+                    
+                    <option value="lt" selected>
+                        Lietuvių
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="no" >
+                        Norsk
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ru" >
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" >
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Perjungti meniu" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- How CardioAnalytics Works -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Kaip veikia CardioAnalytics</h1>
+    <p class="lead">Sklandži HealthKit integracija automatiniam širdies ir kraujagyslių duomenų sinchronizavimui su visiška privatumu ir kontrole</p>
+  </div>
+</section>
+
+<!-- Overview -->
+<section class="content-section">
+  <div class="container">
+    <h2>HealthKit sinchronizacijos apžvalga</h2>
+    <p>CardioAnalytics integruojasi su Apple HealthKit, kad automatiškai importuotų ir stebėtų 11 širdies ir kraujagyslių bei judumo rodiklių. Visi duomenų apdorojimai vykdomi lokaliai jūsų iPhone, be debesijos įkėlimo ar išorinių serverių.</p>
+
+    <div class="steps-grid mt-8">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Suteikite HealthKit prieigą</h3>
+        <p>Suteikite leidimą skaityti konkrečius duomenų tipus iš Apple Health. Detalus kontrolė leidžia pasirinkti tiksliai, kokius rodiklius dalytis.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Automatinė foninė sinchronizacija</h3>
+        <p>CardioAnalytics naudoja efektyvią foninę sinchronizaciją, kad automatiškai gautų naujus duomenis nenaudodamas baterijos.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Vietinis apdorojimas ir įspėjimai</h3>
+        <p>Visi rodikliai apdorojami jūsų įrenginyje. Gaukite įrodymais pagrįstus įspėjimus, sekite tendencijas ir eksportuokite ataskaitas, jei pasirenkate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Data Types Used -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>HealthKit duomenų tipai</h2>
+    <p>CardioAnalytics naudoja oficialius Apple HealthKit identifikatorius visiems širdies ir kraujagyslių bei judumo rodikliams:</p>
+
+    <div class="data-types-grid">
+      <div class="data-type-card">
+        <h4>Širdies ritmo rodikliai</h4>
+        <ul>
+          <li><code>HKQuantityTypeIdentifier.heartRate</code> - Dabartinis širdies ritmas (tvpm)</li>
+          <li><code>restingHeartRate</code> - Ramybės širdies ritmo bazinė linija (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
+          <li><code>walkingHeartRateAverage</code> - Vidutinis širdies ritmas einant</li>
+        </ul>
+      </div>
+
+      <div class="data-type-card">
+        <h4>Širdies ir kraujagyslių rodikliai</h4>
+        <ul>
+          <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Suporuoti kraujospūdžio matavimai (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
+          <li><code>heartRateVariabilitySDNN</code> - Bendras HRV kintamumas</li>
+          <li><code>heartRateVariabilityRMSSD</code> - Trumpalaikis blukinio nervo tonusas (jei yra)</li>
+          <li><code>oxygenSaturation</code> - SpO₂ (trupmeninis, rodomas kaip %) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
+        </ul>
+      </div>
+
+      <div class="data-type-card">
+        <h4>Kūno sudėtis</h4>
+        <ul>
+          <li><code>bodyMass</code> - Svoris kilogramais</li>
+          <li>KMI apskaičiuojamas iš ūgio ir svorio</li>
+        </ul>
+      </div>
+
+      <div class="data-type-card">
+        <h4>EKG ir prieširdžių virpėjimas</h4>
+        <ul>
+          <li><code>electrocardiogramType</code> - EKG įrašai su <code>HKElectrocardiogram.Classification</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
+          <li><code>atrialFibrillationBurden</code> - Prieširdžių virpėjimo naštos procentas (jei yra) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
+        </ul>
+      </div>
+
+      <div class="data-type-card">
+        <h4>Pajėgumas ir judumas</h4>
+        <ul>
+          <li><code>vo2Max</code> - Širdies ir plaučių pajėgumas (ml/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
+          <li><code>walkingSpeed</code> - Ėjimo greitis (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
+          <li><code>walkingAsymmetryPercentage</code> - Ėjimo asimetrija (%) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingasymmetrypercentage" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
+          <li><code>stairAscentSpeed</code> - Laiptų kopimo greitis (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/stairascentspeed" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="note mt-8">🔗 Visi duomenų tipai yra oficialūs Apple HealthKit identifikatoriai. CardioAnalytics nesinaudoja jokiais įprastais duomenimis – viskas paimta iš HealthKit.</p>
+  </div>
+</section>
+
+<!-- Background Sync -->
+<section class="content-section">
+  <div class="container">
+    <h2>Kaip veikia foninė sinchronizacija</h2>
+    <p>CardioAnalytics naudoja HealthKit <code>HKAnchoredObjectQuery</code> su foniniu perdavimu efektyviam sinchronizavimui:</p>
+    <ul class="feature-list">
+      <li><strong>Delta sinchronizacija:</strong> Parsisiunčia tik naujus arba pakeistus duomenis, o ne visą istoriją kiekvieną kartą</li>
+      <li><strong>Efektyvu baterijai:</strong> Užklausos vykdomos tik tada, kai yra naujų duomenų, nėra nuolatinio baterijos naudojimo</li>
+      <li><strong>Automatiniai atnaujinimai:</strong> Gauna naujas HealthKit įvestis iš Apple Watch, prijungtų prietaisų ar rankinio įvedimo</li>
+      <li><strong>Jokio vartotojo įsikišimo:</strong> Sinchronizacija vyksta automatiškai fone</li>
+    </ul>
+    <p class="note">⚡ <strong>Optimizuota našumui:</strong> CardioAnalytics naudoja „inkaro" užklausas su foniniais pranešimais, kad išliktų sinchronizuotas be baterijos išsekimo.</p>
+  </div>
+</section>
+
+<!-- Writing to HealthKit -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Rašymas į HealthKit</h2>
+    <p>CardioAnalytics gali įrašyti kai kuriuos duomenų tipus į Apple Health, kad būtų užtikrinta nuoseklumas tarp programų:</p>
+    <ul class="feature-list">
+      <li><strong>Svoris:</strong> Jei rankiniu būdu įvedate svorį CardioAnalytics, jis gali būti įrašytas į HealthKit nuoseklumui</li>
+      <li><strong>Kraujospūdis:</strong> Rankiniai kraujospūdžio matavimai gali būti įrašyti į HealthKit sinchronizavimui su kitomis programomis</li>
+      <li><strong>Vaistai:</strong> CardioAnalytics gali sinchronizuoti vaistų dozę su HealthKit vaistų įrašais (jei suteiktas leidimas)</li>
+    </ul>
+    <p><strong>Jūs kontroliuojate rašymo leidimus:</strong> HealthKit leidžia atskirai suteikti „skaitymo" ir „rašymo" leidimus. Galite leisti CardioAnalytics skaityti, bet ne rašyti, arba atvirkščiai.</p>
+  </div>
+</section>
+
+<!-- Privacy & Security -->
+<section class="content-section">
+  <div class="container">
+    <h2>Privatumas ir saugumas</h2>
+    <p>CardioAnalytics sukurtas su privatumu kaip pagrindiniu prioritetu:</p>
+    <ul class="feature-list">
+      <li><strong>100% vietinis apdorojimas:</strong> Visi duomenys apdorojami ir saugomi jūsų iPhone – jokio debesijos įkėlimo</li>
+      <li><strong>Jokios paskyros nėra:</strong> Jokio el. pašto, prisijungimo ar paskyros kūrimo – tiesiog suteikite HealthKit leidimą</li>
+      <li><strong>Jokio sekimo:</strong> Nėra analitikos, stebėsenos ar duomenų rinkimo</li>
+      <li><strong>Detalus leidimas:</strong> Pasirinkite tiksliai, kokius HealthKit duomenų tipus CardioAnalytics gali skaityti arba įrašyti</li>
+      <li><strong>Jūs valdote eksportus:</strong> Duomenys palieka jūsų įrenginį tik tada, kai pasirenkate eksportuoti ataskaitą</li>
+    </ul>
+    <p>🔒 CardioAnalytics niekada neturi prieigos prie jūsų duomenų. Jie egzistuoja tik jūsų įrenginyje.</p>
+    <p><a href="/lt/privacy/" class="btn btn-secondary">Skaitykite visą privatumo politiką</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Patirkite sklandžią HealthKit integraciją</h2>
+      <p>Atsisiųskite CardioAnalytics ir automatiškai sinchronizuokite 11 širdies ir kraujagyslių rodiklių iš Apple Health. Vietinis apdorojimas, automatiniai atnaujinimai, visiškas privatumas.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Atsisiųsti iš App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Pagrindinis</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/">Afrikaans</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/">العربية</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/">Български</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/">বাংলা</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/">Čeština</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/">Ελληνικά</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/">Eesti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/">فارسی</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/">Suomi</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/">Hausa</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/">עברית</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/">हिन्दी</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/">Hrvatski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/">Magyar</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/">Bahasa Indonesia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/">Íslenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/">Italiano</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/">日本語</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/">한국어</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/">Lietuvių</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/">Bahasa Melayu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/">မြန်မာဘာသာ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/">Latviešu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/">Nederlands</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/no/">Norsk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/">Русский</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/">Slovenčina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/">Slovenščina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/">Српски</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/">Svenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/">ไทย</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/">Tagalog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/">Українська</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/">Română</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/">Kiswahili</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/">Türkçe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/">اردو</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Visos teisės saugomos
+            </p>
+            <ul class="footer-links">
+                <li><a href="/lt/privacy/">Privatumas</a></li>
+                <li><a href="/lt/terms/">Sąlygos</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Ši svetainė naudoja slapukus, kad pagerintų jūsų patirtį.</p>
+            <a href="/lt/privacy/" class="text-sm">Sužinoti daugiau</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Atmesti</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Priimti</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

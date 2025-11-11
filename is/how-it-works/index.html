@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="is" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Hvernig CardioAnalytics virkar - HealthKit samstilling og bakgrunnsuppfærslur</title>
+    <meta name="description" content="Lærðu hvernig CardioAnalytics samstillist við Apple HealthKit fyrir rauntíma hjarta- og æðakerfismælingar, bakgrunnsuppfærslur og skrifmöguleikar. Gagnavinnsla sem setur persónuvernd í fyrsta sæti.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="HealthKit samþætting, bakgrunnssamstilling, persónuvernd heilsugagna, Apple Watch samstilling, hjarta- og æðakerfis gagnaeftirlit">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/is/how-it-works/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-11T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/is/how-it-works/">
+    <meta property="og:title" content="Hvernig CardioAnalytics virkar - HealthKit samstilling og bakgrunnsuppfærslur">
+    <meta property="og:description" content="Lærðu hvernig CardioAnalytics samstillist við Apple HealthKit fyrir rauntíma hjarta- og æðakerfismælingar, bakgrunnsuppfærslur og skrifmöguleikar. Gagnavinnsla sem setur persónuvernd í fyrsta sæti.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="is_IS">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/is/how-it-works/">
+    <meta name="twitter:title" content="Hvernig CardioAnalytics virkar - HealthKit samstilling og bakgrunnsuppfærslur">
+    <meta name="twitter:description" content="Lærðu hvernig CardioAnalytics samstillist við Apple HealthKit fyrir rauntíma hjarta- og æðakerfismælingar, bakgrunnsuppfærslur og skrifmöguleikar. Gagnavinnsla sem setur persónuvernd í fyrsta sæti.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/how-it-works/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/how-it-works/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/how-it-works/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/how-it-works/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/how-it-works/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/how-it-works/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/how-it-works/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/how-it-works/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/how-it-works/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/how-it-works/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/how-it-works/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/how-it-works/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/how-it-works/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/how-it-works/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/how-it-works/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/how-it-works/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/how-it-works/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/how-it-works/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/how-it-works/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/how-it-works/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/how-it-works/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/how-it-works/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/how-it-works/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/how-it-works/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/how-it-works/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/how-it-works/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/how-it-works/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/how-it-works/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/how-it-works/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/how-it-works/">
+    
+    <link rel="alternate" hreflang="no" href="https://cardio.analyticszone.app/no/how-it-works/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/how-it-works/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/how-it-works/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/how-it-works/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/how-it-works/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/how-it-works/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/how-it-works/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/how-it-works/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/how-it-works/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/how-it-works/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/how-it-works/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/how-it-works/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/how-it-works/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/how-it-works/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/how-it-works/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/how-it-works/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/how-it-works/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Fara í efni</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/is/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/is/"
+                           
+                           aria-current="">
+                            Heim
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Forrit
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/is/features/"
+                                   
+                                   aria-current="">
+                                    Eiginleikar
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/how-it-works/"
+                                   class="active"
+                                   aria-current="page">
+                                    Hvernig það virkar
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/privacy/"
+                                   
+                                   aria-current="">
+                                    Persónuvernd
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Vísindi
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/is/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Hjartsláttur
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Blóðþrýstingur
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/hrv/"
+                                   
+                                   aria-current="">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/spo2/"
+                                   
+                                   aria-current="">
+                                    Súrefnismettun
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Þyngd og líkamsþyngdarstuðull
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG og gáttatif
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Gönguhraði
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Ósamhverfa í göngu
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Hraði þess að ganga upp stiga
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/healthkit/"
+                                   
+                                   aria-current="">
+                                    HealthKit samþætting
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/is/references/"
+                                   
+                                   aria-current="">
+                                    Tilvísanir
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/is/support/"
+                           
+                           aria-current="">
+                            Stuðningur
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Veldu tungumál">
+                    
+                    <option value="af" >
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" >
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" >
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" >
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" >
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" selected>
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" >
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" >
+                        한국어
+                    </option>
+                    
+                    <option value="lt" >
+                        Lietuvių
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="no" >
+                        Norsk
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ru" >
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" >
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Víxla valmynd" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- CardioAnalytics How It Works Page -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Hvernig CardioAnalytics virkar</h1>
+    <p class="lead">Óaðfinnanleg HealthKit samþætting fyrir rauntíma hjarta- og æðakerfismælingar, bakgrunnsuppfærslur og persónuvernd fyrst</p>
+  </div>
+</section>
+
+<!-- HealthKit Authorization -->
+<section class="feature-section">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>1. Heimila HealthKit aðgang</h2>
+        <p>CardioAnalytics þarf heimild til að lesa hjarta- og æðakerfismælingar þínar frá Apple Health. Þú hefur nákvæma stjórn á hvaða gagnatýpur á að deila.</p>
+        <ul class="feature-list">
+          <li><strong>Nákvæmar heimildir</strong> - Velja hverja gagnatýpu fyrir sig (hjartsláttur, blóðþrýstingur, HRV, SpO₂, ECG, VO₂ Max, þyngd, líkamsþyngdarstuðull, gönguhraði, ósamhverfa í göngu, stigahraði)</li>
+          <li><strong>Aðeins lesaðgangur sjálfgefið</strong> - CardioAnalytics les aðeins gögn, skrifar ekki nema þú biður</li>
+          <li><strong>Valfrjáls skrifheimild</strong> - Ef þú færir inn þyngd eða blóðþrýsting handvirkt getur CardioAnalytics skrifað þau í HealthKit fyrir samkvæmni</li>
+          <li><strong>Engar ytri flutningar</strong> - Gögn þín yfirgefa aldrei tækið þitt nema þú flyttir út skýrslu</li>
+        </ul>
+        <p class="note">🔒 <strong>Persónuvernd fyrst:</strong> CardioAnalytics geymir engin gögn á ytri þjónum. Allt er unnið og geymt á staðnum á iPhone þínum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Automatic Background Sync -->
+<section class="feature-section bg-light">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>2. Sjálfvirk bakgrunnssamstilling</h2>
+        <p>CardioAnalytics notar háþróaða HealthKit fyrirspurn til að halda gögnunum þínum ferskum án þess að tæma rafhlöðuna.</p>
+        <ul class="feature-list">
+          <li><strong>HKAnchoredObjectQuery</strong> - Skilvirk delta samstilling halar aðeins nýjar eða uppfærðar færslur</li>
+          <li><strong>Bakgrunnsafhending</strong> - iOS lætur CardioAnalytics vita þegar ný gögn eru tiltæk</li>
+          <li><strong>Rafhlöðuvænn</strong> - Engin stöðug fyrirspurn þýðir lágmarks rafhlöðuáhrif</li>
+          <li><strong>Rauntímauppfærslur</strong> - Nýjar mælingar birtast innan nokkurra sekúndna</li>
+          <li><strong>Sögulegar bakfyllingar</strong> - Við upphaflega uppsetningu, sækir CardioAnalytics upp að 2 ára sögulegar mælingar</li>
+        </ul>
+        <p><strong>Studd gagnagjöf:</strong></p>
+        <ul class="feature-list">
+          <li>Apple Watch (hjartsláttur, HRV, ECG, SpO₂, VO₂ Max, hreyfanleikamælingar)</li>
+          <li>Tengdir blóðþrýstingsmælar (Omron, Withings, o.fl.)</li>
+          <li>Tengdar vigtir (Withings, Fitbit Aria, o.fl.)</li>
+          <li>Handvirkir færslur í Apple Health</li>
+          <li>Önnur þriðja aðila forrit sem skrifa í HealthKit</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Data Processing & Visualization -->
+<section class="feature-section">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>3. Gagnavinnsla og sjónræn framsetning</h2>
+        <p>Þegar gögn eru samstillt úr HealthKit vinnur CardioAnalytics þau fyrir innsýn og viðvaranir.</p>
+        <ul class="feature-list">
+          <li><strong>Tölfræðiútreikningar</strong> - Meðaltal, miðgildi, lægstu/hæstu gildi fyrir hverja mælingu</li>
+          <li><strong>Þróunargreining</strong> - Greinir mynstur og breytingar með tímanum</li>
+          <li><strong>Flokkunarkerfi</strong> - Flokkar gildi út frá klínískum viðmiðunum (AHA, Mayo Clinic, Cleveland Clinic)</li>
+          <li><strong>Viðvörunarvél</strong> - Ber saman gildi við persónulega þröskulda og kveikir á viðvörunum</li>
+          <li><strong>Tengslasýning</strong> - Sýnir tengsl milli lyfjafylgni og mælingabreytinga</li>
+        </ul>
+        <p class="note">📊 Allar útreikningar gerðir á tækinu þínu - engin gögn send til ytri greininga.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Track Trends & Get Alerts -->
+<section class="feature-section bg-light">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>4. Fylgstu með þróun og fáðu viðvaranir</h2>
+        <p>Persónulegt mælaborð sýnir allar 11 mælingarnar þínar með klínískum samhengi og viðvörunum.</p>
+        <ul class="feature-list">
+          <li><strong>Sameinað mælaborð</strong> - Sjáðu allar hjarta- og æðakerfis- og hreyfanleikamælingar í einu yfirliti</li>
+          <li><strong>Viðmiðunarbil</strong> - Sjáðu hvernig gildin þín bera saman við klínískar leiðbeiningar</li>
+          <li><strong>Persónulegir þröskuldar</strong> - Aðlagaðu viðvörunarbil út frá ráðleggingum læknis þíns</li>
+          <li><strong>Þróunarrit</strong> - Skoðaðu daglegar, vikulegar, mánaðarlegar eða árlegar þróunir</li>
+          <li><strong>Innsýn í heilsu</strong> - Fáðu skýr skilaboð sem útskýra hvað mælingarnar þínar þýða</li>
+        </ul>
+        <p><strong>Dæmi um viðvaranir:</strong></p>
+        <ul class="feature-list">
+          <li>"Blóðþrýstingur þinn er í AHA stig 1 háþrýstingi. Hafðu samband við lækninn þinn."</li>
+          <li>"Hvíld hjartsláttur &lt;60 slög/mín greindur (hægur hjartsláttur). Fylgstu með einkennum."</li>
+          <li>"SpO₂ &lt;90% greint. Leitaðu læknishjálpar ef það er viðvarandi."</li>
+          <li>"HRV verulega undir grunnlínu þinni. Íhugaðu að draga úr streitu."</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Log Medications & Symptoms -->
+<section class="feature-section">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>5. Skráðu lyf og einkenni</h2>
+        <p>Auðgaðu hjarta- og æðakerfis gögn þín með lyfjafylgni og einkennaskráningu.</p>
+        <ul class="feature-list">
+          <li><strong>Lyfjaeftirlit</strong> - Skráðu lyfjaskammta handvirkt eða samstilltu frá HealthKit lyfjum</li>
+          <li><strong>Einkennaskráning</strong> - Skráðu einkenni (brjóstverkur, öndunarörðugleikar, sundl) með alvarleikamati</li>
+          <li><strong>Umönnunarmarkmið</strong> - Settu heilsumarkmið (t.d. "Lækka blóðþrýsting í &lt;130/80")</li>
+          <li><strong>Læknisfundir</strong> - Fylgstu með komandi læknisheimsóknum og eftirlitsskoðunum</li>
+          <li><strong>Sýndu tengsl</strong> - Sjáðu hvernig lyfjafylgni tengist mælingabreytingum</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Share Reports with Clinician -->
+<section class="feature-section bg-light">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>6. Deildu skýrslum með lækninum þínum</h2>
+        <p>Flyttu út faglegar skýrslur til að deila með heilsuteyminu þínu.</p>
+        <ul class="feature-list">
+          <li><strong>PDF skýrslur</strong> - Þægilega sniðnar skýrslur fyrir klínískar umsagnir</li>
+          <li><strong>CSV útflutningur</strong> - Hrá gögn fyrir nánari greiningu í töflureikni</li>
+          <li><strong>Sérsniðið tímabil</strong> - Flyttu út síðustu 7 daga, 30 daga, 90 daga eða sérsniðið bil</li>
+          <li><strong>Fullkomin heilsusaga</strong> - Inniheldur allar mælingar, lyf, einkenni og umönnunarmarkmið</li>
+          <li><strong>Deildu á þinn hátt</strong> - Sendu með tölvupósti, AirDrop eða vistaðu í Files</li>
+        </ul>
+        <p>📄 <strong>Bætta klíníska samskipti:</strong> Gefðu lækninum þínum fullkomið heilsuyfirlit til að taka upplýstari ákvarðanir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Technical Details -->
+<section class="feature-section">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>Tæknilegar upplýsingar</h2>
+        <p>CardioAnalytics er smíðað með innfæddum iOS tækni fyrir hámarks afköst og persónuvernd.</p>
+        <ul class="feature-list">
+          <li><strong>HealthKit auðkenni sem notuð eru:</strong>
+            <ul>
+              <li>HKQuantityTypeIdentifierHeartRate (hjartsláttur)</li>
+              <li>HKQuantityTypeIdentifierRestingHeartRate (hvíld hjartsláttur)</li>
+              <li>HKQuantityTypeIdentifierWalkingHeartRateAverage (göngu hjartsláttur)</li>
+              <li>HKQuantityTypeIdentifierHeartRateVariabilitySDNN (HRV SDNN)</li>
+              <li>HKQuantityTypeIdentifierHeartRateRecoveryOneMinute (RMSSD)</li>
+              <li>HKQuantityTypeIdentifierBloodPressureSystolic (slagbilsþrýstingur)</li>
+              <li>HKQuantityTypeIdentifierBloodPressureDiastolic (hlébilsþrýstingur)</li>
+              <li>HKQuantityTypeIdentifierOxygenSaturation (SpO₂)</li>
+              <li>HKQuantityTypeIdentifierBodyMass (þyngd)</li>
+              <li>HKQuantityTypeIdentifierBodyMassIndex (líkamsþyngdarstuðull)</li>
+              <li>HKQuantityTypeIdentifierVO2Max (VO₂ Max)</li>
+              <li>HKQuantityTypeIdentifierWalkingSpeed (gönguhraði)</li>
+              <li>HKQuantityTypeIdentifierWalkingAsymmetryPercentage (ósamhverfa í göngu)</li>
+              <li>HKQuantityTypeIdentifierStairAscentSpeed (stigahraði)</li>
+              <li>HKCategoryTypeIdentifierElectrocardiogram (ECG upptökur)</li>
+              <li>HKCategoryTypeIdentifierIrregularHeartRhythmEvent (óreglulegir púlsatburðir)</li>
+            </ul>
+          </li>
+          <li><strong>Geymsluframkvæmd:</strong> Core Data með staðbundinni SQLite gagnagrunni</li>
+          <li><strong>UI rammi:</strong> SwiftUI með innfæddum Apple hönnunarviðmiðunum</li>
+          <li><strong>Bakgrunnsvinnsla:</strong> BGTaskScheduler fyrir skilvirkar uppfærslur</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Byrjaðu að fylgjast með hjartaheilsunni þinni í dag</h2>
+      <p>Sæktu CardioAnalytics og njóttu óaðfinnanlegrar HealthKit samþættingar. Allar hjarta- og æðakerfismælingar þínar á einum stað með fullri persónuvernd.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Sækja á App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Heim</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/">Afrikaans</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/">العربية</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/">Български</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/">বাংলা</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/">Čeština</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/">Ελληνικά</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/">Eesti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/">فارسی</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/">Suomi</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/">Hausa</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/">עברית</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/">हिन्दी</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/">Hrvatski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/">Magyar</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/">Bahasa Indonesia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/">Íslenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/">Italiano</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/">日本語</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/">한국어</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/">Lietuvių</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/">Bahasa Melayu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/">မြန်မာဘာသာ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/">Latviešu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/">Nederlands</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/no/">Norsk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/">Русский</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/">Slovenčina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/">Slovenščina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/">Српски</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/">Svenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/">ไทย</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/">Tagalog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/">Українська</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/">Română</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/">Kiswahili</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/">Türkçe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/">اردو</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Öll réttindi áskilin
+            </p>
+            <ul class="footer-links">
+                <li><a href="/is/privacy/">Persónuvernd</a></li>
+                <li><a href="/is/terms/">Skilmálar</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Þessi vefsíða notar vafrakökur til að bæta upplifun þína.</p>
+            <a href="/is/privacy/" class="text-sm">Læra meira</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Hafna</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Samþykkja</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

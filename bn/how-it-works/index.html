@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>CardioAnalytics কীভাবে কাজ করে - HealthKit সিঙ্ক এবং ব্যাকগ্রাউন্ড আপডেট</title>
+    <meta name="description" content="রিয়েল-টাইম কার্ডিওভাসকুলার ডেটা, ব্যাকগ্রাউন্ড আপডেট এবং রাইট-ব্যাক ক্ষমতার জন্য CardioAnalytics কীভাবে Apple HealthKit এর সাথে সিঙ্ক করে তা জানুন। গোপনীয়তা-প্রথম ডেটা প্রসেসিং।">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="HealthKit ইন্টিগ্রেশন, ব্যাকগ্রাউন্ড সিঙ্ক, স্বাস্থ্য ডেটা গোপনীয়তা, Apple Watch সিঙ্ক, কার্ডিওভাসকুলার ডেটা ট্র্যাকিং">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/bn/how-it-works/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-11T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/bn/how-it-works/">
+    <meta property="og:title" content="CardioAnalytics কীভাবে কাজ করে - HealthKit সিঙ্ক এবং ব্যাকগ্রাউন্ড আপডেট">
+    <meta property="og:description" content="রিয়েল-টাইম কার্ডিওভাসকুলার ডেটা, ব্যাকগ্রাউন্ড আপডেট এবং রাইট-ব্যাক ক্ষমতার জন্য CardioAnalytics কীভাবে Apple HealthKit এর সাথে সিঙ্ক করে তা জানুন। গোপনীয়তা-প্রথম ডেটা প্রসেসিং।">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="bn_BD">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/bn/how-it-works/">
+    <meta name="twitter:title" content="CardioAnalytics কীভাবে কাজ করে - HealthKit সিঙ্ক এবং ব্যাকগ্রাউন্ড আপডেট">
+    <meta name="twitter:description" content="রিয়েল-টাইম কার্ডিওভাসকুলার ডেটা, ব্যাকগ্রাউন্ড আপডেট এবং রাইট-ব্যাক ক্ষমতার জন্য CardioAnalytics কীভাবে Apple HealthKit এর সাথে সিঙ্ক করে তা জানুন। গোপনীয়তা-প্রথম ডেটা প্রসেসিং।">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/how-it-works/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/how-it-works/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/how-it-works/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/how-it-works/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/how-it-works/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/how-it-works/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/how-it-works/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/how-it-works/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/how-it-works/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/how-it-works/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/how-it-works/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/how-it-works/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/how-it-works/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/how-it-works/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/how-it-works/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/how-it-works/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/how-it-works/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/how-it-works/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/how-it-works/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/how-it-works/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/how-it-works/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/how-it-works/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/how-it-works/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/how-it-works/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/how-it-works/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/how-it-works/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/how-it-works/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/how-it-works/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/how-it-works/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/how-it-works/">
+    
+    <link rel="alternate" hreflang="no" href="https://cardio.analyticszone.app/no/how-it-works/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/how-it-works/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/how-it-works/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/how-it-works/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/how-it-works/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/how-it-works/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/how-it-works/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/how-it-works/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/how-it-works/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/how-it-works/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/how-it-works/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/how-it-works/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/how-it-works/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/how-it-works/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/how-it-works/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/how-it-works/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/how-it-works/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">বিষয়বস্তুতে যান</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/bn/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/bn/"
+                           
+                           aria-current="">
+                            হোম
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            অ্যাপ
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/bn/features/"
+                                   
+                                   aria-current="">
+                                    বৈশিষ্ট্যসমূহ
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/how-it-works/"
+                                   class="active"
+                                   aria-current="page">
+                                    এটি কীভাবে কাজ করে
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/privacy/"
+                                   
+                                   aria-current="">
+                                    গোপনীয়তা
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            বিজ্ঞান
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/bn/heart-rate/"
+                                   
+                                   aria-current="">
+                                    হৃদস্পন্দন
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    রক্তচাপ
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/hrv/"
+                                   
+                                   aria-current="">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/spo2/"
+                                   
+                                   aria-current="">
+                                    অক্সিজেন স্যাচুরেশন
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    ওজন এবং BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG এবং অ্যাট্রিয়াল ফাইব্রিলেশন
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/walking-speed/"
+                                   
+                                   aria-current="">
+                                    হাঁটার গতি
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    হাঁটার অসামঞ্জস্যতা
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/stair-speed/"
+                                   
+                                   aria-current="">
+                                    সিঁড়ির গতি
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/healthkit/"
+                                   
+                                   aria-current="">
+                                    HealthKit ইন্টিগ্রেশন
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/bn/references/"
+                                   
+                                   aria-current="">
+                                    রেফারেন্স
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/bn/support/"
+                           
+                           aria-current="">
+                            সহায়তা
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="ভাষা নির্বাচন করুন">
+                    
+                    <option value="af" >
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" selected>
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" >
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" >
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" >
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" >
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" >
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" >
+                        한국어
+                    </option>
+                    
+                    <option value="lt" >
+                        Lietuvių
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="no" >
+                        Norsk
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ru" >
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" >
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="মেনু টগল করুন" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- How CardioAnalytics Works -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>CardioAnalytics কীভাবে কাজ করে</h1>
+    <p class="lead">সম্পূর্ণ গোপনীয়তা এবং নিয়ন্ত্রণ সহ স্বয়ংক্রিয় কার্ডিওভাসকুলার ডেটা সিঙ্কের জন্য নিরবচ্ছিন্ন HealthKit ইন্টিগ্রেশন</p>
+  </div>
+</section>
+
+<!-- Overview -->
+<section class="content-section">
+  <div class="container">
+    <h2>HealthKit সিঙ্ক ওভারভিউ</h2>
+    <p>CardioAnalytics স্বয়ংক্রিয়ভাবে ১১টি কার্ডিওভাসকুলার এবং মোবিলিটি মেট্রিক্স আমদানি ও ট্র্যাক করতে Apple HealthKit এর সাথে ইন্টিগ্রেট করে। সমস্ত ডেটা প্রসেসিং কোনও ক্লাউড আপলোড বা বাহ্যিক সার্ভার ছাড়াই আপনার iPhone এ স্থানীয়ভাবে হয়।</p>
+
+    <div class="steps-grid mt-8">
+      <div class="step-card">
+        <div class="step-number">১</div>
+        <h3>HealthKit অ্যাক্সেস অনুমোদন করুন</h3>
+        <p>Apple Health থেকে নির্দিষ্ট ডেটা টাইপ পড়ার অনুমতি দিন। আপনি বিশদ নিয়ন্ত্রণ সহ ঠিক কোন মেট্রিক্স শেয়ার করতে হবে তা চয়ন করেন।</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">২</div>
+        <h3>স্বয়ংক্রিয় ব্যাকগ্রাউন্ড সিঙ্ক</h3>
+        <p>CardioAnalytics আপনার ব্যাটারি নষ্ট না করে স্বয়ংক্রিয়ভাবে নতুন ডেটা আনতে দক্ষ ব্যাকগ্রাউন্ড সিঙ্ক্রোনাইজেশন ব্যবহার করে।</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">৩</div>
+        <h3>স্থানীয় প্রসেসিং এবং সতর্কতা</h3>
+        <p>সমস্ত মেট্রিক্স ডিভাইসে প্রসেস করা হয়। প্রমাণ-ভিত্তিক সতর্কতা পান, প্রবণতা ট্র্যাক করুন এবং আপনি যখন বেছে নেন তখন রিপোর্ট রপ্তানি করুন।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Data Types Used -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>HealthKit ডেটা টাইপস</h2>
+    <p>CardioAnalytics সমস্ত কার্ডিওভাসকুলার এবং মোবিলিটি মেট্রিক্সের জন্য অফিসিয়াল Apple HealthKit আইডেন্টিফায়ার ব্যবহার করে:</p>
+
+    <div class="data-types-grid">
+      <div class="data-type-card">
+        <h4>হৃদস্পন্দন মেট্রিক্স</h4>
+        <ul>
+          <li><code>HKQuantityTypeIdentifier.heartRate</code> - বর্তমান হৃদস্পন্দন (বিট/মিনিট)</li>
+          <li><code>restingHeartRate</code> - বিশ্রামকালীন HR বেসলাইন (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
+          <li><code>walkingHeartRateAverage</code> - হাঁটার সময় গড় HR</li>
+        </ul>
+      </div>
+
+      <div class="data-type-card">
+        <h4>কার্ডিওভাসকুলার মেট্রিক্স</h4>
+        <ul>
+          <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - জোড়া BP রিডিং (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple Docs</a>)</li>
+          <li><code>heartRateVariabilitySDNN</code> - সামগ্রিক HRV পরিবর্তনশীলতা</li>
+          <li><code>heartRateVariabilityRMSSD</code> - স্বল্পমেয়াদী ভেগাল টোন (যেখানে উপলব্ধ)</li>
+          <li><code>oxygenSaturation</code> - ভগ্নাংশ হিসাবে SpO₂ (% হিসাবে প্রদর্শন) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation" target="_blank" rel="noopener">Apple Docs</a>)</li>
+        </ul>
+      </div>
+
+      <div class="data-type-card">
+        <h4>শরীরের গঠন</h4>
+        <ul>
+          <li><code>bodyMass</code> - kg এ ওজন</li>
+          <li>উচ্চতা এবং ওজন থেকে গণনা করা BMI</li>
+        </ul>
+      </div>
+
+      <div class="data-type-card">
+        <h4>ECG এবং অ্যাট্রিয়াল ফাইব্রিলেশন</h4>
+        <ul>
+          <li><code>electrocardiogramType</code> - <code>HKElectrocardiogram.Classification</code> সহ ECG রেকর্ডিং (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>)</li>
+          <li><code>atrialFibrillationBurden</code> - AF বোঝা শতাংশ (যেখানে উপলব্ধ) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple Docs</a>)</li>
+        </ul>
+      </div>
+
+      <div class="data-type-card">
+        <h4>ফিটনেস এবং মোবিলিটি</h4>
+        <ul>
+          <li><code>vo2Max</code> - কার্ডিও ফিটনেস (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li>
+          <li><code>walkingSpeed</code> - গড় স্থির হাঁটার গতি (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
+          <li><code>walkingAsymmetryPercentage</code> - গেইট ভারসাম্যহীনতা % (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingasymmetrypercentage" target="_blank" rel="noopener">Apple Docs</a>)</li>
+          <li><code>stairAscentSpeed</code> - সিঁড়ি আরোহণের গতি (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/stairascentspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Background Sync Patterns -->
+<section class="content-section">
+  <div class="container">
+    <h2>ব্যাকগ্রাউন্ড সিঙ্ক প্রযুক্তি</h2>
+    <p>CardioAnalytics দক্ষ, ব্যাটারি-বন্ধুত্বপূর্ণ ডেটা সিঙ্ক্রোনাইজেশনের জন্য Apple-এর প্রস্তাবিত প্যাটার্ন ব্যবহার করে:</p>
+
+    <h3>Anchored Object Queries</h3>
+    <p>CardioAnalytics দক্ষ ডেল্টা সিঙ্ক্রোনাইজেশনের জন্য <code>HKAnchoredObjectQuery</code> ব্যবহার করে, শেষ সিঙ্কের পর থেকে শুধুমাত্র নতুন বা পরিবর্তিত ডেটা আনে (<a href="https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery" target="_blank" rel="noopener">Apple Docs</a>)।</p>
+
+    <div class="code-example">
+      <pre><code>// Example: Anchored query for efficient delta sync
+let query = HKAnchoredObjectQuery(
+    type: heartRateType,
+    predicate: nil,
+    anchor: lastAnchor,
+    limit: HKObjectQueryNoLimit
+) { (query, samples, deletedObjects, newAnchor, error) in
+    // Process only new/changed samples
+    self.processSamples(samples)
+    self.lastAnchor = newAnchor
+}</code></pre>
+    </div>
+
+    <h3 class="mt-8">ব্যাকগ্রাউন্ড ডেলিভারি</h3>
+    <p><code>HKHealthStore.enableBackgroundDelivery</code> ব্যবহার করে, নতুন ডেটা উপলব্ধ হলে HealthKit স্বয়ংক্রিয়ভাবে অ্যাপ জাগাতে পারে (<a href="https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery%28for%3Afrequency%3AwithCompletion%3A%29" target="_blank" rel="noopener">Apple Docs</a>)।</p>
+
+    <ul class="feature-list">
+      <li><strong>তাৎক্ষণিক আপডেট</strong> - ম্যানুয়াল রিফ্রেশ ছাড়াই তাজা কার্ডিওভাসকুলার ডেটা</li>
+      <li><strong>ব্যাটারি দক্ষ</strong> - সিস্টেম-পরিচালিত ওয়েক-আপ পাওয়ার খরচ কমিয়ে দেয়</li>
+      <li><strong>নির্ভরযোগ্য ডেলিভারি</strong> - অ্যাপ বন্ধ থাকলেও কাজ করে</li>
+    </ul>
+
+    <p class="note">📱 <strong>প্রয়োজনীয় এনটাইটেলমেন্ট:</strong> <code>com.apple.developer.healthkit.background-delivery</code> (<a href="https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.healthkit.background-delivery" target="_blank" rel="noopener">Docs</a>)</p>
+  </div>
+</section>
+
+<!-- Write-Back Capabilities -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>HealthKit এ রাইট-ব্যাক</h2>
+    <p>ব্যবহারকারীর-প্রবেশকৃত ডেটা (ওজন, রক্তচাপ) সমস্ত স্বাস্থ্য অ্যাপ এবং ডিভাইস জুড়ে সংগতির জন্য HealthKit এ ফেরত লেখা যেতে পারে।</p>
+
+    <ul class="feature-list">
+      <li><strong>একীভূত স্বাস্থ্য রেকর্ড</strong> - CardioAnalytics এ প্রবেশকৃত ডেটা Apple Health এ প্রদর্শিত হয়</li>
+      <li><strong>চিকিৎসক দৃশ্যমানতা</strong> - HealthKit-সংযুক্ত সিস্টেম ব্যবহারকারী ডাক্তাররা সামঞ্জস্যপূর্ণ রেকর্ড দেখেন</li>
+      <li><strong>ক্রস-অ্যাপ সামঞ্জস্যতা</strong> - অন্যান্য স্বাস্থ্য অ্যাপ আপনার CardioAnalytics এন্ট্রি অ্যাক্সেস করতে পারে</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Privacy & Permissions -->
+<section class="content-section">
+  <div class="container">
+    <h2>গোপনীয়তা এবং বিশদ অনুমতি</h2>
+    <p>আপনি ঠিক কোন ডেটা টাইপ CardioAnalytics অ্যাক্সেস করতে পারে তা নিয়ন্ত্রণ করেন। HealthKit অনুমোদন বিশদ - প্রতিটি মেট্রিক পৃথকভাবে অনুমোদন বা অস্বীকার করুন।</p>
+
+    <h3>CardioAnalytics যা করে না:</h3>
+    <ul class="feature-list">
+      <li>❌ কোনও ক্লাউড আপলোড নেই - সমস্ত ডেটা আপনার ডিভাইসে থাকে</li>
+      <li>❌ কোনও বাহ্যিক সার্ভার নেই - তৃতীয় পক্ষের কাছে কোনও ডেটা ট্রান্সমিশন নেই</li>
+      <li>❌ কোনও অ্যাকাউন্ট প্রয়োজন নেই - কোনও ইমেল, ব্যবহারকারীর নাম বা ব্যক্তিগত তথ্য সংগ্রহ নেই</li>
+      <li>❌ কোনও ট্র্যাকিং বা বিশ্লেষণ নেই - আমরা জানি না আপনি কে বা আপনি অ্যাপটি কীভাবে ব্যবহার করেন</li>
+    </ul>
+
+    <h3 class="mt-6">আপনি যা নিয়ন্ত্রণ করেন:</h3>
+    <ul class="feature-list">
+      <li>✅ কোন মেট্রিক্স শেয়ার করতে হবে তা চয়ন করুন (যেমন, HR শেয়ার করুন কিন্তু ওজন নয়)</li>
+      <li>✅ iOS সেটিংস → গোপনীয়তা → স্বাস্থ্য-এ যেকোনো সময় অনুমতি প্রত্যাহার করুন</li>
+      <li>✅ শুধুমাত্র যখন আপনি আপনার চিকিৎসকের সাথে শেয়ার করার সিদ্ধান্ত নেন তখনই রিপোর্ট রপ্তানি করুন</li>
+      <li>✅ আনইনস্টল করে যেকোনো সময় সমস্ত অ্যাপ ডেটা মুছে ফেলুন</li>
+    </ul>
+
+    <p><a href="/bn/privacy/" class="btn btn-secondary">সম্পূর্ণ গোপনীয়তা নীতি পড়ুন</a></p>
+  </div>
+</section>
+
+<!-- Device Compatibility -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>ডিভাইস সামঞ্জস্যতা</h2>
+    <p>CardioAnalytics যেকোনো ডিভাইস বা অ্যাপের সাথে কাজ করে যা Apple HealthKit এ লেখে:</p>
+
+    <div class="compatibility-grid">
+      <div class="compatibility-card">
+        <h4>Apple Watch</h4>
+        <p>হৃদস্পন্দন, HRV, SpO₂, ECG, VO₂ Max, হাঁটার মেট্রিক্স, সিঁড়ির গতি</p>
+      </div>
+      <div class="compatibility-card">
+        <h4>সংযুক্ত BP মনিটর</h4>
+        <p>ব্লুটুথ রক্তচাপ কাফ (Omron, Withings, QardioArm, ইত্যাদি)</p>
+      </div>
+      <div class="compatibility-card">
+        <h4>স্মার্ট স্কেল</h4>
+        <p>সংযুক্ত স্কেল থেকে ওজন এবং BMI (Withings, Fitbit Aria, ইত্যাদি)</p>
+      </div>
+      <div class="compatibility-card">
+        <h4>ম্যানুয়াল এন্ট্রি</h4>
+        <p>Apple Health অ্যাপে সরাসরি BP, ওজন বা অন্যান্য মেট্রিক্স যোগ করুন</p>
+      </div>
+      <div class="compatibility-card">
+        <h4>অন্যান্য ফিটনেস ট্র্যাকার</h4>
+        <p>HealthKit এ হৃদস্পন্দন বা ফিটনেস ডেটা সিঙ্ক করা যেকোনো ডিভাইস</p>
+      </div>
+      <div class="compatibility-card">
+        <h4>চিকিৎসা ডিভাইস</h4>
+        <p>HealthKit ইন্টিগ্রেশন সহ FDA-অনুমোদিত ডিভাইস</p>
+      </div>
+    </div>
+
+    <p class="note">💡 <strong>মেট্রিক্স অনুপস্থিত?</strong> যদি আপনার ডিভাইস কিছু মেট্রিক্স রেকর্ড না করে (যেমন, পুরানো ঘড়িতে SpO₂), CardioAnalytics স্বয়ংক্রিয়ভাবে সেই কার্ডগুলি লুকিয়ে রাখে।</p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>সহজ স্বাস্থ্য ট্র্যাকিং অনুভব করুন</h2>
+      <p>CardioAnalytics ডাউনলোড করুন এবং Apple HealthKit আপনার কার্ডিওভাসকুলার ডেটা স্বয়ংক্রিয়ভাবে সিঙ্ক করতে দিন। কোনও ম্যানুয়াল এন্ট্রির প্রয়োজন নেই - শুধু পর্যবেক্ষণ করুন, বিশ্লেষণ করুন এবং আপনার ডাক্তারের সাথে শেয়ার করুন।</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        App Store থেকে ডাউনলোড করুন
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">হোম</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/">Afrikaans</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/">العربية</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/">Български</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/">বাংলা</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/">Čeština</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/">Ελληνικά</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/">Eesti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/">فارسی</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/">Suomi</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/">Hausa</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/">עברית</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/">हिन्दी</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/">Hrvatski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/">Magyar</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/">Bahasa Indonesia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/">Íslenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/">Italiano</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/">日本語</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/">한국어</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/">Lietuvių</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/">Bahasa Melayu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/">မြန်မာဘာသာ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/">Latviešu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/">Nederlands</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/no/">Norsk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/">Русский</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/">Slovenčina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/">Slovenščina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/">Српски</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/">Svenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/">ไทย</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/">Tagalog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/">Українська</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/">Română</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/">Kiswahili</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/">Türkçe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/">اردو</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. সর্বস্বত্ব সংরক্ষিত
+            </p>
+            <ul class="footer-links">
+                <li><a href="/bn/privacy/">গোপনীয়তা</a></li>
+                <li><a href="/bn/terms/">শর্তাবলী</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>এই ওয়েবসাইট আপনার অভিজ্ঞতা উন্নত করতে কুকি ব্যবহার করে।</p>
+            <a href="/bn/privacy/" class="text-sm">আরও জানুন</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">প্রত্যাখ্যান করুন</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">স্বীকার করুন</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Monitoraggio frequenza cardiaca - Frequenza a riposo, durante camminata e attuale | CardioAnalytics</title>
+    <meta name="description" content="Monitora frequenza cardiaca a riposo, durante camminata e attuale da Apple Watch. Comprendi i range normali (60-100 bpm), rileva bradicardia e tachicardia con soglie personalizzate.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="monitoraggio frequenza cardiaca, frequenza cardiaca a riposo, frequenza cardiaca durante camminata, bradicardia, tachicardia, monitoraggio salute cardiaca">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/it/heart-rate/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-11T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/it/heart-rate/">
+    <meta property="og:title" content="Monitoraggio frequenza cardiaca - Frequenza a riposo, durante camminata e attuale | CardioAnalytics">
+    <meta property="og:description" content="Monitora frequenza cardiaca a riposo, durante camminata e attuale da Apple Watch. Comprendi i range normali (60-100 bpm), rileva bradicardia e tachicardia con soglie personalizzate.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/it/heart-rate/">
+    <meta name="twitter:title" content="Monitoraggio frequenza cardiaca - Frequenza a riposo, durante camminata e attuale | CardioAnalytics">
+    <meta name="twitter:description" content="Monitora frequenza cardiaca a riposo, durante camminata e attuale da Apple Watch. Comprendi i range normali (60-100 bpm), rileva bradicardia e tachicardia con soglie personalizzate.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/heart-rate/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/heart-rate/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/heart-rate/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/heart-rate/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/heart-rate/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/heart-rate/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/heart-rate/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/heart-rate/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/heart-rate/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/heart-rate/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/heart-rate/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/heart-rate/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/heart-rate/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/heart-rate/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/heart-rate/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/heart-rate/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/heart-rate/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/heart-rate/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/heart-rate/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/heart-rate/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/heart-rate/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/heart-rate/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/heart-rate/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/heart-rate/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/heart-rate/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/heart-rate/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/heart-rate/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/heart-rate/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/heart-rate/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/heart-rate/">
+    
+    <link rel="alternate" hreflang="no" href="https://cardio.analyticszone.app/no/heart-rate/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/heart-rate/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/heart-rate/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/heart-rate/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/heart-rate/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/heart-rate/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/heart-rate/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/heart-rate/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/heart-rate/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/heart-rate/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/heart-rate/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/heart-rate/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/heart-rate/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/heart-rate/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/heart-rate/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/heart-rate/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/heart-rate/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Monitoraggio frequenza cardiaca - Frequenza a riposo, durante camminata e attuale | CardioAnalytics",
+      "description": "Monitora frequenza cardiaca a riposo, durante camminata e attuale da Apple Watch. Comprendi i range normali (60-100 bpm), rileva bradicardia e tachicardia con soglie personalizzate.",
+      "url": "https://cardio.analyticszone.app/it/heart-rate/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      }
+    }
+    </script>
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Vai al contenuto</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/it/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/it/"
+                           
+                           aria-current="">
+                            Home
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            App
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/it/features/"
+                                   
+                                   aria-current="">
+                                    Funzionalità
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Come funziona
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/privacy/"
+                                   
+                                   aria-current="">
+                                    Privacy
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Scienza
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/it/heart-rate/"
+                                   class="active"
+                                   aria-current="page">
+                                    Frequenza cardiaca
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Pressione sanguigna
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/hrv/"
+                                   
+                                   aria-current="">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/spo2/"
+                                   
+                                   aria-current="">
+                                    Saturazione di ossigeno
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Peso e BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG e fibrillazione atriale
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Velocità di camminata
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Asimmetria della camminata
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Velocità di salita delle scale
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/healthkit/"
+                                   
+                                   aria-current="">
+                                    Integrazione HealthKit
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/it/references/"
+                                   
+                                   aria-current="">
+                                    Riferimenti
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/it/support/"
+                           
+                           aria-current="">
+                            Supporto
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Seleziona lingua">
+                    
+                    <option value="af" >
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" >
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" >
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" >
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" >
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" >
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" selected>
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" >
+                        한국어
+                    </option>
+                    
+                    <option value="lt" >
+                        Lietuvių
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="no" >
+                        Norsk
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ru" >
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" >
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Attiva/disattiva menu" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- Heart Rate Science Page -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Tracciamento della frequenza cardiaca</h1>
+    <p class="lead">Monitora frequenza cardiaca a riposo, durante la camminata e attuale per la valutazione della salute cardiovascolare</p>
+  </div>
+</section>
+
+<!-- What It Is -->
+<section class="content-section">
+  <div class="container">
+    <h2>Cos'è la frequenza cardiaca?</h2>
+    <p>La frequenza cardiaca è il numero di volte che il cuore batte al minuto (bpm). Viene misurata a diversi livelli di attività:</p>
+    <ul class="feature-list">
+      <li><strong>Frequenza cardiaca a riposo</strong> - Misurata quando sei completamente a riposo, idealmente al mattino prima di alzarti dal letto</li>
+      <li><strong>Frequenza cardiaca durante la camminata</strong> - Frequenza cardiaca media durante attività di camminata costante</li>
+      <li><strong>Frequenza cardiaca attuale</strong> - Misurazione in tempo reale in un dato momento</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Why It Matters -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Perché la frequenza cardiaca è importante</h2>
+    <p>La frequenza cardiaca a riposo è un indicatore generale di forma cardiovascolare e salute generale:</p>
+    <ul class="feature-list">
+      <li>Una frequenza cardiaca a riposo più bassa indica spesso una migliore forma cardiovascolare</li>
+      <li>Una frequenza cardiaca a riposo elevata può segnalare stress, malattia o problemi cardiovascolari</li>
+      <li>I cambiamenti nella frequenza cardiaca a riposo possono indicare cambiamenti nel livello di fitness o nello stato di salute</li>
+      <li>La frequenza cardiaca durante la camminata aiuta a valutare la risposta cardiovascolare a un'attività leggera</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Typical Ranges -->
+<section class="content-section">
+  <div class="container">
+    <h2>Range tipici di frequenza cardiaca</h2>
+
+    <div class="range-card">
+      <h3>Frequenza cardiaca a riposo (Adulti)</h3>
+      <p><strong>Range normale: 60-100 bpm</strong> (<a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979" target="_blank" rel="noopener">Mayo Clinic</a>)</p>
+      <ul>
+        <li><strong>&lt;60 bpm</strong> - Bradicardia (può essere normale negli atleti, ma consultare un medico se sintomatica)</li>
+        <li><strong>60-100 bpm</strong> - Range normale per adulti</li>
+        <li><strong>&gt;100 bpm</strong> - Tachicardia (consultare un medico, specialmente se persistente)</li>
+      </ul>
+    </div>
+
+    <div class="range-card mt-6">
+      <h3>Fattori che influenzano la frequenza cardiaca</h3>
+      <ul class="feature-list">
+        <li>Età - la frequenza cardiaca a riposo generalmente diminuisce con l'età</li>
+        <li>Livello di fitness - gli atleti allenati hanno spesso una frequenza cardiaca a riposo più bassa (40-60 bpm)</li>
+        <li>Farmaci - i beta-bloccanti e altri farmaci influenzano la frequenza cardiaca</li>
+        <li>Temperatura - il calore può elevare la frequenza cardiaca</li>
+        <li>Emozioni e stress - l'ansia aumenta la frequenza cardiaca</li>
+        <li>Caffeina e stimolanti - aumentano temporaneamente la frequenza cardiaca</li>
+        <li>Disidratazione - può elevare la frequenza cardiaca</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- How CardioAnalytics Uses It -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Come CardioAnalytics utilizza i dati della frequenza cardiaca</h2>
+    <ul class="feature-list">
+      <li><strong>Traccia tendenze di frequenza cardiaca a riposo e durante la camminata</strong> - Visualizza i cambiamenti nel tempo (giorni, settimane, mesi)</li>
+      <li><strong>Segnala bradicardia/tachicardia persistente</strong> - Avvisi basati su soglie personalizzate</li>
+      <li><strong>Confronta con range di linee guida</strong> - Indicatori di range normale Mayo Clinic (60-100 bpm)</li>
+      <li><strong>Correlazioni con i farmaci</strong> - Vedi come i farmaci (es. beta-bloccanti) influenzano la tua frequenza cardiaca</li>
+      <li><strong>Correlazioni con i sintomi</strong> - Registra sintomi e identifica pattern con i cambiamenti di frequenza cardiaca</li>
+    </ul>
+
+    <p class="note">📊 <strong>Traccia le tendenze, non le singole letture:</strong> La frequenza cardiaca a riposo varia quotidianamente. Concentrati sui pattern a lungo termine piuttosto che sulle misurazioni isolate.</p>
+  </div>
+</section>
+
+<!-- HealthKit Integration -->
+<section class="content-section">
+  <div class="container">
+    <h2>Tipi di dati HealthKit</h2>
+    <p>CardioAnalytics legge i dati della frequenza cardiaca da Apple HealthKit utilizzando questi identificatori:</p>
+    <ul class="feature-list">
+      <li><code>HKQuantityTypeIdentifier.heartRate</code> - Frequenza cardiaca attuale (conteggi/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>restingHeartRate</code> - Baseline della frequenza cardiaca a riposo (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>walkingHeartRateAverage</code> - Frequenza cardiaca media durante la camminata (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+
+    <p class="mt-6"><a href="/it/healthkit/" class="btn btn-secondary">Scopri di più sull'integrazione HealthKit</a></p>
+  </div>
+</section>
+
+<!-- References -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Riferimenti scientifici</h2>
+    <ol class="references-list">
+      <li>Mayo Clinic. <em>What's a normal resting heart rate?</em> <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979" target="_blank" rel="noopener">https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979</a></li>
+    </ol>
+    <p><a href="/it/references/" class="btn btn-secondary">Visualizza tutti i riferimenti</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Traccia la tua frequenza cardiaca con CardioAnalytics</h2>
+      <p>Monitora frequenza cardiaca a riposo, durante la camminata e attuale con avvisi basati sull'evidenza e analisi delle tendenze.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Scarica su App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Home</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/">Afrikaans</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/">العربية</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/">Български</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/">বাংলা</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/">Čeština</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/">Ελληνικά</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/">Eesti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/">فارسی</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/">Suomi</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/">Hausa</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/">עברית</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/">हिन्दी</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/">Hrvatski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/">Magyar</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/">Bahasa Indonesia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/">Íslenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/">Italiano</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/">日本語</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/">한국어</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/">Lietuvių</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/">Bahasa Melayu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/">မြန်မာဘာသာ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/">Latviešu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/">Nederlands</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/no/">Norsk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/">Русский</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/">Slovenčina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/">Slovenščina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/">Српски</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/">Svenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/">ไทย</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/">Tagalog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/">Українська</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/">Română</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/">Kiswahili</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/">Türkçe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/">اردو</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Tutti i diritti riservati
+            </p>
+            <ul class="footer-links">
+                <li><a href="/it/privacy/">Privacy</a></li>
+                <li><a href="/it/terms/">Termini</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Questo sito web utilizza cookie per migliorare la tua esperienza.</p>
+            <a href="/it/privacy/" class="text-sm">Scopri di più</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Rifiuta</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Accetta</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

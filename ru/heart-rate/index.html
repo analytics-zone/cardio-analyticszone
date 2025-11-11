@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Мониторинг частоты сердечных сокращений - ЧСС в покое, при ходьбе и текущая | CardioAnalytics</title>
+    <meta name="description" content="Отслеживайте частоту сердечных сокращений в покое, при ходьбе и текущую с Apple Watch. Понимайте нормальные диапазоны (60-100 уд/мин), выявляйте брадикардию и тахикардию с персональными пороговыми значениями.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="мониторинг частоты сердечных сокращений, ЧСС в покое, ЧСС при ходьбе, брадикардия, тахикардия, мониторинг здоровья сердца">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/ru/heart-rate/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-11T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/ru/heart-rate/">
+    <meta property="og:title" content="Мониторинг частоты сердечных сокращений - ЧСС в покое, при ходьбе и текущая | CardioAnalytics">
+    <meta property="og:description" content="Отслеживайте частоту сердечных сокращений в покое, при ходьбе и текущую с Apple Watch. Понимайте нормальные диапазоны (60-100 уд/мин), выявляйте брадикардию и тахикардию с персональными пороговыми значениями.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/ru/heart-rate/">
+    <meta name="twitter:title" content="Мониторинг частоты сердечных сокращений - ЧСС в покое, при ходьбе и текущая | CardioAnalytics">
+    <meta name="twitter:description" content="Отслеживайте частоту сердечных сокращений в покое, при ходьбе и текущую с Apple Watch. Понимайте нормальные диапазоны (60-100 уд/мин), выявляйте брадикардию и тахикардию с персональными пороговыми значениями.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/heart-rate/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/heart-rate/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/heart-rate/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/heart-rate/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/heart-rate/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/heart-rate/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/heart-rate/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/heart-rate/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/heart-rate/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/heart-rate/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/heart-rate/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/heart-rate/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/heart-rate/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/heart-rate/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/heart-rate/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/heart-rate/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/heart-rate/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/heart-rate/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/heart-rate/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/heart-rate/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/heart-rate/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/heart-rate/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/heart-rate/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/heart-rate/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/heart-rate/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/heart-rate/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/heart-rate/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/heart-rate/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/heart-rate/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/heart-rate/">
+    
+    <link rel="alternate" hreflang="no" href="https://cardio.analyticszone.app/no/heart-rate/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/heart-rate/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/heart-rate/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/heart-rate/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/heart-rate/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/heart-rate/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/heart-rate/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/heart-rate/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/heart-rate/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/heart-rate/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/heart-rate/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/heart-rate/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/heart-rate/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/heart-rate/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/heart-rate/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/heart-rate/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/heart-rate/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Мониторинг частоты сердечных сокращений - ЧСС в покое, при ходьбе и текущая | CardioAnalytics",
+      "description": "Отслеживайте частоту сердечных сокращений в покое, при ходьбе и текущую с Apple Watch. Понимайте нормальные диапазоны (60-100 уд/мин), выявляйте брадикардию и тахикардию с персональными пороговыми значениями.",
+      "url": "https://cardio.analyticszone.app/ru/heart-rate/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      }
+    }
+    </script>
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Перейти к содержимому</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/ru/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ru/"
+                           
+                           aria-current="">
+                            Главная
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Приложение
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ru/features/"
+                                   
+                                   aria-current="">
+                                    Функции
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Как это работает
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/privacy/"
+                                   
+                                   aria-current="">
+                                    Конфиденциальность
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Наука
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ru/heart-rate/"
+                                   class="active"
+                                   aria-current="page">
+                                    Частота сердечных сокращений
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Артериальное давление
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/hrv/"
+                                   
+                                   aria-current="">
+                                    ВСР (HRV)
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/spo2/"
+                                   
+                                   aria-current="">
+                                    Насыщение кислородом
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Вес и ИМТ
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ЭКГ и фибрилляция предсердий
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Скорость ходьбы
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Асимметрия походки
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Скорость подъема по лестнице
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/healthkit/"
+                                   
+                                   aria-current="">
+                                    Интеграция с HealthKit
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/references/"
+                                   
+                                   aria-current="">
+                                    Источники
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ru/support/"
+                           
+                           aria-current="">
+                            Поддержка
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Выбрать язык">
+                    
+                    <option value="af" >
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" >
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" >
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" >
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" >
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" >
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" >
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" >
+                        한국어
+                    </option>
+                    
+                    <option value="lt" >
+                        Lietuvių
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="no" >
+                        Norsk
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ru" selected>
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" >
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Переключить меню" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- Heart Rate Science Page -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Отслеживание частоты сердечных сокращений</h1>
+    <p class="lead">Контролируйте частоту сердечных сокращений в покое, при ходьбе и текущую для оценки сердечно-сосудистого здоровья</p>
+  </div>
+</section>
+
+<!-- What It Is -->
+<section class="content-section">
+  <div class="container">
+    <h2>Что такое частота сердечных сокращений?</h2>
+    <p>Частота сердечных сокращений — это количество ударов вашего сердца в минуту (уд/мин). Она измеряется при различных уровнях активности:</p>
+    <ul class="feature-list">
+      <li><strong>ЧСС в покое</strong> — измеряется в полном покое, в идеале утром перед подъемом</li>
+      <li><strong>ЧСС при ходьбе</strong> — средняя частота сердечных сокращений во время устойчивой ходьбы</li>
+      <li><strong>Текущая ЧСС</strong> — измерение в реальном времени в данный момент</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Why It Matters -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Почему важна частота сердечных сокращений</h2>
+    <p>ЧСС в покое является общим маркером сердечно-сосудистой выносливости и общего здоровья:</p>
+    <ul class="feature-list">
+      <li>Более низкая ЧСС в покое часто указывает на лучшую сердечно-сосудистую выносливость</li>
+      <li>Повышенная ЧСС в покое может сигнализировать о стрессе, болезни или сердечно-сосудистых проблемах</li>
+      <li>Изменения ЧСС в покое могут указывать на изменения уровня физической подготовки или состояния здоровья</li>
+      <li>ЧСС при ходьбе помогает оценить сердечно-сосудистый ответ на легкую активность</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Typical Ranges -->
+<section class="content-section">
+  <div class="container">
+    <h2>Типичные диапазоны частоты сердечных сокращений</h2>
+
+    <div class="range-card">
+      <h3>ЧСС в покое (взрослые)</h3>
+      <p><strong>Нормальный диапазон: 60-100 уд/мин</strong> (<a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979" target="_blank" rel="noopener">Mayo Clinic</a>)</p>
+      <ul>
+        <li><strong>&lt;60 уд/мин</strong> — Брадикардия (может быть нормальным у спортсменов, но проконсультируйтесь с врачом при наличии симптомов)</li>
+        <li><strong>60-100 уд/мин</strong> — Нормальный диапазон для взрослых</li>
+        <li><strong>&gt;100 уд/мин</strong> — Тахикардия (проконсультируйтесь с врачом, особенно если сохраняется)</li>
+      </ul>
+    </div>
+
+    <div class="range-card mt-6">
+      <h3>Факторы, влияющие на частоту сердечных сокращений</h3>
+      <ul class="feature-list">
+        <li>Возраст — ЧСС в покое обычно снижается с возрастом</li>
+        <li>Уровень физической подготовки — тренированные спортсмены часто имеют более низкую ЧСС в покое (40-60 уд/мин)</li>
+        <li>Лекарства — бета-блокаторы и другие препараты влияют на ЧСС</li>
+        <li>Температура — жара может повысить ЧСС</li>
+        <li>Эмоции и стресс — тревога повышает ЧСС</li>
+        <li>Кофеин и стимуляторы — временно повышают ЧСС</li>
+        <li>Обезвоживание — может повысить ЧСС</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- How CardioAnalytics Uses It -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Как CardioAnalytics использует данные о частоте сердечных сокращений</h2>
+    <ul class="feature-list">
+      <li><strong>Отслеживает тренды ЧСС в покое и при ходьбе</strong> — Визуализируйте изменения с течением времени (дни, недели, месяцы)</li>
+      <li><strong>Отмечает стойкую брадикардию/тахикардию</strong> — Уведомления на основе персональных пороговых значений</li>
+      <li><strong>Сравнивает с диапазонами рекомендаций</strong> — Индикаторы нормального диапазона Mayo Clinic (60-100 уд/мин)</li>
+      <li><strong>Корреляции с лекарствами</strong> — Посмотрите, как лекарства (например, бета-блокаторы) влияют на вашу частоту сердечных сокращений</li>
+      <li><strong>Корреляции с симптомами</strong> — Регистрируйте симптомы и выявляйте закономерности с изменениями ЧСС</li>
+    </ul>
+
+    <p class="note">📊 <strong>Отслеживайте тренды, а не отдельные показания:</strong> ЧСС в покое варьируется изо дня в день. Сосредоточьтесь на долгосрочных закономерностях, а не на изолированных измерениях.</p>
+  </div>
+</section>
+
+<!-- HealthKit Integration -->
+<section class="content-section">
+  <div class="container">
+    <h2>Типы данных HealthKit</h2>
+    <p>CardioAnalytics считывает данные о частоте сердечных сокращений из Apple HealthKit, используя следующие идентификаторы:</p>
+    <ul class="feature-list">
+      <li><code>HKQuantityTypeIdentifier.heartRate</code> — Текущая частота сердечных сокращений (уд/мин) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>restingHeartRate</code> — Базовая ЧСС в покое (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>walkingHeartRateAverage</code> — Средняя ЧСС во время ходьбы (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+
+    <p class="mt-6"><a href="/ru/healthkit/" class="btn btn-secondary">Узнать больше об интеграции с HealthKit</a></p>
+  </div>
+</section>
+
+<!-- References -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Научные источники</h2>
+    <ol class="references-list">
+      <li>Mayo Clinic. <em>What's a normal resting heart rate?</em> <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979" target="_blank" rel="noopener">https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/heart-rate/faq-20057979</a></li>
+    </ol>
+    <p><a href="/ru/references/" class="btn btn-secondary">Посмотреть все источники</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Отслеживайте частоту сердечных сокращений с CardioAnalytics</h2>
+      <p>Контролируйте тренды ЧСС в покое и при ходьбе с персональными пороговыми значениями.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Загрузить в App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Главная</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/">Afrikaans</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/">العربية</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/">Български</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/">বাংলা</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/">Čeština</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/">Ελληνικά</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/">Eesti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/">فارسی</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/">Suomi</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/">Hausa</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/">עברית</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/">हिन्दी</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/">Hrvatski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/">Magyar</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/">Bahasa Indonesia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/">Íslenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/">Italiano</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/">日本語</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/">한국어</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/">Lietuvių</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/">Bahasa Melayu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/">မြန်မာဘာသာ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/">Latviešu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/">Nederlands</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/no/">Norsk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/">Русский</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/">Slovenčina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/">Slovenščina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/">Српски</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/">Svenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/">ไทย</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/">Tagalog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/">Українська</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/">Română</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/">Kiswahili</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/">Türkçe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/">اردو</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Все права защищены
+            </p>
+            <ul class="footer-links">
+                <li><a href="/ru/privacy/">Конфиденциальность</a></li>
+                <li><a href="/ru/terms/">Условия</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Этот сайт использует файлы cookie для улучшения вашего опыта.</p>
+            <a href="/ru/privacy/" class="text-sm">Узнать больше</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Отклонить</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Принять</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

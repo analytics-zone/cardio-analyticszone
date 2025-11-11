@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="sr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Варијабилност откуцаја срца (HRV) - CardioAnalytics</title>
+    <meta name="description" content="Пратите SDNN и RMSSD показатеље за процену стреса и кардиоваскуларног здравља. Ниска HRV повезана са лошијим здравственим исходима.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="H, R, V, ,,  , S, D, N, N, ,,  , R, M, S, S, D, ,,  , в, а, р, и, ј, а, б, и, л, н, о, с, т,  , о, т, к, у, ц, а, ј, а,  , с, р, ц, а, ,,  , с, т, р, е, с, ,,  , C, l, e, v, e, l, a, n, d,  , C, l, i, n, i, c">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/sr/hrv/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-11T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/sr/hrv/">
+    <meta property="og:title" content="Варијабилност откуцаја срца (HRV) - CardioAnalytics">
+    <meta property="og:description" content="Пратите SDNN и RMSSD показатеље за процену стреса и кардиоваскуларног здравља. Ниска HRV повезана са лошијим здравственим исходима.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="sr_RS">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/sr/hrv/">
+    <meta name="twitter:title" content="Варијабилност откуцаја срца (HRV) - CardioAnalytics">
+    <meta name="twitter:description" content="Пратите SDNN и RMSSD показатеље за процену стреса и кардиоваскуларног здравља. Ниска HRV повезана са лошијим здравственим исходима.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/hrv/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/hrv/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/hrv/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/hrv/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/hrv/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/hrv/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/hrv/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/hrv/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/hrv/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/hrv/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/hrv/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/hrv/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/hrv/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/hrv/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/hrv/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/hrv/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/hrv/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/hrv/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/hrv/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/hrv/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/hrv/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/hrv/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/hrv/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/hrv/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/hrv/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/hrv/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/hrv/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/hrv/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/hrv/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/hrv/">
+    
+    <link rel="alternate" hreflang="no" href="https://cardio.analyticszone.app/no/hrv/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/hrv/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/hrv/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/hrv/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/hrv/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/hrv/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/hrv/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/hrv/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/hrv/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/hrv/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/hrv/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/hrv/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/hrv/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/hrv/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/hrv/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/hrv/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/hrv/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Варијабилност откуцаја срца (HRV) - CardioAnalytics",
+      "description": "Пратите SDNN и RMSSD показатеље за процену стреса и кардиоваскуларног здравља. Ниска HRV повезана са лошијим здравственим исходима.",
+      "url": "https://cardio.analyticszone.app/sr/hrv/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      }
+    }
+    </script>
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Пређи на садржај</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/sr/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/sr/"
+                           
+                           aria-current="">
+                            Почетна
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Апликација
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/sr/features/"
+                                   
+                                   aria-current="">
+                                    Функције
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Како функционише
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/privacy/"
+                                   
+                                   aria-current="">
+                                    Приватност
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Наука
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/sr/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Откуцаји срца
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Крвни притисак
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/hrv/"
+                                   class="active"
+                                   aria-current="page">
+                                    Варијабилност откуцаја срца
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/spo2/"
+                                   
+                                   aria-current="">
+                                    Засићеност кисеоником
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Тежина и BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG и атријална фибрилација
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Брзина ходања
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Асиметрија ходања
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Брзина пењања степеницама
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/healthkit/"
+                                   
+                                   aria-current="">
+                                    HealthKit интеграција
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/sr/references/"
+                                   
+                                   aria-current="">
+                                    Референце
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/sr/support/"
+                           
+                           aria-current="">
+                            Подршка
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Изаберите језик">
+                    
+                    <option value="af" >
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" >
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" >
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" >
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" >
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" >
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" >
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" >
+                        한국어
+                    </option>
+                    
+                    <option value="lt" >
+                        Lietuvių
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="no" >
+                        Norsk
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ru" >
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" selected>
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Мењај мени" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- Heart Rate Variability (HRV) Science Page -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Варијабилност откуцаја срца (HRV)</h1>
+    <p class="lead">Надгледајте SDNN и RMSSD показатеље за процену кардиоваскуларног здравља и нивоа стреса</p>
+  </div>
+</section>
+
+<!-- What It Is -->
+<section class="content-section">
+  <div class="container">
+    <h2>Шта је варијабилност откуцаја срца?</h2>
+    <p>Варијабилност откуцаја срца (HRV) мери варијацију у времену између узастопних откуцаја срца. То је маркер функције аутономног нервног система и општег кардиоваскуларног здравља.</p>
+
+    <h3 class="mt-6">HRV показатељи:</h3>
+    <ul class="feature-list">
+      <li><strong>SDNN (стандардна девијација NN интервала)</strong> - Мери укупну HRV. Одражава укупну активност аутономног нервног система.</li>
+      <li><strong>RMSSD (корен средње квадратне разлике узастопних разлика)</strong> - Мери краткорочну HRV. Примарно одражава парасимпатички (вагални) тонус.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Why It Matters -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Зашто је HRV важна</h2>
+    <p><strong>Ниска HRV је повезана са лошијим здравственим исходима и повећаним стресом</strong> (<a href="https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv" target="_blank" rel="noopener">Cleveland Clinic</a>):</p>
+    <ul class="feature-list">
+      <li>Нижа HRV указује на смањену способност прилагођавања стресу</li>
+      <li>Повезана је са повећаним ризиком од кардиоваскуларних болести</li>
+      <li>Може указивати на прекомерни тренинг, болест или хронични стрес</li>
+      <li>Виша HRV генерално указује на бољу кардиоваскуларну кондицију и отпорност</li>
+    </ul>
+
+    <p class="note">📊 <strong>HRV је веома индивидуална:</strong> Фокусирајте се на своје личне трендове уместо на апсолутне вредности. Упоредите данашњу HRV са својом сопственом основном линијом.</p>
+  </div>
+</section>
+
+<!-- Typical Ranges -->
+<section class="content-section">
+  <div class="container">
+    <h2>Тумачење HRV вредности</h2>
+    <p>HRV се значајно разликује између појединаца на основу година, кондиције, генетике и других фактора. Не постоји један "нормалан" опсег, али општи обрасци:</p>
+
+    <div class="range-card">
+      <h3>SDNN</h3>
+      <ul>
+        <li><strong>&gt;100 ms</strong> - Одлична HRV</li>
+        <li><strong>50-100 ms</strong> - Добра HRV</li>
+        <li><strong>20-50 ms</strong> - Задовољавајућа HRV</li>
+        <li><strong>&lt;20 ms</strong> - Ниска HRV (може указивати на здравствене проблеме)</li>
+      </ul>
+    </div>
+
+    <div class="range-card mt-6">
+      <h3>RMSSD</h3>
+      <ul>
+        <li><strong>&gt;50 ms</strong> - Одлична краткорочна HRV</li>
+        <li><strong>30-50 ms</strong> - Добра краткорочна HRV</li>
+        <li><strong>15-30 ms</strong> - Задовољавајућа краткорочна HRV</li>
+        <li><strong>&lt;15 ms</strong> - Ниска краткорочна HRV</li>
+      </ul>
+    </div>
+
+    <p class="note mt-6">⚠️ <strong>Користите личну основну линију:</strong> Ваша HRV може природно бити виша или нижа од ових опсега. Најважније је пратити промене од сопствене основне линије.</p>
+  </div>
+</section>
+
+<!-- Factors Affecting HRV -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Фактори који утичу на HRV</h2>
+    <ul class="feature-list">
+      <li><strong>Године</strong> - HRV се генерално смањује са годинама</li>
+      <li><strong>Ниво кондиције</strong> - Спортисти обично имају вишу HRV</li>
+      <li><strong>Стрес</strong> - Физички или ментални стрес снижава HRV</li>
+      <li><strong>Квалитет сна</strong> - Лош сан смањује HRV</li>
+      <li><strong>Алкохол</strong> - Конзумација снижава HRV 12-24 сата</li>
+      <li><strong>Болест</strong> - Инфекције и болести смањују HRV</li>
+      <li><strong>Дехидрација</strong> - Може снизити HRV</li>
+      <li><strong>Прекомерни тренинг</strong> - Прекомерна вежба без опоравка снижава HRV</li>
+    </ul>
+  </div>
+</section>
+
+<!-- How CardioAnalytics Uses It -->
+<section class="content-section">
+  <div class="container">
+    <h2>Како CardioAnalytics користи HRV податке</h2>
+    <ul class="feature-list">
+      <li><strong>Приказује ноћне HRV трендове</strong> - Apple Watch типично бележи HRV током сна</li>
+      <li><strong>Означава необично ниске вредности</strong> - Упозорења када HRV значајно падне испод ваше основне линије</li>
+      <li><strong>Дугорочна анализа трендова</strong> - Пратите HRV промене током недеља и месеци</li>
+      <li><strong>Корелације са лековима</strong> - Погледајте како лекови утичу на аутономну функцију</li>
+      <li><strong>Корелације са симптомима</strong> - Идентификујте обрасце између ниске HRV и симптома</li>
+    </ul>
+  </div>
+</section>
+
+<!-- HealthKit Integration -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>HealthKit типови података</h2>
+    <p>CardioAnalytics чита HRV податке из Apple HealthKit користећи ове идентификаторе:</p>
+    <ul class="feature-list">
+      <li><code>heartRateVariabilitySDNN</code> - Укупна HRV (SDNN у милисекундама) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>heartRateVariabilityRMSSD</code> - Краткорочни вагални тонус (RMSSD у ms, где је доступно) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+
+    <p class="mt-6"><a href="/sr/healthkit/" class="btn btn-secondary">Сазнајте више о HealthKit интеграцији</a></p>
+  </div>
+</section>
+
+<!-- References -->
+<section class="content-section">
+  <div class="container">
+    <h2>Научне референце</h2>
+    <ol class="references-list">
+      <li>Cleveland Clinic. <em>Heart Rate Variability (HRV): What It Is and How You Can Improve It.</em> <a href="https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv" target="_blank" rel="noopener">https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv</a></li>
+    </ol>
+    <p><a href="/sr/references/" class="btn btn-secondary">Погледајте све референце</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Пратите HRV са CardioAnalytics</h2>
+      <p>Надгледајте трендове варијабилности откуцаја срца за процену нивоа стреса и кардиоваскуларног здравља.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Преузмите на App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Почетна</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/">Afrikaans</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/">العربية</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/">Български</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/">বাংলা</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/">Čeština</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/">Ελληνικά</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/">Eesti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/">فارسی</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/">Suomi</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/">Hausa</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/">עברית</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/">हिन्दी</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/">Hrvatski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/">Magyar</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/">Bahasa Indonesia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/">Íslenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/">Italiano</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/">日本語</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/">한국어</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/">Lietuvių</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/">Bahasa Melayu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/">မြန်မာဘာသာ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/">Latviešu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/">Nederlands</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/no/">Norsk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/">Русский</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/">Slovenčina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/">Slovenščina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/">Српски</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/">Svenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/">ไทย</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/">Tagalog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/">Українська</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/">Română</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/">Kiswahili</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/">Türkçe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/">اردو</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Сва права задржана
+            </p>
+            <ul class="footer-links">
+                <li><a href="/sr/privacy/">Приватност</a></li>
+                <li><a href="/sr/terms/">Услови</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Овај веб сајт користи колачиће да побољша ваше искуство.</p>
+            <a href="/sr/privacy/" class="text-sm">Сазнајте више</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Одбиј</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Прихвати</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

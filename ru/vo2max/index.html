@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Отслеживание VO₂ Max - Кардиореспираторная выносливость и маркер смертности | CardioAnalytics</title>
+    <meta name="description" content="Отслеживайте тренды VO₂ Max с Apple Watch. Мощный маркер выносливости и смертности. Понимайте ограничения точности vs лабораторное тестирование (PLOS ONE 2025).">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="отслеживание VO2 max, кардиореспираторная выносливость, аэробная способность, максимальное потребление кислорода, тренды выносливости, риск смертности">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/ru/vo2max/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-11T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/ru/vo2max/">
+    <meta property="og:title" content="Отслеживание VO₂ Max - Кардиореспираторная выносливость и маркер смертности | CardioAnalytics">
+    <meta property="og:description" content="Отслеживайте тренды VO₂ Max с Apple Watch. Мощный маркер выносливости и смертности. Понимайте ограничения точности vs лабораторное тестирование (PLOS ONE 2025).">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/ru/vo2max/">
+    <meta name="twitter:title" content="Отслеживание VO₂ Max - Кардиореспираторная выносливость и маркер смертности | CardioAnalytics">
+    <meta name="twitter:description" content="Отслеживайте тренды VO₂ Max с Apple Watch. Мощный маркер выносливости и смертности. Понимайте ограничения точности vs лабораторное тестирование (PLOS ONE 2025).">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/vo2max/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/vo2max/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/vo2max/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/vo2max/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/vo2max/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/vo2max/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/vo2max/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/vo2max/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/vo2max/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/vo2max/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/vo2max/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/vo2max/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/vo2max/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/vo2max/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/vo2max/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/vo2max/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/vo2max/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/vo2max/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/vo2max/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/vo2max/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/vo2max/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/vo2max/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/vo2max/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/vo2max/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/vo2max/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/vo2max/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/vo2max/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/vo2max/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/vo2max/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/vo2max/">
+    
+    <link rel="alternate" hreflang="no" href="https://cardio.analyticszone.app/no/vo2max/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/vo2max/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/vo2max/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/vo2max/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/vo2max/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/vo2max/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/vo2max/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/vo2max/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/vo2max/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/vo2max/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/vo2max/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/vo2max/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/vo2max/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/vo2max/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/vo2max/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/vo2max/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/vo2max/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Отслеживание VO₂ Max - Кардиореспираторная выносливость и маркер смертности | CardioAnalytics",
+      "description": "Отслеживайте тренды VO₂ Max с Apple Watch. Мощный маркер выносливости и смертности. Понимайте ограничения точности vs лабораторное тестирование (PLOS ONE 2025).",
+      "url": "https://cardio.analyticszone.app/ru/vo2max/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      }
+    }
+    </script>
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Перейти к содержимому</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/ru/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ru/"
+                           
+                           aria-current="">
+                            Главная
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Приложение
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ru/features/"
+                                   
+                                   aria-current="">
+                                    Функции
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Как это работает
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/privacy/"
+                                   
+                                   aria-current="">
+                                    Конфиденциальность
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Наука
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ru/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Частота сердечных сокращений
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Артериальное давление
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/hrv/"
+                                   
+                                   aria-current="">
+                                    ВСР (HRV)
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/spo2/"
+                                   
+                                   aria-current="">
+                                    Насыщение кислородом
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Вес и ИМТ
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ЭКГ и фибрилляция предсердий
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/vo2max/"
+                                   class="active"
+                                   aria-current="page">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Скорость ходьбы
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Асимметрия походки
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Скорость подъема по лестнице
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/healthkit/"
+                                   
+                                   aria-current="">
+                                    Интеграция с HealthKit
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ru/references/"
+                                   
+                                   aria-current="">
+                                    Источники
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ru/support/"
+                           
+                           aria-current="">
+                            Поддержка
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Выбрать язык">
+                    
+                    <option value="af" >
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" >
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" >
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" >
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" >
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" >
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" >
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" >
+                        한국어
+                    </option>
+                    
+                    <option value="lt" >
+                        Lietuvių
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="no" >
+                        Norsk
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ru" selected>
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" >
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Переключить меню" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- VO2 Max Science Page -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>VO₂ Max — кардиореспираторная выносливость</h1>
+    <p class="lead">Контролируйте свою кардиореспираторную выносливость — мощный предиктор долголетия</p>
+  </div>
+</section>
+
+<!-- What It Is -->
+<section class="content-section">
+  <div class="container">
+    <h2>Что такое VO₂ Max?</h2>
+    <p>VO₂ Max (максимальное потребление кислорода) — это максимальное количество кислорода, которое ваш организм может использовать во время интенсивных упражнений. Оно измеряется в миллилитрах кислорода на килограмм массы тела в минуту (мл/кг/мин).</p>
+    <p>VO₂ Max является золотым стандартом измерения кардиореспираторной выносливости, отражая эффективность вашего сердца, легких и мышц в доставке и использовании кислорода.</p>
+  </div>
+</section>
+
+<!-- Why It Matters -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Почему важен VO₂ Max</h2>
+    <p>VO₂ Max признан одним из самых мощных предикторов общего здоровья и долголетия:</p>
+    <ul class="feature-list">
+      <li><strong>Прогноз смертности</strong> — Более высокий VO₂ Max связан со значительно более низким риском смерти от всех причин</li>
+      <li><strong>Риск сердечно-сосудистых заболеваний</strong> — Низкая кардиореспираторная выносливость является основным фактором риска сердечных заболеваний</li>
+      <li><strong>Физическая функция</strong> — Более высокий VO₂ Max позволяет выполнять повседневные действия с меньшими усилиями</li>
+      <li><strong>Эффективность тренировок</strong> — Отслеживание VO₂ Max помогает оптимизировать программы упражнений</li>
+    </ul>
+
+    <p class="note mt-6">📚 <strong>Исследование:</strong> Каждое увеличение VO₂ Max на 1 MET связано со снижением смертности на 13% (<em>Circulation 2013</em>).</p>
+  </div>
+</section>
+
+<!-- Typical Ranges -->
+<section class="content-section">
+  <div class="container">
+    <h2>Типичные диапазоны VO₂ Max</h2>
+    <p>VO₂ Max варьируется в зависимости от возраста, пола и уровня физической подготовки:</p>
+
+    <div class="range-card">
+      <h3>Мужчины (по возрасту)</h3>
+      <ul>
+        <li><strong>20-29 лет:</strong> Отлично &gt;51, Хорошо 43-51, Среднее 35-42, Ниже среднего &lt;35</li>
+        <li><strong>30-39 лет:</strong> Отлично &gt;49, Хорошо 42-49, Среднее 35-41, Ниже среднего &lt;35</li>
+        <li><strong>40-49 лет:</strong> Отлично &gt;46, Хорошо 39-46, Среднее 33-38, Ниже среднего &lt;33</li>
+        <li><strong>50-59 лет:</strong> Отлично &gt;43, Хорошо 36-43, Среднее 30-35, Ниже среднего &lt;30</li>
+        <li><strong>60+ лет:</strong> Отлично &gt;40, Хорошо 33-40, Среднее 27-32, Ниже среднего &lt;27</li>
+      </ul>
+    </div>
+
+    <div class="range-card mt-6">
+      <h3>Женщины (по возрасту)</h3>
+      <ul>
+        <li><strong>20-29 лет:</strong> Отлично &gt;44, Хорошо 37-44, Среднее 31-36, Ниже среднего &lt;31</li>
+        <li><strong>30-39 лет:</strong> Отлично &gt;42, Хорошо 35-42, Среднее 29-34, Ниже среднего &lt;29</li>
+        <li><strong>40-49 лет:</strong> Отлично &gt;39, Хорошо 33-39, Среднее 27-32, Ниже среднего &lt;27</li>
+        <li><strong>50-59 лет:</strong> Отлично &gt;36, Хорошо 30-36, Среднее 24-29, Ниже среднего &lt;24</li>
+        <li><strong>60+ лет:</strong> Отлично &gt;33, Хорошо 27-33, Среднее 22-26, Ниже среднего &lt;22</li>
+      </ul>
+    </div>
+
+    <p class="note mt-6">📊 Значения в мл/кг/мин. Элитные спортсмены на выносливость могут иметь значения &gt;70 мл/кг/мин.</p>
+  </div>
+</section>
+
+<!-- How Apple Watch Estimates It -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Как Apple Watch оценивает VO₂ Max</h2>
+    <p>Apple Watch оценивает VO₂ Max, используя:</p>
+    <ul class="feature-list">
+      <li>Данные частоты сердечных сокращений во время аэробных упражнений (ходьба, бег на открытом воздухе)</li>
+      <li>Скорость GPS/темп</li>
+      <li>Возраст, пол, вес, рост</li>
+      <li>Алгоритмы, валидированные по сравнению с клиническими измерениями золотого стандарта</li>
+    </ul>
+    <p class="note mt-4">📚 <strong>Валидация:</strong> Исследования показывают, что оценки VO₂ Max от Apple Watch хорошо коррелируют с лабораторными измерениями (<em>PLOS ONE 2021</em>).</p>
+  </div>
+</section>
+
+<!-- How CardioAnalytics Uses It -->
+<section class="content-section">
+  <div class="container">
+    <h2>Как CardioAnalytics использует данные VO₂ Max</h2>
+    <ul class="feature-list">
+      <li><strong>Отслеживает тренды с течением времени</strong> — Визуализирует изменения кардиореспираторной выносливости</li>
+      <li><strong>Классифицирует по категориям физической подготовки</strong> — Сравнивает с нормами по возрасту и полу (отлично, хорошо, среднее)</li>
+      <li><strong>Мониторинг целей</strong> — Устанавливает и отслеживает целевые значения VO₂ Max</li>
+      <li><strong>Корреляции с тренировками</strong> — Связывает изменения VO₂ Max с активностью упражнений</li>
+      <li><strong>Прогноз долголетия</strong> — Отображает, как улучшения VO₂ Max могут снизить риск смертности</li>
+    </ul>
+
+    <p class="note">📊 <strong>Регулярные аэробные упражнения:</strong> Последовательная кардио-тренировка (ходьба, бег, езда на велосипеде) может улучшить VO₂ Max на 15-30%.</p>
+  </div>
+</section>
+
+<!-- HealthKit Integration -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Типы данных HealthKit</h2>
+    <p>CardioAnalytics считывает оценки VO₂ Max из Apple HealthKit:</p>
+    <ul class="feature-list">
+      <li><code>HKQuantityTypeIdentifier.vo2Max</code> — VO₂ Max в мл/кг/мин (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+    <p>Apple Watch автоматически оценивает VO₂ Max во время аэробных тренировок на открытом воздухе.</p>
+
+    <p class="mt-6"><a href="/ru/healthkit/" class="btn btn-secondary">Узнать больше об интеграции с HealthKit</a></p>
+  </div>
+</section>
+
+<!-- References -->
+<section class="content-section">
+  <div class="container">
+    <h2>Научные источники</h2>
+    <ol class="references-list">
+      <li>Kodama S, et al. <em>Cardiorespiratory fitness as a quantitative predictor of all-cause mortality and cardiovascular events.</em> JAMA 2009. <a href="https://pubmed.ncbi.nlm.nih.gov/19454641/" target="_blank" rel="noopener">PubMed</a></li>
+      <li>Shei RJ, et al. <em>Wearable activity trackers-advanced technology or advanced marketing?</em> PLOS ONE 2021. <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254774" target="_blank" rel="noopener">DOI</a></li>
+    </ol>
+    <p><a href="/ru/references/" class="btn btn-secondary">Посмотреть все источники</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Отслеживайте VO₂ Max с CardioAnalytics</h2>
+      <p>Контролируйте свою кардиореспираторную выносливость и отслеживайте улучшения с течением времени.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Загрузить в App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Главная</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/">Afrikaans</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/">العربية</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/">Български</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/">বাংলা</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/">Čeština</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/">Ελληνικά</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/">Eesti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/">فارسی</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/">Suomi</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/">Hausa</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/">עברית</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/">हिन्दी</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/">Hrvatski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/">Magyar</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/">Bahasa Indonesia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/">Íslenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/">Italiano</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/">日本語</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/">한국어</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/">Lietuvių</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/">Bahasa Melayu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/">မြန်မာဘာသာ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/">Latviešu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/">Nederlands</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/no/">Norsk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/">Русский</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/">Slovenčina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/">Slovenščina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/">Српски</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/">Svenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/">ไทย</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/">Tagalog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/">Українська</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/">Română</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/">Kiswahili</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/">Türkçe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/">اردو</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Все права защищены
+            </p>
+            <ul class="footer-links">
+                <li><a href="/ru/privacy/">Конфиденциальность</a></li>
+                <li><a href="/ru/terms/">Условия</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Этот сайт использует файлы cookie для улучшения вашего опыта.</p>
+            <a href="/ru/privacy/" class="text-sm">Узнать больше</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Отклонить</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Принять</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ha" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Haɗin HealthKit - Nassoshi na Fasaha da Nau&#39;ikan Bayanan | CardioAnalytics</title>
+    <meta name="description" content="Cikakken nassoshi na fasaha don nau&#39;ikan bayanan HealthKit da tsarin daidaitawa na CardioAnalytics. Ku koyi game da HKAnchoredObjectQuery, isar bayanan na bango, da ƙarin.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="haɗin HealthKit, Apple Health API, nau&#39;ikan bayanan lafiya, daidaitawar bango, bayanan zuciya da jijiyoyin jini">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/ha/healthkit/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-11T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/ha/healthkit/">
+    <meta property="og:title" content="Haɗin HealthKit - Nassoshi na Fasaha da Nau&#39;ikan Bayanan | CardioAnalytics">
+    <meta property="og:description" content="Cikakken nassoshi na fasaha don nau&#39;ikan bayanan HealthKit da tsarin daidaitawa na CardioAnalytics. Ku koyi game da HKAnchoredObjectQuery, isar bayanan na bango, da ƙarin.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="ha_NG">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/ha/healthkit/">
+    <meta name="twitter:title" content="Haɗin HealthKit - Nassoshi na Fasaha da Nau&#39;ikan Bayanan | CardioAnalytics">
+    <meta name="twitter:description" content="Cikakken nassoshi na fasaha don nau&#39;ikan bayanan HealthKit da tsarin daidaitawa na CardioAnalytics. Ku koyi game da HKAnchoredObjectQuery, isar bayanan na bango, da ƙarin.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/healthkit/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/healthkit/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/healthkit/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/healthkit/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/healthkit/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/healthkit/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/healthkit/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/healthkit/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/healthkit/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/healthkit/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/healthkit/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/healthkit/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/healthkit/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/healthkit/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/healthkit/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/healthkit/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/healthkit/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/healthkit/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/healthkit/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/healthkit/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/healthkit/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/healthkit/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/healthkit/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/healthkit/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/healthkit/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/healthkit/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/healthkit/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/healthkit/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/healthkit/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/healthkit/">
+    
+    <link rel="alternate" hreflang="no" href="https://cardio.analyticszone.app/no/healthkit/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/healthkit/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/healthkit/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/healthkit/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/healthkit/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/healthkit/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/healthkit/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/healthkit/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/healthkit/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/healthkit/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/healthkit/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/healthkit/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/healthkit/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/healthkit/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/healthkit/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/healthkit/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/healthkit/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Tsallake zuwa abun ciki</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/ha/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ha/"
+                           
+                           aria-current="">
+                            Gida
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            App
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ha/features/"
+                                   
+                                   aria-current="">
+                                    Abubuwan
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Yadda Yake Aiki
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/privacy/"
+                                   
+                                   aria-current="">
+                                    Sirri
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Kimiyya
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ha/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Bugun Zuciya
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Hawan Jini
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/hrv/"
+                                   
+                                   aria-current="">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/spo2/"
+                                   
+                                   aria-current="">
+                                    Iskar Oxygen
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Nauyi da BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG da Atrial Fibrillation
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Saurin Tafiya
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Rashin Daidaito na Tafiya
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Saurin Hawan Matakala
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/healthkit/"
+                                   class="active"
+                                   aria-current="page">
+                                    Haɗin HealthKit
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ha/references/"
+                                   
+                                   aria-current="">
+                                    Nassoshi
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ha/support/"
+                           
+                           aria-current="">
+                            Tallafi
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Zaɓi harshe">
+                    
+                    <option value="af" >
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" >
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" >
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" selected>
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" >
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" >
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" >
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" >
+                        한국어
+                    </option>
+                    
+                    <option value="lt" >
+                        Lietuvių
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="no" >
+                        Norsk
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ru" >
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" >
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Canza menu" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- HealthKit Integration Page -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Haɗin HealthKit</h1>
+    <p class="lead">Cikakken nassoshi na fasaha don nau'ikan bayanan HealthKit na CardioAnalytics da tsarin daidaitawa</p>
+  </div>
+</section>
+<section class="content-section">
+  <div class="container">
+    <h2>Nau'ikan Bayanan HealthKit da Aka Yi Amfani da su</h2>
+    <p>CardioAnalytics yana karanta auna 11 na zuciya da jijiyoyin jini da motsi daga Apple HealthKit ta amfani da masu gano na farko:</p>
+  </div>
+</section>
+<section class="content-section bg-light">
+  <div class="container">
+    <h3>Auna Bugun Zuciya</h3>
+    <ul class="feature-list">
+      <li><code>HKQuantityTypeIdentifier.heartRate</code> - Bugun zuciya na yanzu (kirga/min)</li>
+      <li><code>restingHeartRate</code> - Tushen bugun zuciya na hutawa</li>
+      <li><code>walkingHeartRateAverage</code> - Matsakaicin bugun zuciya yayin tafiya</li>
+    </ul>
+  </div>
+</section>
+<section class="content-section">
+  <div class="container">
+    <h3>Auna Zuciya da Jijiyoyin Jini</h3>
+    <ul class="feature-list">
+      <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Karatun hawan jini mai haɗuwa tare da alaƙa</li>
+      <li><code>heartRateVariabilitySDNN</code> - Bambancin bugun zuciya gabaɗaya (SDNN a cikin milliseconds)</li>
+      <li><code>heartRateVariabilityRMSSD</code> - Sautin vagal na ɗan lokaci (RMSSD a cikin ms, inda akwai)</li>
+      <li><code>oxygenSaturation</code> - SpO₂ a matsayin juzu'i (0.0-1.0, ana nuna azaman kashi)</li>
+    </ul>
+  </div>
+</section>
+<section class="content-section bg-light">
+  <div class="container">
+    <h3>Tsarin Jiki</h3>
+    <ul class="feature-list">
+      <li><code>bodyMass</code> - Nauyi a cikin kg</li>
+      <li><code>height</code> - Tsawo a cikin meters (ana amfani da shi don ƙididdige BMI)</li>
+    </ul>
+  </div>
+</section>
+<section class="content-section">
+  <div class="container">
+    <h3>ECG da Fibrillation na Atrial</h3>
+    <ul class="feature-list">
+      <li><code>electrocardiogramType</code> - Rikodin ECG tare da <code>HKElectrocardiogram.Classification</code> gami da <code>.atrialFibrillation</code></li>
+      <li><code>atrialFibrillationBurden</code> - Kashi na nauyin AF (inda akwai, watchOS 9+)</li>
+    </ul>
+  </div>
+</section>
+<section class="content-section bg-light">
+  <div class="container">
+    <h3>Auna Dacewa da Motsi</h3>
+    <ul class="feature-list">
+      <li><code>vo2Max</code> - Matsakaicin shan iskar oxygen (mL/kg/min)</li>
+      <li><code>walkingSpeed</code> - Matsakaicin gudun tafiya tsayin gudu (m/s)</li>
+      <li><code>walkingAsymmetryPercentage</code> - Kashi na rashin daidaiton tafiya</li>
+      <li><code>stairAscentSpeed</code> - Gudun hawan matakala (m/s)</li>
+    </ul>
+  </div>
+</section>
+<section class="content-section">
+  <div class="container">
+    <h2>Tsarin Daidaitawar Bango</h2>
+    <h3>Tambayoyin Abubuwan da Aka Ƙulla</h3>
+    <p><code>HKAnchoredObjectQuery</code> yana ba da damar daidaitawar bambance-bambance, yana ɗaukar kawai sabon bayanan ko bayanan da aka canza tun daga daidaitawa ta ƙarshe.</p>
+    <ul class="feature-list">
+      <li><strong>Ingantacciyar amfani da baturi</strong> - Yana ɗaukar bayanan da suka canja kawai, ba duk saitin bayanan ba</li>
+      <li><strong>Ƙulla mai dorewa</strong> - Yana ajiye wurin daidaitawa na ƙarshe don ci gaba bayan aikace-aikacen ya sake farawa</li>
+      <li><strong>Yana sarrafa sharewa</strong> - Yana karɓar samfurori da aka share don daidaitawa mai daidaito</li>
+    </ul>
+    <h3 class="mt-8">Isar Bayanan na Bango</h3>
+    <p><code>HKHealthStore.enableBackgroundDelivery</code> yana barin HealthKit ya tashe aikace-aikacen ta atomatik lokacin da sabon bayanan ya samu.</p>
+    <ul class="feature-list">
+      <li><strong>Sabuntawa nan take</strong> - Sabon bayanan zuciya da jijiyoyin jini ba tare da sake sabuntawa da hannu ba</li>
+      <li><strong>Mai inganci ga baturi</strong> - Tashe wanda tsarin ke sarrafa yana rage amfani da wuta</li>
+      <li><strong>Isar da aminci</strong> - Yana aiki ko da lokacin da aka rufe aikace-aikacen</li>
+    </ul>
+  </div>
+</section>
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Ikon Rubuta-Baya</h2>
+    <p>Bayanan da mai amfani ya shigar (nauyi, hawan jini) ana iya rubuta su baya zuwa HealthKit don daidaito a cikin duk aikace-aikacen lafiya da na'urori.</p>
+    <ul class="feature-list">
+      <li><strong>Rikodin lafiya mai haɗuwa</strong> - Bayanan da aka shigar a cikin CardioAnalytics suna bayyana a cikin Apple Health</li>
+      <li><strong>Ganin likitoci</strong> - Likitoci da ke amfani da tsarin da ke haɗe da HealthKit suna ganin rikodin daidai</li>
+      <li><strong>Dacewa da aikace-aikacen guda</strong> - Sauran aikace-aikacen lafiya na iya samun damar shigarwar CardioAnalytics ɗin ku</li>
+      <li><strong>Bayyana na'ura</strong> - HealthKit yana bin diddigar aikace-aikacen/na'urar da ta yin rikodin kowane samfurin</li>
+    </ul>
+  </div>
+</section>
+<section class="content-section">
+  <div class="container">
+    <h2>Sirri da Izini Dalla-dalla</h2>
+    <p>Izini na HealthKit yana dalla-dalla - masu amfani suna yarda ko sun ƙi kowane nau'in bayanan daban. CardioAnalytics yana girmama duk yankewa na izini:</p>
+    <ul class="feature-list">
+      <li><strong>Izini na karanta/rubuta dalla-dalla</strong> - Mai amfani yana zaɓar auna da za a raba</li>
+      <li><strong>Babu damar nau'o'i marasa izini</strong> - HealthKit yana tilasta iyakokin izini</li>
+      <li><strong>Ana iya sokewa kowane lokaci</strong> - Masu amfani na iya canza izini a cikin Saitunan iOS → Sirri → Lafiya</li>
+      <li><strong>Babu isar sabar</strong> - Izini na HealthKit ba ya ba da damar sabar samun bayanan</li>
+    </ul>
+    <p><a href="/ha/privacy/" class="btn btn-secondary mt-6">Ku Karanta Cikakken Manufar Sirri</a></p>
+  </div>
+</section>
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Ku Ji Haɗin HealthKit Mai Sauƙi</h2>
+      <p>Ku zazzage CardioAnalytics kuma ku haɗu da Apple HealthKit don bin diddigar zuciya da jijiyoyin jini ta atomatik.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Zazzage akan App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Gida</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/">Afrikaans</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/">العربية</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/">Български</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/">বাংলা</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/">Čeština</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/">Ελληνικά</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/">Eesti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/">فارسی</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/">Suomi</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/">Hausa</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/">עברית</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/">हिन्दी</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/">Hrvatski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/">Magyar</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/">Bahasa Indonesia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/">Íslenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/">Italiano</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/">日本語</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/">한국어</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/">Lietuvių</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/">Bahasa Melayu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/">မြန်မာဘာသာ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/">Latviešu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/">Nederlands</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/no/">Norsk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/">Русский</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/">Slovenčina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/">Slovenščina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/">Српски</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/">Svenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/">ไทย</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/">Tagalog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/">Українська</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/">Română</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/">Kiswahili</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/">Türkçe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/">اردو</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Dukkan haƙƙoƙi an kiyaye su
+            </p>
+            <ul class="footer-links">
+                <li><a href="/ha/privacy/">Sirri</a></li>
+                <li><a href="/ha/terms/">Sharuɗɗa</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Wannan gidan yanar gizon yana amfani da kukis don inganta gogewar ku.</p>
+            <a href="/ha/privacy/" class="text-sm">Koyi ƙari</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Ƙi</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Yarda</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

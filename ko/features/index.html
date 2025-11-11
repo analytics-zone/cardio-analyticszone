@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>CardioAnalytics 기능 - 개인화된 대시보드, 약물 모니터링 및 경고</title>
+    <meta name="description" content="개인화된 대시보드, 약물 순응도, 근거 기반 경고, 증상 기록 및 공유 가능한 보고서로 11가지 심혈관 지표를 추적하세요. 모든 데이터는 기기에 유지됩니다.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="심장 건강 대시보드, 약물 모니터링, 심혈관 경고, 증상 기록, 심장 건강 보고서, 혈압 모니터링, HRV 모니터링">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/ko/features/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-11T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/ko/features/">
+    <meta property="og:title" content="CardioAnalytics 기능 - 개인화된 대시보드, 약물 모니터링 및 경고">
+    <meta property="og:description" content="개인화된 대시보드, 약물 순응도, 근거 기반 경고, 증상 기록 및 공유 가능한 보고서로 11가지 심혈관 지표를 추적하세요. 모든 데이터는 기기에 유지됩니다.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/ko/features/">
+    <meta name="twitter:title" content="CardioAnalytics 기능 - 개인화된 대시보드, 약물 모니터링 및 경고">
+    <meta name="twitter:description" content="개인화된 대시보드, 약물 순응도, 근거 기반 경고, 증상 기록 및 공유 가능한 보고서로 11가지 심혈관 지표를 추적하세요. 모든 데이터는 기기에 유지됩니다.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/features/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/features/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/features/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/features/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/features/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/features/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/features/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/features/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/features/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/features/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/features/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/features/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/features/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/features/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/features/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/features/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/features/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/features/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/features/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/features/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/features/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/features/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/features/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/features/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/features/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/features/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/features/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/features/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/features/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/features/">
+    
+    <link rel="alternate" hreflang="no" href="https://cardio.analyticszone.app/no/features/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/features/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/features/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/features/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/features/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/features/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/features/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/features/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/features/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/features/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/features/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/features/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/features/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/features/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/features/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/features/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/features/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">콘텐츠로 건너뛰기</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/ko/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ko/"
+                           
+                           aria-current="">
+                            홈
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            앱
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ko/features/"
+                                   class="active"
+                                   aria-current="page">
+                                    기능
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/how-it-works/"
+                                   
+                                   aria-current="">
+                                    작동 방식
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/privacy/"
+                                   
+                                   aria-current="">
+                                    개인정보 보호
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            과학
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/ko/heart-rate/"
+                                   
+                                   aria-current="">
+                                    심박수
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    혈압
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/hrv/"
+                                   
+                                   aria-current="">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/spo2/"
+                                   
+                                   aria-current="">
+                                    산소포화도
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    체중 및 BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    ECG 및 심방세동
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/walking-speed/"
+                                   
+                                   aria-current="">
+                                    보행 속도
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    보행 비대칭
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/stair-speed/"
+                                   
+                                   aria-current="">
+                                    계단 오르기 속도
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/healthkit/"
+                                   
+                                   aria-current="">
+                                    HealthKit 통합
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/ko/references/"
+                                   
+                                   aria-current="">
+                                    참고문헌
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/ko/support/"
+                           
+                           aria-current="">
+                            지원
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="언어 선택">
+                    
+                    <option value="af" >
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" >
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" >
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" >
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" >
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" >
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" >
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" selected>
+                        한국어
+                    </option>
+                    
+                    <option value="lt" >
+                        Lietuvių
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="no" >
+                        Norsk
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ru" >
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" >
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="메뉴 전환" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- CardioAnalytics Features Page -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>CardioAnalytics 기능</h1>
+    <p class="lead">개인화된 대시보드, 약물 순응도, 근거 기반 경고 및 설계부터 개인정보 보호를 갖춘 완전한 심혈관 건강 추적</p>
+  </div>
+</section>
+
+<!-- Personalized Dashboard -->
+<section class="feature-section">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>개인화된 대시보드</h2>
+        <p>하나의 통합 뷰에서 11가지 심혈관 및 이동성 지표를 모두 추적하세요. 추세를 확인하고, 가이드라인 범위와 비교하고, 변화를 한눈에 모니터링하세요.</p>
+        <ul class="feature-list">
+          <li><strong>안정 시 및 보행 시 심박수</strong> - 정상 범위 지표(60-100 bpm)로 심혈관 상태 모니터링</li>
+          <li><strong>혈압 추적</strong> - AHA 범주 대역(정상 &lt;120/80, 상승, 1단계, 2단계)</li>
+          <li><strong>심박변이도(HRV)</strong> - 스트레스 및 건강 평가를 위한 SDNN 및 RMSSD 지표</li>
+          <li><strong>산소포화도(SpO₂)</strong> - 저산소혈증 경고(&lt;90%)로 호흡기 건강 추적</li>
+          <li><strong>체중 및 BMI</strong> - 건강한 범위 지표(18.5-24.9 kg/m²)로 체성분 모니터링</li>
+          <li><strong>ECG 분류</strong> - Apple Watch ECG 기록 및 심방세동 에피소드 추적 저장</li>
+          <li><strong>VO₂ Max</strong> - 심폐 체력 추세 및 사망률 위험 지표</li>
+          <li><strong>보행 속도</strong> - 기능적 능력을 위한 "여섯 번째 활력 징후"(&lt;0.8 m/s 위험 임계값)</li>
+          <li><strong>보행 비대칭</strong> - 보행 균형 및 낙상 위험 평가</li>
+          <li><strong>계단 오르기 속도</strong> - 기능적 능력 및 다리 근력 지표</li>
+        </ul>
+        <p><strong>개인화된 임계값:</strong> 담당 의사의 권장 사항에 따라 가이드라인 범위를 조정하세요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Medication Adherence & Correlations -->
+<section class="feature-section bg-light">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>약물 순응도 및 상관관계</h2>
+        <p>약물 복용량을 추적하고 심혈관 지표와의 관계를 시각화하세요.</p>
+        <ul class="feature-list">
+          <li><strong>수동 복용량 기록</strong> - 타임스탬프와 함께 약물 복용 기록</li>
+          <li><strong>HealthKit 약물 동기화</strong> - Apple Health에서 약물 기록 자동 가져오기</li>
+          <li><strong>순응도 계산</strong> - 처방된 약물을 얼마나 일관되게 복용하는지 추적</li>
+          <li><strong>상관관계 시각화</strong> - 약물이 혈압, 심박수, HRV 및 체중에 미치는 영향 확인</li>
+          <li><strong>추세 분석</strong> - 약물 순응도와 건강 결과 간의 패턴 식별</li>
+        </ul>
+        <p class="note">📋 치료 계획을 최적화하기 위해 담당 의사와 약물 순응도 보고서를 공유하세요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Evidence-Based Alerts -->
+<section class="feature-section">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>근거 기반 경고</h2>
+        <p>존경받는 임상 가이드라인 및 동료 검토 연구를 기반으로 한 지능형 경고.</p>
+        <ul class="feature-list">
+          <li><strong>AHA 혈압 범주</strong> - 상승(120-129/&lt;80), 1단계(130-139 또는 80-89), 2단계(≥140 또는 ≥90)에 대한 경고</li>
+          <li><strong>Mayo Clinic 심박수 임계값</strong> - 서맥(&lt;60 bpm) 및 빈맥(&gt;100 bpm) 감지</li>
+          <li><strong>SpO₂ 저산소혈증 경고</strong> - 지속적인 값 &lt;90%에 대한 경고(Mayo Clinic 가이드라인)</li>
+          <li><strong>Cleveland Clinic HRV 연구</strong> - 기준선에 비해 낮은 HRV 경고</li>
+          <li><strong>맞춤형 임계값</strong> - 담당 의사의 권장 사항에 따라 모든 경고 임계값 조정</li>
+        </ul>
+        <p class="disclaimer">⚠️ <strong>의료기기가 아닙니다:</strong> CardioAnalytics는 질환을 진단하거나 치료하지 않습니다. 항상 자격을 갖춘 임상의와 상담하세요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Symptom & Care Hub -->
+<section class="feature-section bg-light">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>증상 및 관리 허브</h2>
+        <p>지표를 넘어선 포괄적인 건강 추적. 증상을 기록하고, 관리 목표를 추적하고, 진료 예약을 관리하세요.</p>
+        <ul class="feature-list">
+          <li><strong>증상 기록</strong> - 심각도 등급 및 타임스탬프와 함께 증상 기록</li>
+          <li><strong>관리 목표 추적</strong> - 건강 목표 설정 및 모니터링(예: "혈압을 &lt;130/80으로 낮추기")</li>
+          <li><strong>진료 예약 관리자</strong> - 의사 방문 및 후속 조치 추적</li>
+          <li><strong>전문 내보내기</strong> - 담당 의사를 위한 PDF 또는 CSV 보고서 생성</li>
+          <li><strong>완전한 건강 기록</strong> - 하나의 문서에 모든 지표, 약물, 증상 및 목표</li>
+        </ul>
+        <p>📄 더 나은 정보를 바탕으로 한 임상 결정을 위해 의료팀과 공유할 전문 보고서를 내보내세요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Privacy by Design -->
+<section class="feature-section">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>설계부터 개인정보 보호</h2>
+        <p>귀하의 심혈관 데이터는 기기에 유지됩니다. 무엇을 누구와 공유할지 제어합니다.</p>
+        <ul class="feature-list">
+          <li><strong>세분화된 HealthKit 권한 부여</strong> - 공유할 데이터 유형을 정확히 선택</li>
+          <li><strong>100% 로컬 저장</strong> - 모든 데이터가 iPhone에서 처리되고 저장됨</li>
+          <li><strong>클라우드 서버 없음</strong> - 외부 데이터 전송 없음, 계정 필요 없음</li>
+          <li><strong>추적 또는 분석 없음</strong> - 사용 데이터나 개인 정보를 수집하지 않음</li>
+          <li><strong>공유 항목은 사용자가 결정</strong> - 선택한 경우에만 보고서 내보내기</li>
+        </ul>
+        <p>🔒 <strong>개인정보 우선 아키텍처:</strong> CardioAnalytics는 귀하의 데이터에 액세스할 수 없습니다. 데이터는 귀하의 기기에만 존재합니다.</p>
+        <p><a href="/ko/privacy/" class="btn btn-secondary">전체 개인정보 보호정책 읽기</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How HealthKit Sync Works -->
+<section class="feature-section bg-light">
+  <div class="container">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>HealthKit 동기화 작동 방식</h2>
+        <p>손쉬운 심혈관 모니터링을 위한 Apple Health와의 원활한 통합.</p>
+        <ul class="feature-list">
+          <li><strong>자사 HealthKit 식별자</strong> - 11가지 지표 모두에 대해 공식 Apple 데이터 유형 사용</li>
+          <li><strong>백그라운드 업데이트</strong> - 최신 데이터를 위한 백그라운드 전송이 포함된 HKAnchoredObjectQuery</li>
+          <li><strong>배터리 효율적</strong> - 델타 동기화는 지속적인 폴링으로 인한 배터리 소모 없음을 의미</li>
+          <li><strong>쓰기 지원</strong> - 사용자 입력(체중, BP)을 일관성을 위해 HealthKit에 쓸 수 있음</li>
+          <li><strong>모든 기기와 호환</strong> - Apple Watch, 피트니스 트래커, 수동 입력 및 연결된 기기와 작동</li>
+        </ul>
+        <p><a href="/ko/how-it-works/" class="btn btn-secondary">HealthKit 통합에 대해 자세히 알아보기</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>오늘 심장 건강 여정을 시작하세요</h2>
+      <p>CardioAnalytics를 다운로드하고 심혈관 건강에 대한 완전한 가시성을 확보하세요. 근거 기반 인사이트, 완전한 개인정보 보호, 의사를 위한 전문 보고서.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        App Store에서 다운로드
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">홈</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/">Afrikaans</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/">العربية</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/">Български</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/">বাংলা</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/">Čeština</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/">Ελληνικά</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/">Eesti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/">فارسی</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/">Suomi</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/">Hausa</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/">עברית</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/">हिन्दी</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/">Hrvatski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/">Magyar</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/">Bahasa Indonesia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/">Íslenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/">Italiano</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/">日本語</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/">한국어</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/">Lietuvių</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/">Bahasa Melayu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/">မြန်မာဘာသာ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/">Latviešu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/">Nederlands</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/no/">Norsk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/">Русский</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/">Slovenčina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/">Slovenščina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/">Српски</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/">Svenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/">ไทย</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/">Tagalog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/">Українська</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/">Română</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/">Kiswahili</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/">Türkçe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/">اردو</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. 모든 권리 보유
+            </p>
+            <ul class="footer-links">
+                <li><a href="/ko/privacy/">개인정보 보호</a></li>
+                <li><a href="/ko/terms/">약관</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>이 웹사이트는 귀하의 경험을 개선하기 위해 쿠키를 사용합니다.</p>
+            <a href="/ko/privacy/" class="text-sm">자세히 알아보기</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">거부</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">수락</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

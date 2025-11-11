@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="af" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>HealthKit Integrasie - Agtergrond Sinkronisering &amp; Data Tipes | CardioAnalytics</title>
+    <meta name="description" content="Omvattende gids vir CardioAnalytics HealthKit integrasie. 11 data tipes, geanker navrae, agtergrond aflewering, terugskryf vermoëns.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="HealthKit integrasie, Apple Health sinkronisering, agtergrond aflewering, gesondheidsdata tipes, HKAnchoredObjectQuery">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/af/healthkit/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-11T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/af/healthkit/">
+    <meta property="og:title" content="HealthKit Integrasie - Agtergrond Sinkronisering &amp; Data Tipes | CardioAnalytics">
+    <meta property="og:description" content="Omvattende gids vir CardioAnalytics HealthKit integrasie. 11 data tipes, geanker navrae, agtergrond aflewering, terugskryf vermoëns.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="af_ZA">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/af/healthkit/">
+    <meta name="twitter:title" content="HealthKit Integrasie - Agtergrond Sinkronisering &amp; Data Tipes | CardioAnalytics">
+    <meta name="twitter:description" content="Omvattende gids vir CardioAnalytics HealthKit integrasie. 11 data tipes, geanker navrae, agtergrond aflewering, terugskryf vermoëns.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/healthkit/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/healthkit/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/healthkit/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/healthkit/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/healthkit/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/healthkit/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/healthkit/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/healthkit/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/healthkit/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/healthkit/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/healthkit/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/healthkit/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/healthkit/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/healthkit/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/healthkit/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/healthkit/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/healthkit/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/healthkit/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/healthkit/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/healthkit/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/healthkit/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/healthkit/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/healthkit/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/healthkit/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/healthkit/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/healthkit/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/healthkit/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/healthkit/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/healthkit/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/healthkit/">
+    
+    <link rel="alternate" hreflang="no" href="https://cardio.analyticszone.app/no/healthkit/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/healthkit/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/healthkit/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/healthkit/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/healthkit/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/healthkit/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/healthkit/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/healthkit/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/healthkit/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/healthkit/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/healthkit/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/healthkit/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/healthkit/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/healthkit/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/healthkit/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/healthkit/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/healthkit/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Spring na inhoud</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/af/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/af/"
+                           
+                           aria-current="">
+                            Tuis
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Toep
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/af/features/"
+                                   
+                                   aria-current="">
+                                    Kenmerke
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Hoe Dit Werk
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/privacy/"
+                                   
+                                   aria-current="">
+                                    Privaatheid
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Wetenskap
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/af/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Hartklop
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Bloeddruk
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/hrv/"
+                                   
+                                   aria-current="">
+                                    HKV (HRV)
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/spo2/"
+                                   
+                                   aria-current="">
+                                    Suurstofversadiging
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Gewig &amp; BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    EKG &amp; Atriaal Fibrillasie
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Loopspoed
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Loopasimmetrie
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Trapspoed
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/healthkit/"
+                                   class="active"
+                                   aria-current="page">
+                                    HealthKit Integrasie
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/af/references/"
+                                   
+                                   aria-current="">
+                                    Verwysings
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/af/support/"
+                           
+                           aria-current="">
+                            Ondersteuning
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Kies taal">
+                    
+                    <option value="af" selected>
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" >
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" >
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" >
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" >
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" >
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" >
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" >
+                        한국어
+                    </option>
+                    
+                    <option value="lt" >
+                        Lietuvių
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="no" >
+                        Norsk
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ru" >
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" >
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Wissel kieslys" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- HealthKit Integration Page -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>HealthKit Integrasie</h1>
+    <p class="lead">Volledige tegniese verwysing vir CardioAnalytics HealthKit datatipes en sinkroniserings patrone</p>
+  </div>
+</section>
+
+<!-- Overview -->
+<section class="content-section">
+  <div class="container">
+    <h2>HealthKit Data Tipes Gebruik</h2>
+    <p>CardioAnalytics lees 11 kardiovaskulêre en mobiliteitsmetings van Apple HealthKit deur eersteparty identifiseerders te gebruik:</p>
+  </div>
+</section>
+
+<!-- Heart Rate Metrics -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h3>Hartklop Metings</h3>
+    <ul class="feature-list">
+      <li><code>HKQuantityTypeIdentifier.heartRate</code> - Huidige hartklop (slae/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>restingHeartRate</code> - Rustende hartklop basislyn (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>walkingHeartRateAverage</code> - Gemiddelde hartklop tydens loop</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Cardiovascular Metrics -->
+<section class="content-section">
+  <div class="container">
+    <h3>Kardiovaskulêre Metings</h3>
+    <ul class="feature-list">
+      <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Gepaarde bloeddruk lesings met korrelasie (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>heartRateVariabilitySDNN</code> - Algehele HRV variasie (SDNN in millisekondes)</li>
+      <li><code>heartRateVariabilityRMSSD</code> - Korttermyn vagale toon (RMSSD in ms, waar beskikbaar)</li>
+      <li><code>oxygenSaturation</code> - SpO₂ as breukdeel (0.0-1.0, vertoon as %) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Body Composition -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h3>Liggaamssamestelling</h3>
+    <ul class="feature-list">
+      <li><code>bodyMass</code> - Gewig in kg</li>
+      <li><code>height</code> - Hoogte in meters (gebruik om BMI te bereken)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ECG & AF -->
+<section class="content-section">
+  <div class="container">
+    <h3>EKG & Atriaal Fibrillasie</h3>
+    <ul class="feature-list">
+      <li><code>electrocardiogramType</code> - EKG opnames met <code>HKElectrocardiogram.Classification</code> insluitend <code>.atrialFibrillation</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>atrialFibrillationBurden</code> - AF las persentasie (waar beskikbaar, watchOS 9+) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Fitness & Mobility -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h3>Fiksheid & Mobiliteitsmetings</h3>
+    <ul class="feature-list">
+      <li><code>vo2Max</code> - Maksimale suurstofopname (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>walkingSpeed</code> - Gemiddelde bestendige loopspoed (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>walkingAsymmetryPercentage</code> - Loopgang-wanbalans persentasie (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingasymmetrypercentage" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>stairAscentSpeed</code> - Trapklimspoed (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/stairascentspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Background Sync Patterns -->
+<section class="content-section">
+  <div class="container">
+    <h2>Agtergrond Sinkroniserings Patrone</h2>
+
+    <h3>Veranker Objek Navrae</h3>
+    <p><code>HKAnchoredObjectQuery</code> stel delta sinkronisering in staat, haal slegs nuwe of gewysigde data sedert die laaste sinkronisering (<a href="https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery" target="_blank" rel="noopener">Apple Docs</a>).</p>
+
+    <ul class="feature-list">
+      <li><strong>Doeltreffende battery gebruik</strong> - Haal slegs gewysigde data, nie hele datastelle nie</li>
+      <li><strong>Volhoudende anker</strong> - Stoor laaste sinkroniseringspunt om na toepassing herbegin voort te gaan</li>
+      <li><strong>Hanteer verwyderings</strong> - Ontvang verwyderde monsters vir akkurate sinkronisering</li>
+    </ul>
+
+    <h3 class="mt-8">Agtergrond Lewering</h3>
+    <p><code>HKHealthStore.enableBackgroundDelivery</code> laat HealthKit toe om outomaties die toepassing wakker te maak wanneer nuwe data beskikbaar word (<a href="https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery%28for%3Afrequency%3AwithCompletion%3A%29" target="_blank" rel="noopener">Apple Docs</a>).</p>
+
+    <ul class="feature-list">
+      <li><strong>Onmiddellike opdaterings</strong> - Vars kardiovaskulêre data sonder handmatige verfris</li>
+      <li><strong>Battery doeltreffend</strong> - Stelselbestuurde wakker-maak minimaliseer kragverbruik</li>
+      <li><strong>Betroubare lewering</strong> - Werk selfs wanneer toepassing gesluit is</li>
+    </ul>
+
+    <p class="note">📱 <strong>Vereiste geregtigheid:</strong> <code>com.apple.developer.healthkit.background-delivery</code> (<a href="https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.healthkit.background-delivery" target="_blank" rel="noopener">Docs</a>)</p>
+  </div>
+</section>
+
+<!-- Write-Back -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Terugskryf Vermoëns</h2>
+    <p>Gebruiker-ingevoerde data (gewig, bloeddruk) kan teruggeschryf word na HealthKit vir konsekwentheid oor alle gesondheidstoepassing en toestelle.</p>
+
+    <ul class="feature-list">
+      <li><strong>Eenvormige gesondheidsrekord</strong> - Data ingevoer in CardioAnalytics verskyn in Apple Health</li>
+      <li><strong>Klinikus sigbaarheid</strong> - Dokters wat HealthKit-gekoppelde stelsels gebruik, sien konsekwente rekords</li>
+      <li><strong>Kruis-toepassing verenigbaarheid</strong> - Ander gesondheidstoepassing kan jou CardioAnalytics inskrywings toegang</li>
+      <li><strong>Toestel-toeskrywing</strong> - HealthKit volg watter toepassing/toestel elke monster aangeteken het</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Privacy & Permissions -->
+<section class="content-section">
+  <div class="container">
+    <h2>Privaatheid & Granulêre Toestemmings</h2>
+    <p>HealthKit magtiging is granulêr - gebruikers keur of weier elke datatipe individueel goed. CardioAnalytics respekteer alle toestemmingsbesluite:</p>
+
+    <ul class="feature-list">
+      <li><strong>Granulêre lees/skryf toestemmings</strong> - Gebruiker kies watter metings om te deel</li>
+      <li><strong>Geen toegang tot ongemagtigde tipes nie</strong> - HealthKit dwing toestemmingsgrense af</li>
+      <li><strong>Herroepbaar enige tyd</strong> - Gebruikers kan toestemmings verander in iOS Instellings → Privaatheid → Gesondheid</li>
+      <li><strong>Geen bediener-oordrag nie</strong> - Alle data bly op-toestel; HealthKit magtiging verleen nie bediener-toegang nie</li>
+    </ul>
+
+    <p><a href="/af/privacy/" class="btn btn-secondary mt-6">Lees Volledige Privaatheidsbeleid</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Ervaar Naatlose HealthKit Integrasie</h2>
+      <p>Laai CardioAnalytics af en koppel met Apple HealthKit vir outomatiese kardiovaskulêre monitoring.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Laai Af op App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Tuis</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/">Afrikaans</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/">العربية</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/">Български</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/">বাংলা</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/">Čeština</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/">Ελληνικά</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/">Eesti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/">فارسی</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/">Suomi</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/">Hausa</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/">עברית</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/">हिन्दी</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/">Hrvatski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/">Magyar</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/">Bahasa Indonesia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/">Íslenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/">Italiano</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/">日本語</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/">한국어</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/">Lietuvių</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/">Bahasa Melayu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/">မြန်မာဘာသာ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/">Latviešu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/">Nederlands</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/no/">Norsk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/">Русский</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/">Slovenčina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/">Slovenščina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/">Српски</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/">Svenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/">ไทย</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/">Tagalog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/">Українська</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/">Română</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/">Kiswahili</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/">Türkçe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/">اردو</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Alle regte voorbehou
+            </p>
+            <ul class="footer-links">
+                <li><a href="/af/privacy/">Privaatheid</a></li>
+                <li><a href="/af/terms/">Terme</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Hierdie webwerf gebruik koekies om jou ervaring te verbeter.</p>
+            <a href="/af/privacy/" class="text-sm">Leer meer</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Weier</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Aanvaar</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

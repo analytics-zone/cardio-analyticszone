@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Sledování Saturace Kyslíkem (SpO₂) - Detekce Hypoxemie | CardioAnalytics</title>
+    <meta name="description" content="Sledujte úrovně saturace kyslíkem z Apple Watch. Normální rozmezí 95-100%, upozornění na hodnoty &lt;90% (hypoxemie). Monitorujte respirační a kardiovaskulární zdraví.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="saturace kyslíkem, sledování SpO2, hypoxemie, pulzní oxymetrie, respirační zdraví, kyslík Apple Watch">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/cs/spo2/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-11T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cardio.analyticszone.app/cs/spo2/">
+    <meta property="og:title" content="Sledování Saturace Kyslíkem (SpO₂) - Detekce Hypoxemie | CardioAnalytics">
+    <meta property="og:description" content="Sledujte úrovně saturace kyslíkem z Apple Watch. Normální rozmezí 95-100%, upozornění na hodnoty &lt;90% (hypoxemie). Monitorujte respirační a kardiovaskulární zdraví.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/cs/spo2/">
+    <meta name="twitter:title" content="Sledování Saturace Kyslíkem (SpO₂) - Detekce Hypoxemie | CardioAnalytics">
+    <meta name="twitter:description" content="Sledujte úrovně saturace kyslíkem z Apple Watch. Normální rozmezí 95-100%, upozornění na hodnoty &lt;90% (hypoxemie). Monitorujte respirační a kardiovaskulární zdraví.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/spo2/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/spo2/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/spo2/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/spo2/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/spo2/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/spo2/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/spo2/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/spo2/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/spo2/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/spo2/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/spo2/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/spo2/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/spo2/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/spo2/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/spo2/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/spo2/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/spo2/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/spo2/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/spo2/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/spo2/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/spo2/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/spo2/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/spo2/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/spo2/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/spo2/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/spo2/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/spo2/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/spo2/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/spo2/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/spo2/">
+    
+    <link rel="alternate" hreflang="no" href="https://cardio.analyticszone.app/no/spo2/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/spo2/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/spo2/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/spo2/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/spo2/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/spo2/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/spo2/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/spo2/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/spo2/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/spo2/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/spo2/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/spo2/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/spo2/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/spo2/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/spo2/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/spo2/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/spo2/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Sledování Saturace Kyslíkem (SpO₂) - Detekce Hypoxemie | CardioAnalytics",
+      "description": "Sledujte úrovně saturace kyslíkem z Apple Watch. Normální rozmezí 95-100%, upozornění na hodnoty &lt;90% (hypoxemie). Monitorujte respirační a kardiovaskulární zdraví.",
+      "url": "https://cardio.analyticszone.app/cs/spo2/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      }
+    }
+    </script>
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Přejít k obsahu</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/cs/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/cs/"
+                           
+                           aria-current="">
+                            Domů
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Aplikace
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/cs/features/"
+                                   
+                                   aria-current="">
+                                    Funkce
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Jak to funguje
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/privacy/"
+                                   
+                                   aria-current="">
+                                    Soukromí
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Věda
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/cs/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Srdeční frekvence
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Krevní tlak
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/hrv/"
+                                   
+                                   aria-current="">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/spo2/"
+                                   class="active"
+                                   aria-current="page">
+                                    Saturace kyslíkem
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Hmotnost a BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    EKG a fibrilace síní
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Rychlost chůze
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Asymetrie chůze
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Rychlost chůze po schodech
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/healthkit/"
+                                   
+                                   aria-current="">
+                                    Integrace HealthKit
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/cs/references/"
+                                   
+                                   aria-current="">
+                                    Reference
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/cs/support/"
+                           
+                           aria-current="">
+                            Podpora
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Vyberte jazyk">
+                    
+                    <option value="af" >
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" >
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" selected>
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" >
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" >
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" >
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" >
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" >
+                        한국어
+                    </option>
+                    
+                    <option value="lt" >
+                        Lietuvių
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="no" >
+                        Norsk
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ru" >
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" >
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Přepnout menu" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- Stránka vědeckých informací o saturaci kyslíkem (SpO₂) -->
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Saturace kyslíkem (SpO₂)</h1>
+    <p class="lead">Monitorujte hladiny kyslíku v krvi pro posouzení respiračního a kardiovaskulárního zdraví</p>
+  </div>
+</section>
+
+<!-- Co to je -->
+<section class="content-section">
+  <div class="container">
+    <h2>Co je saturace kyslíkem?</h2>
+    <p>Saturace kyslíkem (SpO₂) je procento hemoglobinu v krvi, které nese kyslík. Měří se pomocí pulsní oxymetrie (typicky přes Apple Watch nebo vyhrazená zařízení).</p>
+
+    <p>Hodnota 98% SpO₂ znamená, že 98% molekul hemoglobinu je saturováno kyslíkem.</p>
+  </div>
+</section>
+
+<!-- Proč je důležitá -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Proč je saturace kyslíkem důležitá</h2>
+    <p>SpO₂ odráží, jak dobře vaše plíce okysličují krev a jak efektivně je kyslík dodáván do tkání:</p>
+    <ul class="feature-list">
+      <li>Indikuje respirační a kardiovaskulární funkci</li>
+      <li>Může včas detekovat hypoxémii (nízký kyslík v krvi)</li>
+      <li>Důležité pro monitorování chronických plicních onemocnění (CHOPN, astma)</li>
+      <li>Může indikovat spánkovou apnoe při měření během noci</li>
+      <li>Užitečné pro monitorování aklimatizace ve vysoké nadmořské výšce</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Typické rozsahy -->
+<section class="content-section">
+  <div class="container">
+    <h2>Rozsahy saturace kyslíkem</h2>
+
+    <div class="range-card">
+      <h3>Normální rozsah</h3>
+      <p><strong>95-100%</strong> - Normální saturace kyslíkem pro většinu zdravých dospělých</p>
+    </div>
+
+    <div class="range-card mt-6 bg-warning">
+      <h3>Hypoxémie (nízký kyslík)</h3>
+      <p><strong>&lt;90%</strong> - Nízké hladiny kyslíku vyžadující lékařskou péči (<a href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" target="_blank" rel="noopener">Mayo Clinic</a>)</p>
+      <p>Trvalé hodnoty pod 90% indikují hypoxémii a měly by být vyhodnoceny lékařem.</p>
+    </div>
+
+    <div class="range-card mt-6">
+      <h3>Zvláštní případy</h3>
+      <ul class="feature-list">
+        <li><strong>Chronické plicní onemocnění</strong> - Základní SpO₂ může být 88-92% (poraďte se s lékařem o cílový rozsah)</li>
+        <li><strong>Vysoká nadmořská výška</strong> - SpO₂ přirozeně klesá s výškou (např. 90-95% ve výšce 2400-3000 metrů)</li>
+        <li><strong>Během spánku</strong> - Dočasné poklesy na 88-90% mohou být normální; trvalé nízké hodnoty mohou indikovat spánkovou apnoe</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Jak to CardioAnalytics využívá -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Jak CardioAnalytics využívá data SpO₂</h2>
+    <ul class="feature-list">
+      <li><strong>Zobrazuje trendy SpO₂</strong> - Sleduje saturaci kyslíkem v čase (denně, týdně, měsíčně)</li>
+      <li><strong>Upozornění na trvalé nízké hodnoty</strong> - Varování, když hodnoty trvale klesají pod 90%</li>
+      <li><strong>Noční monitorování</strong> - Identifikuje vzory noční desaturace (možná spánková apnoe)</li>
+      <li><strong>Elegantní degradace</strong> - Pokud vaše zařízení nezaznamenává SpO₂, karta je automaticky skryta</li>
+    </ul>
+
+    <p class="note">⚠️ <strong>Ne všechna zařízení podporují SpO₂:</strong> Apple Watch Series 6 a novější podporují měření kyslíku v krvi. Starší modely tato data nebudou mít.</p>
+  </div>
+</section>
+
+<!-- Integrace HealthKit -->
+<section class="content-section">
+  <div class="container">
+    <h2>Datové typy HealthKit</h2>
+    <p>CardioAnalytics čte data SpO₂ z Apple HealthKit pomocí tohoto identifikátoru:</p>
+    <ul class="feature-list">
+      <li><code>oxygenSaturation</code> - Saturace kyslíkem v krvi jako zlomek (0,0-1,0, zobrazeno jako procento) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation" target="_blank" rel="noopener">Apple Docs</a>)</li>
+    </ul>
+
+    <p class="mt-6"><a href="/cs/healthkit/" class="btn btn-secondary">Další informace o integraci HealthKit</a></p>
+  </div>
+</section>
+
+<!-- Tipy pro měření -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Tipy pro přesné měření SpO₂</h2>
+    <ul class="feature-list">
+      <li><strong>Teplé ruce</strong> - Studené prsty mohou ovlivnit přesnost</li>
+      <li><strong>Zůstaňte v klidu</strong> - Pohyb může narušit měření</li>
+      <li><strong>Odstraňte lak na nehty</strong> - Může interferovat se senzory pulsní oxymetrie</li>
+      <li><strong>Správné nasazení hodinek</strong> - Apple Watch by měly být pevně, ale pohodlně na zápěstí</li>
+      <li><strong>Položte paži v klidu</strong> - Umístěte paži na úroveň srdce, uvolněně na stole</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Reference -->
+<section class="content-section">
+  <div class="container">
+    <h2>Vědecké reference</h2>
+    <ol class="references-list">
+      <li>Mayo Clinic. <em>Low blood oxygen (hypoxemia).</em> <a href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" target="_blank" rel="noopener">https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930</a></li>
+    </ol>
+    <p><a href="/cs/references/" class="btn btn-secondary">Zobrazit všechny reference</a></p>
+  </div>
+</section>
+
+<!-- Výzva k akci -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Sledujte svou saturaci kyslíkem s CardioAnalytics</h2>
+      <p>Monitorujte trendy SpO₂ a přijímejte upozornění na trvalé nízké hladiny kyslíku.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Stáhnout na App Store
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Domů</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/">Afrikaans</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/">العربية</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/">Български</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/">বাংলা</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/">Čeština</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/">Ελληνικά</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/">Eesti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/">فارسی</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/">Suomi</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/">Hausa</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/">עברית</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/">हिन्दी</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/">Hrvatski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/">Magyar</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/">Bahasa Indonesia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/">Íslenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/">Italiano</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/">日本語</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/">한국어</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/">Lietuvių</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/">Bahasa Melayu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/">မြန်မာဘာသာ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/">Latviešu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/">Nederlands</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/no/">Norsk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/">Русский</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/">Slovenčina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/">Slovenščina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/">Српски</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/">Svenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/">ไทย</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/">Tagalog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/">Українська</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/">Română</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/">Kiswahili</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/">Türkçe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/">اردو</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Všechna práva vyhrazena
+            </p>
+            <ul class="footer-links">
+                <li><a href="/cs/privacy/">Soukromí</a></li>
+                <li><a href="/cs/terms/">Podmínky</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Tato webová stránka používá soubory cookie ke zlepšení vašeho zážitku.</p>
+            <a href="/cs/privacy/" class="text-sm">Zjistit více</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Odmítnout</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Přijmout</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>

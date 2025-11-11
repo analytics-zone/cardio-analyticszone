@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>CardioAnalytics - 11 szívegészségi mutató követése Apple Health-ből | iOS alkalmazás</title>
+    <meta name="description" content="Átfogó kardiovaszkuláris és mobilitási követő alkalmazás. Kövesse a szívfrekvenciát, vérnyomást, HRV-t, SpO₂-t, EKG-t, VO₂ Max-ot, séta mutatókat és még sok mást. Adatvédelmi szemléletű iOS-alkalmazás HealthKit integrációval.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="kardiovaszkuláris analitika, szívegészség követés, vérnyomás alkalmazás, pulzusszám-variabilitás, VO2 max követő, EKG alkalmazás, pitvarfibrilláció, kardiovaszkuláris egészség, Apple Health, HealthKit">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/hu/">
+
+    
+    
+    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-11T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cardio.analyticszone.app/hu/">
+    <meta property="og:title" content="CardioAnalytics - 11 szívegészségi mutató követése Apple Health-ből | iOS alkalmazás">
+    <meta property="og:description" content="Átfogó kardiovaszkuláris és mobilitási követő alkalmazás. Kövesse a szívfrekvenciát, vérnyomást, HRV-t, SpO₂-t, EKG-t, VO₂ Max-ot, séta mutatókat és még sok mást. Adatvédelmi szemléletű iOS-alkalmazás HealthKit integrációval.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+    <meta property="og:locale" content="hu_HU">
+    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/hu/">
+    <meta name="twitter:title" content="CardioAnalytics - 11 szívegészségi mutató követése Apple Health-ből | iOS alkalmazás">
+    <meta name="twitter:description" content="Átfogó kardiovaszkuláris és mobilitási követő alkalmazás. Kövesse a szívfrekvenciát, vérnyomást, HRV-t, SpO₂-t, EKG-t, VO₂ Max-ot, séta mutatókat és még sok mást. Adatvédelmi szemléletű iOS-alkalmazás HealthKit integrációval.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/">
+    
+    <link rel="alternate" hreflang="no" href="https://cardio.analyticszone.app/no/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+
+    
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    
+    
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CardioAnalytics - Comprehensive Heart Health Tracking | iOS App",
+      "url": "https://cardio.analyticszone.app",
+      "logo": "https://cardio.analyticszone.app/assets/images/logo.png",
+      "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.",
+      "author": "Arno Health",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "info@onmedic.com"
+      }
+    }
+    </script>
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CardioAnalytics",
+      "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Monitor heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max, walking metrics and more. Privacy-first iOS app with HealthKit integration.",
+      "url": "https://cardio.analyticszone.app",
+      "applicationCategory": ["HealthApplication", "MedicalApplication"],
+      "operatingSystem": "iOS",
+      "softwareVersion": "Latest",
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      },
+      "downloadUrl": "https://apps.apple.com/app/cardioanalytics",
+      "featureList": [
+        "11 cardiovascular and mobility metrics tracking",
+        "Heart rate monitoring (resting, walking, current)",
+        "Blood pressure tracking with AHA categories",
+        "Heart rate variability (HRV) analysis",
+        "Oxygen saturation (SpO₂) monitoring",
+        "Weight and BMI tracking",
+        "ECG and atrial fibrillation detection",
+        "VO₂ Max cardio fitness tracking",
+        "Walking speed (sixth vital sign)",
+        "Walking asymmetry and gait analysis",
+        "Stair ascent speed monitoring",
+        "Medication adherence tracking",
+        "Evidence-based health alerts",
+        "Symptom and care hub logging",
+        "HealthKit integration with background sync",
+        "Privacy by design - all data on-device",
+        "Shareable PDF and CSV reports"
+      ]
+    }
+    </script>
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "CardioAnalytics - 11 szívegészségi mutató követése Apple Health-ből | iOS alkalmazás",
+      "description": "Átfogó kardiovaszkuláris és mobilitási követő alkalmazás. Kövesse a szívfrekvenciát, vérnyomást, HRV-t, SpO₂-t, EKG-t, VO₂ Max-ot, séta mutatókat és még sok mást. Adatvédelmi szemléletű iOS-alkalmazás HealthKit integrációval.",
+      "url": "https://cardio.analyticszone.app/hu/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Cardiovascular Health Monitoring"
+      }
+    }
+    </script>
+
+    
+
+    
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Ugrás a tartalomhoz</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/hu/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="40" height="40">
+                </picture>
+                <span class="logo-text">CardioAnalytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        
+                        <a href="/hu/"
+                           
+                           aria-current="">
+                            Kezdőlap
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Alkalmazás
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/hu/features/"
+                                   
+                                   aria-current="">
+                                    Funkciók
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/how-it-works/"
+                                   
+                                   aria-current="">
+                                    Hogyan működik
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/privacy/"
+                                   
+                                   aria-current="">
+                                    Adatvédelem
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                            Tudomány
+                            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="3 4.5 6 7.5 9 4.5"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/hu/heart-rate/"
+                                   
+                                   aria-current="">
+                                    Szívfrekvencia
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/blood-pressure/"
+                                   
+                                   aria-current="">
+                                    Vérnyomás
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/hrv/"
+                                   
+                                   aria-current="">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/spo2/"
+                                   
+                                   aria-current="">
+                                    Oxigénszaturáció
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/weight-bmi/"
+                                   
+                                   aria-current="">
+                                    Testsúly és BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/ecg-afib/"
+                                   
+                                   aria-current="">
+                                    EKG és pitvarfibrilláció
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/vo2max/"
+                                   
+                                   aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/walking-speed/"
+                                   
+                                   aria-current="">
+                                    Sétasebesség
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/walking-asymmetry/"
+                                   
+                                   aria-current="">
+                                    Járási aszimmetria
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/stair-speed/"
+                                   
+                                   aria-current="">
+                                    Lépcsősebesség
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/healthkit/"
+                                   
+                                   aria-current="">
+                                    HealthKit integráció
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/hu/references/"
+                                   
+                                   aria-current="">
+                                    Hivatkozások
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        
+                        <a href="/hu/support/"
+                           
+                           aria-current="">
+                            Támogatás
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input
+                        type="search"
+                        id="site-search"
+                        class="search-input"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Nyelv választása">
+                    
+                    <option value="af" >
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" >
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" >
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" >
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" selected>
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" >
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" >
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" >
+                        한국어
+                    </option>
+                    
+                    <option value="lt" >
+                        Lietuvių
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="no" >
+                        Norsk
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ru" >
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" >
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                </select>
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menü váltása" aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- CardioAnalytics Landing Page -->
+
+<!-- Hero Section -->
+<section class="app-hero">
+  <div class="container">
+    <div class="app-hero-content">
+      <div class="app-hero-text">
+        <div class="app-hero-badge">
+          <span>❤️</span>
+          <span>Átfogó szívegészség-követés</span>
+        </div>
+        <h1>Kövesse nyomon szívegészségét magabiztosan</h1>
+        <p class="app-hero-subtitle">
+          Kövessen nyomon 11 kardiovaszkuláris és mobilitási mutatót az Apple Health-ből. Kövesse a szívfrekvenciát, vérnyomást, HRV-t, SpO₂-t, EKG-t, VO₂ Max-ot és még sok mást.
+          Adatvédelmi szemléletű iOS-alkalmazás teljes eszközön történő adatfeldolgozással.
+        </p>
+        <div class="app-hero-cta">
+          <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+            Letöltés az App Store-ból
+          </a>
+          <a href="/hu/features/" class="btn btn-large btn-secondary">
+            Funkciók felfedezése
+          </a>
+        </div>
+        <p class="mt-6 text-sm-muted disclaimer-note">
+          ⚠️ A CardioAnalytics nem nyújt orvosi diagnózist. Mindig konzultáljon képzett szakorvossal.
+        </p>
+      </div>
+      <div class="app-hero-mockup">
+        <div class="mockup-phone">
+          <!-- Placeholder for app screenshot -->
+          <div class="placeholder-screenshot" style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%); height: 600px; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+            CardioAnalytics Vezérlőpult
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Metrics Overview -->
+<section id="metrics" class="metrics-overview">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">11 átfogó mérés</div>
+      <h2 class="section-title">Teljes kardiovaszkuláris és mobilitási nyomon követés</h2>
+      <p class="section-subtitle">Egyetlen vezérlőpult az összes szív- és mobilitási adathoz az Apple HealthKit-ből</p>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-icon">❤️</div>
+        <h3><a href="/hu/heart-rate/">Szívfrekvencia</a></h3>
+        <p>Kövesse nyomon a nyugalmi, séta közbeni és pillanatnyi pulzusszámot normáltartomány-jelzőkkel (60-100 ütés/perc). Ismerje fel a bradycardiát és tachycardiát.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🩺</div>
+        <h3><a href="/hu/blood-pressure/">Vérnyomás</a></h3>
+        <p>Kövesse a szisztolés és diasztolés értékeket AHA kategorizálással. Figyelje a magas vérnyomás kockázatát és az általános kardiovaszkuláris egészséget.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">📊</div>
+        <h3><a href="/hu/hrv/">Pulzusszám-variabilitás</a></h3>
+        <p>Kövesse az SDNN és RMSSD mutatókat a stresszszint és kardiovaszkuláris egészség értékeléséhez. Az alacsony HRV rosszabb egészségi kimenetelekkel társul.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🫁</div>
+        <h3><a href="/hu/spo2/">Oxigénszaturáció</a></h3>
+        <p>Kövesse az SpO₂ szinteket normáltartomány-jelzőkkel (95-100%). Kapjon értesítéseket hypoxaemiáról és figyelje a légzési és kardiovaszkuláris egészséget.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">⚖️</div>
+        <h3><a href="/hu/weight-bmi/">Testsúly és BMI</a></h3>
+        <p>Kövesse a testsúlyt és BMI-t egészségestartomány-jelzőkkel (18,5-24,9 kg/m²). Figyelje a kardiovaszkuláris kockázati tényezőket az idő múlásával.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">📈</div>
+        <h3><a href="/hu/ecg-afib/">EKG és pitvarfibrilláció</a></h3>
+        <p>Tárolja az FDA által jóváhagyott Apple Watch EKG-felvételeket. Kövesse az AF terhelést és az szabálytalan ritmus értesítéseket 95%-os érzékenységgel és specificitással.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🏃</div>
+        <h3><a href="/hu/vo2max/">VO₂ Max</a></h3>
+        <p>Kövesse kardio-fittségét ezzel az erőteljes mortalitási kockázat előrejelzővel. Figyelje a trendeket az idő múlásával és elemezze az edzészónákat.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🚶</div>
+        <h3><a href="/hu/walking-speed/">Sétasebesség</a></h3>
+        <p>Kövesse a „hatodik vitális jelet" a funkcionális egészséghez. A &lt;0,8 m/s sétasebesség megnövekedett kockázatot jelez. Figyelje funkcionális kapacitását az idő múlásával.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">⚖️</div>
+        <h3><a href="/hu/walking-asymmetry/">Járási aszimmetria</a></h3>
+        <p>Értékelje a járási egyensúlyt és eséskockázatot az Apple Mobility validált mutatóival az átfogó funkcionális egészség nyomon követéséhez.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🪜</div>
+        <h3><a href="/hu/stair-speed/">Lépcsőmászás sebessége</a></h3>
+        <p>Kövesse a funkcionális kapacitást és láberőt a lépcsőmászási mutatókkal. Korai felismerés a jelentős mobilitás-csökkenésekről.</p>
+      </div>
+      <div class="metric-card metric-card-highlight">
+        <div class="metric-icon">🔗</div>
+        <h3><a href="/hu/healthkit/">HealthKit integráció</a></h3>
+        <p>Tapasztalja meg a zökkenőmentes szinkronizálást az Apple Health-szel. Automatikus háttérfrissítések, hatékony adatlekérdezések és visszaírási lehetőségek.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Features Section -->
+<section id="features" class="app-features">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Funkciók</div>
+      <h2 class="section-title">Minden, amire szüksége van a szívegészség követéséhez</h2>
+      <p class="section-subtitle">Professzionális kardiovaszkuláris elemzés betegek megerősítésére tervezve</p>
+    </div>
+    <div class="app-features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-dashboard"></use>
+          </svg>
+        </div>
+        <h3>Személyre szabott vezérlőpult</h3>
+        <p>Mind a 11 mérés egyetlen nézetben. Világos trendek, tartomány-iránymutatások és személyre szabott küszöbök. Kövesse a változásokat egy pillantással.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-pill"></use>
+          </svg>
+        </div>
+        <h3>Gyógyszerbevitel követése</h3>
+        <p>Adagolások bevitele vagy HealthKit gyógyszerek szinkronizálása. Kövesse a betartási arányokat. Jelenítse meg a korrelációkat a vérnyomással, pulzusszámmal, HRV-vel és súllyal.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-alert"></use>
+          </svg>
+        </div>
+        <h3>Bizonyítékokon alapuló értesítések</h3>
+        <p>AHA, Mayo Clinic, Cleveland Clinic irányelvekhez igazított küszöbök. Testreszabás az orvos tanácsai alapján.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-clipboard"></use>
+          </svg>
+        </div>
+        <h3>Tünetek és gondozási központ</h3>
+        <p>Tünetek bevitele súlyossági értékeléssel. Kövesse a gondozási célokat és orvosi találkozókat. Exportáljon professzionális jelentéseket az orvosának.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-shield"></use>
+          </svg>
+        </div>
+        <h3>Adatvédelem a tervezéstől</h3>
+        <p>Részletes HealthKit engedélyezés. Minden adat helyileg tárolva az eszközén. Ön dönti el, mit oszt meg.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-export"></use>
+          </svg>
+        </div>
+        <h3>Megosztható jelentések</h3>
+        <p>Exportáljon professzionális PDF vagy CSV fájlokat szakorvosának. Teljes egészségügyi előzmények egyetlen dokumentumban.</p>
+      </div>
+    </div>
+    <div class="cta-center">
+      <a href="/hu/features/" class="btn btn-large btn-primary">
+        További információ a funkciókról
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Hogyan működik</div>
+      <h2 class="section-title">Zökkenőmentes HealthKit integráció</h2>
+      <p class="section-subtitle">Automatikus szinkronizálás az Apple Health-szel az egyszerű kardiovaszkuláris követéshez</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>HealthKit engedélyezése</h3>
+        <p>Engedélyezze a kardiovaszkuláris mérések olvasását az Apple Health-ből. Részletes kontroll a megosztandó adattípusok felett.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Automatikus háttérszinkronizálás</h3>
+        <p>A CardioAnalytics horgonyzott lekérdezéseket és háttérszállítást használ friss adatokhoz akkumulátor-merülés nélkül.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Trendek követése és értesítések fogadása</h3>
+        <p>Kövesse a trendeket, kapjon bizonyítékokon alapuló értesítéseket, vigyen be gyógyszereket és tüneteket, valamint osszon meg jelentéseket szakorvosával.</p>
+      </div>
+    </div>
+    <div class="cta-center mt-8">
+      <a href="/hu/how-it-works/" class="btn btn-large btn-secondary">
+        További információ a HealthKit szinkronizálásról
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Science-Backed Section -->
+<section class="science-backed">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Tudomány</div>
+      <h2 class="section-title">Bizonyítékokon alapuló kardiovaszkuláris mérések</h2>
+      <p class="section-subtitle">Minden mérés szakmai értékelésű kutatással és klinikai irányelvekkel alátámasztva</p>
+    </div>
+    <div class="science-grid">
+      <div class="science-card">
+        <h4>Klinikai irányelvek</h4>
+        <p>AHA vérnyomás kategóriák, Mayo Clinic HR/SpO₂ tartományok, Cleveland Clinic HRV kutatás.</p>
+      </div>
+      <div class="science-card">
+        <h4>Szakmai értékelésű kutatás</h4>
+        <p>NEJM Apple Heart tanulmány, JACC AF meta-analízis, PLOS ONE VO₂ validálás, JAMA sétasebesség tanulmányok.</p>
+      </div>
+      <div class="science-card">
+        <h4>FDA által jóváhagyott eszközök</h4>
+        <p>Az Apple Watch EKG és szabálytalan ritmus értesítések FDA által jóváhagyottak az AF detektálásához.</p>
+      </div>
+    </div>
+    <div class="cta-center mt-8">
+      <a href="/hu/references/" class="btn btn-large btn-secondary">
+        Összes hivatkozás megtekintése
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Vegye kezébe szívegészségét még ma</h2>
+      <p>Töltse le a CardioAnalytics-ot és kövesse kardiovaszkuláris egészségét átfogó, adatvédelmi szemléletű nyomon követéssel. Összes szívegészségi adata egy helyen.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Letöltés az App Store-ból
+      </a>
+      <p class="disclaimer-note mt-4">
+        ⚠️ A CardioAnalytics nem nyújt orvosi diagnózist vagy kezelést. Mindig konzultáljon képzett szakorvossal orvosi tanácsért.
+      </p>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Kezdőlap</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/">Afrikaans</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/">العربية</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/">Български</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/">বাংলা</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/">Català</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/">Čeština</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/">Dansk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/">Deutsch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/">Ελληνικά</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/">English</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/">Español</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/">Eesti</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/">فارسی</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/">Suomi</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/">Français</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/">Hausa</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/">עברית</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/">हिन्दी</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/">Hrvatski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/">Magyar</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/">Bahasa Indonesia</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/">Íslenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/">Italiano</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/">日本語</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/">한국어</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/">Lietuvių</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/">Bahasa Melayu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/">မြန်မာဘာသာ</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/">Latviešu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/">Nederlands</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/no/">Norsk</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/">Polski</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/">Português</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/">Русский</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/">Slovenčina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/">Slovenščina</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/">Српски</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/">Svenska</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/">ไทย</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/">Tagalog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/">Українська</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/">中文</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/">Română</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/">Kiswahili</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/">Türkçe</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/">اردو</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. Minden jog fenntartva
+            </p>
+            <ul class="footer-links">
+                <li><a href="/hu/privacy/">Adatvédelem</a></li>
+                <li><a href="/hu/terms/">Feltételek</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Ez a weboldal sütiket használ a felhasználói élmény javításához.</p>
+            <a href="/hu/privacy/" class="text-sm">További információ</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Elutasítom</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Elfogadom</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/main.min.js"></script>
+    <script src="/assets/js/cookie-consent.min.js"></script>
+    <script src="/assets/js/lazy-load.min.js"></script>
+
+    
+    <script src="/assets/js/fuse.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+
+    
+    
+</body>
+</html>
