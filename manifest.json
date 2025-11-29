@@ -1,6 +1,6 @@
 {
-  "name": "CardioAnalytics - Comprehensive Heart Health Tracking | iOS App",
-  "short_name": "CardioAnalytics - Comprehensive Heart Health Tracking | iOS App",
+  "name": "Cardio Analytics - Comprehensive Heart Health Tracking | iOS App",
+  "short_name": "Cardio Analytics - Comprehensive Heart Health Tracking | iOS App",
   "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO\u2082, ECG, VO\u2082 Max and more. Privacy-first iOS app.",
   "start_url": "/",
   "display": "standalone",

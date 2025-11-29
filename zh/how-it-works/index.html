@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <title>CardioAnalytics如何运作 - HealthKit同步与后台更新</title>
-    <meta name="description" content="了解CardioAnalytics如何与Apple HealthKit同步实时心血管数据、后台更新和数据回写功能。注重隐私的数据处理。">
+    <title>Cardio Analytics如何运作 - HealthKit同步与后台更新</title>
+    <meta name="description" content="了解Cardio Analytics如何与Apple HealthKit同步实时心血管数据、后台更新和数据回写功能。注重隐私的数据处理。">
     <meta name="author" content="Arno Health">
 
     
@@ -27,19 +27,19 @@
     
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://cardio.analyticszone.app/zh/how-it-works/">
-    <meta property="og:title" content="CardioAnalytics如何运作 - HealthKit同步与后台更新">
-    <meta property="og:description" content="了解CardioAnalytics如何与Apple HealthKit同步实时心血管数据、后台更新和数据回写功能。注重隐私的数据处理。">
+    <meta property="og:title" content="Cardio Analytics如何运作 - HealthKit同步与后台更新">
+    <meta property="og:description" content="了解Cardio Analytics如何与Apple HealthKit同步实时心血管数据、后台更新和数据回写功能。注重隐私的数据处理。">
     
     <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
     
     <meta property="og:locale" content="zh_CN">
-    <meta property="og:site_name" content="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App">
+    <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
 
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cardio.analyticszone.app/zh/how-it-works/">
-    <meta name="twitter:title" content="CardioAnalytics如何运作 - HealthKit同步与后台更新">
-    <meta name="twitter:description" content="了解CardioAnalytics如何与Apple HealthKit同步实时心血管数据、后台更新和数据回写功能。注重隐私的数据处理。">
+    <meta name="twitter:title" content="Cardio Analytics如何运作 - HealthKit同步与后台更新">
+    <meta name="twitter:description" content="了解Cardio Analytics如何与Apple HealthKit同步实时心血管数据、后台更新和数据回写功能。注重隐私的数据处理。">
     
     <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
     
@@ -171,9 +171,9 @@
                     
                     <source srcset="/assets/images/logo-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
                     
-                    <img src="/assets/images/logo.png" alt="CardioAnalytics - Comprehensive Heart Health Tracking | iOS App" width="56" height="56">
+                    <img src="/assets/images/logo.png" alt="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App" width="56" height="56">
                 </picture>
-                <span class="logo-text">CardioAnalytics</span>
+                <span class="logo-text">Cardio Analytics</span>
             </a>
 
             
@@ -580,11 +580,11 @@
 
     
     <main id="main-content" class="main-content">
-        <!-- How CardioAnalytics Works -->
+        <!-- How Cardio Analytics Works -->
 
 <section class="page-hero">
   <div class="container">
-    <h1>CardioAnalytics 工作原理</h1>
+    <h1>Cardio Analytics 工作原理</h1>
     <p class="lead">无缝 HealthKit 集成，自动同步心血管数据，完全保护隐私和控制</p>
   </div>
 </section>
@@ -593,7 +593,7 @@
 <section class="content-section">
   <div class="container">
     <h2>HealthKit 同步概述</h2>
-    <p>CardioAnalytics 与 Apple HealthKit 集成，自动导入和追踪 11 项心血管和活动能力指标。所有数据处理均在您的 iPhone 本地进行，无云上传或外部服务器。</p>
+    <p>Cardio Analytics 与 Apple HealthKit 集成，自动导入和追踪 11 项心血管和活动能力指标。所有数据处理均在您的 iPhone 本地进行，无云上传或外部服务器。</p>
 
     <div class="steps-grid mt-8">
       <div class="step-card">
@@ -604,7 +604,7 @@
       <div class="step-card">
         <div class="step-number">2</div>
         <h3>自动后台同步</h3>
-        <p>CardioAnalytics 使用高效的后台同步自动获取新数据，而不会耗尽您的电池。</p>
+        <p>Cardio Analytics 使用高效的后台同步自动获取新数据，而不会耗尽您的电池。</p>
       </div>
       <div class="step-card">
         <div class="step-number">3</div>
@@ -619,7 +619,7 @@
 <section class="content-section bg-light">
   <div class="container">
     <h2>HealthKit 数据类型</h2>
-    <p>CardioAnalytics 使用官方 Apple HealthKit 标识符来追踪所有心血管和活动能力指标：</p>
+    <p>Cardio Analytics 使用官方 Apple HealthKit 标识符来追踪所有心血管和活动能力指标：</p>
 
     <div class="data-types-grid">
       <div class="data-type-card">
@@ -674,10 +674,10 @@
 <section class="content-section">
   <div class="container">
     <h2>后台同步技术</h2>
-    <p>CardioAnalytics 使用 Apple 推荐的模式进行高效、节省电量的数据同步：</p>
+    <p>Cardio Analytics 使用 Apple 推荐的模式进行高效、节省电量的数据同步：</p>
 
     <h3>锚定对象查询</h3>
-    <p>CardioAnalytics 使用 <code>HKAnchoredObjectQuery</code> 进行高效的增量同步，仅获取自上次同步以来的新数据或修改数据（<a href="https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery" target="_blank" rel="noopener">Apple 文档</a>）。</p>
+    <p>Cardio Analytics 使用 <code>HKAnchoredObjectQuery</code> 进行高效的增量同步，仅获取自上次同步以来的新数据或修改数据（<a href="https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery" target="_blank" rel="noopener">Apple 文档</a>）。</p>
 
     <div class="code-example">
       <pre><code>// 示例：用于高效增量同步的锚定查询
@@ -713,9 +713,9 @@ let query = HKAnchoredObjectQuery(
     <p>用户输入的数据（体重、血压）可回写到 HealthKit，以保持所有健康应用和设备的一致性。</p>
 
     <ul class="feature-list">
-      <li><strong>统一健康记录</strong> - 在 CardioAnalytics 中输入的数据会出现在 Apple Health 中</li>
+      <li><strong>统一健康记录</strong> - 在 Cardio Analytics 中输入的数据会出现在 Apple Health 中</li>
       <li><strong>临床医生可见性</strong> - 使用 HealthKit 连接系统的医生可以看到一致的记录</li>
-      <li><strong>跨应用兼容性</strong> - 其他健康应用可以访问您的 CardioAnalytics 条目</li>
+      <li><strong>跨应用兼容性</strong> - 其他健康应用可以访问您的 Cardio Analytics 条目</li>
     </ul>
   </div>
 </section>
@@ -724,9 +724,9 @@ let query = HKAnchoredObjectQuery(
 <section class="content-section">
   <div class="container">
     <h2>隐私与精细权限</h2>
-    <p>您可精确控制 CardioAnalytics 可访问哪些数据类型。HealthKit 授权是精细的 - 单独批准或拒绝每个指标。</p>
+    <p>您可精确控制 Cardio Analytics 可访问哪些数据类型。HealthKit 授权是精细的 - 单独批准或拒绝每个指标。</p>
 
-    <h3>CardioAnalytics 不会做的事情：</h3>
+    <h3>Cardio Analytics 不会做的事情：</h3>
     <ul class="feature-list">
       <li>❌ 无云上传 - 所有数据保留在您的设备上</li>
       <li>❌ 无外部服务器 - 不向第三方传输数据</li>
@@ -750,7 +750,7 @@ let query = HKAnchoredObjectQuery(
 <section class="content-section bg-light">
   <div class="container">
     <h2>设备兼容性</h2>
-    <p>CardioAnalytics 适用于任何写入 Apple HealthKit 的设备或应用：</p>
+    <p>Cardio Analytics 适用于任何写入 Apple HealthKit 的设备或应用：</p>
 
     <div class="compatibility-grid">
       <div class="compatibility-card">
@@ -779,7 +779,7 @@ let query = HKAnchoredObjectQuery(
       </div>
     </div>
 
-    <p class="note">💡 <strong>缺少指标？</strong> 如果您的设备不记录某些指标（例如，旧手表上的 SpO₂），CardioAnalytics 会自动隐藏这些卡片。</p>
+    <p class="note">💡 <strong>缺少指标？</strong> 如果您的设备不记录某些指标（例如，旧手表上的 SpO₂），Cardio Analytics 会自动隐藏这些卡片。</p>
   </div>
 </section>
 
@@ -788,7 +788,7 @@ let query = HKAnchoredObjectQuery(
   <div class="container">
     <div class="cta-box">
       <h2>体验轻松的健康追踪</h2>
-      <p>下载 CardioAnalytics，让 Apple HealthKit 自动同步您的心血管数据。无需手动输入 - 只需监测、分析并与您的医生分享。</p>
+      <p>下载 Cardio Analytics，让 Apple HealthKit 自动同步您的心血管数据。无需手动输入 - 只需监测、分析并与您的医生分享。</p>
       <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
         在 App Store 下载
       </a>
@@ -803,7 +803,7 @@ let query = HKAnchoredObjectQuery(
         <div class="footer-grid">
             
             <div>
-                <h3 class="mb-md">CardioAnalytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <h3 class="mb-md">Cardio Analytics - Comprehensive Heart Health Tracking | iOS App</h3>
                 <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
             </div>
 
@@ -1246,7 +1246,7 @@ let query = HKAnchoredObjectQuery(
         
         <div class="footer-bottom">
             <p class="text-sm text-secondary">
-                &copy; 2025 CardioAnalytics - Comprehensive Heart Health Tracking | iOS App. 版权所有
+                &copy; 2025 Cardio Analytics - Comprehensive Heart Health Tracking | iOS App. 版权所有
             </p>
             <ul class="footer-links">
                 <li><a href="/zh/privacy/">隐私</a></li>
