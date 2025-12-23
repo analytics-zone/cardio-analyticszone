@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <title>Slik fungerer Cardio Analytics - HealthKit-synkronisering og bakgrunnsoppdateringer</title>
-    <meta name="description" content="Lær hvordan Cardio Analytics synkroniserer med Apple HealthKit for sanntids kardiovaskulære data, bakgrunnsoppdateringer og tilbakeskrivingsfunksjoner. Personvern-først databehandling.">
+    <title>Slik fungerer Cardio Analytics - HealthKit-synkronisering og</title>
+    <meta name="description" content="Lær hvordan Cardio Analytics synkroniserer med Apple HealthKit for sanntids kardiovaskulære data, bakgrunnsoppdateringer og tilbakeskrivingsfunksjoner. Personvern-først">
     <meta name="author" content="Arno Health">
 
     
@@ -19,18 +19,18 @@
 
     
     
-    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-    <meta property="article:modified_time" content="2025-12-08T14:30:00Z">
+    <meta property="article:published_time" content="2024-01-01T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-29T14:30:00Z">
     <meta property="article:author" content="Arno Health">
     
 
     
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://cardio.analyticszone.app/no/how-it-works/">
-    <meta property="og:title" content="Slik fungerer Cardio Analytics - HealthKit-synkronisering og bakgrunnsoppdateringer">
-    <meta property="og:description" content="Lær hvordan Cardio Analytics synkroniserer med Apple HealthKit for sanntids kardiovaskulære data, bakgrunnsoppdateringer og tilbakeskrivingsfunksjoner. Personvern-først databehandling.">
+    <meta property="og:title" content="Slik fungerer Cardio Analytics - HealthKit-synkronisering og">
+    <meta property="og:description" content="Lær hvordan Cardio Analytics synkroniserer med Apple HealthKit for sanntids kardiovaskulære data, bakgrunnsoppdateringer og tilbakeskrivingsfunksjoner. Personvern-først">
     
-    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
     <meta property="og:locale" content="no_NO">
     <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
@@ -38,10 +38,10 @@
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cardio.analyticszone.app/no/how-it-works/">
-    <meta name="twitter:title" content="Slik fungerer Cardio Analytics - HealthKit-synkronisering og bakgrunnsoppdateringer">
-    <meta name="twitter:description" content="Lær hvordan Cardio Analytics synkroniserer med Apple HealthKit for sanntids kardiovaskulære data, bakgrunnsoppdateringer og tilbakeskrivingsfunksjoner. Personvern-først databehandling.">
+    <meta name="twitter:title" content="Slik fungerer Cardio Analytics - HealthKit-synkronisering og">
+    <meta name="twitter:description" content="Lær hvordan Cardio Analytics synkroniserer med Apple HealthKit for sanntids kardiovaskulære data, bakgrunnsoppdateringer og tilbakeskrivingsfunksjoner. Personvern-først">
     
-    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
 
     
@@ -883,7 +883,7 @@ img[width][height] {
 
     <div class="data-types-grid">
       <div class="data-type-card">
-        <h4>Hjertefrekvensmålinger</h4>
+        <h3>Hjertefrekvensmålinger</h3>
         <ul>
           <li><code>HKQuantityTypeIdentifier.heartRate</code> - Nåværende hjertefrekvens (slag/min)</li>
           <li><code>restingHeartRate</code> - Hvilende HR baseline (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -892,7 +892,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Kardiovaskulære målinger</h4>
+        <h3>Kardiovaskulære målinger</h3>
         <ul>
           <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Parvise BP-avlesninger (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>heartRateVariabilitySDNN</code> - Samlet HRV-variabilitet</li>
@@ -902,7 +902,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Kroppssammensetning</h4>
+        <h3>Kroppssammensetning</h3>
         <ul>
           <li><code>bodyMass</code> - Vekt i kg</li>
           <li>BMI beregnet fra høyde og vekt</li>
@@ -910,7 +910,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>ECG og atrieflimmer</h4>
+        <h3>ECG og atrieflimmer</h3>
         <ul>
           <li><code>electrocardiogramType</code> - ECG-opptak med <code>HKElectrocardiogram.Classification</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>atrialFibrillationBurden</code> - AF-byrdeprosent (hvor tilgjengelig) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -918,7 +918,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Kondisjon og mobilitet</h4>
+        <h3>Kondisjon og mobilitet</h3>
         <ul>
           <li><code>vo2Max</code> - Kardio kondisjon (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>walkingSpeed</code> - Gjennomsnittlig jevn gangfart (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -1014,27 +1014,27 @@ let query = HKAnchoredObjectQuery(
 
     <div class="compatibility-grid">
       <div class="compatibility-card">
-        <h4>Apple Watch</h4>
+        <h3>Apple Watch</h3>
         <p>Hjertefrekvens, HRV, SpO₂, ECG, VO₂ Max, gangmålinger, trappeoppgangsfart</p>
       </div>
       <div class="compatibility-card">
-        <h4>Tilkoblede BP-monitorer</h4>
+        <h3>Tilkoblede BP-monitorer</h3>
         <p>Bluetooth blodtrykksmanchetter (Omron, Withings, QardioArm, osv.)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Smarte vekter</h4>
+        <h3>Smarte vekter</h3>
         <p>Vekt og BMI fra tilkoblede vekter (Withings, Fitbit Aria, osv.)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Manuelle registreringer</h4>
+        <h3>Manuelle registreringer</h3>
         <p>Legg til BP, vekt eller andre målinger direkte i Apple Health-appen</p>
       </div>
       <div class="compatibility-card">
-        <h4>Andre treningsarmbånd</h4>
+        <h3>Andre treningsarmbånd</h3>
         <p>Enhver enhet som synkroniserer hjertefrekvens eller treningsdata til HealthKit</p>
       </div>
       <div class="compatibility-card">
-        <h4>Medisinske enheter</h4>
+        <h3>Medisinske enheter</h3>
         <p>FDA-godkjente enheter med HealthKit-integrasjon</p>
       </div>
     </div>

@@ -19,8 +19,8 @@
 
     
     
-    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-    <meta property="article:modified_time" content="2025-12-08T14:30:00Z">
+    <meta property="article:published_time" content="2024-01-01T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-29T14:30:00Z">
     <meta property="article:author" content="Arno Health">
     
 
@@ -30,7 +30,7 @@
     <meta property="og:title" content="Cardio Analytics 작동 방식 - HealthKit 동기화 및 백그라운드 업데이트">
     <meta property="og:description" content="Cardio Analytics가 Apple HealthKit과 동기화하여 실시간 심혈관 데이터, 백그라운드 업데이트 및 쓰기 기능을 제공하는 방법을 알아보세요. 개인정보 우선 데이터 처리.">
     
-    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
     <meta property="og:locale" content="ko_KR">
     <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
@@ -41,7 +41,7 @@
     <meta name="twitter:title" content="Cardio Analytics 작동 방식 - HealthKit 동기화 및 백그라운드 업데이트">
     <meta name="twitter:description" content="Cardio Analytics가 Apple HealthKit과 동기화하여 실시간 심혈관 데이터, 백그라운드 업데이트 및 쓰기 기능을 제공하는 방법을 알아보세요. 개인정보 우선 데이터 처리.">
     
-    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
 
     
@@ -883,7 +883,7 @@ img[width][height] {
 
     <div class="data-types-grid">
       <div class="data-type-card">
-        <h4>심박수 지표</h4>
+        <h3>심박수 지표</h3>
         <ul>
           <li><code>HKQuantityTypeIdentifier.heartRate</code> - 현재 심박수(박동/분)</li>
           <li><code>restingHeartRate</code> - 안정 시 심박수 기준선(<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple 문서</a>)</li>
@@ -892,7 +892,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>심혈관 지표</h4>
+        <h3>심혈관 지표</h3>
         <ul>
           <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - 쌍 혈압 측정값(<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple 문서</a>)</li>
           <li><code>heartRateVariabilitySDNN</code> - 전반적인 HRV 변동성</li>
@@ -902,7 +902,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>체성분</h4>
+        <h3>체성분</h3>
         <ul>
           <li><code>bodyMass</code> - kg 단위 체중</li>
           <li>신장과 체중에서 계산된 BMI</li>
@@ -910,7 +910,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>ECG 및 심방세동</h4>
+        <h3>ECG 및 심방세동</h3>
         <ul>
           <li><code>electrocardiogramType</code> - <code>HKElectrocardiogram.Classification</code>이 포함된 ECG 기록(<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple 문서</a>)</li>
           <li><code>atrialFibrillationBurden</code> - 심방세동 부담 백분율(사용 가능한 경우)(<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple 문서</a>)</li>
@@ -918,7 +918,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>체력 및 이동성</h4>
+        <h3>체력 및 이동성</h3>
         <ul>
           <li><code>vo2Max</code> - 심폐 체력(mL/kg/min)(<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple 문서</a>)</li>
           <li><code>walkingSpeed</code> - 평균 일정한 보행 속도(m/s)(<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple 문서</a>)</li>
@@ -1014,27 +1014,27 @@ let query = HKAnchoredObjectQuery(
 
     <div class="compatibility-grid">
       <div class="compatibility-card">
-        <h4>Apple Watch</h4>
+        <h3>Apple Watch</h3>
         <p>심박수, HRV, SpO₂, ECG, VO₂ Max, 보행 지표, 계단 속도</p>
       </div>
       <div class="compatibility-card">
-        <h4>연결된 혈압계</h4>
+        <h3>연결된 혈압계</h3>
         <p>블루투스 혈압계(Omron, Withings, QardioArm 등)</p>
       </div>
       <div class="compatibility-card">
-        <h4>스마트 체중계</h4>
+        <h3>스마트 체중계</h3>
         <p>연결된 체중계의 체중 및 BMI(Withings, Fitbit Aria 등)</p>
       </div>
       <div class="compatibility-card">
-        <h4>수동 입력</h4>
+        <h3>수동 입력</h3>
         <p>Apple Health 앱에서 직접 혈압, 체중 또는 기타 지표 추가</p>
       </div>
       <div class="compatibility-card">
-        <h4>기타 피트니스 트래커</h4>
+        <h3>기타 피트니스 트래커</h3>
         <p>HealthKit에 심박수 또는 피트니스 데이터를 동기화하는 모든 기기</p>
       </div>
       <div class="compatibility-card">
-        <h4>의료기기</h4>
+        <h3>의료기기</h3>
         <p>HealthKit 통합이 있는 FDA 승인 기기</p>
       </div>
     </div>

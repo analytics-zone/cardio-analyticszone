@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <title>Jak Funguje Cardio Analytics - Synchronizace HealthKit a Aktualizace na Pozadí</title>
-    <meta name="description" content="Zjistěte, jak se Cardio Analytics synchronizuje s Apple HealthKit pro kardiovaskulární data v reálném čase, aktualizace na pozadí a možnosti zpětného zápisu. Zpracování dat zaměřené na soukromí.">
+    <title>Jak Funguje Cardio Analytics - Synchronizace HealthKit a Aktualizace</title>
+    <meta name="description" content="Zjistěte, jak se Cardio Analytics synchronizuje s Apple HealthKit pro kardiovaskulární data v reálném čase, aktualizace na pozadí a možnosti zpětného zápisu. Zpracování">
     <meta name="author" content="Arno Health">
 
     
@@ -19,18 +19,18 @@
 
     
     
-    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-    <meta property="article:modified_time" content="2025-12-08T14:30:00Z">
+    <meta property="article:published_time" content="2024-01-01T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-29T14:30:00Z">
     <meta property="article:author" content="Arno Health">
     
 
     
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://cardio.analyticszone.app/cs/how-it-works/">
-    <meta property="og:title" content="Jak Funguje Cardio Analytics - Synchronizace HealthKit a Aktualizace na Pozadí">
-    <meta property="og:description" content="Zjistěte, jak se Cardio Analytics synchronizuje s Apple HealthKit pro kardiovaskulární data v reálném čase, aktualizace na pozadí a možnosti zpětného zápisu. Zpracování dat zaměřené na soukromí.">
+    <meta property="og:title" content="Jak Funguje Cardio Analytics - Synchronizace HealthKit a Aktualizace">
+    <meta property="og:description" content="Zjistěte, jak se Cardio Analytics synchronizuje s Apple HealthKit pro kardiovaskulární data v reálném čase, aktualizace na pozadí a možnosti zpětného zápisu. Zpracování">
     
-    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
     <meta property="og:locale" content="cs_CZ">
     <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
@@ -38,10 +38,10 @@
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cardio.analyticszone.app/cs/how-it-works/">
-    <meta name="twitter:title" content="Jak Funguje Cardio Analytics - Synchronizace HealthKit a Aktualizace na Pozadí">
-    <meta name="twitter:description" content="Zjistěte, jak se Cardio Analytics synchronizuje s Apple HealthKit pro kardiovaskulární data v reálném čase, aktualizace na pozadí a možnosti zpětného zápisu. Zpracování dat zaměřené na soukromí.">
+    <meta name="twitter:title" content="Jak Funguje Cardio Analytics - Synchronizace HealthKit a Aktualizace">
+    <meta name="twitter:description" content="Zjistěte, jak se Cardio Analytics synchronizuje s Apple HealthKit pro kardiovaskulární data v reálném čase, aktualizace na pozadí a možnosti zpětného zápisu. Zpracování">
     
-    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
 
     
@@ -883,7 +883,7 @@ img[width][height] {
 
     <div class="data-types-grid">
       <div class="data-type-card">
-        <h4>Metriky srdeční frekvence</h4>
+        <h3>Metriky srdeční frekvence</h3>
         <ul>
           <li><code>HKQuantityTypeIdentifier.heartRate</code> - Aktuální srdeční frekvence (tepů/min)</li>
           <li><code>restingHeartRate</code> - Klidová srdeční frekvence (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -892,7 +892,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Kardiovaskulární metriky</h4>
+        <h3>Kardiovaskulární metriky</h3>
         <ul>
           <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Párová měření krevního tlaku (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>heartRateVariabilitySDNN</code> - Celková variabilita srdeční frekvence</li>
@@ -902,7 +902,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Tělesné složení</h4>
+        <h3>Tělesné složení</h3>
         <ul>
           <li><code>bodyMass</code> - Hmotnost v kg</li>
           <li>BMI vypočítané z výšky a hmotnosti</li>
@@ -910,7 +910,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>EKG a fibrilace síní</h4>
+        <h3>EKG a fibrilace síní</h3>
         <ul>
           <li><code>electrocardiogramType</code> - EKG záznamy s <code>HKElectrocardiogram.Classification</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>atrialFibrillationBurden</code> - Procento fibrilace síní (kde je k dispozici) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -918,7 +918,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Fitness a mobilita</h4>
+        <h3>Fitness a mobilita</h3>
         <ul>
           <li><code>vo2Max</code> - Kardio fitness (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>walkingSpeed</code> - Průměrná rychlost chůze (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -1014,27 +1014,27 @@ let query = HKAnchoredObjectQuery(
 
     <div class="compatibility-grid">
       <div class="compatibility-card">
-        <h4>Apple Watch</h4>
+        <h3>Apple Watch</h3>
         <p>Srdeční frekvence, HRV, SpO₂, EKG, VO₂ Max, metriky chůze, rychlost schodů</p>
       </div>
       <div class="compatibility-card">
-        <h4>Připojené tlakoměry</h4>
+        <h3>Připojené tlakoměry</h3>
         <p>Bluetooth tlakoměry (Omron, Withings, QardioArm atd.)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Chytré váhy</h4>
+        <h3>Chytré váhy</h3>
         <p>Hmotnost a BMI z připojených vah (Withings, Fitbit Aria atd.)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Manuální záznamy</h4>
+        <h3>Manuální záznamy</h3>
         <p>Přidejte krevní tlak, hmotnost nebo jiné metriky přímo v aplikaci Apple Health</p>
       </div>
       <div class="compatibility-card">
-        <h4>Jiné fitness trackery</h4>
+        <h3>Jiné fitness trackery</h3>
         <p>Jakékoli zařízení synchronizující srdeční frekvenci nebo fitness data do HealthKit</p>
       </div>
       <div class="compatibility-card">
-        <h4>Lékařská zařízení</h4>
+        <h3>Lékařská zařízení</h3>
         <p>FDA schválená zařízení s integrací HealthKit</p>
       </div>
     </div>

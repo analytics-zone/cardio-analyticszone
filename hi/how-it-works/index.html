@@ -6,7 +6,7 @@
 
     
     <title>Cardio Analytics कैसे काम करता है - HealthKit सिंक और पृष्ठभूमि अपडेट</title>
-    <meta name="description" content="जानें कि Cardio Analytics वास्तविक समय हृदय संबंधी डेटा, पृष्ठभूमि अपडेट और राइट-बैक क्षमताओं के लिए Apple HealthKit के साथ कैसे सिंक करता है। गोपनीयता-केंद्रित डेटा प्रोसेसिंग।">
+    <meta name="description" content="जानें कि Cardio Analytics वास्तविक समय हृदय संबंधी डेटा, पृष्ठभूमि अपडेट और राइट-बैक क्षमताओं के लिए Apple HealthKit के साथ कैसे सिंक करता है। गोपनीयता-केंद्रित डेटा">
     <meta name="author" content="Arno Health">
 
     
@@ -19,8 +19,8 @@
 
     
     
-    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-    <meta property="article:modified_time" content="2025-12-08T14:30:00Z">
+    <meta property="article:published_time" content="2024-01-01T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-29T14:30:00Z">
     <meta property="article:author" content="Arno Health">
     
 
@@ -28,9 +28,9 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://cardio.analyticszone.app/hi/how-it-works/">
     <meta property="og:title" content="Cardio Analytics कैसे काम करता है - HealthKit सिंक और पृष्ठभूमि अपडेट">
-    <meta property="og:description" content="जानें कि Cardio Analytics वास्तविक समय हृदय संबंधी डेटा, पृष्ठभूमि अपडेट और राइट-बैक क्षमताओं के लिए Apple HealthKit के साथ कैसे सिंक करता है। गोपनीयता-केंद्रित डेटा प्रोसेसिंग।">
+    <meta property="og:description" content="जानें कि Cardio Analytics वास्तविक समय हृदय संबंधी डेटा, पृष्ठभूमि अपडेट और राइट-बैक क्षमताओं के लिए Apple HealthKit के साथ कैसे सिंक करता है। गोपनीयता-केंद्रित डेटा">
     
-    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
     <meta property="og:locale" content="hi_IN">
     <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
@@ -39,9 +39,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cardio.analyticszone.app/hi/how-it-works/">
     <meta name="twitter:title" content="Cardio Analytics कैसे काम करता है - HealthKit सिंक और पृष्ठभूमि अपडेट">
-    <meta name="twitter:description" content="जानें कि Cardio Analytics वास्तविक समय हृदय संबंधी डेटा, पृष्ठभूमि अपडेट और राइट-बैक क्षमताओं के लिए Apple HealthKit के साथ कैसे सिंक करता है। गोपनीयता-केंद्रित डेटा प्रोसेसिंग।">
+    <meta name="twitter:description" content="जानें कि Cardio Analytics वास्तविक समय हृदय संबंधी डेटा, पृष्ठभूमि अपडेट और राइट-बैक क्षमताओं के लिए Apple HealthKit के साथ कैसे सिंक करता है। गोपनीयता-केंद्रित डेटा">
     
-    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
 
     
@@ -883,7 +883,7 @@ img[width][height] {
 
     <div class="data-types-grid">
       <div class="data-type-card">
-        <h4>हृदय गति मेट्रिक्स</h4>
+        <h3>हृदय गति मेट्रिक्स</h3>
         <ul>
           <li><code>HKQuantityTypeIdentifier.heartRate</code> - वर्तमान हृदय गति (बीट/मिनट)</li>
           <li><code>restingHeartRate</code> - विश्राम HR बेसलाइन (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -892,7 +892,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>हृदय संबंधी मेट्रिक्स</h4>
+        <h3>हृदय संबंधी मेट्रिक्स</h3>
         <ul>
           <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - युग्मित BP रीडिंग (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>heartRateVariabilitySDNN</code> - समग्र HRV परिवर्तनशीलता</li>
@@ -902,7 +902,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>शरीर संरचना</h4>
+        <h3>शरीर संरचना</h3>
         <ul>
           <li><code>bodyMass</code> - kg में वजन</li>
           <li>ऊंचाई और वजन से गणना की गई BMI</li>
@@ -910,7 +910,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>ईसीजी और एट्रियल फाइब्रिलेशन</h4>
+        <h3>ईसीजी और एट्रियल फाइब्रिलेशन</h3>
         <ul>
           <li><code>electrocardiogramType</code> - <code>HKElectrocardiogram.Classification</code> के साथ ईसीजी रिकॉर्डिंग (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>atrialFibrillationBurden</code> - AF बर्डन प्रतिशत (जहां उपलब्ध) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -918,7 +918,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>फिटनेस और गतिशीलता</h4>
+        <h3>फिटनेस और गतिशीलता</h3>
         <ul>
           <li><code>vo2Max</code> - कार्डियो फिटनेस (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>walkingSpeed</code> - औसत स्थिर चलने की गति (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -1014,27 +1014,27 @@ let query = HKAnchoredObjectQuery(
 
     <div class="compatibility-grid">
       <div class="compatibility-card">
-        <h4>Apple Watch</h4>
+        <h3>Apple Watch</h3>
         <p>हृदय गति, HRV, SpO₂, ईसीजी, VO₂ Max, चलने के मेट्रिक्स, सीढ़ी की गति</p>
       </div>
       <div class="compatibility-card">
-        <h4>कनेक्टेड BP मॉनिटर</h4>
+        <h3>कनेक्टेड BP मॉनिटर</h3>
         <p>ब्लूटूथ रक्तचाप कफ (Omron, Withings, QardioArm, आदि)</p>
       </div>
       <div class="compatibility-card">
-        <h4>स्मार्ट स्केल</h4>
+        <h3>स्मार्ट स्केल</h3>
         <p>कनेक्टेड स्केल से वजन और BMI (Withings, Fitbit Aria, आदि)</p>
       </div>
       <div class="compatibility-card">
-        <h4>मैनुअल प्रविष्टियां</h4>
+        <h3>मैनुअल प्रविष्टियां</h3>
         <p>सीधे Apple Health ऐप में BP, वजन, या अन्य मेट्रिक्स जोड़ें</p>
       </div>
       <div class="compatibility-card">
-        <h4>अन्य फिटनेस ट्रैकर</h4>
+        <h3>अन्य फिटनेस ट्रैकर</h3>
         <p>कोई भी डिवाइस जो HealthKit में हृदय गति या फिटनेस डेटा सिंक करता है</p>
       </div>
       <div class="compatibility-card">
-        <h4>चिकित्सा उपकरण</h4>
+        <h3>चिकित्सा उपकरण</h3>
         <p>HealthKit एकीकरण के साथ FDA-क्लीयर्ड डिवाइस</p>
       </div>
     </div>

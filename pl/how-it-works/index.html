@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <title>Jak działa Cardio Analytics - Synchronizacja HealthKit i aktualizacje w tle</title>
-    <meta name="description" content="Dowiedz się, jak Cardio Analytics synchronizuje się z Apple HealthKit w celu uzyskania danych sercowo-naczyniowych w czasie rzeczywistym, aktualizacji w tle i możliwości zapisu danych. Przetwarzanie danych z priorytetem prywatności.">
+    <title>Jak działa Cardio Analytics - Synchronizacja HealthKit i aktualizacje</title>
+    <meta name="description" content="Dowiedz się, jak Cardio Analytics synchronizuje się z Apple HealthKit w celu uzyskania danych sercowo-naczyniowych w czasie rzeczywistym, aktualizacji w tle i możliwości">
     <meta name="author" content="Arno Health">
 
     
@@ -19,18 +19,18 @@
 
     
     
-    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-    <meta property="article:modified_time" content="2025-12-08T14:30:00Z">
+    <meta property="article:published_time" content="2024-01-01T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-29T14:30:00Z">
     <meta property="article:author" content="Arno Health">
     
 
     
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://cardio.analyticszone.app/pl/how-it-works/">
-    <meta property="og:title" content="Jak działa Cardio Analytics - Synchronizacja HealthKit i aktualizacje w tle">
-    <meta property="og:description" content="Dowiedz się, jak Cardio Analytics synchronizuje się z Apple HealthKit w celu uzyskania danych sercowo-naczyniowych w czasie rzeczywistym, aktualizacji w tle i możliwości zapisu danych. Przetwarzanie danych z priorytetem prywatności.">
+    <meta property="og:title" content="Jak działa Cardio Analytics - Synchronizacja HealthKit i aktualizacje">
+    <meta property="og:description" content="Dowiedz się, jak Cardio Analytics synchronizuje się z Apple HealthKit w celu uzyskania danych sercowo-naczyniowych w czasie rzeczywistym, aktualizacji w tle i możliwości">
     
-    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
     <meta property="og:locale" content="pl_PL">
     <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
@@ -38,10 +38,10 @@
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cardio.analyticszone.app/pl/how-it-works/">
-    <meta name="twitter:title" content="Jak działa Cardio Analytics - Synchronizacja HealthKit i aktualizacje w tle">
-    <meta name="twitter:description" content="Dowiedz się, jak Cardio Analytics synchronizuje się z Apple HealthKit w celu uzyskania danych sercowo-naczyniowych w czasie rzeczywistym, aktualizacji w tle i możliwości zapisu danych. Przetwarzanie danych z priorytetem prywatności.">
+    <meta name="twitter:title" content="Jak działa Cardio Analytics - Synchronizacja HealthKit i aktualizacje">
+    <meta name="twitter:description" content="Dowiedz się, jak Cardio Analytics synchronizuje się z Apple HealthKit w celu uzyskania danych sercowo-naczyniowych w czasie rzeczywistym, aktualizacji w tle i możliwości">
     
-    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
 
     
@@ -883,7 +883,7 @@ img[width][height] {
 
     <div class="data-types-grid">
       <div class="data-type-card">
-        <h4>Parametry Tętna</h4>
+        <h3>Parametry Tętna</h3>
         <ul>
           <li><code>HKQuantityTypeIdentifier.heartRate</code> - Bieżące tętno (uderzenia/min)</li>
           <li><code>restingHeartRate</code> - Linia bazowa spoczynkowego tętna (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Dokumentacja Apple</a>)</li>
@@ -892,7 +892,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Parametry Sercowo-Naczyniowe</h4>
+        <h3>Parametry Sercowo-Naczyniowe</h3>
         <ul>
           <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Sparowane odczyty ciśnienia (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Dokumentacja Apple</a>)</li>
           <li><code>heartRateVariabilitySDNN</code> - Ogólna zmienność HRV</li>
@@ -902,7 +902,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Skład Ciała</h4>
+        <h3>Skład Ciała</h3>
         <ul>
           <li><code>bodyMass</code> - Waga w kg</li>
           <li>BMI obliczane na podstawie wzrostu i wagi</li>
@@ -910,7 +910,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>EKG i Migotanie Przedsionków</h4>
+        <h3>EKG i Migotanie Przedsionków</h3>
         <ul>
           <li><code>electrocardiogramType</code> - Zapisy EKG z <code>HKElectrocardiogram.Classification</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Dokumentacja Apple</a>)</li>
           <li><code>atrialFibrillationBurden</code> - Procent obciążenia AF (gdzie dostępne) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Dokumentacja Apple</a>)</li>
@@ -918,7 +918,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Kondycja i Mobilność</h4>
+        <h3>Kondycja i Mobilność</h3>
         <ul>
           <li><code>vo2Max</code> - Kondycja kardio (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Dokumentacja Apple</a>)</li>
           <li><code>walkingSpeed</code> - Średnia stała prędkość chodzenia (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Dokumentacja Apple</a>)</li>
@@ -1014,27 +1014,27 @@ let query = HKAnchoredObjectQuery(
 
     <div class="compatibility-grid">
       <div class="compatibility-card">
-        <h4>Apple Watch</h4>
+        <h3>Apple Watch</h3>
         <p>Tętno, HRV, SpO₂, EKG, VO₂ Max, parametry chodzenia, prędkość po schodach</p>
       </div>
       <div class="compatibility-card">
-        <h4>Podłączone Ciśnieniomierze</h4>
+        <h3>Podłączone Ciśnieniomierze</h3>
         <p>Mankiety do pomiaru ciśnienia Bluetooth (Omron, Withings, QardioArm itp.)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Inteligentne Wagi</h4>
+        <h3>Inteligentne Wagi</h3>
         <p>Waga i BMI z podłączonych wag (Withings, Fitbit Aria itp.)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Ręczne Wpisy</h4>
+        <h3>Ręczne Wpisy</h3>
         <p>Dodaj ciśnienie, wagę lub inne parametry bezpośrednio w aplikacji Apple Health</p>
       </div>
       <div class="compatibility-card">
-        <h4>Inne Trackery Fitness</h4>
+        <h3>Inne Trackery Fitness</h3>
         <p>Każde urządzenie synchronizujące tętno lub dane fitness do HealthKit</p>
       </div>
       <div class="compatibility-card">
-        <h4>Urządzenia Medyczne</h4>
+        <h3>Urządzenia Medyczne</h3>
         <p>Urządzenia zatwierdzone przez FDA z integracją HealthKit</p>
       </div>
     </div>

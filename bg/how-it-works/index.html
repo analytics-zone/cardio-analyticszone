@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <title>Как работи Cardio Analytics - Синхронизация с HealthKit и актуализации на заден план</title>
-    <meta name="description" content="Научете как Cardio Analytics се синхронизира с Apple HealthKit за сърдечно-съдови данни в реално време, актуализации на заден план и възможности за обратен запис. Обработка на данни с приоритет на поверителността.">
+    <title>Как работи Cardio Analytics - Синхронизация с HealthKit и</title>
+    <meta name="description" content="Научете как Cardio Analytics се синхронизира с Apple HealthKit за сърдечно-съдови данни в реално време, актуализации на заден план и възможности за обратен запис.">
     <meta name="author" content="Arno Health">
 
     
@@ -19,18 +19,18 @@
 
     
     
-    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-    <meta property="article:modified_time" content="2025-12-08T14:30:00Z">
+    <meta property="article:published_time" content="2024-01-01T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-29T14:30:00Z">
     <meta property="article:author" content="Arno Health">
     
 
     
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://cardio.analyticszone.app/bg/how-it-works/">
-    <meta property="og:title" content="Как работи Cardio Analytics - Синхронизация с HealthKit и актуализации на заден план">
-    <meta property="og:description" content="Научете как Cardio Analytics се синхронизира с Apple HealthKit за сърдечно-съдови данни в реално време, актуализации на заден план и възможности за обратен запис. Обработка на данни с приоритет на поверителността.">
+    <meta property="og:title" content="Как работи Cardio Analytics - Синхронизация с HealthKit и">
+    <meta property="og:description" content="Научете как Cardio Analytics се синхронизира с Apple HealthKit за сърдечно-съдови данни в реално време, актуализации на заден план и възможности за обратен запис.">
     
-    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
     <meta property="og:locale" content="bg_BG">
     <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
@@ -38,10 +38,10 @@
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cardio.analyticszone.app/bg/how-it-works/">
-    <meta name="twitter:title" content="Как работи Cardio Analytics - Синхронизация с HealthKit и актуализации на заден план">
-    <meta name="twitter:description" content="Научете как Cardio Analytics се синхронизира с Apple HealthKit за сърдечно-съдови данни в реално време, актуализации на заден план и възможности за обратен запис. Обработка на данни с приоритет на поверителността.">
+    <meta name="twitter:title" content="Как работи Cardio Analytics - Синхронизация с HealthKit и">
+    <meta name="twitter:description" content="Научете как Cardio Analytics се синхронизира с Apple HealthKit за сърдечно-съдови данни в реално време, актуализации на заден план и възможности за обратен запис.">
     
-    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
 
     
@@ -883,7 +883,7 @@ img[width][height] {
 
     <div class="data-types-grid">
       <div class="data-type-card">
-        <h4>Показатели за сърдечната честота</h4>
+        <h3>Показатели за сърдечната честота</h3>
         <ul>
           <li><code>HKQuantityTypeIdentifier.heartRate</code> - Текуща сърдечна честота (удари/мин)</li>
           <li><code>restingHeartRate</code> - Базова почиваща СЧ (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple документация</a>)</li>
@@ -892,7 +892,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Сърдечно-съдови показатели</h4>
+        <h3>Сърдечно-съдови показатели</h3>
         <ul>
           <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Сдвоени КН измервания (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple документация</a>)</li>
           <li><code>heartRateVariabilitySDNN</code> - Обща HRV вариабилност</li>
@@ -902,7 +902,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Телесен състав</h4>
+        <h3>Телесен състав</h3>
         <ul>
           <li><code>bodyMass</code> - Тегло в kg</li>
           <li>ИТМ изчислен от височина и тегло</li>
@@ -910,7 +910,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>ЕКГ и предсърдно мъждене</h4>
+        <h3>ЕКГ и предсърдно мъждене</h3>
         <ul>
           <li><code>electrocardiogramType</code> - ЕКГ записи с <code>HKElectrocardiogram.Classification</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple документация</a>)</li>
           <li><code>atrialFibrillationBurden</code> - Процент тежест на AF (когато е налично) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple документация</a>)</li>
@@ -918,7 +918,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Годност и мобилност</h4>
+        <h3>Годност и мобилност</h3>
         <ul>
           <li><code>vo2Max</code> - Сърдечна годност (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple документация</a>)</li>
           <li><code>walkingSpeed</code> - Средна устойчива скорост на ходене (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple документация</a>)</li>
@@ -1014,27 +1014,27 @@ let query = HKAnchoredObjectQuery(
 
     <div class="compatibility-grid">
       <div class="compatibility-card">
-        <h4>Apple Watch</h4>
+        <h3>Apple Watch</h3>
         <p>Сърдечна честота, HRV, SpO₂, ЕКГ, VO₂ Max, показатели за ходене, скорост на стълби</p>
       </div>
       <div class="compatibility-card">
-        <h4>Свързани КН монитори</h4>
+        <h3>Свързани КН монитори</h3>
         <p>Bluetooth апарати за кръвно налягане (Omron, Withings, QardioArm и др.)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Интелигентни везни</h4>
+        <h3>Интелигентни везни</h3>
         <p>Тегло и ИТМ от свързани везни (Withings, Fitbit Aria и др.)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Ръчни записи</h4>
+        <h3>Ръчни записи</h3>
         <p>Добавете КН, тегло или други показатели директно в приложението Apple Health</p>
       </div>
       <div class="compatibility-card">
-        <h4>Други фитнес тракери</h4>
+        <h3>Други фитнес тракери</h3>
         <p>Всяко устройство, синхронизиращо сърдечна честота или данни за фитнес с HealthKit</p>
       </div>
       <div class="compatibility-card">
-        <h4>Медицински устройства</h4>
+        <h3>Медицински устройства</h3>
         <p>Одобрени от FDA устройства с интеграция с HealthKit</p>
       </div>
     </div>

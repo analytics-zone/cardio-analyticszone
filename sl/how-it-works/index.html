@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <title>Kako deluje Cardio Analytics - sinhronizacija HealthKit in posodobitve v ozadju</title>
-    <meta name="description" content="Spoznajte, kako se Cardio Analytics sinhronizira z Apple HealthKit za kardiovaskularne podatke v realnem času, posodobitve v ozadju in možnosti povratnega zapisovanja. Obdelava podatkov, ki daje prednost zasebnosti.">
+    <title>Kako deluje Cardio Analytics - sinhronizacija HealthKit in</title>
+    <meta name="description" content="Spoznajte, kako se Cardio Analytics sinhronizira z Apple HealthKit za kardiovaskularne podatke v realnem času, posodobitve v ozadju in možnosti povratnega zapisovanja.">
     <meta name="author" content="Arno Health">
 
     
@@ -19,18 +19,18 @@
 
     
     
-    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-    <meta property="article:modified_time" content="2025-12-08T14:30:00Z">
+    <meta property="article:published_time" content="2024-01-01T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-29T14:30:00Z">
     <meta property="article:author" content="Arno Health">
     
 
     
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://cardio.analyticszone.app/sl/how-it-works/">
-    <meta property="og:title" content="Kako deluje Cardio Analytics - sinhronizacija HealthKit in posodobitve v ozadju">
-    <meta property="og:description" content="Spoznajte, kako se Cardio Analytics sinhronizira z Apple HealthKit za kardiovaskularne podatke v realnem času, posodobitve v ozadju in možnosti povratnega zapisovanja. Obdelava podatkov, ki daje prednost zasebnosti.">
+    <meta property="og:title" content="Kako deluje Cardio Analytics - sinhronizacija HealthKit in">
+    <meta property="og:description" content="Spoznajte, kako se Cardio Analytics sinhronizira z Apple HealthKit za kardiovaskularne podatke v realnem času, posodobitve v ozadju in možnosti povratnega zapisovanja.">
     
-    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
     <meta property="og:locale" content="sl_SI">
     <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
@@ -38,10 +38,10 @@
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cardio.analyticszone.app/sl/how-it-works/">
-    <meta name="twitter:title" content="Kako deluje Cardio Analytics - sinhronizacija HealthKit in posodobitve v ozadju">
-    <meta name="twitter:description" content="Spoznajte, kako se Cardio Analytics sinhronizira z Apple HealthKit za kardiovaskularne podatke v realnem času, posodobitve v ozadju in možnosti povratnega zapisovanja. Obdelava podatkov, ki daje prednost zasebnosti.">
+    <meta name="twitter:title" content="Kako deluje Cardio Analytics - sinhronizacija HealthKit in">
+    <meta name="twitter:description" content="Spoznajte, kako se Cardio Analytics sinhronizira z Apple HealthKit za kardiovaskularne podatke v realnem času, posodobitve v ozadju in možnosti povratnega zapisovanja.">
     
-    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
 
     
@@ -883,7 +883,7 @@ img[width][height] {
 
     <div class="data-types-grid">
       <div class="data-type-card">
-        <h4>Meritve srčnega utripa</h4>
+        <h3>Meritve srčnega utripa</h3>
         <ul>
           <li><code>HKQuantityTypeIdentifier.heartRate</code> - Trenutni srčni utrip (utripov/min)</li>
           <li><code>restingHeartRate</code> - Izhodiščna vrednost HR v mirovanju (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
@@ -892,7 +892,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Kardiovaskularne meritve</h4>
+        <h3>Kardiovaskularne meritve</h3>
         <ul>
           <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Seznanjeni odčitki BP (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
           <li><code>heartRateVariabilitySDNN</code> - Celotna variabilnost HRV</li>
@@ -902,7 +902,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Telesna sestava</h4>
+        <h3>Telesna sestava</h3>
         <ul>
           <li><code>bodyMass</code> - Teža v kg</li>
           <li>BMI izračunan iz višine in teže</li>
@@ -910,7 +910,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>ECG in atrijska fibrilacija</h4>
+        <h3>ECG in atrijska fibrilacija</h3>
         <ul>
           <li><code>electrocardiogramType</code> - ECG posnetki z <code>HKElectrocardiogram.Classification</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
           <li><code>atrialFibrillationBurden</code> - Odstotek obremenitve z AF (kjer je na voljo) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
@@ -918,7 +918,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Fitnes in mobilnost</h4>
+        <h3>Fitnes in mobilnost</h3>
         <ul>
           <li><code>vo2Max</code> - Kardio fitnes (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
           <li><code>walkingSpeed</code> - Povprečna stalna hitrost hoje (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple dokumentacija</a>)</li>
@@ -1014,27 +1014,27 @@ let query = HKAnchoredObjectQuery(
 
     <div class="compatibility-grid">
       <div class="compatibility-card">
-        <h4>Apple Watch</h4>
+        <h3>Apple Watch</h3>
         <p>Srčni utrip, HRV, SpO₂, ECG, VO₂ Max, meritve hoje, hitrost stopnic</p>
       </div>
       <div class="compatibility-card">
-        <h4>Povezani merilniki BP</h4>
+        <h3>Povezani merilniki BP</h3>
         <p>Bluetooth manšete za krvni tlak (Omron, Withings, QardioArm itd.)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Pametne tehtnice</h4>
+        <h3>Pametne tehtnice</h3>
         <p>Teža in BMI s povezanih tehtnic (Withings, Fitbit Aria itd.)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Ročni vnosi</h4>
+        <h3>Ročni vnosi</h3>
         <p>Dodajte BP, težo ali druge meritve neposredno v aplikacijo Apple Health</p>
       </div>
       <div class="compatibility-card">
-        <h4>Drugi fitnes sledilniki</h4>
+        <h3>Drugi fitnes sledilniki</h3>
         <p>Katerakoli naprava, ki sinhronizira srčni utrip ali fitnes podatke v HealthKit</p>
       </div>
       <div class="compatibility-card">
-        <h4>Medicinske naprave</h4>
+        <h3>Medicinske naprave</h3>
         <p>Naprave, ki jih je odobrila FDA, z integracijo HealthKit</p>
       </div>
     </div>

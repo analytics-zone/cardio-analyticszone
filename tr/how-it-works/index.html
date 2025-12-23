@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <title>Cardio Analytics Nasıl Çalışır - HealthKit Senkronizasyonu ve Arka Plan Güncellemeleri</title>
-    <meta name="description" content="Cardio Analytics&#39;in gerçek zamanlı kardiyovasküler veri, arka plan güncellemeleri ve geri yazma yetenekleri için Apple HealthKit ile nasıl senkronize olduğunu öğrenin. Gizlilik odaklı veri işleme.">
+    <title>Cardio Analytics Nasıl Çalışır - HealthKit Senkronizasyonu ve Arka</title>
+    <meta name="description" content="Cardio Analytics&#39;in gerçek zamanlı kardiyovasküler veri, arka plan güncellemeleri ve geri yazma yetenekleri için Apple HealthKit ile nasıl senkronize olduğunu öğrenin.">
     <meta name="author" content="Arno Health">
 
     
@@ -19,18 +19,18 @@
 
     
     
-    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-    <meta property="article:modified_time" content="2025-12-08T14:30:00Z">
+    <meta property="article:published_time" content="2024-01-01T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-29T14:30:00Z">
     <meta property="article:author" content="Arno Health">
     
 
     
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://cardio.analyticszone.app/tr/how-it-works/">
-    <meta property="og:title" content="Cardio Analytics Nasıl Çalışır - HealthKit Senkronizasyonu ve Arka Plan Güncellemeleri">
-    <meta property="og:description" content="Cardio Analytics&#39;in gerçek zamanlı kardiyovasküler veri, arka plan güncellemeleri ve geri yazma yetenekleri için Apple HealthKit ile nasıl senkronize olduğunu öğrenin. Gizlilik odaklı veri işleme.">
+    <meta property="og:title" content="Cardio Analytics Nasıl Çalışır - HealthKit Senkronizasyonu ve Arka">
+    <meta property="og:description" content="Cardio Analytics&#39;in gerçek zamanlı kardiyovasküler veri, arka plan güncellemeleri ve geri yazma yetenekleri için Apple HealthKit ile nasıl senkronize olduğunu öğrenin.">
     
-    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
     <meta property="og:locale" content="tr_TR">
     <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
@@ -38,10 +38,10 @@
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cardio.analyticszone.app/tr/how-it-works/">
-    <meta name="twitter:title" content="Cardio Analytics Nasıl Çalışır - HealthKit Senkronizasyonu ve Arka Plan Güncellemeleri">
-    <meta name="twitter:description" content="Cardio Analytics&#39;in gerçek zamanlı kardiyovasküler veri, arka plan güncellemeleri ve geri yazma yetenekleri için Apple HealthKit ile nasıl senkronize olduğunu öğrenin. Gizlilik odaklı veri işleme.">
+    <meta name="twitter:title" content="Cardio Analytics Nasıl Çalışır - HealthKit Senkronizasyonu ve Arka">
+    <meta name="twitter:description" content="Cardio Analytics&#39;in gerçek zamanlı kardiyovasküler veri, arka plan güncellemeleri ve geri yazma yetenekleri için Apple HealthKit ile nasıl senkronize olduğunu öğrenin.">
     
-    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
 
     
@@ -883,7 +883,7 @@ img[width][height] {
 
     <div class="data-types-grid">
       <div class="data-type-card">
-        <h4>Kalp hızı metrikleri</h4>
+        <h3>Kalp hızı metrikleri</h3>
         <ul>
           <li><code>HKQuantityTypeIdentifier.heartRate</code> - Anlık kalp hızı (atım/dk)</li>
           <li><code>restingHeartRate</code> - Dinlenme kalp hızı başlangıç değeri (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -892,7 +892,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Kardiyovasküler metrikler</h4>
+        <h3>Kardiyovasküler metrikler</h3>
         <ul>
           <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Eşleştirilmiş kan basıncı ölçümleri (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>heartRateVariabilitySDNN</code> - Genel HRV değişkenliği</li>
@@ -902,7 +902,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Vücut kompozisyonu</h4>
+        <h3>Vücut kompozisyonu</h3>
         <ul>
           <li><code>bodyMass</code> - kg cinsinden ağırlık</li>
           <li>BMI boy ve kiloden hesaplanır</li>
@@ -910,7 +910,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>ECG ve atriyal fibrilasyon</h4>
+        <h3>ECG ve atriyal fibrilasyon</h3>
         <ul>
           <li><code>electrocardiogramType</code> - <code>HKElectrocardiogram.Classification</code> ile ECG kayıtları (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>atrialFibrillationBurden</code> - Yüzde olarak atriyal fibrilasyon yükü (varsa) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -918,7 +918,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>Kondisyon ve mobilite</h4>
+        <h3>Kondisyon ve mobilite</h3>
         <ul>
           <li><code>vo2Max</code> - Kardiyovasküler kondisyon (mL/kg/dk) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>walkingSpeed</code> - Ortalama sabit yürüme hızı (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -1014,27 +1014,27 @@ let query = HKAnchoredObjectQuery(
 
     <div class="compatibility-grid">
       <div class="compatibility-card">
-        <h4>Apple Watch</h4>
+        <h3>Apple Watch</h3>
         <p>Kalp hızı, HRV, SpO₂, ECG, VO₂ Max, yürüme metrikleri, merdiven hızı</p>
       </div>
       <div class="compatibility-card">
-        <h4>Bağlı kan basıncı monitörleri</h4>
+        <h3>Bağlı kan basıncı monitörleri</h3>
         <p>Bluetooth kan basıncı manşonları (Omron, Withings, QardioArm, vb.)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Akıllı teraziler</h4>
+        <h3>Akıllı teraziler</h3>
         <p>Bağlı terazilerden kilo ve BMI (Withings, Fitbit Aria, vb.)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Manuel girişler</h4>
+        <h3>Manuel girişler</h3>
         <p>Kan basıncı, kilo veya diğer metrikleri doğrudan Apple Health uygulamasına ekleyin</p>
       </div>
       <div class="compatibility-card">
-        <h4>Diğer fitness izleyiciler</h4>
+        <h3>Diğer fitness izleyiciler</h3>
         <p>HealthKit'e kalp hızı veya kondisyon verilerini senkronize eden tüm cihazlar</p>
       </div>
       <div class="compatibility-card">
-        <h4>Tıbbi cihazlar</h4>
+        <h3>Tıbbi cihazlar</h3>
         <p>HealthKit entegrasyonlu FDA onaylı cihazlar</p>
       </div>
     </div>

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <title>Kuidas Cardio Analytics Töötab - HealthKit Sünkroniseerimine ja Tausta Värskendused</title>
-    <meta name="description" content="Avastage, kuidas Cardio Analytics sünkroniseerub Apple HealthKit&#39;iga reaalajas kardiovaskulaarsete andmete, tausta värskenduste ja kirjutamisvõimaluste jaoks. Privaatsusele orienteeritud andmetöötlus.">
+    <title>Kuidas Cardio Analytics Töötab - HealthKit Sünkroniseerimine ja</title>
+    <meta name="description" content="Avastage, kuidas Cardio Analytics sünkroniseerub Apple HealthKit&#39;iga reaalajas kardiovaskulaarsete andmete, tausta värskenduste ja kirjutamisvõimaluste jaoks.">
     <meta name="author" content="Arno Health">
 
     
@@ -19,18 +19,18 @@
 
     
     
-    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-    <meta property="article:modified_time" content="2025-12-08T14:30:00Z">
+    <meta property="article:published_time" content="2024-01-01T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-29T14:30:00Z">
     <meta property="article:author" content="Arno Health">
     
 
     
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://cardio.analyticszone.app/et/how-it-works/">
-    <meta property="og:title" content="Kuidas Cardio Analytics Töötab - HealthKit Sünkroniseerimine ja Tausta Värskendused">
-    <meta property="og:description" content="Avastage, kuidas Cardio Analytics sünkroniseerub Apple HealthKit&#39;iga reaalajas kardiovaskulaarsete andmete, tausta värskenduste ja kirjutamisvõimaluste jaoks. Privaatsusele orienteeritud andmetöötlus.">
+    <meta property="og:title" content="Kuidas Cardio Analytics Töötab - HealthKit Sünkroniseerimine ja">
+    <meta property="og:description" content="Avastage, kuidas Cardio Analytics sünkroniseerub Apple HealthKit&#39;iga reaalajas kardiovaskulaarsete andmete, tausta värskenduste ja kirjutamisvõimaluste jaoks.">
     
-    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
     <meta property="og:locale" content="et_EE">
     <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
@@ -38,10 +38,10 @@
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cardio.analyticszone.app/et/how-it-works/">
-    <meta name="twitter:title" content="Kuidas Cardio Analytics Töötab - HealthKit Sünkroniseerimine ja Tausta Värskendused">
-    <meta name="twitter:description" content="Avastage, kuidas Cardio Analytics sünkroniseerub Apple HealthKit&#39;iga reaalajas kardiovaskulaarsete andmete, tausta värskenduste ja kirjutamisvõimaluste jaoks. Privaatsusele orienteeritud andmetöötlus.">
+    <meta name="twitter:title" content="Kuidas Cardio Analytics Töötab - HealthKit Sünkroniseerimine ja">
+    <meta name="twitter:description" content="Avastage, kuidas Cardio Analytics sünkroniseerub Apple HealthKit&#39;iga reaalajas kardiovaskulaarsete andmete, tausta värskenduste ja kirjutamisvõimaluste jaoks.">
     
-    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
 
     
@@ -885,7 +885,7 @@ iga</p>
 
     <div class="data-types-grid">
       <div class="data-type-card">
-        <h4>Südame Löögisageduse Näitajad</h4>
+        <h3>Südame Löögisageduse Näitajad</h3>
         <ul>
           <li><code>HKQuantityTypeIdentifier.heartRate</code> - Praegune südame löögisagedus (lööki/min)</li>
           <li><code>restingHeartRate</code> - Puhkeasendi löögisageduse lähteväärtus (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -894,7 +894,7 @@ iga</p>
       </div>
 
       <div class="data-type-card">
-        <h4>Kardiovaskulaarsed Näitajad</h4>
+        <h3>Kardiovaskulaarsed Näitajad</h3>
         <ul>
           <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Paaris vererõhu mõõtmised (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>heartRateVariabilitySDNN</code> - Üldine HRV varieeruvus</li>
@@ -904,7 +904,7 @@ iga</p>
       </div>
 
       <div class="data-type-card">
-        <h4>Kehakoostis</h4>
+        <h3>Kehakoostis</h3>
         <ul>
           <li><code>bodyMass</code> - Kaal kilogrammides</li>
           <li>KMI arvutatakse pikkusest ja kaalust</li>
@@ -912,7 +912,7 @@ iga</p>
       </div>
 
       <div class="data-type-card">
-        <h4>EKG & Kodade Virvendusarütmia</h4>
+        <h3>EKG & Kodade Virvendusarütmia</h3>
         <ul>
           <li><code>electrocardiogramType</code> - EKG salvestised koos <code>HKElectrocardiogram.Classification</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>atrialFibrillationBurden</code> - Kodade virvendusarütmia koormuse protsent (kui saadaval) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -920,7 +920,7 @@ iga</p>
       </div>
 
       <div class="data-type-card">
-        <h4>Fitness & Liikuvus</h4>
+        <h3>Fitness & Liikuvus</h3>
         <ul>
           <li><code>vo2Max</code> - Südame vorm (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>walkingSpeed</code> - Keskmine püsiv kõndimise kiirus (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -1016,27 +1016,27 @@ let query = HKAnchoredObjectQuery(
 
     <div class="compatibility-grid">
       <div class="compatibility-card">
-        <h4>Apple Watch</h4>
+        <h3>Apple Watch</h3>
         <p>Südame löögisagedus, HRV, SpO₂, EKG, VO₂ Max, kõndimise näitajad, treppide kiirus</p>
       </div>
       <div class="compatibility-card">
-        <h4>Ühendatud Vererõhu Monitorid</h4>
+        <h3>Ühendatud Vererõhu Monitorid</h3>
         <p>Bluetooth vererõhu mansetid (Omron, Withings, QardioArm jne)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Nutikad Kaalud</h4>
+        <h3>Nutikad Kaalud</h3>
         <p>Kaal ja KMI ühendatud kaaludest (Withings, Fitbit Aria jne)</p>
       </div>
       <div class="compatibility-card">
-        <h4>Manuaalsed Kirjed</h4>
+        <h3>Manuaalsed Kirjed</h3>
         <p>Lisage vererõhk, kaal või teised näitajad otse Apple Health rakenduses</p>
       </div>
       <div class="compatibility-card">
-        <h4>Teised Fitness Jälgijad</h4>
+        <h3>Teised Fitness Jälgijad</h3>
         <p>Mis tahes seade, mis sünkroniseerib löögisageduse või fitness andmed HealthKit'i</p>
       </div>
       <div class="compatibility-card">
-        <h4>Meditsiiniseadmed</h4>
+        <h3>Meditsiiniseadmed</h3>
         <p>FDA heakskiidetud seadmed HealthKit integratsiooniga</p>
       </div>
     </div>

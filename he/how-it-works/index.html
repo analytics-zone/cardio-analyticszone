@@ -19,8 +19,8 @@
 
     
     
-    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-    <meta property="article:modified_time" content="2025-12-08T14:30:00Z">
+    <meta property="article:published_time" content="2024-01-01T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-29T14:30:00Z">
     <meta property="article:author" content="Arno Health">
     
 
@@ -30,7 +30,7 @@
     <meta property="og:title" content="כיצד Cardio Analytics עובדת - סנכרון HealthKit ועדכונים ברקע">
     <meta property="og:description" content="למד כיצד Cardio Analytics מסנכרנת עם Apple HealthKit לנתונים קרדיווסקולריים בזמן אמת, עדכונים ברקע ויכולות כתיבה חזרה. עיבוד נתונים המתמקד בפרטיות.">
     
-    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
     <meta property="og:locale" content="he_IL">
     <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
@@ -41,7 +41,7 @@
     <meta name="twitter:title" content="כיצד Cardio Analytics עובדת - סנכרון HealthKit ועדכונים ברקע">
     <meta name="twitter:description" content="למד כיצד Cardio Analytics מסנכרנת עם Apple HealthKit לנתונים קרדיווסקולריים בזמן אמת, עדכונים ברקע ויכולות כתיבה חזרה. עיבוד נתונים המתמקד בפרטיות.">
     
-    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
 
     
@@ -883,7 +883,7 @@ img[width][height] {
 
     <div class="data-types-grid">
       <div class="data-type-card">
-        <h4>מדדי קצב לב</h4>
+        <h3>מדדי קצב לב</h3>
         <ul>
           <li><code>HKQuantityTypeIdentifier.heartRate</code> - קצב לב נוכחי (פעימות/דקה)</li>
           <li><code>restingHeartRate</code> - קו בסיס של קצב לב במנוחה (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -892,7 +892,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>מדדים קרדיווסקולריים</h4>
+        <h3>מדדים קרדיווסקולריים</h3>
         <ul>
           <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - קריאות לחץ דם מזווגות (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>heartRateVariabilitySDNN</code> - שונות HRV כוללת</li>
@@ -902,7 +902,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>הרכב גוף</h4>
+        <h3>הרכב גוף</h3>
         <ul>
           <li><code>bodyMass</code> - משקל בקילוגרמים</li>
           <li>BMI מחושב מגובה ומשקל</li>
@@ -910,7 +910,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>א.ק.ג ופרפור פרוזדורים</h4>
+        <h3>א.ק.ג ופרפור פרוזדורים</h3>
         <ul>
           <li><code>electrocardiogramType</code> - הקלטות א.ק.ג עם <code>HKElectrocardiogram.Classification</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>atrialFibrillationBurden</code> - אחוז נטל AF (כאשר זמין) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -918,7 +918,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>כושר וניידות</h4>
+        <h3>כושר וניידות</h3>
         <ul>
           <li><code>vo2Max</code> - כושר קרדיו (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>walkingSpeed</code> - מהירות הליכה יציבה ממוצעת (מ'/שנ') (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -1014,27 +1014,27 @@ let query = HKAnchoredObjectQuery(
 
     <div class="compatibility-grid">
       <div class="compatibility-card">
-        <h4>Apple Watch</h4>
+        <h3>Apple Watch</h3>
         <p>קצב לב, HRV, SpO₂, א.ק.ג, VO₂ Max, מדדי הליכה, מהירות מדרגות</p>
       </div>
       <div class="compatibility-card">
-        <h4>מוניטורי לחץ דם מחוברים</h4>
+        <h3>מוניטורי לחץ דם מחוברים</h3>
         <p>חפתי לחץ דם בלוטות' (Omron, Withings, QardioArm וכו')</p>
       </div>
       <div class="compatibility-card">
-        <h4>משקלים חכמים</h4>
+        <h3>משקלים חכמים</h3>
         <p>משקל ו-BMI ממשקלים מחוברים (Withings, Fitbit Aria וכו')</p>
       </div>
       <div class="compatibility-card">
-        <h4>ערכים ידניים</h4>
+        <h3>ערכים ידניים</h3>
         <p>הוסף לחץ דם, משקל או מדדים אחרים ישירות באפליקציית Apple Health</p>
       </div>
       <div class="compatibility-card">
-        <h4>מכשירי כושר אחרים</h4>
+        <h3>מכשירי כושר אחרים</h3>
         <p>כל מכשיר המסנכרן קצב לב או נתוני כושר ל-HealthKit</p>
       </div>
       <div class="compatibility-card">
-        <h4>מכשירים רפואיים</h4>
+        <h3>מכשירים רפואיים</h3>
         <p>מכשירים מאושרי FDA עם אינטגרציית HealthKit</p>
       </div>
     </div>

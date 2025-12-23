@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <title>Cardio Analytics কীভাবে কাজ করে - HealthKit সিঙ্ক এবং ব্যাকগ্রাউন্ড আপডেট</title>
-    <meta name="description" content="রিয়েল-টাইম কার্ডিওভাসকুলার ডেটা, ব্যাকগ্রাউন্ড আপডেট এবং রাইট-ব্যাক ক্ষমতার জন্য Cardio Analytics কীভাবে Apple HealthKit এর সাথে সিঙ্ক করে তা জানুন। গোপনীয়তা-প্রথম ডেটা প্রসেসিং।">
+    <title>Cardio Analytics কীভাবে কাজ করে - HealthKit সিঙ্ক এবং ব্যাকগ্রাউন্ড</title>
+    <meta name="description" content="রিয়েল-টাইম কার্ডিওভাসকুলার ডেটা, ব্যাকগ্রাউন্ড আপডেট এবং রাইট-ব্যাক ক্ষমতার জন্য Cardio Analytics কীভাবে Apple HealthKit এর সাথে সিঙ্ক করে তা জানুন। গোপনীয়তা-প্রথম">
     <meta name="author" content="Arno Health">
 
     
@@ -19,18 +19,18 @@
 
     
     
-    <meta property="article:published_time" content="2025-01-15T10:00:00Z">
-    <meta property="article:modified_time" content="2025-12-08T14:30:00Z">
+    <meta property="article:published_time" content="2024-01-01T10:00:00Z">
+    <meta property="article:modified_time" content="2025-11-29T14:30:00Z">
     <meta property="article:author" content="Arno Health">
     
 
     
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://cardio.analyticszone.app/bn/how-it-works/">
-    <meta property="og:title" content="Cardio Analytics কীভাবে কাজ করে - HealthKit সিঙ্ক এবং ব্যাকগ্রাউন্ড আপডেট">
-    <meta property="og:description" content="রিয়েল-টাইম কার্ডিওভাসকুলার ডেটা, ব্যাকগ্রাউন্ড আপডেট এবং রাইট-ব্যাক ক্ষমতার জন্য Cardio Analytics কীভাবে Apple HealthKit এর সাথে সিঙ্ক করে তা জানুন। গোপনীয়তা-প্রথম ডেটা প্রসেসিং।">
+    <meta property="og:title" content="Cardio Analytics কীভাবে কাজ করে - HealthKit সিঙ্ক এবং ব্যাকগ্রাউন্ড">
+    <meta property="og:description" content="রিয়েল-টাইম কার্ডিওভাসকুলার ডেটা, ব্যাকগ্রাউন্ড আপডেট এবং রাইট-ব্যাক ক্ষমতার জন্য Cardio Analytics কীভাবে Apple HealthKit এর সাথে সিঙ্ক করে তা জানুন। গোপনীয়তা-প্রথম">
     
-    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
     <meta property="og:locale" content="bn_BD">
     <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
@@ -38,10 +38,10 @@
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cardio.analyticszone.app/bn/how-it-works/">
-    <meta name="twitter:title" content="Cardio Analytics কীভাবে কাজ করে - HealthKit সিঙ্ক এবং ব্যাকগ্রাউন্ড আপডেট">
-    <meta name="twitter:description" content="রিয়েল-টাইম কার্ডিওভাসকুলার ডেটা, ব্যাকগ্রাউন্ড আপডেট এবং রাইট-ব্যাক ক্ষমতার জন্য Cardio Analytics কীভাবে Apple HealthKit এর সাথে সিঙ্ক করে তা জানুন। গোপনীয়তা-প্রথম ডেটা প্রসেসিং।">
+    <meta name="twitter:title" content="Cardio Analytics কীভাবে কাজ করে - HealthKit সিঙ্ক এবং ব্যাকগ্রাউন্ড">
+    <meta name="twitter:description" content="রিয়েল-টাইম কার্ডিওভাসকুলার ডেটা, ব্যাকগ্রাউন্ড আপডেট এবং রাইট-ব্যাক ক্ষমতার জন্য Cardio Analytics কীভাবে Apple HealthKit এর সাথে সিঙ্ক করে তা জানুন। গোপনীয়তা-প্রথম">
     
-    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/cardio-analytics-og.jpg">
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
     
 
     
@@ -883,7 +883,7 @@ img[width][height] {
 
     <div class="data-types-grid">
       <div class="data-type-card">
-        <h4>হৃদস্পন্দন মেট্রিক্স</h4>
+        <h3>হৃদস্পন্দন মেট্রিক্স</h3>
         <ul>
           <li><code>HKQuantityTypeIdentifier.heartRate</code> - বর্তমান হৃদস্পন্দন (বিট/মিনিট)</li>
           <li><code>restingHeartRate</code> - বিশ্রামকালীন HR বেসলাইন (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -892,7 +892,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>কার্ডিওভাসকুলার মেট্রিক্স</h4>
+        <h3>কার্ডিওভাসকুলার মেট্রিক্স</h3>
         <ul>
           <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - জোড়া BP রিডিং (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>heartRateVariabilitySDNN</code> - সামগ্রিক HRV পরিবর্তনশীলতা</li>
@@ -902,7 +902,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>শরীরের গঠন</h4>
+        <h3>শরীরের গঠন</h3>
         <ul>
           <li><code>bodyMass</code> - kg এ ওজন</li>
           <li>উচ্চতা এবং ওজন থেকে গণনা করা BMI</li>
@@ -910,7 +910,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>ECG এবং অ্যাট্রিয়াল ফাইব্রিলেশন</h4>
+        <h3>ECG এবং অ্যাট্রিয়াল ফাইব্রিলেশন</h3>
         <ul>
           <li><code>electrocardiogramType</code> - <code>HKElectrocardiogram.Classification</code> সহ ECG রেকর্ডিং (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>atrialFibrillationBurden</code> - AF বোঝা শতাংশ (যেখানে উপলব্ধ) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -918,7 +918,7 @@ img[width][height] {
       </div>
 
       <div class="data-type-card">
-        <h4>ফিটনেস এবং মোবিলিটি</h4>
+        <h3>ফিটনেস এবং মোবিলিটি</h3>
         <ul>
           <li><code>vo2Max</code> - কার্ডিও ফিটনেস (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li>
           <li><code>walkingSpeed</code> - গড় স্থির হাঁটার গতি (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
@@ -1014,27 +1014,27 @@ let query = HKAnchoredObjectQuery(
 
     <div class="compatibility-grid">
       <div class="compatibility-card">
-        <h4>Apple Watch</h4>
+        <h3>Apple Watch</h3>
         <p>হৃদস্পন্দন, HRV, SpO₂, ECG, VO₂ Max, হাঁটার মেট্রিক্স, সিঁড়ির গতি</p>
       </div>
       <div class="compatibility-card">
-        <h4>সংযুক্ত BP মনিটর</h4>
+        <h3>সংযুক্ত BP মনিটর</h3>
         <p>ব্লুটুথ রক্তচাপ কাফ (Omron, Withings, QardioArm, ইত্যাদি)</p>
       </div>
       <div class="compatibility-card">
-        <h4>স্মার্ট স্কেল</h4>
+        <h3>স্মার্ট স্কেল</h3>
         <p>সংযুক্ত স্কেল থেকে ওজন এবং BMI (Withings, Fitbit Aria, ইত্যাদি)</p>
       </div>
       <div class="compatibility-card">
-        <h4>ম্যানুয়াল এন্ট্রি</h4>
+        <h3>ম্যানুয়াল এন্ট্রি</h3>
         <p>Apple Health অ্যাপে সরাসরি BP, ওজন বা অন্যান্য মেট্রিক্স যোগ করুন</p>
       </div>
       <div class="compatibility-card">
-        <h4>অন্যান্য ফিটনেস ট্র্যাকার</h4>
+        <h3>অন্যান্য ফিটনেস ট্র্যাকার</h3>
         <p>HealthKit এ হৃদস্পন্দন বা ফিটনেস ডেটা সিঙ্ক করা যেকোনো ডিভাইস</p>
       </div>
       <div class="compatibility-card">
-        <h4>চিকিৎসা ডিভাইস</h4>
+        <h3>চিকিৎসা ডিভাইস</h3>
         <p>HealthKit ইন্টিগ্রেশন সহ FDA-অনুমোদিত ডিভাইস</p>
       </div>
     </div>
