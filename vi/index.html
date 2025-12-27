@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Cardio Analytics - 11 chỉ số sức khỏe tim mạch từ Apple Health</title>
+    <meta name="description" content="Ứng dụng theo dõi tim mạch toàn diện. Theo dõi nhịp tim, huyết áp, HRV, SpO₂, ECG, VO₂ Max, chỉ số đi bộ và nhiều hơn nữa.">
+    <meta name="author" content="Arno Health">
+
+    
+    
+    <meta name="keywords" content="phân tích tim mạch, theo dõi sức khỏe tim mạch, ứng dụng huyết áp, biến thiên nhịp tim, theo dõi VO2 max, ứng dụng ECG, rung tâm nhĩ, sức khỏe tim mạch, Apple Health, HealthKit">
+    
+
+    
+    <link rel="canonical" href="https://cardio.analyticszone.app/vi/">
+
+    
+    
+    <meta property="article:published_time" content="2024-01-01T10:00:00Z">
+    <meta property="article:modified_time" content="2025-12-23T14:30:00Z">
+    <meta property="article:author" content="Arno Health">
+    
+
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cardio.analyticszone.app/vi/">
+    <meta property="og:title" content="Cardio Analytics - 11 chỉ số sức khỏe tim mạch từ Apple Health">
+    <meta property="og:description" content="Ứng dụng theo dõi tim mạch toàn diện. Theo dõi nhịp tim, huyết áp, HRV, SpO₂, ECG, VO₂ Max, chỉ số đi bộ và nhiều hơn nữa.">
+    
+    <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
+    
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:site_name" content="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardio.analyticszone.app/vi/">
+    <meta name="twitter:title" content="Cardio Analytics - 11 chỉ số sức khỏe tim mạch từ Apple Health">
+    <meta name="twitter:description" content="Ứng dụng theo dõi tim mạch toàn diện. Theo dõi nhịp tim, huyết áp, HRV, SpO₂, ECG, VO₂ Max, chỉ số đi bộ và nhiều hơn nữa.">
+    
+    <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
+    
+
+    
+    
+    <link rel="alternate" hreflang="af" href="https://cardio.analyticszone.app/af/">
+    
+    <link rel="alternate" hreflang="ar" href="https://cardio.analyticszone.app/ar/">
+    
+    <link rel="alternate" hreflang="bg" href="https://cardio.analyticszone.app/bg/">
+    
+    <link rel="alternate" hreflang="bn" href="https://cardio.analyticszone.app/bn/">
+    
+    <link rel="alternate" hreflang="ca" href="https://cardio.analyticszone.app/ca/">
+    
+    <link rel="alternate" hreflang="cs" href="https://cardio.analyticszone.app/cs/">
+    
+    <link rel="alternate" hreflang="da" href="https://cardio.analyticszone.app/da/">
+    
+    <link rel="alternate" hreflang="de" href="https://cardio.analyticszone.app/de/">
+    
+    <link rel="alternate" hreflang="el" href="https://cardio.analyticszone.app/el/">
+    
+    <link rel="alternate" hreflang="en" href="https://cardio.analyticszone.app/en/">
+    
+    <link rel="alternate" hreflang="es" href="https://cardio.analyticszone.app/es/">
+    
+    <link rel="alternate" hreflang="et" href="https://cardio.analyticszone.app/et/">
+    
+    <link rel="alternate" hreflang="fa" href="https://cardio.analyticszone.app/fa/">
+    
+    <link rel="alternate" hreflang="fi" href="https://cardio.analyticszone.app/fi/">
+    
+    <link rel="alternate" hreflang="fr" href="https://cardio.analyticszone.app/fr/">
+    
+    <link rel="alternate" hreflang="ha" href="https://cardio.analyticszone.app/ha/">
+    
+    <link rel="alternate" hreflang="he" href="https://cardio.analyticszone.app/he/">
+    
+    <link rel="alternate" hreflang="hi" href="https://cardio.analyticszone.app/hi/">
+    
+    <link rel="alternate" hreflang="hr" href="https://cardio.analyticszone.app/hr/">
+    
+    <link rel="alternate" hreflang="hu" href="https://cardio.analyticszone.app/hu/">
+    
+    <link rel="alternate" hreflang="id" href="https://cardio.analyticszone.app/id/">
+    
+    <link rel="alternate" hreflang="is" href="https://cardio.analyticszone.app/is/">
+    
+    <link rel="alternate" hreflang="it" href="https://cardio.analyticszone.app/it/">
+    
+    <link rel="alternate" hreflang="ja" href="https://cardio.analyticszone.app/ja/">
+    
+    <link rel="alternate" hreflang="ko" href="https://cardio.analyticszone.app/ko/">
+    
+    <link rel="alternate" hreflang="lt" href="https://cardio.analyticszone.app/lt/">
+    
+    <link rel="alternate" hreflang="ms" href="https://cardio.analyticszone.app/ms/">
+    
+    <link rel="alternate" hreflang="my" href="https://cardio.analyticszone.app/my/">
+    
+    <link rel="alternate" hreflang="lv" href="https://cardio.analyticszone.app/lv/">
+    
+    <link rel="alternate" hreflang="nl" href="https://cardio.analyticszone.app/nl/">
+    
+    <link rel="alternate" hreflang="nb" href="https://cardio.analyticszone.app/nb/">
+    
+    <link rel="alternate" hreflang="pl" href="https://cardio.analyticszone.app/pl/">
+    
+    <link rel="alternate" hreflang="pt" href="https://cardio.analyticszone.app/pt/">
+    
+    <link rel="alternate" hreflang="ru" href="https://cardio.analyticszone.app/ru/">
+    
+    <link rel="alternate" hreflang="sk" href="https://cardio.analyticszone.app/sk/">
+    
+    <link rel="alternate" hreflang="sl" href="https://cardio.analyticszone.app/sl/">
+    
+    <link rel="alternate" hreflang="sr" href="https://cardio.analyticszone.app/sr/">
+    
+    <link rel="alternate" hreflang="sv" href="https://cardio.analyticszone.app/sv/">
+    
+    <link rel="alternate" hreflang="th" href="https://cardio.analyticszone.app/th/">
+    
+    <link rel="alternate" hreflang="tl" href="https://cardio.analyticszone.app/tl/">
+    
+    <link rel="alternate" hreflang="uk" href="https://cardio.analyticszone.app/uk/">
+    
+    <link rel="alternate" hreflang="zh" href="https://cardio.analyticszone.app/zh/">
+    
+    <link rel="alternate" hreflang="ro" href="https://cardio.analyticszone.app/ro/">
+    
+    <link rel="alternate" hreflang="sw" href="https://cardio.analyticszone.app/sw/">
+    
+    <link rel="alternate" hreflang="tr" href="https://cardio.analyticszone.app/tr/">
+    
+    <link rel="alternate" hreflang="ur" href="https://cardio.analyticszone.app/ur/">
+    
+    <link rel="alternate" hreflang="vi" href="https://cardio.analyticszone.app/vi/">
+    
+    <link rel="alternate" hreflang="yo" href="https://cardio.analyticszone.app/yo/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://cardio.analyticszone.app/en/">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF6B6B">
+    <meta name="robots" content="index, follow">
+
+    
+    <style>
+/* Critical CSS - Above the fold styles for fast LCP */
+:root {
+  --color-primary: #0066CC;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skip link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header - Critical for LCP */
+.site-header {
+  background: var(--color-bg);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.site-logo img, .site-logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Navigation */
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
+  }
+  .main-nav a:hover {
+    color: var(--color-primary);
+  }
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: flex;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+}
+
+/* Hero section - Critical for LCP */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.hero .lead, .hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Buttons - Critical for CTA */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0052a3;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Utility classes */
+.hidden { display: none !important; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Images - prevent CLS with aspect-ratio */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.lazy-image {
+  background: var(--color-bg-alt);
+  transition: opacity 0.3s;
+}
+
+.lazy-image:not(.loaded) {
+  opacity: 0;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* App badges - fixed dimensions to prevent CLS */
+.app-badge img {
+  width: 140px;
+  height: 42px;
+}
+
+/* Logo - fixed dimensions */
+.site-logo img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+
+    
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <link rel="preload" href="/assets/css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/main.min.css"></noscript>
+
+    
+    
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Cardio Analytics - Comprehensive Heart Health Tracking | iOS App",
+      "url": "https://cardio.analyticszone.app",
+      "logo": "https://cardio.analyticszone.app/assets/images/logo.png",
+      "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.",
+      "author": "Arno Health",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "info@onmedic.com"
+      }
+    }
+    </script>
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Cardio Analytics",
+      "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Monitor heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max, walking metrics and more. Privacy-first iOS app with HealthKit integration.",
+      "url": "https://cardio.analyticszone.app",
+      "applicationCategory": ["HealthApplication", "MedicalApplication"],
+      "operatingSystem": "iOS",
+      "softwareVersion": "Latest",
+      "author": {
+        "@type": "Organization",
+        "name": "Arno Health"
+      },
+      "downloadUrl": "https://apps.apple.com/app/cardioanalytics",
+      "featureList": [
+        "11 cardiovascular and mobility metrics tracking",
+        "Heart rate monitoring (resting, walking, current)",
+        "Blood pressure tracking with AHA categories",
+        "Heart rate variability (HRV) analysis",
+        "Oxygen saturation (SpO₂) monitoring",
+        "Weight and BMI tracking",
+        "ECG and atrial fibrillation detection",
+        "VO₂ Max cardio fitness tracking",
+        "Walking speed (sixth vital sign)",
+        "Walking asymmetry and gait analysis",
+        "Stair ascent speed monitoring",
+        "Medication adherence tracking",
+        "Evidence-based health alerts",
+        "Symptom and care hub logging",
+        "HealthKit integration with background sync",
+        "Privacy by design - all data on-device",
+        "Shareable PDF and CSV reports"
+      ]
+    }
+    </script>
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Cardio Analytics - 11 chỉ số sức khỏe tim mạch từ Apple Health",
+      "description": "Ứng dụng theo dõi tim mạch toàn diện. Theo dõi nhịp tim, huyết áp, HRV, SpO₂, ECG, VO₂ Max, chỉ số đi bộ và nhiều hơn nữa.",
+      "url": "https://cardio.analyticszone.app/vi/",
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Cardiovascular Health Monitoring"
+      }
+    }
+    </script>
+
+    
+
+    
+    
+
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Chuyển đến nội dung</a>
+
+    
+    <header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            
+            <a href="/vi/" class="site-logo">
+                <picture>
+                    <source srcset="/assets/images/logo-dark.png" type="image/png" media="(prefers-color-scheme: dark)">
+                    <img src="/assets/images/logo.png" alt="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App" width="56" height="56">
+                </picture>
+                <span class="logo-text">Cardio Analytics</span>
+            </a>
+
+            
+            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
+                <ul>
+                    
+                    <li>
+                        
+                        <a href="/vi/" 
+                            aria-current="">
+                            Trang chủ
+                        </a>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <span class="nav-label">Ứng dụng</span>
+                        
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/vi/features/" 
+                                    aria-current="">
+                                    Tính năng
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/how-it-works/" 
+                                    aria-current="">
+                                    Cách thức hoạt động
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/privacy/" 
+                                    aria-current="">
+                                    Quyền riêng tư
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li class="has-submenu">
+                        
+                        
+                        <span class="nav-label">Khoa học</span>
+                        
+                        <ul class="submenu">
+                            
+                            <li>
+                                <a href="/vi/heart-rate/" 
+                                    aria-current="">
+                                    Nhịp tim
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/blood-pressure/" 
+                                    aria-current="">
+                                    Huyết áp
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/hrv/" 
+                                    aria-current="">
+                                    HRV
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/spo2/" 
+                                    aria-current="">
+                                    Độ bão hòa oxy
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/weight-bmi/" 
+                                    aria-current="">
+                                    Cân nặng &amp; BMI
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/ecg-afib/" 
+                                    aria-current="">
+                                    Điện tâm đồ &amp; Rung tâm nhĩ
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/vo2max/" 
+                                    aria-current="">
+                                    VO₂ Max
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/walking-speed/" 
+                                    aria-current="">
+                                    Tốc độ đi bộ
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/walking-asymmetry/" 
+                                    aria-current="">
+                                    Đi bộ bất đối xứng
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/stair-speed/" 
+                                    aria-current="">
+                                    Tốc độ leo cầu thang
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/healthkit/" 
+                                    aria-current="">
+                                    Tích hợp HealthKit
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/vi/references/" 
+                                    aria-current="">
+                                    Tài liệu tham khảo
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+                    
+                    <li>
+                        
+                        <a href="/vi/support/" 
+                            aria-current="">
+                            Hỗ trợ
+                        </a>
+                        
+                    </li>
+                    
+                </ul>
+
+                
+                <div class="search-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="search" id="site-search" class="search-input" aria-expanded="false"
+                        aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
+                    <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
+                </div>
+
+                
+                <select class="language-selector" id="language-select" aria-label="Chọn ngôn ngữ">
+                    
+                    <option value="af" >
+                        Afrikaans
+                    </option>
+                    
+                    <option value="ar" >
+                        العربية
+                    </option>
+                    
+                    <option value="bg" >
+                        Български
+                    </option>
+                    
+                    <option value="bn" >
+                        বাংলা
+                    </option>
+                    
+                    <option value="ca" >
+                        Català
+                    </option>
+                    
+                    <option value="cs" >
+                        Čeština
+                    </option>
+                    
+                    <option value="da" >
+                        Dansk
+                    </option>
+                    
+                    <option value="de" >
+                        Deutsch
+                    </option>
+                    
+                    <option value="el" >
+                        Ελληνικά
+                    </option>
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                    <option value="es" >
+                        Español
+                    </option>
+                    
+                    <option value="et" >
+                        Eesti
+                    </option>
+                    
+                    <option value="fa" >
+                        فارسی
+                    </option>
+                    
+                    <option value="fi" >
+                        Suomi
+                    </option>
+                    
+                    <option value="fr" >
+                        Français
+                    </option>
+                    
+                    <option value="ha" >
+                        Hausa
+                    </option>
+                    
+                    <option value="he" >
+                        עברית
+                    </option>
+                    
+                    <option value="hi" >
+                        हिन्दी
+                    </option>
+                    
+                    <option value="hr" >
+                        Hrvatski
+                    </option>
+                    
+                    <option value="hu" >
+                        Magyar
+                    </option>
+                    
+                    <option value="id" >
+                        Bahasa Indonesia
+                    </option>
+                    
+                    <option value="is" >
+                        Íslenska
+                    </option>
+                    
+                    <option value="it" >
+                        Italiano
+                    </option>
+                    
+                    <option value="ja" >
+                        日本語
+                    </option>
+                    
+                    <option value="ko" >
+                        한국어
+                    </option>
+                    
+                    <option value="lt" >
+                        Lietuvių
+                    </option>
+                    
+                    <option value="lv" >
+                        Latviešu
+                    </option>
+                    
+                    <option value="ms" >
+                        Bahasa Melayu
+                    </option>
+                    
+                    <option value="my" >
+                        မြန်မာဘာသာ
+                    </option>
+                    
+                    <option value="nb" >
+                        Norsk Bokmål
+                    </option>
+                    
+                    <option value="nl" >
+                        Nederlands
+                    </option>
+                    
+                    <option value="pl" >
+                        Polski
+                    </option>
+                    
+                    <option value="pt" >
+                        Português
+                    </option>
+                    
+                    <option value="ro" >
+                        Română
+                    </option>
+                    
+                    <option value="ru" >
+                        Русский
+                    </option>
+                    
+                    <option value="sk" >
+                        Slovenčina
+                    </option>
+                    
+                    <option value="sl" >
+                        Slovenščina
+                    </option>
+                    
+                    <option value="sr" >
+                        Српски
+                    </option>
+                    
+                    <option value="sv" >
+                        Svenska
+                    </option>
+                    
+                    <option value="sw" >
+                        Kiswahili
+                    </option>
+                    
+                    <option value="th" >
+                        ไทย
+                    </option>
+                    
+                    <option value="tl" >
+                        Tagalog
+                    </option>
+                    
+                    <option value="tr" >
+                        Türkçe
+                    </option>
+                    
+                    <option value="uk" >
+                        Українська
+                    </option>
+                    
+                    <option value="ur" >
+                        اردو
+                    </option>
+                    
+                    <option value="vi" selected>
+                        Tiếng Việt
+                    </option>
+                    
+                    <option value="yo" >
+                        Yoruba
+                    </option>
+                    
+                    <option value="zh" >
+                        中文
+                    </option>
+                    
+                </select>
+
+                
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                
+                
+                <a href="https://apps.apple.com/app/cardioanalytics" class="header-download-btn" target="_blank" rel="noopener"
+                    aria-label="Download on App Store">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                    </svg>
+                    <span class="download-text">Download</span>
+                </a>
+                
+            </nav>
+
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Chuyển đổi menu"
+                aria-expanded="false" aria-controls="nav-primary">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main id="main-content" class="main-content">
+        <!-- Cardio Analytics Trang Chủ -->
+
+<!-- Phần Hero -->
+<section class="app-hero">
+  <div class="container">
+    <div class="app-hero-content">
+      <div class="app-hero-text">
+        <div class="app-hero-badge">
+          <span>❤️</span>
+          <span>Theo Dõi Sức Khỏe Tim Mạch Toàn Diện</span>
+        </div>
+        <h1>Theo Dõi Sức Khỏe Tim Mạch Với Sự Tự Tin</h1>
+        <p class="app-hero-subtitle">
+          Theo dõi 11 chỉ số tim mạch và vận động từ Apple Health. Theo dõi nhịp tim, huyết áp, HRV, SpO₂, điện tâm đồ, VO₂ Max và nhiều hơn nữa.
+          Ứng dụng iOS ưu tiên quyền riêng tư với xử lý dữ liệu hoàn toàn trên thiết bị.
+        </p>
+        <div class="app-hero-cta">
+          <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+            Tải về trên App Store
+          </a>
+          <a href="/vi/features/" class="btn btn-large btn-secondary">
+            Khám Phá Tính Năng
+          </a>
+        </div>
+        <p class="mt-6 text-sm-muted disclaimer-note">
+          ⚠️ Cardio Analytics không cung cấp chẩn đoán y khoa. Luôn tham khảo ý kiến bác sĩ có trình độ.
+        </p>
+      </div>
+      <div class="app-hero-mockup">
+        <div class="mockup-phone">
+          <!-- Placeholder for app screenshot -->
+          <div class="placeholder-screenshot">
+            Bảng Điều Khiển Cardio Analytics
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tổng Quan Các Chỉ Số Chính -->
+<section id="metrics" class="metrics-overview">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">11 Chỉ Số Toàn Diện</div>
+      <h2 class="section-title">Theo Dõi Tim Mạch & Vận Động Hoàn Chỉnh</h2>
+      <p class="section-subtitle">Bảng điều khiển thống nhất cho tất cả dữ liệu sức khỏe tim và vận động của bạn từ Apple HealthKit</p>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-icon">❤️</div>
+        <h3><a href="/vi/heart-rate/">Nhịp Tim</a></h3>
+        <p>Theo dõi nhịp tim lúc nghỉ, khi đi bộ và hiện tại với chỉ báo phạm vi bình thường (60-100 nhịp/phút). Phát hiện nhịp tim chậm và nhịp tim nhanh.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🩺</div>
+        <h3><a href="/vi/blood-pressure/">Huyết Áp</a></h3>
+        <p>Theo dõi chỉ số tâm thu và tâm trương với phân loại danh mục AHA. Theo dõi nguy cơ tăng huyết áp và sức khỏe tim mạch tổng thể.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">📊</div>
+        <h3><a href="/vi/hrv/">Biến Thiên Nhịp Tim</a></h3>
+        <p>Theo dõi các chỉ số SDNN và RMSSD để đánh giá mức độ căng thẳng và sức khỏe tim mạch. HRV thấp liên quan đến kết quả sức khỏe xấu hơn.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🫁</div>
+        <h3><a href="/vi/spo2/">Độ Bão Hòa Oxy</a></h3>
+        <p>Theo dõi mức SpO₂ với chỉ báo phạm vi bình thường (95-100%). Nhận cảnh báo thiếu oxy và theo dõi sức khỏe hô hấp và tim mạch.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">⚖️</div>
+        <h3><a href="/vi/weight-bmi/">Cân Nặng & BMI</a></h3>
+        <p>Theo dõi cân nặng cơ thể và BMI với chỉ báo phạm vi khỏe mạnh (18,5-24,9 kg/m²). Theo dõi các yếu tố nguy cơ tim mạch theo thời gian.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">📈</div>
+        <h3><a href="/vi/ecg-afib/">Điện Tâm Đồ & Rung Nhĩ</a></h3>
+        <p>Lưu trữ bản ghi ECG Apple Watch được FDA phê duyệt. Theo dõi gánh nặng rung nhĩ và thông báo nhịp không đều với độ nhạy và độ đặc hiệu 95%.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🏃</div>
+        <h3><a href="/vi/vo2max/">VO₂ Max</a></h3>
+        <p>Theo dõi sức khỏe tim mạch của bạn với yếu tố dự đoán mạnh mẽ về nguy cơ tử vong. Theo dõi xu hướng theo thời gian và phân tích các vùng tập luyện.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🚶</div>
+        <h3><a href="/vi/walking-speed/">Tốc Độ Đi Bộ</a></h3>
+        <p>Theo dõi "dấu hiệu quan trọng thứ sáu" cho sức khỏe chức năng. Tốc độ đi bộ &lt;0,8 m/s chỉ ra nguy cơ cao hơn. Theo dõi khả năng chức năng của bạn theo thời gian.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">⚖️</div>
+        <h3><a href="/vi/walking-asymmetry/">Sự Bất Đối Xứng Khi Đi Bộ</a></h3>
+        <p>Đánh giá cân bằng dáng đi và nguy cơ té ngã với các chỉ số Apple Mobility được xác thực để theo dõi sức khỏe chức năng toàn diện.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🪜</div>
+        <h3><a href="/vi/stair-speed/">Tốc Độ Leo Cầu Thang</a></h3>
+        <p>Theo dõi khả năng chức năng và sức mạnh chân với các chỉ số leo cầu thang. Phát hiện sớm sự suy giảm vận động có ý nghĩa.</p>
+      </div>
+      <div class="metric-card metric-card-highlight">
+        <div class="metric-icon">🔗</div>
+        <h3><a href="/vi/healthkit/">Tích Hợp HealthKit</a></h3>
+        <p>Trải nghiệm đồng bộ liền mạch với Apple Health. Cập nhật nền tự động, truy vấn dữ liệu hiệu quả và khả năng ghi lại.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Phần Tính Năng Chính -->
+<section id="features" class="app-features">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Tính Năng</div>
+      <h2 class="section-title">Mọi Thứ Bạn Cần Để Theo Dõi Sức Khỏe Tim Mạch</h2>
+      <p class="section-subtitle">Phân tích tim mạch cấp chuyên nghiệp được thiết kế để trao quyền cho bệnh nhân</p>
+    </div>
+    <div class="app-features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-dashboard"></use>
+          </svg>
+        </div>
+        <h3>Bảng Điều Khiển Cá Nhân Hóa</h3>
+        <p>Tất cả 11 chỉ số trong một giao diện. Xu hướng rõ ràng, phạm vi hướng dẫn và ngưỡng cá nhân hóa. Theo dõi thay đổi trong nháy mắt.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-pill"></use>
+          </svg>
+        </div>
+        <h3>Theo Dõi Thuốc</h3>
+        <p>Ghi lại liều dùng hoặc đồng bộ Thuốc HealthKit. Theo dõi tỷ lệ tuân thủ. Trực quan hóa mối tương quan với huyết áp, nhịp tim, HRV và cân nặng.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-alert"></use>
+          </svg>
+        </div>
+        <h3>Cảnh Báo Dựa Trên Bằng Chứng</h3>
+        <p>Ngưỡng phù hợp với AHA, Mayo Clinic, Cleveland Clinic. Cá nhân hóa theo lời khuyên của bác sĩ.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-clipboard"></use>
+          </svg>
+        </div>
+        <h3>Trung Tâm Triệu Chứng & Chăm Sóc</h3>
+        <p>Ghi lại triệu chứng với mức độ nghiêm trọng. Theo dõi mục tiêu chăm sóc và lịch hẹn y tế. Xuất báo cáo chuyên nghiệp cho bác sĩ của bạn.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-shield"></use>
+          </svg>
+        </div>
+        <h3>Quyền Riêng Tư Theo Thiết Kế</h3>
+        <p>Ủy quyền HealthKit chi tiết. Tất cả dữ liệu được lưu trữ cục bộ trên thiết bị của bạn. Bạn quyết định chia sẻ gì.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="icon" aria-hidden="true">
+            <use href="/assets/images/icons-sprite.svg#icon-export"></use>
+          </svg>
+        </div>
+        <h3>Báo Cáo Có Thể Chia Sẻ</h3>
+        <p>Xuất PDF hoặc CSV chuyên nghiệp cho bác sĩ. Lịch sử sức khỏe hoàn chỉnh trong một tài liệu.</p>
+      </div>
+    </div>
+    <div class="cta-center">
+      <a href="/vi/features/" class="btn btn-large btn-primary">
+        Tìm Hiểu Thêm Về Tính Năng
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Phần Cách Hoạt Động -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Cách Hoạt Động</div>
+      <h2 class="section-title">Tích Hợp HealthKit Liền Mạch</h2>
+      <p class="section-subtitle">Đồng bộ tự động với Apple Health để theo dõi tim mạch dễ dàng</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>Ủy Quyền HealthKit</h3>
+        <p>Cấp quyền đọc các chỉ số tim mạch từ Apple Health. Kiểm soát chi tiết các loại dữ liệu để chia sẻ.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Đồng Bộ Nền Tự Động</h3>
+        <p>Cardio Analytics sử dụng truy vấn neo và phân phối nền cho dữ liệu mới mà không làm hao pin.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Theo Dõi Xu Hướng & Nhận Cảnh Báo</h3>
+        <p>Theo dõi xu hướng, nhận cảnh báo dựa trên bằng chứng, ghi lại thuốc và triệu chứng, và chia sẻ báo cáo với bác sĩ.</p>
+      </div>
+    </div>
+    <div class="cta-center mt-8">
+      <a href="/vi/how-it-works/" class="btn btn-large btn-secondary">
+        Tìm Hiểu Thêm Về Đồng Bộ HealthKit
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Phần Dựa Trên Khoa Học -->
+<section class="science-backed">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">Khoa Học</div>
+      <h2 class="section-title">Các Chỉ Số Tim Mạch Dựa Trên Bằng Chứng</h2>
+      <p class="section-subtitle">Tất cả các chỉ số được hỗ trợ bởi nghiên cứu được đánh giá đồng cấp và hướng dẫn lâm sàng</p>
+    </div>
+    <div class="science-grid">
+      <div class="science-card">
+        <h3>Hướng Dẫn Lâm Sàng</h3>
+        <p>Danh mục huyết áp AHA, phạm vi nhịp tim/SpO₂ Mayo Clinic, nghiên cứu HRV Cleveland Clinic.</p>
+      </div>
+      <div class="science-card">
+        <h3>Nghiên Cứu Được Đánh Giá Đồng Cấp</h3>
+        <p>Nghiên cứu NEJM Apple Heart, phân tích tổng hợp rung nhĩ JACC, xác thực VO₂ PLOS ONE, nghiên cứu tốc độ đi bộ JAMA.</p>
+      </div>
+      <div class="science-card">
+        <h3>Thiết Bị Được FDA Phê Duyệt</h3>
+        <p>ECG Apple Watch và thông báo nhịp không đều được FDA phê duyệt để phát hiện rung nhĩ.</p>
+      </div>
+    </div>
+    <div class="cta-center mt-8">
+      <a href="/vi/references/" class="btn btn-large btn-secondary">
+        Xem Tài Liệu Tham Khảo Đầy Đủ
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Phần Kêu Gọi Hành Động -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Kiểm Soát Sức Khỏe Tim Mạch Của Bạn Ngay Hôm Nay</h2>
+      <p>Tải Cardio Analytics và theo dõi sức khỏe tim mạch của bạn với theo dõi toàn diện, ưu tiên quyền riêng tư. Tất cả dữ liệu sức khỏe tim của bạn ở một nơi.</p>
+      <a href="https://apps.apple.com/app/cardioanalytics" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+        Tải về trên App Store
+      </a>
+      <p class="disclaimer-note mt-4">
+        ⚠️ Cardio Analytics không cung cấp chẩn đoán hoặc điều trị y khoa. Luôn tham khảo ý kiến bác sĩ có trình độ để được tư vấn y tế.
+      </p>
+    </div>
+  </div>
+</section>
+    </main>
+
+    
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div>
+                <h3 class="mb-md">Cardio Analytics - Comprehensive Heart Health Tracking | iOS App</h3>
+                <p class="text-secondary">Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Trang chủ</h3>
+                <ul class="footer-links">
+                    
+                    <li>
+                        <a href="/af/"
+                           hreflang="af"
+                           lang="af"
+                           aria-label="Chuyển sang Afrikaans">
+                            Afrikaans
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ar/"
+                           hreflang="ar"
+                           lang="ar"
+                           aria-label="Chuyển sang العربية">
+                            العربية
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bg/"
+                           hreflang="bg"
+                           lang="bg"
+                           aria-label="Chuyển sang Български">
+                            Български
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/bn/"
+                           hreflang="bn"
+                           lang="bn"
+                           aria-label="Chuyển sang বাংলা">
+                            বাংলা
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ca/"
+                           hreflang="ca"
+                           lang="ca"
+                           aria-label="Chuyển sang Català">
+                            Català
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/cs/"
+                           hreflang="cs"
+                           lang="cs"
+                           aria-label="Chuyển sang Čeština">
+                            Čeština
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/da/"
+                           hreflang="da"
+                           lang="da"
+                           aria-label="Chuyển sang Dansk">
+                            Dansk
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/de/"
+                           hreflang="de"
+                           lang="de"
+                           aria-label="Chuyển sang Deutsch">
+                            Deutsch
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/el/"
+                           hreflang="el"
+                           lang="el"
+                           aria-label="Chuyển sang Ελληνικά">
+                            Ελληνικά
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/en/"
+                           hreflang="en"
+                           lang="en"
+                           aria-label="Chuyển sang English">
+                            English
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/es/"
+                           hreflang="es"
+                           lang="es"
+                           aria-label="Chuyển sang Español">
+                            Español
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/et/"
+                           hreflang="et"
+                           lang="et"
+                           aria-label="Chuyển sang Eesti">
+                            Eesti
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fa/"
+                           hreflang="fa"
+                           lang="fa"
+                           aria-label="Chuyển sang فارسی">
+                            فارسی
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fi/"
+                           hreflang="fi"
+                           lang="fi"
+                           aria-label="Chuyển sang Suomi">
+                            Suomi
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/fr/"
+                           hreflang="fr"
+                           lang="fr"
+                           aria-label="Chuyển sang Français">
+                            Français
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ha/"
+                           hreflang="ha"
+                           lang="ha"
+                           aria-label="Chuyển sang Hausa">
+                            Hausa
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/he/"
+                           hreflang="he"
+                           lang="he"
+                           aria-label="Chuyển sang עברית">
+                            עברית
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hi/"
+                           hreflang="hi"
+                           lang="hi"
+                           aria-label="Chuyển sang हिन्दी">
+                            हिन्दी
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hr/"
+                           hreflang="hr"
+                           lang="hr"
+                           aria-label="Chuyển sang Hrvatski">
+                            Hrvatski
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/hu/"
+                           hreflang="hu"
+                           lang="hu"
+                           aria-label="Chuyển sang Magyar">
+                            Magyar
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/id/"
+                           hreflang="id"
+                           lang="id"
+                           aria-label="Chuyển sang Bahasa Indonesia">
+                            Bahasa Indonesia
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/is/"
+                           hreflang="is"
+                           lang="is"
+                           aria-label="Chuyển sang Íslenska">
+                            Íslenska
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/it/"
+                           hreflang="it"
+                           lang="it"
+                           aria-label="Chuyển sang Italiano">
+                            Italiano
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ja/"
+                           hreflang="ja"
+                           lang="ja"
+                           aria-label="Chuyển sang 日本語">
+                            日本語
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ko/"
+                           hreflang="ko"
+                           lang="ko"
+                           aria-label="Chuyển sang 한국어">
+                            한국어
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lt/"
+                           hreflang="lt"
+                           lang="lt"
+                           aria-label="Chuyển sang Lietuvių">
+                            Lietuvių
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ms/"
+                           hreflang="ms"
+                           lang="ms"
+                           aria-label="Chuyển sang Bahasa Melayu">
+                            Bahasa Melayu
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/my/"
+                           hreflang="my"
+                           lang="my"
+                           aria-label="Chuyển sang မြန်မာဘာသာ">
+                            မြန်မာဘာသာ
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/lv/"
+                           hreflang="lv"
+                           lang="lv"
+                           aria-label="Chuyển sang Latviešu">
+                            Latviešu
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nl/"
+                           hreflang="nl"
+                           lang="nl"
+                           aria-label="Chuyển sang Nederlands">
+                            Nederlands
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/nb/"
+                           hreflang="nb"
+                           lang="nb"
+                           aria-label="Chuyển sang Norsk Bokmål">
+                            Norsk Bokmål
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pl/"
+                           hreflang="pl"
+                           lang="pl"
+                           aria-label="Chuyển sang Polski">
+                            Polski
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/pt/"
+                           hreflang="pt"
+                           lang="pt"
+                           aria-label="Chuyển sang Português">
+                            Português
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ru/"
+                           hreflang="ru"
+                           lang="ru"
+                           aria-label="Chuyển sang Русский">
+                            Русский
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sk/"
+                           hreflang="sk"
+                           lang="sk"
+                           aria-label="Chuyển sang Slovenčina">
+                            Slovenčina
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sl/"
+                           hreflang="sl"
+                           lang="sl"
+                           aria-label="Chuyển sang Slovenščina">
+                            Slovenščina
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sr/"
+                           hreflang="sr"
+                           lang="sr"
+                           aria-label="Chuyển sang Српски">
+                            Српски
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sv/"
+                           hreflang="sv"
+                           lang="sv"
+                           aria-label="Chuyển sang Svenska">
+                            Svenska
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/th/"
+                           hreflang="th"
+                           lang="th"
+                           aria-label="Chuyển sang ไทย">
+                            ไทย
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tl/"
+                           hreflang="tl"
+                           lang="tl"
+                           aria-label="Chuyển sang Tagalog">
+                            Tagalog
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/uk/"
+                           hreflang="uk"
+                           lang="uk"
+                           aria-label="Chuyển sang Українська">
+                            Українська
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/zh/"
+                           hreflang="zh"
+                           lang="zh"
+                           aria-label="Chuyển sang 中文">
+                            中文
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ro/"
+                           hreflang="ro"
+                           lang="ro"
+                           aria-label="Chuyển sang Română">
+                            Română
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/sw/"
+                           hreflang="sw"
+                           lang="sw"
+                           aria-label="Chuyển sang Kiswahili">
+                            Kiswahili
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tr/"
+                           hreflang="tr"
+                           lang="tr"
+                           aria-label="Chuyển sang Türkçe">
+                            Türkçe
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/ur/"
+                           hreflang="ur"
+                           lang="ur"
+                           aria-label="Chuyển sang اردو">
+                            اردو
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/vi/"
+                           hreflang="vi"
+                           lang="vi"
+                           aria-label="Chuyển sang Tiếng Việt">
+                            Tiếng Việt
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/yo/"
+                           hreflang="yo"
+                           lang="yo"
+                           aria-label="Chuyển sang Yoruba">
+                            Yoruba
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            
+            <div>
+                <h3 class="mb-md">Download</h3>
+                <div class="footer-badges">
+                    <a href="https://apps.apple.com/app/cardioanalytics" class="app-store-badge" target="_blank" rel="noopener">
+                        <img src="/assets/images/badge-app-store.svg" alt="Download on the App Store" width="120" height="40">
+                    </a>
+                    <a href="" class="app-store-badge" target="_blank" rel="noopener">
+                        <img src="/assets/images/badge-google-play.svg" alt="Get it on Google Play" width="120" height="40">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p class="text-sm text-secondary">
+                &copy; 2025 Cardio Analytics - Comprehensive Heart Health Tracking | iOS App. Bảo lưu mọi quyền
+            </p>
+            <ul class="footer-links">
+                <li><a href="/vi/privacy/">Quyền riêng tư</a></li>
+                <li><a href="/vi/terms/">Điều khoản</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-banner-content">
+        <div>
+            <p>Trang web này sử dụng cookie để cải thiện trải nghiệm của bạn.</p>
+            <a href="/vi/privacy/" class="text-sm">Tìm hiểu thêm</a>
+        </div>
+        <div class="cookie-banner-actions">
+            <button id="cookie-decline" class="btn btn-secondary btn-small">Từ chối</button>
+            <button id="cookie-accept" class="btn btn-primary btn-small">Chấp nhận</button>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="/assets/js/core.min.js" defer></script>
+    <script src="/assets/js/search.min.js" defer></script>
+
+    
+    
+
+    
+    <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js')}</script>
+</body>
+</html>
