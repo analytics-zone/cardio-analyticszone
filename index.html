@@ -6,7 +6,7 @@
     <script>
         // Detect browser language
         const browserLang = navigator.language.split('-')[0];
-        const supportedLangs = ["af", "ar", "bg", "bn", "ca", "cs", "da", "de", "el", "en", "es", "et", "fa", "fi", "fr", "ha", "he", "hi", "hr", "hu", "id", "is", "it", "ja", "ko", "lt", "ms", "my", "lv", "nl", "nb", "pl", "pt", "ru", "sk", "sl", "sr", "sv", "th", "tl", "uk", "zh", "ro", "sw", "tr", "ur", "vi", "yo"];
+        const supportedLangs = ["af", "am", "ar", "bg", "bn", "ca", "cs", "da", "de", "el", "en", "es", "et", "fa", "fi", "fr", "gu", "ha", "he", "hi", "hr", "hu", "id", "is", "it", "ja", "kn", "ko", "lt", "ms", "my", "lv", "nl", "nb", "pl", "pt", "pt-br", "ru", "sk", "sl", "sr", "sv", "th", "tl", "uk", "zh", "ro", "sw", "ta", "te", "tr", "ur", "vi", "yo"];
         const targetLang = supportedLangs.includes(browserLang) ? browserLang : 'en';
         window.location.href = '/' + targetLang + '/';
     </script>
