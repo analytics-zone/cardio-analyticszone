@@ -946,18 +946,18 @@ img[width][height] {
 
 <section class="page-hero">
   <div class="container">
-    <h1>EKG i detekcija atrijske fibrilacije</h1>
-    <p class="lead">FDA odobren Apple Watch EKG i praćenje opterećenja atrijskom fibrilacijom</p>
+    <h1>심전도(ECG) 및 심방세동 감지</h1>
+    <p class="lead">FDA 승인을 받은 Apple Watch 심전도(ECG) 및 심방세동 부담 추적</p>
   </div>
 </section>
 
 <!-- What It Is -->
 <section class="content-section">
   <div class="container">
-    <h2>Što su EKG i atrijska fibrilacija?</h2>
+    <h2>심전도(ECG) 및 심방세동이란 무엇입니까?</h2>
     <ul class="feature-list">
-      <li><strong>EKG (elektrokardiogram)</strong> - Snimanje električne aktivnosti srca. Apple Watch pruža jednokanalne EKG snimke.</li>
-      <li><strong>Atrijska fibrilacija (AF)</strong> - Nepravilan srčani ritam gdje atriji tresu umjesto da se normalno kontrahiraju. Može povećati rizik od moždanog udara.</li>
+      <li><strong>심전도(ECG)</strong> - 심장의 전기적 활동을 기록하는 것입니다. Apple Watch는 단일 유도 심전도 기록을 제공합니다.</li>
+      <li><strong>심방세동(AF)</strong> - 심방이 정상적으로 수축하지 않고 가늘게 떨리는 부정맥의 일종입니다. 뇌졸중 위험을 증가시킬 수 있습니다.</li>
     </ul>
   </div>
 </section>
@@ -965,45 +965,52 @@ img[width][height] {
 <!-- Why It Matters -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>Zašto su EKG i detekcija AF važni</h2>
-    <p><strong>FDA odobren Apple Watch EKG može detektirati atrijsku fibrilaciju</strong> s visokom točnošću. <strong>Apple Heart Study</strong> (NEJM 2019) pokazala je da upozorenja na nepravilan puls pametnog sata mogu identificirati AF (<a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1901183" target="_blank" rel="noopener">NEJM</a>).</p>
+    <h2>심전도(ECG) 및 심방세동 감지가 중요한 이유</h2>
+    <p><strong>FDA 승인을 받은 Apple Watch 심전도(ECG)는 높은 정확도로 심방세동을 감지</strong>할 수 있습니다. <strong>Apple Heart
+        Study</strong>(NEJM 2019)에 따르면 스마트워치의 불규칙한 맥박 알림으로 심방세동을 식별할 수 있음이 입증되었습니다 (<a
+        href="https://www.nejm.org/doi/full/10.1056/NEJMoa1901183" target="_blank" rel="noopener">NEJM</a>).</p>
 
     <ul class="feature-list">
-      <li><strong>AF povećava rizik od moždanog udara</strong> - 5x viši rizik od ishemijskog moždanog udara</li>
-      <li><strong>Često asimptomatska</strong> - Mnogi ljudi s AF nemaju simptome</li>
-      <li><strong>Visoka točnost detekcije</strong> - Meta-analize izvještavaju ~95% osjetljivost i 95% specifičnost za Apple Watch EKG AF klasifikaciju (<a href="https://www.jacc.org/doi/10.1016/j.jacadv.2025.102133" target="_blank" rel="noopener">JACC Advances 2025</a>)</li>
-      <li><strong>Rana detekcija omogućava liječenje</strong> - Antikoagulacija i upravljanje ritmom smanjuju rizik od moždanog udara</li>
+      <li><strong>심방세동은 뇌졸중 위험을 증가시킵니다</strong> - 허혈성 뇌졸중 위험이 5배 더 높습니다</li>
+      <li><strong>종종 증상이 없습니다</strong> - 심방세동이 있는 많은 사람들은 증상을 느끼지 못합니다</li>
+      <li><strong>높은 감지 정확도</strong> - 메타 분석에 따르면 Apple Watch 심전도 심방세동 분류의 민감도와 특이도는 각각 약 95%입니다 (<a
+          href="https://www.jacc.org/doi/10.1016/j.jacadv.2025.102133" target="_blank" rel="noopener">JACC Advances
+          2025</a>)</li>
+      <li><strong>조기 감지로 치료 가능</strong> - 항응고 요법 및 리듬 관리는 뇌졸중 위험을 줄입니다</li>
     </ul>
 
-    <p class="disclaimer mt-6">⚠️ <strong>Cardio Analytics ne dijagnosticira AF.</strong> Prikazuje Apple Watch EKG klasifikacije i AF epizode koje vi i vaš liječnik možete pregledati. Uvijek se savjetujte s kvalificiranim liječnikom za medicinsku dijagnozu.</p>
+    <p class="disclaimer mt-6">⚠️ <strong>Cardio Analytics는 심방세동을 진단하지 않습니다.</strong> 이 앱은 귀하와 귀하의 임상의가 검토할 수 있도록 Apple
+      Watch 심전도 분류 및 심방세동 에피소드를 표시합니다. 의학적 진단은 항상 자격을 갖춘 임상의와 상담하세요.</p>
   </div>
 </section>
 
 <!-- ECG Classifications -->
 <section class="content-section">
   <div class="container">
-    <h2>Apple Watch EKG klasifikacije</h2>
-    <p>Apple Watch EKG pruža ove klasifikacije (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>):</p>
+    <h2>Apple Watch 심전도(ECG) 분류</h2>
+    <p>Apple Watch 심전도는 다음과 같은 분류를 제공합니다 (<a
+        href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum"
+        target="_blank" rel="noopener">Apple Docs</a>):</p>
 
     <div class="ecg-classifications">
       <div class="ecg-classification">
-        <h3>Sinusni ritam</h3>
-        <p>Normalan, pravilan srčani ritam. Nije potrebna radnja.</p>
+        <h3>동리듬 (Sinus Rhythm)</h3>
+        <p>정상적이고 규칙적인 심장 리듬입니다. 조치가 필요하지 않습니다.</p>
       </div>
 
       <div class="ecg-classification">
-        <h3>Atrijska fibrilacija</h3>
-        <p>Otkriven nepravilan ritam. Konzultirajte liječnika za procjenu.</p>
+        <h3>심방세동 (Atrial Fibrillation)</h3>
+        <p>불규칙한 리듬이 감지되었습니다. 평가를 위해 임상의와 상담하세요.</p>
       </div>
 
       <div class="ecg-classification">
-        <h3>Nizak/visok otkucaj srca</h3>
-        <p>Otkucaj srca izvan raspona 50-150 otkucaja/min tijekom EKG. Može biti potrebna dodatna provjera.</p>
+        <h3>낮은/높은 심박수</h3>
+        <p>심전도 측정 중 심박수가 50-150 bpm 범위를 벗어났습니다. 추적 관찰이 필요할 수 있습니다.</p>
       </div>
 
       <div class="ecg-classification">
-        <h3>Neuvjerljivo</h3>
-        <p>Nije moguće klasificirati. Ponovite EKG ili konzultirajte liječnika ako postoje simptomi.</p>
+        <h3>판정 불가 (Inconclusive)</h3>
+        <p>분류할 수 없습니다. 심전도를 다시 측정하거나 증상이 있는 경우 임상의와 상담하세요.</p>
       </div>
     </div>
   </div>
@@ -1012,29 +1019,29 @@ img[width][height] {
 <!-- AF Burden -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>Praćenje opterećenja atrijskom fibrilacijom</h2>
-    <p>Apple Watch (watchOS 9+) može procijeniti <strong>opterećenje AF</strong> - postotak vremena koje provodite u atrijskoj fibrilaciji tijekom tjedna.</p>
+    <h2>심방세동 부담(AF Burden) 추적</h2>
+    <p>Apple Watch(watchOS 9 이상)는 일주일 동안 심방세동 상태였던 시간의 백분율인 <strong>심방세동 부담(AF Burden)</strong>을 추정할 수 있습니다.</p>
 
     <ul class="feature-list">
-      <li><strong>Izračunato iz obavijesti o nepravilnom ritmu i EKG snimaka</strong></li>
-      <li><strong>Korisno za praćenje napredovanja AF</strong> - Postaje li AF učestalija?</li>
-      <li><strong>Pomaže usmjeriti odluke o liječenju</strong> - Veće opterećenje AF može ukazivati na potrebu za kontrolom ritma</li>
+      <li><strong>불규칙한 맥박 알림 및 심전도 기록에서 계산됨</strong></li>
+      <li><strong>심방세동의 진행 상황 모니터링에 유용함</strong> - 심방세동이 더 빈번해지고 있습니까?</li>
+      <li><strong>치료 결정 지침에 도움</strong> - 심방세동 부담이 높을수록 리듬 제어의 필요성을 나타낼 수 있습니다</li>
     </ul>
 
-    <p class="note">📊 <strong>Podijelite sa svojim liječnikom:</strong> Podaci o opterećenju AF pomažu kardiolozima procijeniti težinu aritmije i učinkovitost liječenja.</p>
+    <p class="note">📊 <strong>임상의와 공유하세요:</strong> 심방세동 부담 데이터는 심장 전문의가 부정맥의 중증도와 치료 효과를 평가하는 데 도움이 됩니다.</p>
   </div>
 </section>
 
 <!-- How Cardio Analytics Uses It -->
 <section class="content-section">
   <div class="container">
-    <h2>Kako Cardio Analytics koristi EKG i AF podatke</h2>
+    <h2>Cardio Analytics가 심전도(ECG) 및 심방세동 데이터를 사용하는 방법</h2>
     <ul class="feature-list">
-      <li><strong>Pohranjuje EKG klasifikacije</strong> - Sve Apple Watch EKG snimke s vremenskim oznakama</li>
-      <li><strong>Prati AF epizode</strong> - Broj i vrijeme AF detekcija</li>
-      <li><strong>Sažima opterećenje AF</strong> - Postotak vremena u AF tijekom dana/tjedana</li>
-      <li><strong>Ističe epizode za klinički pregled</strong> - Izvezite AF povijest u PDF/CSV za svog kardiologa</li>
-      <li><strong>Korelacije s lijekovima</strong> - Pratite odnos između antiaritmičkih lijekova i AF epizoda</li>
+      <li><strong>심전도 분류 저장</strong> - 타임스탬프가 포함된 모든 Apple Watch 심전도 기록</li>
+      <li><strong>심방세동 에피소드 추적</strong> - 심방세동 감지 횟수 및 시기</li>
+      <li><strong>심방세동 부담 요약</strong> - 일/주 단위의 심방세동 상태 시간 백분율</li>
+      <li><strong>임상 추적 관찰을 위한 에피소드 제시</strong> - 심장 전문의를 위해 심방세동 기록을 PDF/CSV로 내보내기</li>
+      <li><strong>약물 상관관계</strong> - 항부정맥제와 심방세동 에피소드 사이의 관계 추적</li>
     </ul>
   </div>
 </section>
@@ -1042,26 +1049,35 @@ img[width][height] {
 <!-- HealthKit Integration -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>HealthKit tipovi podataka</h2>
-    <p>Cardio Analytics čita EKG i AF podatke iz Apple HealthKit koristeći ove identifikatore:</p>
+    <h2>HealthKit 데이터 유형</h2>
+    <p>Cardio Analytics는 다음 식별자를 사용하여 Apple HealthKit에서 심전도 및 심방세동 데이터를 읽습니다:</p>
     <ul class="feature-list">
-      <li><code>electrocardiogramType</code> - EKG snimke s <code>HKElectrocardiogram.Classification</code> uključujući <code>.atrialFibrillation</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>)</li>
-      <li><code>atrialFibrillationBurden</code> - Postotak opterećenja AF (gdje je dostupno, watchOS 9+) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>electrocardiogramType</code> - <code>.atrialFibrillation</code>을 포함한
+        <code>HKElectrocardiogram.Classification</code>이 있는 심전도 기록 (<a
+          href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum"
+          target="_blank" rel="noopener">Apple 문서</a>)</li>
+      <li><code>atrialFibrillationBurden</code> - 심방세동 부담 백분율 (사용 가능한 경우, watchOS 9 이상) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden"
+          target="_blank" rel="noopener">Apple 문서</a>)</li>
     </ul>
 
-    <p class="mt-6"><a href="/ko/healthkit/" class="btn btn-secondary">Saznajte više o HealthKit integraciji</a></p>
+    <p class="mt-6"><a href="/ko/healthkit/" class="btn btn-secondary">HealthKit 통합에 대해 자세히 알아보기</a></p>
   </div>
 </section>
 
 <!-- References -->
 <section class="content-section">
   <div class="container">
-    <h2>Znanstvene reference</h2>
+    <h2>과학적 참고문헌</h2>
     <ol class="references-list">
-      <li>Perez MV, et al. <em>Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation.</em> NEJM. 2019. <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1901183" target="_blank" rel="noopener">https://www.nejm.org/doi/full/10.1056/NEJMoa1901183</a></li>
-      <li>Barrera N, et al. <em>Accuracy of Smartwatches in the Detection of Atrial Fibrillation.</em> JACC Advances. 2025. <a href="https://www.jacc.org/doi/10.1016/j.jacadv.2025.102133" target="_blank" rel="noopener">https://www.jacc.org/doi/10.1016/j.jacadv.2025.102133</a></li>
+      <li>Perez MV, et al. <em>Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation.</em> NEJM. 2019.
+        <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1901183" target="_blank"
+          rel="noopener">https://www.nejm.org/doi/full/10.1056/NEJMoa1901183</a></li>
+      <li>Barrera N, et al. <em>Accuracy of Smartwatches in the Detection of Atrial Fibrillation.</em> JACC Advances.
+        2025. <a href="https://www.jacc.org/doi/10.1016/j.jacadv.2025.102133" target="_blank"
+          rel="noopener">https://www.jacc.org/doi/10.1016/j.jacadv.2025.102133</a></li>
     </ol>
-    <p><a href="/ko/references/" class="btn btn-secondary">Pogledajte sve reference</a></p>
+    <p><a href="/ko/references/" class="btn btn-secondary">모든 참고문헌 보기</a></p>
   </div>
 </section>
 
@@ -1069,10 +1085,10 @@ img[width][height] {
 <section class="cta-section">
   <div class="container">
     <div class="cta-box">
-      <h2>Pratite EKG i AF s Cardio Analytics</h2>
-      <p>Pohranjujte Apple Watch EKG snimke i pratite opterećenje AF za klinički pregled.</p>
+      <h2>Cardio Analytics로 심전도 및 심방세동 추적</h2>
+      <p>Apple Watch 심전도 기록을 저장하고 임상 추적 관찰을 위해 심방세동 부담을 모니터링하세요.</p>
       <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
-        Preuzmite na App Store
+        App Store에서 다운로드
       </a>
     </div>
   </div>

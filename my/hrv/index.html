@@ -643,7 +643,7 @@ img[width][height] {
                 </div>
 
                 
-                <select class="language-selector" id="language-select" aria-label="Select language">
+                <select class="language-selector" id="language-select" aria-label="ဘာသာစကား ရွေးချယ်ပါ">
                     
                     <option value="af" >
                         Afrikaans
@@ -942,12 +942,175 @@ img[width][height] {
 
     
     <main id="main-content" class="main-content">
-        <!-- HRV Science Page -->
-<section class="page-hero"><div class="container"><h1>နှလုံးခုန်နှုန်းပြောင်းလဲမှု</h1><p class="lead">SDNN နှင့် RMSSD အတိုင်းအတာများဖြင့် စိတ်ဖိစီးမှုနှင့် နှလုံးကျန်းမာရေးကို အကဲဖြတ်ပါ</p></div></section>
-<section class="content-section"><div class="container"><h2>HRV ဆိုတာ ဘာလဲ?</h2><p>နှလုံးခုန်နှုန်းပြောင်းလဲမှု (HRV) သည် ဆက်တိုက် နှလုံးခုန်မှုများကြား အချိန် အပြောင်းအလဲကို တိုင်းတာသည်။ ကျန်းမာသော နှလုံးသည် နှလုံးခုန်မှုအချိန် နည်းနည်းလေး ကွာခြားမှု ပြသသည်။</p><ul class="feature-list"><li><strong>SDNN</strong> - ပုံမှန် နှလုံးခုန်မှုကြား ကြာအဝေးများ၏ စံ ကွဲလွဲမှု</li><li><strong>RMSSD</strong> - ဆက်တိုက် ခြားနားချက်များ၏ ရင်းမြစ် ပျမ်းမျှ စတုရန်း</li></ul></div></section>
-<section class="content-section bg-light"><div class="container"><h2>HRV ဘာကြောင့် အရေးကြီးသနည်း</h2><p>HRV သည် အော်တိုနမိုး အာရုံကြော စနစ် လုပ်ဆောင်မှုကို ရောင်ပြန်ဟပ်သည်:</p><ul class="feature-list"><li>HRV မြင့်ခြင်းသည် ပိုမိုကောင်းမွန်သော ကျန်းမာရေး ရလဒ်များနှင့် ဆက်စပ်သည်</li><li>HRV နိမ့်ခြင်းသည် စိတ်ဖိစီးမှု၊ နှလုံးသွေးကြော အန္တရာယ် တိုးလာခြင်းနှင့် ဆက်စပ်သည်</li><li>HRV သည် သေဆုံးမှု အန္တရာယ်၏ ခန့်မှန်းချက် ဖြစ်သည်</li></ul></div></section>
-<section class="content-section"><div class="container"><h2>HealthKit ဒေတာ အမျိုးအစားများ</h2><ul class="feature-list"><li><code>heartRateVariabilitySDNN</code> - SDNN အတိုင်းအတာ (မီလီစက္ကန့်)</li></ul><p class="mt-6"><a href="/my/healthkit/" class="btn btn-secondary">HealthKit ပေါင်းစပ်မှုအကြောင်း ပိုမိုလေ့လာပါ</a></p></div></section>
-<section class="cta-section"><div class="container"><div class="cta-box"><h2>Cardio Analytics ဖြင့် HRV ကို ခြေရာခံပါ</h2><p>SDNN နှင့် RMSSD အတိုင်းအတာများ၊ ခေတ်ရေစီးကြောင်း ခွဲခြမ်းစိတ်ဖြာမှုနှင့် အထောက်အထားအခြေခံ ကန့်သတ်ချက်များဖြင့် သင့်နှလုံးခုန်နှုန်းပြောင်းလဲမှုကို စောင့်ကြည့်ပါ။</p><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">App Store တွင် ဒေါင်းလုဒ်လုပ်ပါ</a></div></div></section>
+        <!-- Heart Rate Variability (HRV) Science Page -->
+
+<section class="page-hero">
+    <div class="container">
+        <h1>နှလုံးခုန်နှုန်းပြောင်းလဲမှု (HRV)</h1>
+        <p class="lead">နှလုံးသွေးကြော ကျန်းမာရေးနှင့် စိတ်ဖိစီးမှု အဆင့်များကို အကဲဖြတ်ရန် SDNN နှင့် RMSSD
+            အတိုင်းအတာများကို စောင့်ကြည့်ပါ</p>
+    </div>
+</section>
+
+<!-- What It Is -->
+<section class="content-section">
+    <div class="container">
+        <h2>နှလုံးခုန်နှုန်းပြောင်းလဲမှုဆိုတာ ဘာလဲ?</h2>
+        <p>နှလုံးခုန်နှုန်းပြောင်းလဲမှု (Heart Rate Variability - HRV) သည် ဆက်တိုက်ဖြစ်သော နှလုံးခုန်မှုများကြား
+            အချိန်ကွာခြားမှုကို တိုင်းတာခြင်း ဖြစ်သည်။ ၎င်းသည် အလိုအလျောက် အာရုံကြောစနစ် လုပ်ဆောင်ချက်နှင့်
+            တစ်ခုလုံးဆိုင်ရာ နှလုံးသွေးကြော ကျန်းမာရေး၏ အမှတ်အသားတစ်ခု ဖြစ်သည်။</p>
+
+        <h3 class="mt-6">HRV အတိုင်းအတာများ:</h3>
+        <ul class="feature-list">
+            <li><strong>SDNN (NN intervals များ၏ စံဖယ်ရှားချက်)</strong> - တစ်ခုလုံးဆိုင်ရာ HRV ကို တိုင်းတာသည်။
+                စုစုပေါင်း အလိုအလျောက် အာရုံကြောစနစ် လှုပ်ရှားမှုကို ပြသသည်။</li>
+            <li><strong>RMSSD (ဆက်တိုက်ကွာခြားမှုများ၏ Root Mean Square)</strong> - ရေတို HRV ကို တိုင်းတာသည်။
+                အဓိကအားဖြင့် ပါရာဆင်ပသတ္တန် (ဗေဂယ်) တိုးနပ်စ်ကို ပြသသည်။</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Why It Matters -->
+<section class="content-section bg-light">
+    <div class="container">
+        <h2>HRV ဘာကြောင့် အရေးကြီးသနည်း</h2>
+        <p><strong>HRV နိမ့်ခြင်းသည် ပိုဆိုးသော ကျန်းမာရေး ရလဒ်များနှင့် စိတ်ဖိစီးမှု တိုးလာခြင်းတို့နှင့်
+                ဆက်စပ်နေသည်</strong> (<a
+                href="https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv" target="_blank"
+                rel="noopener">Cleveland Clinic</a>)။</p>
+        <ul class="feature-list">
+            <li>နိမ့်သော HRV သည် စိတ်ဖိစီးမှုကို လိုက်လျောညီထွေဖြစ်အောင် လုပ်ဆောင်နိုင်စွမ်း လျော့နည်းခြင်းကို
+                ညွှန်ပြသည်</li>
+            <li>နှလုံးသွေးကြောဆိုင်ရာ ရောဂါ အန္တရာယ် တိုးလာခြင်းနှင့် ဆက်စပ်နေသည်</li>
+            <li>လေ့ကျင့်ခန်း အလွန်အကျွံလုပ်ခြင်း၊ ဖျားနာခြင်း သို့မဟုတ် နာတာရှည် စိတ်ဖိစီးမှုတို့ကို ပြသနိုင်သည်</li>
+            <li>မြင့်သော HRV သည် ယေဘုယျအားဖြင့် ပိုမိုကောင်းမွန်သော နှလုံးသွေးကြော ကြံ့ခိုင်မှုနှင့် ခံနိုင်ရည်ကို
+                ညွှန်ပြသည်</li>
+        </ul>
+
+        <p class="note">📊 <strong>HRV သည် တစ်ဦးချင်းစီအပေါ် မူတည်သည်:</strong> အကြွင်းမဲ့ တန်ဖိုးများထက် သင့်ကိုယ်ပိုင်
+            ခေတ်ရေစီးကြောင်းများကို အာရုံစိုက်ပါ။ ယနေ့ HRV ကို သင့်ကိုယ်ပိုင် အခြေခံမျဉ်းနှင့် နှိုင်းယှဉ်ပါ။</p>
+    </div>
+</section>
+
+<!-- Typical Ranges -->
+<section class="content-section">
+    <div class="container">
+        <h2>HRV တန်ဖိုးများကို အဓိပ္ပာယ်ဖွင့်ဆိုခြင်း</h2>
+        <p>HRV သည် အသက်၊ ကြံ့ခိုင်မှု၊ မျိုးရိုးဗီဇနှင့် အခြားအချက်များအပေါ် မူတည်၍ တစ်ဦးနှင့်တစ်ဦး အလွန်ကွာခြားသည်။
+            ပုံမှန်အကွာအဝေး တစ်ခုတည်း မရှိသော်လည်း ယေဘုယျ ပုံစံများမှာ:</p>
+
+        <div class="range-card">
+            <h3>SDNN</h3>
+            <ul>
+                <li><strong>&gt;၁၀၀ ms</strong> - အထူးကောင်းမွန်သော HRV</li>
+                <li><strong>၅၀-၁၀၀ ms</strong> - ကောင်းမွန်သော HRV</li>
+                <li><strong>၂၀-၅၀ ms</strong> - အသင့်အတင့် HRV</li>
+                <li><strong>&lt;၂၀ ms</strong> - နိမ့်သော HRV (ကျန်းမာရေးဆိုင်ရာ စိုးရိမ်ဖွယ်ရာ ရှိနိုင်သည်)</li>
+            </ul>
+        </div>
+
+        <div class="range-card mt-6">
+            <h3>RMSSD</h3>
+            <ul>
+                <li><strong>&gt;၅၀ ms</strong> - အထူးကောင်းမွန်သော ရေတို HRV</li>
+                <li><strong>၃၀-၅၀ ms</strong> - ကောင်းမွန်သော ရေတို HRV</li>
+                <li><strong>၁၅-၃၀ ms</strong> - အသင့်အတင့် ရေတို HRV</li>
+                <li><strong>&lt;၁၅ ms</strong> - နိမ့်သော ရေတို HRV</li>
+            </ul>
+        </div>
+
+        <p class="note mt-6">⚠️ <strong>ကိုယ်ပိုင် အခြေခံမျဉ်းကို အသုံးပြုပါ:</strong> သင့် HRV သည် ဤအကွာအဝေးများထက်
+            မြင့်နေခြင်း သို့မဟုတ် နိမ့်နေခြင်း ဖြစ်နိုင်သည်။ အရေးကြီးဆုံးမှာ သင့်ကိုယ်ပိုင် အခြေခံမျဉ်းမှ
+            ပြောင်းလဲမှုများကို ခြေရာခံရန် ဖြစ်သည်။</p>
+    </div>
+</section>
+
+<!-- Factors Affecting HRV -->
+<section class="content-section bg-light">
+    <div class="container">
+        <h2>HRV ကို အကျိုးသက်ရောက်စေသော အချက်များ</h2>
+        <ul class="feature-list">
+            <li><strong>အသက်</strong> - HRV သည် ယေဘုယျအားဖြင့် အသက်နှင့်အတူ လျော့နည်းသည်</li>
+            <li><strong>ကြံ့ခိုင်မှု အဆင့်</strong> - အားကစားသမားများသည် ပုံမှန်အားဖြင့် ပိုမိုမြင့်မားသော HRV ရှိသည်
+            </li>
+            <li><strong>စိတ်ဖိစီးမှု</strong> - ရုပ်ပိုင်းဆိုင်ရာ သို့မဟုတ် စိတ်ပိုင်းဆိုင်ရာ စိတ်ဖိစီးမှုသည် HRV ကို
+                လျော့နည်းစေသည်</li>
+            <li><strong>အိပ်စက်မှု အရည်အသွေး</strong> - အိပ်စက်မှု မကောင်းခြင်းသည် HRV ကို လျော့ကျစေသည်</li>
+            <li><strong>အရက်</strong> - အရက်သောက်ခြင်းသည် ၁၂-၂၄ နာရီအတွင်း HRV ကို လျော့နည်းစေသည်</li>
+            <li><strong>ဖျားနာခြင်း</strong> - ကူးစက်ပိုးများနှင့် ဖျားနာမှုများသည် HRV ကို လျော့နည်းစေသည်</li>
+            <li><strong>ရေဓာတ်နည်းခြင်း</strong> - HRV ကို လျော့နည်းစေနိုင်သည်</li>
+            <li><strong>လေ့ကျင့်ခန်း အလွန်အကျွံလုပ်ခြင်း</strong> - ပြန်လည်နာလန်ထူမှု မရှိဘဲ လေ့ကျင့်ခန်း
+                အလွန်အကျွံလုပ်ခြင်းက HRV ကို လျော့နည်းစေသည်</li>
+        </ul>
+    </div>
+</section>
+
+<!-- How Cardio Analytics Uses It -->
+<section class="content-section">
+    <div class="container">
+        <h2>Cardio Analytics သည် HRV ဒေတာကို မည်သို့ အသုံးပြုသနည်း</h2>
+        <ul class="feature-list">
+            <li><strong>ညဘက် HRV ခေတ်ရေစီးကြောင်းများကို ပြသသည်</strong> - Apple Watch သည် ပုံမှန်အားဖြင့်
+                အိပ်ပျော်နေစဉ် HRV ကို မှတ်တမ်းတင်သည်</li>
+            <li><strong>ပုံမှန်မဟုတ်သော နိမ့်သော တန်ဖိုးများကို အလံပြသည်</strong> - HRV သည် သင့်အခြေခံမျဉ်းထက် သိသိသာသာ
+                လျော့ကျသွားသောအခါ သတိပေးသည်</li>
+            <li><strong>ရေရှည် ခေတ်ရေစီးကြောင်း ခွဲခြမ်းစိတ်ဖြာမှု</strong> - ရက်သတ္တပတ်များနှင့် လများအတွင်း HRV
+                ပြောင်းလဲမှုများကို ခြေရာခံပါ</li>
+            <li><strong>ဆေးဝါး ဆက်စပ်မှုများ</strong> - ဆေးဝါးများက အလိုအလျောက် လုပ်ဆောင်ချက်အပေါ် မည်သို့
+                အကျိုးသက်ရောက်သည်ကို ကြည့်ပါ</li>
+            <li><strong>ရောဂါလက္ခဏာ ဆက်စပ်မှုများ</strong> - နိမ့်သော HRV နှင့် ရောဂါလက္ခဏာများကြား ပုံစံများကို
+                ခွဲခြားသတ်မှတ်ပါ</li>
+        </ul>
+    </div>
+</section>
+
+<!-- HealthKit Integration -->
+<section class="content-section bg-light">
+    <div class="container">
+        <h2>HealthKit ဒေတာ အမျိုးအစားများ</h2>
+        <p>Cardio Analytics သည် Apple HealthKit မှ ဤ အမှတ်အသားများကို အသုံးပြု၍ HRV ဒေတာကို ဖတ်သည်:</p>
+        <ul class="feature-list">
+            <li><code>heartRateVariabilitySDNN</code> - တစ်ခုလုံးဆိုင်ရာ HRV (မီလီစက္ကန့်အလိုက် SDNN) (<a
+                    href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank"
+                    rel="noopener">Apple Docs</a>)</li>
+            <li><code>heartRateVariabilityRMSSD</code> - ရေတို ဗေဂယ် တိုးနပ်စ် (ရရှိနိုင်ပါက မီလီစက္ကန့်အလိုက် RMSSD)
+                (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank"
+                    rel="noopener">Apple Docs</a>)</li>
+        </ul>
+
+        <p class="mt-6"><a href="/my/healthkit/" class="btn btn-secondary">HealthKit ပေါင်းစပ်မှုအကြောင်း
+                ပိုမိုလေ့လာပါ</a></p>
+    </div>
+</section>
+
+<!-- References -->
+<section class="content-section">
+    <div class="container">
+        <h2>သိပ္ပံနည်းကျ ကိုးကားချက်များ</h2>
+        <ol class="references-list">
+            <li>Cleveland Clinic. <em>Heart Rate Variability (HRV): What It Is and How You Can Improve It.</em> <a
+                    href="https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv"
+                    target="_blank"
+                    rel="noopener">https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv</a>
+            </li>
+        </ol>
+        <p><a href="/my/references/" class="btn btn-secondary">ကိုးကားချက် အားလုံးကို ကြည့်ပါ</a></p>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-box">
+            <h2>Cardio Analytics ဖြင့် သင့် HRV ကို ခြေရာခံပါ</h2>
+            <p>စိတ်ဖိစီးမှု အဆင့်များနှင့် နှလုံးသွေးကြော ကျန်းမာရေးကို အကဲဖြတ်ရန် နှလုံးခုန်နှုန်းပြောင်းလဲမှု
+                ခေတ်ရေစီးကြောင်းများကို စောင့်ကြည့်ပါ။</p>
+            <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+                App Store တွင် ဒေါင်းလုဒ်လုပ်ပါ
+            </a>
+        </div>
+    </div>
+</section>
     </main>
 
     

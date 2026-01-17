@@ -942,74 +942,116 @@ img[width][height] {
 
     
     <main id="main-content" class="main-content">
-        <!-- Walking Asymmetry Page -->
+        <!-- Walking Asymmetry Science Page -->
 
 <section class="page-hero">
   <div class="container">
     <h1>Asimetri Berjalan</h1>
-    <p class="lead">Nilai keseimbangan gaya berjalan dan risiko jatuh dengan metrik Apple Mobility</p>
+    <p class="lead">Nilai keseimbangan gaya berjalan dan risiko jatuh dengan metrik Mobiliti Apple</p>
   </div>
 </section>
 
+<!-- What It Is -->
 <section class="content-section">
   <div class="container">
-    <h2>Apakah Asimetri Berjalan?</h2>
-    <p>Asimetri berjalan mengukur peratusan masa langkah berjalan anda tidak simetri antara kaki kiri dan kanan. Asimetri lebih tinggi boleh menunjukkan ketidakseimbangan gaya berjalan dan peningkatan risiko jatuh.</p>
+    <h2>Apakah itu Asimetri Berjalan?</h2>
+    <p>Asimetri berjalan adalah peratusan masa langkah satu kaki adalah lebih cepat atau lebih lambat daripada kaki yang
+      satu lagi. Ia mengukur ketidakseimbangan gaya berjalan dan ketidakrataan dalam corak berjalan.</p>
+
+    <p class="mt-6">Apple mentakrifkan dan mengesahkan asimetri berjalan melalui metrik Mobiliti iPhone (<a
+        href="https://www.apple.com/healthcare/docs/site/Measuring_Walking_Quality_Through_iPhone_Mobility_Metrics.pdf"
+        target="_blank" rel="noopener">PDF Kertas Putih Apple</a>).</p>
   </div>
 </section>
 
+<!-- Why It Matters -->
 <section class="content-section bg-light">
   <div class="container">
     <h2>Mengapa Asimetri Berjalan Penting</h2>
+    <p>Asimetri berjalan yang lebih tinggi menunjukkan ketidakseimbangan gaya berjalan dan peningkatan risiko jatuh:</p>
     <ul class="feature-list">
-      <li>Ketidakseimbangan gaya berjalan boleh menunjukkan masalah neuromuskular</li>
-      <li>Dikaitkan dengan peningkatan risiko jatuh</li>
-      <li>Boleh dikesan awal sebelum gejala menjadi jelas</li>
-      <li>Disahkan sebagai penunjuk kesihatan mobiliti</li>
+      <li><strong>Penunjuk risiko jatuh</strong> - Gaya berjalan yang tidak rata meningkatkan kemungkinan tersandung dan
+        jatuh</li>
+      <li><strong>Mengesan masalah neuromuskular</strong> - Boleh menunjukkan strok, Parkinson, artritis, atau
+        kecederaan</li>
+      <li><strong>Penanda kesihatan fungsian</strong> - Mencerminkan keseimbangan, koordinasi, dan kesimetrian kekuatan
+      </li>
+      <li><strong>Tanda amaran awal</strong> - Asimetri yang meningkat mungkin menunjukkan masalah yang baru muncul</li>
     </ul>
   </div>
 </section>
 
+<!-- Typical Ranges -->
 <section class="content-section">
   <div class="container">
     <h2>Julat Asimetri Berjalan</h2>
+
     <div class="range-card">
-      <h3>Julat Biasa</h3>
+      <h3>Garis Panduan Umum (Mobiliti Apple)</h3>
       <ul>
-        <li><strong>&lt;3%</strong> - Asimetri rendah (sihat)</li>
-        <li><strong>3-6%</strong> - Asimetri sederhana</li>
-        <li><strong>&gt;6%</strong> - Asimetri tinggi (pantau rapat)</li>
+        <li><strong>&lt;3%</strong> - Asimetri rendah (gaya berjalan yang sihat dan seimbang)</li>
+        <li><strong>3-6%</strong> - Asimetri sederhana (mungkin menunjukkan ketidakseimbangan kecil)</li>
+        <li><strong>&gt;6%</strong> - Asimetri tinggi (peningkatan risiko jatuh, pertimbangkan penilaian)</li>
       </ul>
     </div>
+
+    <p class="note mt-6">📊 <strong>Kebolehubahan individu:</strong> Sedikit asimetri adalah normal. Fokus pada
+      perubahan daripada garis dasar anda dan bukannya nilai mutlak.</p>
   </div>
 </section>
 
+<!-- How Cardio Analytics Uses It -->
 <section class="content-section bg-light">
   <div class="container">
     <h2>Bagaimana Cardio Analytics Menggunakan Data Asimetri Berjalan</h2>
     <ul class="feature-list">
-      <li><strong>Jejak perubahan asimetri</strong> - Pantau trend dari masa ke masa</li>
-      <li><strong>Amaran asimetri tinggi</strong> - Makluman untuk peningkatan berisiko</li>
-      <li><strong>Pemantauan mobiliti komprehensif</strong> - Gabungkan dengan kelajuan berjalan dan metrik lain</li>
+      <li><strong>Memaparkan aliran peratusan</strong> - Jejak asimetri dari masa ke masa</li>
+      <li><strong>Menandakan peningkatan asimetri</strong> - Amaran apabila asimetri meningkat dengan ketara</li>
+      <li><strong>Berkorelasi dengan simptom</strong> - Lihat jika kesakitan atau kelemahan menjejaskan keseimbangan
+        gaya berjalan</li>
+      <li><strong>Penilaian risiko jatuh</strong> - Digabungkan dengan kelajuan berjalan dan kelajuan tangga untuk
+        penilaian mobiliti yang komprehensif</li>
     </ul>
   </div>
 </section>
 
+<!-- HealthKit Integration -->
 <section class="content-section">
   <div class="container">
     <h2>Jenis Data HealthKit</h2>
+    <p>Cardio Analytics membaca data asimetri berjalan daripada Apple HealthKit menggunakan pengecam ini:</p>
     <ul class="feature-list">
-      <li><code>walkingAsymmetryPercentage</code> - Peratusan asimetri gaya berjalan (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingasymmetrypercentage" target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>walkingAsymmetryPercentage</code> - Peratusan ketidakseimbangan gaya berjalan (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingasymmetrypercentage"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
     </ul>
-    <p class="mt-6"><a href="/ms/healthkit/" class="btn btn-secondary">Ketahui Lebih Lanjut Tentang Integrasi HealthKit</a></p>
+
+    <p class="mt-6"><a href="/ms/healthkit/" class="btn btn-secondary">Ketahui Lebih Lanjut Mengenai Integrasi
+        HealthKit</a></p>
   </div>
 </section>
 
+<!-- References -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Rujukan Saintifik</h2>
+    <ol class="references-list">
+      <li>Apple. <em>Mengukur Kualiti Berjalan Melalui Metrik Mobiliti iPhone.</em> Kertas Putih. 2022. <a
+          href="https://www.apple.com/healthcare/docs/site/Measuring_Walking_Quality_Through_iPhone_Mobility_Metrics.pdf"
+          target="_blank"
+          rel="noopener">https://www.apple.com/healthcare/docs/site/Measuring_Walking_Quality_Through_iPhone_Mobility_Metrics.pdf</a>
+      </li>
+    </ol>
+    <p><a href="/ms/references/" class="btn btn-secondary">Lihat Semua Rujukan</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
 <section class="cta-section">
   <div class="container">
     <div class="cta-box">
-      <h2>Pantau Keseimbangan Gaya Berjalan Anda</h2>
-      <p>Muat turun Cardio Analytics untuk menjejak asimetri berjalan dan risiko jatuh.</p>
+      <h2>Jejak Asimetri Berjalan Anda dengan Cardio Analytics</h2>
+      <p>Pantau keseimbangan gaya berjalan dan risiko jatuh dengan metrik Mobiliti Apple yang disahkan.</p>
       <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
         Muat Turun di App Store
       </a>

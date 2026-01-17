@@ -942,90 +942,144 @@ img[width][height] {
 
     
     <main id="main-content" class="main-content">
-        <!-- Oxygen Saturation Science Page -->
+        <!-- Oxygen Saturation (SpO₂) Science Page -->
 
 <section class="page-hero">
   <div class="container">
     <h1>Ketepuan Oksigen (SpO₂)</h1>
-    <p class="lead">Pantau tahap ketepuan oksigen untuk kesihatan pernafasan dan kardiovaskular</p>
+    <p class="lead">Pantau tahap oksigen darah untuk menilai kesihatan pernafasan dan kardiovaskular</p>
   </div>
 </section>
 
+<!-- What It Is -->
 <section class="content-section">
   <div class="container">
-    <h2>Apakah SpO₂?</h2>
-    <p>Ketepuan oksigen (SpO₂) mengukur peratusan hemoglobin dalam darah anda yang mengandungi oksigen. Ia diukur menggunakan pulse oximetry, biasanya di hujung jari atau pergelangan tangan.</p>
+    <h2>Apakah itu Ketepuan Oksigen?</h2>
+    <p>Ketepuan oksigen (SpO₂) adalah peratusan hemoglobin dalam darah anda yang membawa oksigen. Ia diukur menggunakan
+      oksimetri nadi (biasanya melalui Apple Watch atau peranti khusus).</p>
+
+    <p>Bacaan 98% SpO₂ bermakna 98% molekul hemoglobin anda tepu dengan oksigen.</p>
   </div>
 </section>
 
+<!-- Why It Matters -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>Mengapa SpO₂ Penting</h2>
-    <p>SpO₂ adalah penunjuk penting seberapa baik oksigen diangkut ke seluruh badan anda:</p>
+    <h2>Mengapa Ketepuan Oksigen Penting</h2>
+    <p>SpO₂ mencerminkan sejauh mana paru-paru anda membekalkan oksigen kepada darah dan seberapa berkesan oksigen
+      dihantar ke tisu:</p>
     <ul class="feature-list">
-      <li>SpO₂ rendah (hipoksemia) boleh menunjukkan masalah pernafasan atau kardiovaskular</li>
-      <li>Penting untuk memantau penyakit paru-paru kronik, apnea tidur, dan keadaan jantung</li>
-      <li>Berguna untuk menilai fungsi pernafasan pada ketinggian atau semasa aktiviti</li>
+      <li>Menunjukkan fungsi pernafasan dan kardiovaskular</li>
+      <li>Boleh mengesan hipoksemia (oksigen darah rendah) dengan awal</li>
+      <li>Penting untuk pemantauan keadaan paru-paru kronik (COPD, asma)</li>
+      <li>Boleh menunjukkan apnea tidur apabila diukur semalaman</li>
+      <li>Berguna untuk pemantauan penyesuaian di altitud tinggi</li>
     </ul>
   </div>
 </section>
 
+<!-- Typical Ranges -->
 <section class="content-section">
   <div class="container">
-    <h2>Julat SpO₂ Normal</h2>
+    <h2>Julat Ketepuan Oksigen</h2>
+
     <div class="range-card">
-      <h3>Julat Biasa</h3>
-      <p><strong>Normal: 95-100%</strong> (<a href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" target="_blank" rel="noopener">Mayo Clinic</a>)</p>
-      <ul>
-        <li><strong>95-100%</strong> - Ketepuan oksigen normal</li>
-        <li><strong>90-94%</strong> - Sedikit rendah, pantau rapat</li>
-        <li><strong>&lt;90%</strong> - Hipoksemia, rujuk pakar klinikal segera</li>
-      </ul>
+      <h3>Julat Normal</h3>
+      <p><strong>95-100%</strong> - Ketepuan oksigen normal untuk kebanyakan dewasa yang sihat</p>
     </div>
 
-    <p class="mt-6"><strong>Nota:</strong> Sesetengah keadaan kronik mungkin mempunyai garis dasar SpO₂ lebih rendah. Sentiasa rujuk doktor anda untuk tafsiran diperibadikan.</p>
+    <div class="range-card mt-6 bg-warning">
+      <h3>Hipoksemia (Oksigen Rendah)</h3>
+      <p><strong>&lt;90%</strong> - Tahap oksigen rendah yang memerlukan perhatian perubatan (<a
+          href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" target="_blank"
+          rel="noopener">Mayo Clinic</a>)</p>
+      <p>Bacaan berterusan di bawah 90% menunjukkan hipoksemia dan harus dinilai oleh pakar klinikal.</p>
+    </div>
+
+    <div class="range-card mt-6">
+      <h3>Pertimbangan Khas</h3>
+      <ul class="feature-list">
+        <li><strong>Penyakit paru-paru kronik</strong> - Garis dasar SpO₂ mungkin 88-92% (rujuk pakar klinikal untuk
+          julat sasaran)</li>
+        <li><strong>Altitud tinggi</strong> - SpO₂ menurun secara semula jadi di tempat tinggi (cth: 90-95% pada
+          8,000-10,000 kaki)</li>
+        <li><strong>Semasa tidur</strong> - Penurunan sementara ke 88-90% boleh menjadi normal; nilai rendah yang
+          berterusan mungkin menunjukkan apnea tidur</li>
+      </ul>
+    </div>
   </div>
 </section>
 
+<!-- How Cardio Analytics Uses It -->
 <section class="content-section bg-light">
   <div class="container">
     <h2>Bagaimana Cardio Analytics Menggunakan Data SpO₂</h2>
     <ul class="feature-list">
-      <li><strong>Jejak tahap SpO₂</strong> - Lihat trend dari masa ke masa</li>
-      <li><strong>Amaran hipoksemia</strong> - Makluman untuk bacaan berterusan &lt;90%</li>
-      <li><strong>Analisis tidur</strong> - Pantau SpO₂ malam jika Apple Watch menjejak semasa tidur</li>
-      <li><strong>Korelasi aktiviti</strong> - Lihat bagaimana senaman mempengaruhi tahap oksigen</li>
+      <li><strong>Menunjukkan aliran SpO₂</strong> - Jejak ketepuan oksigen dari masa ke masa (harian, mingguan,
+        bulanan)</li>
+      <li><strong>Amaran untuk nilai rendah yang berterusan</strong> - Amaran apabila bacaan sentiasa jatuh di bawah 90%
+      </li>
+      <li><strong>Pemantauan semalaman</strong> - Mengenal pasti corak desaturasi nokturnal (kemungkinan apnea tidur)
+      </li>
+      <li><strong>Degradasi anggun</strong> - Jika peranti anda tidak merekodkan SpO₂, kad tersebut disembunyikan secara
+        automatik</li>
     </ul>
+
+    <p class="note">⚠️ <strong>Bukan semua peranti menyokong SpO₂:</strong> Apple Watch Series 6 dan lebih baharu
+      menyokong pengukuran oksigen darah. Model lama tidak akan mempunyai data ini.</p>
   </div>
 </section>
 
+<!-- HealthKit Integration -->
 <section class="content-section">
   <div class="container">
     <h2>Jenis Data HealthKit</h2>
+    <p>Cardio Analytics membaca data SpO₂ daripada Apple HealthKit menggunakan pengecam ini:</p>
     <ul class="feature-list">
-      <li><code>oxygenSaturation</code> - SpO₂ sebagai pecahan (dipaparkan sebagai %) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation" target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>oxygenSaturation</code> - Ketepuan oksigen darah sebagai pecahan (0.0-1.0, dipaparkan sebagai peratusan)
+        (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
     </ul>
-    <p class="mt-6"><strong>Keperluan Peranti:</strong> Apple Watch Series 6 atau lebih baharu untuk pengukuran SpO₂.</p>
-    <p class="mt-6"><a href="/ms/healthkit/" class="btn btn-secondary">Ketahui Lebih Lanjut Tentang Integrasi HealthKit</a></p>
+
+    <p class="mt-6"><a href="/ms/healthkit/" class="btn btn-secondary">Ketahui Lebih Lanjut Mengenai Integrasi
+        HealthKit</a></p>
   </div>
 </section>
 
+<!-- Measurement Tips -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>Rujukan Saintifik</h2>
-    <ul class="reference-list">
-      <li>Mayo Clinic. "Hypoxemia (Low Blood Oxygen)." <a href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" target="_blank" rel="noopener">Artikel Klinikal</a></li>
-      <li>Apple Inc. "Using Apple Watch for Blood Oxygen measurements." Sokongan Rasmi.</li>
+    <h2>Petua untuk Pengukuran SpO₂ yang Tepat</h2>
+    <ul class="feature-list">
+      <li><strong>Tangan yang hangat</strong> - Jari yang sejuk boleh menjejaskan ketepatan</li>
+      <li><strong>Kekal diam</strong> - Pergerakan boleh mengganggu bacaan</li>
+      <li><strong>Tanggalkan pengilat kuku</strong> - Boleh mengganggu penderia oksimetri nadi</li>
+      <li><strong>Kesesuaian jam yang betul</strong> - Apple Watch haruslah kemas tetapi selesa pada pergelangan tangan
+        anda</li>
+      <li><strong>Rehatkan lengan anda</strong> - Letakkan lengan pada paras jantung, santai di atas meja</li>
     </ul>
-    <p class="mt-6"><a href="/ms/references/" class="btn btn-secondary">Lihat Semua Rujukan</a></p>
   </div>
 </section>
 
+<!-- References -->
+<section class="content-section">
+  <div class="container">
+    <h2>Rujukan Saintifik</h2>
+    <ol class="references-list">
+      <li>Mayo Clinic. <em>Oksigen darah rendah (hipoksemia).</em> <a
+          href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" target="_blank"
+          rel="noopener">https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930</a></li>
+    </ol>
+    <p><a href="/ms/references/" class="btn btn-secondary">Lihat Semua Rujukan</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
 <section class="cta-section">
   <div class="container">
     <div class="cta-box">
-      <h2>Jejak Ketepuan Oksigen Anda</h2>
-      <p>Muat turun Cardio Analytics untuk memantau SpO₂ dengan amaran dan cerapan terperinci.</p>
+      <h2>Jejak Ketepuan Oksigen Anda dengan Cardio Analytics</h2>
+      <p>Pantau aliran SpO₂ dan terima amaran untuk tahap oksigen rendah yang berterusan.</p>
       <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
         Muat Turun di App Store
       </a>

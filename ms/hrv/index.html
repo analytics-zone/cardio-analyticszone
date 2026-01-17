@@ -942,96 +942,155 @@ img[width][height] {
 
     
     <main id="main-content" class="main-content">
-        <!-- Heart Rate Variability Science Page -->
+        <!-- Kebolehubahan Kadar Jantung (HRV) Science Page -->
 
 <section class="page-hero">
   <div class="container">
     <h1>Kebolehubahan Kadar Jantung (HRV)</h1>
-    <p class="lead">Jejak metrik SDNN dan RMSSD untuk menilai tahap tekanan dan kesihatan kardiovaskular</p>
+    <p class="lead">Pantau metrik SDNN dan RMSSD untuk menilai kesihatan kardiovaskular dan tahap tekanan</p>
   </div>
 </section>
 
+<!-- What It Is -->
 <section class="content-section">
   <div class="container">
-    <h2>Apakah HRV?</h2>
-    <p>Kebolehubahan Kadar Jantung (HRV) mengukur variasi masa antara degupan jantung berturut-turut. HRV yang lebih tinggi secara amnya menunjukkan sistem saraf autonomi yang lebih sihat dan kapasiti penyesuaian yang lebih baik terhadap tekanan.</p>
+    <h2>Apakah itu Kebolehubahan Kadar Jantung?</h2>
+    <p>Kebolehubahan Kadar Jantung (HRV) mengukur variasi masa antara denyutan jantung yang berturut-turut. Ia merupakan
+      penanda fungsi sistem saraf autonomi dan kesihatan kardiovaskular keseluruhan.</p>
+
+    <h3 class="mt-6">Metrik HRV:</h3>
     <ul class="feature-list">
-      <li><strong>SDNN</strong> - Sisihan piawai selang NN (normal-to-normal), mengukur kebolehubahan keseluruhan</li>
-      <li><strong>RMSSD</strong> - Punca kuasa dua min perbezaan berturut-turut, mencerminkan tonus parasimpatetik</li>
+      <li><strong>SDNN (Standard Deviation of NN intervals)</strong> - Mengukur HRV keseluruhan. Mencerminkan jumlah
+        aktiviti sistem saraf autonomi.</li>
+      <li><strong>RMSSD (Root Mean Square of Successive Differences)</strong> - Mengukur HRV jangka pendek. Mencerminkan
+        tonus parasimpatetik (vagal) terutamanya.</li>
     </ul>
   </div>
 </section>
 
+<!-- Why It Matters -->
 <section class="content-section bg-light">
   <div class="container">
     <h2>Mengapa HRV Penting</h2>
-    <p>HRV adalah penunjuk penting kesihatan kardiovaskular dan fungsi sistem saraf autonomi:</p>
+    <p><strong>HRV yang rendah dikaitkan dengan hasil kesihatan yang lebih buruk dan peningkatan tekanan</strong> (<a
+        href="https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv" target="_blank"
+        rel="noopener">Cleveland Clinic</a>):</p>
     <ul class="feature-list">
-      <li>HRV rendah dikaitkan dengan peningkatan risiko kardiovaskular (<a href="https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv" target="_blank" rel="noopener">Cleveland Clinic</a>)</li>
-      <li>HRV tinggi menunjukkan keseimbangan autonomi dan pemulihan yang baik</li>
-      <li>HRV menurun dengan tekanan, keletihan dan penyakit</li>
-      <li>Berguna untuk memantau pemulihan latihan dan tekanan keseluruhan</li>
+      <li>HRV yang lebih rendah menunjukkan pengurangan keupayaan untuk menyesuaikan diri dengan tekanan</li>
+      <li>Dikaitkan dengan peningkatan risiko penyakit kardiovaskular</li>
+      <li>Boleh menunjukkan latihan berlebihan, penyakit, atau tekanan kronik</li>
+      <li>HRV yang lebih tinggi secara amnya menunjukkan kecergasan kardiovaskular dan daya tahan yang lebih baik</li>
     </ul>
+
+    <p class="note">📊 <strong>HRV sangat unik bagi setiap individu:</strong> Fokus pada aliran peribadi anda dan
+      bukannya nilai mutlak. Bandingkan HRV hari ini dengan garis dasar anda sendiri.</p>
   </div>
 </section>
 
+<!-- Typical Ranges -->
 <section class="content-section">
   <div class="container">
-    <h2>Julat Biasa</h2>
+    <h2>Mentafsir Nilai HRV</h2>
+    <p>HRV sangat berbeza antara individu berdasarkan umur, kecergasan, genetik, dan faktor lain. Tiada julat "normal"
+      tunggal, tetapi terdapat corak umum:</p>
+
     <div class="range-card">
-      <h3>SDNN (Apple Watch)</h3>
-      <p>Julat normal berbeza mengikut umur, tetapi secara amnya:</p>
+      <h3>SDNN</h3>
       <ul>
-        <li><strong>&gt;50 ms</strong> - HRV sihat (dewasa muda)</li>
-        <li><strong>20-50 ms</strong> - Purata (meningkat dengan usia)</li>
-        <li><strong>&lt;20 ms</strong> - Rendah (rujuk pakar klinikal jika berterusan)</li>
+        <li><strong>&gt;100 ms</strong> - HRV Cemerlang</li>
+        <li><strong>50-100 ms</strong> - HRV Baik</li>
+        <li><strong>20-50 ms</strong> - HRV Sederhana</li>
+        <li><strong>&lt;20 ms</strong> - HRV Rendah (mungkin menunjukkan kebimbangan kesihatan)</li>
       </ul>
     </div>
 
-    <p class="mt-6"><strong>Nota:</strong> HRV sangat individu dan dipengaruhi oleh umur, kecergasan, genetik. Jejak trend peribadi anda dari masa ke masa, bukan julat mutlak.</p>
+    <div class="range-card mt-6">
+      <h3>RMSSD</h3>
+      <ul>
+        <li><strong>&gt;50 ms</strong> - HRV jangka pendek Cemerlang</li>
+        <li><strong>30-50 ms</strong> - HRV jangka pendek Baik</li>
+        <li><strong>15-30 ms</strong> - HRV jangka pendek Sederhana</li>
+        <li><strong>&lt;15 ms</strong> - HRV jangka pendek Rendah</li>
+      </ul>
+    </div>
+
+    <p class="note mt-6">⚠️ <strong>Gunakan garis dasar peribadi:</strong> HRV anda mungkin secara semula jadi lebih
+      tinggi atau lebih rendah daripada julat ini. Perkara yang paling penting ialah menjejak perubahan daripada garis
+      dasar anda sendiri.</p>
   </div>
 </section>
 
+<!-- Factors Affecting HRV -->
 <section class="content-section bg-light">
+  <div class="container">
+    <h2>Faktor-faktor yang Mempengaruhi HRV</h2>
+    <ul class="feature-list">
+      <li><strong>Umur</strong> - HRV secara amnya menurun mengikut usia</li>
+      <li><strong>Tahap kecergasan</strong> - Atlet biasanya mempunyai HRV yang lebih tinggi</li>
+      <li><strong>Tekanan</strong> - Tekanan fizikal atau mental merendahkan HRV</li>
+      <li><strong>Kualiti tidur</strong> - Tidur yang buruk mengurangkan HRV</li>
+      <li><strong>Alkohol</strong> - Penggunaan merendahkan HRV selama 12-24 jam</li>
+      <li><strong>Penyakit</strong> - Jangkitan dan penyakit mengurangkan HRV</li>
+      <li><strong>Dehidrasi</strong> - Boleh merendahkan HRV</li>
+      <li><strong>Latihan berlebihan</strong> - Senaman berlebihan tanpa pemulihan merendahkan HRV</li>
+    </ul>
+  </div>
+</section>
+
+<!-- How Cardio Analytics Uses It -->
+<section class="content-section">
   <div class="container">
     <h2>Bagaimana Cardio Analytics Menggunakan Data HRV</h2>
     <ul class="feature-list">
-      <li><strong>Jejak SDNN dan RMSSD</strong> - Kedua-dua metrik HRV dipaparkan jika tersedia</li>
-      <li><strong>Analisis trend</strong> - Lihat bagaimana HRV anda berubah dari masa ke masa</li>
-      <li><strong>Amaran HRV rendah</strong> - Makluman untuk penurunan berterusan daripada garis dasar peribadi anda</li>
-      <li><strong>Korelasi tekanan</strong> - Log simptom dan kenal pasti corak dengan perubahan HRV</li>
-      <li><strong>Korelasi latihan</strong> - Lihat bagaimana latihan mempengaruhi pemulihan HRV</li>
+      <li><strong>Memaparkan aliran HRV waktu malam</strong> - Apple Watch biasanya merekodkan HRV semasa tidur</li>
+      <li><strong>Menandakan nilai rendah yang luar biasa</strong> - Amaran apabila HRV menurun dengan ketara di bawah
+        garis dasar anda</li>
+      <li><strong>Analisis aliran jangka panjang</strong> - Jejak perubahan HRV selama berminggu-minggu dan
+        berbulan-bulan</li>
+      <li><strong>Korelasi ubat</strong> - Lihat bagaimana ubat-ubatan mempengaruhi fungsi autonomi</li>
+      <li><strong>Korelasi simptom</strong> - Mengenal pasti corak antara HRV rendah dan simptom</li>
     </ul>
   </div>
 </section>
 
-<section class="content-section">
-  <div class="container">
-    <h2>Jenis Data HealthKit</h2>
-    <ul class="feature-list">
-      <li><code>heartRateVariabilitySDNN</code> - Metrik HRV keseluruhan (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
-      <li><code>heartRateVariabilityRMSSD</code> - Tonus vagal jangka pendek (jika tersedia dari watchOS 10+)</li>
-    </ul>
-    <p class="mt-6"><a href="/ms/healthkit/" class="btn btn-secondary">Ketahui Lebih Lanjut Tentang Integrasi HealthKit</a></p>
-  </div>
-</section>
-
+<!-- HealthKit Integration -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>Rujukan Saintifik</h2>
-    <ul class="reference-list">
-      <li>Cleveland Clinic. "Heart Rate Variability (HRV)." <a href="https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv" target="_blank" rel="noopener">Artikel Klinikal</a></li>
-      <li>Shaffer F, Ginsberg JP. "An Overview of Heart Rate Variability Metrics and Norms." Front Public Health (2017).</li>
+    <h2>Jenis Data HealthKit</h2>
+    <p>Cardio Analytics membaca data HRV daripada Apple HealthKit menggunakan pengecam berikut:</p>
+    <ul class="feature-list">
+      <li><code>heartRateVariabilitySDNN</code> - HRV keseluruhan (SDNN dalam milisaat) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank"
+          rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>heartRateVariabilityRMSSD</code> - Tonus vagal jangka pendek (RMSSD dalam ms, jika tersedia) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank"
+          rel="noopener">Dokumentasi Apple</a>)</li>
     </ul>
-    <p class="mt-6"><a href="/ms/references/" class="btn btn-secondary">Lihat Semua Rujukan</a></p>
+
+    <p class="mt-6"><a href="/ms/healthkit/" class="btn btn-secondary">Ketahui Lebih Lanjut Mengenai Integrasi
+        HealthKit</a></p>
   </div>
 </section>
 
+<!-- References -->
+<section class="content-section">
+  <div class="container">
+    <h2>Rujukan Saintifik</h2>
+    <ol class="references-list">
+      <li>Cleveland Clinic. <em>Heart Rate Variability (HRV): Apakah Ia dan Bagaimana Anda Boleh Menambah Baiknya.</em>
+        <a href="https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv" target="_blank"
+          rel="noopener">https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv</a></li>
+    </ol>
+    <p><a href="/ms/references/" class="btn btn-secondary">Lihat Semua Rujukan</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
 <section class="cta-section">
   <div class="container">
     <div class="cta-box">
-      <h2>Pantau HRV Anda untuk Kesihatan Optimum</h2>
-      <p>Muat turun Cardio Analytics untuk menjejak HRV dengan trend terperinci dan cerapan diperibadikan.</p>
+      <h2>Jejak HRV Anda dengan Cardio Analytics</h2>
+      <p>Pantau aliran kebolehubahan kadar jantung untuk menilai tahap tekanan dan kesihatan kardiovaskular.</p>
       <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
         Muat Turun di App Store
       </a>

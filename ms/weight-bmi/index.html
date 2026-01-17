@@ -946,88 +946,137 @@ img[width][height] {
 
 <section class="page-hero">
   <div class="container">
-    <h1>Berat & Indeks Jisim Badan (BMI)</h1>
-    <p class="lead">Jejak komposisi badan dan pantau faktor risiko kardiovaskular</p>
+    <h1>Penjejakan Berat & BMI</h1>
+    <p class="lead">Pantau berat badan dan indeks jisim badan untuk kesihatan kardiovaskular</p>
   </div>
 </section>
 
+<!-- What It Is -->
 <section class="content-section">
   <div class="container">
-    <h2>Apakah Berat dan BMI?</h2>
-    <p>Berat badan dan Indeks Jisim Badan (BMI) adalah pengukuran komposisi badan:</p>
+    <h2>Apakah itu Berat dan BMI?</h2>
     <ul class="feature-list">
-      <li><strong>Berat Badan</strong> - Jisim badan total dalam kilogram (kg)</li>
-      <li><strong>BMI</strong> - Dikira sebagai berat (kg) / tinggi² (m²)</li>
+      <li><strong>Berat Badan</strong> - Jumlah jisim badan anda dalam kilogram (kg) atau paun (lbs)</li>
+      <li><strong>BMI (Indeks Jisim Badan)</strong> - Nisbah berat-kepada-ketinggian yang dikira sebagai berat (kg) /
+        tinggi² (m²)</li>
     </ul>
+
+    <p class="mt-6">Contoh: Seseorang yang beratnya 70 kg dengan ketinggian 1.75 m mempunyai BMI 70 / (1.75²) = 22.9
+      kg/m²</p>
   </div>
 </section>
 
+<!-- Why It Matters -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>Mengapa Berat dan BMI Penting</h2>
-    <p>Berat berlebihan dan obesiti adalah faktor risiko kardiovaskular utama:</p>
+    <h2>Mengapa Berat dan BMI Penting untuk Kesihatan Kardiovaskular</h2>
     <ul class="feature-list">
-      <li>Meningkatkan risiko hipertensi, diabetes, dan penyakit jantung</li>
-      <li>BMI membantu menilai risiko kesihatan berkaitan berat</li>
-      <li>Trend berat dari masa ke masa penting untuk pemantauan kesihatan</li>
+      <li>Berat berlebihan meningkatkan risiko penyakit kardiovaskular</li>
+      <li>Dikaitkan dengan hipertensi, diabetes, dan dislipidemia</li>
+      <li>Penurunan berat badan boleh menambah baik tekanan darah dan kesihatan metabolik</li>
+      <li>Perubahan berat badan yang cepat mungkin menunjukkan penahanan cecair atau masalah kesihatan lain</li>
     </ul>
+
+    <p class="note">📊 <strong>Had BMI:</strong> BMI tidak membezakan otot daripada lemak. Atlet dan individu berotot
+      mungkin mempunyai BMI yang "tinggi" walaupun mereka sihat. Bincangkan julat sasaran anda dengan pakar klinikal.
+    </p>
   </div>
 </section>
 
+<!-- BMI Categories -->
 <section class="content-section">
   <div class="container">
-    <h2>Kategori BMI</h2>
+    <h2>Kategori BMI (CDC)</h2>
+
     <div class="bmi-categories">
-      <div class="bmi-category">
-        <h3>Berat Kurang</h3>
+      <div class="bmi-category bmi-underweight">
+        <h3>Kurang Berat Badan</h3>
         <p class="bmi-values">&lt;18.5 kg/m²</p>
+        <p>Mungkin menunjukkan kekurangan zat makanan atau keadaan kesihatan yang sedia ada.</p>
       </div>
+
       <div class="bmi-category bmi-normal">
-        <h3>Normal</h3>
-        <p class="bmi-values">18.5-24.9 kg/m²</p>
+        <h3>Berat Badan Sihat</h3>
+        <p class="bmi-values">18.5 - 24.9 kg/m²</p>
+        <p>Dikaitkan dengan risiko penyakit kardiovaskular yang lebih rendah.</p>
       </div>
-      <div class="bmi-category">
-        <h3>Berat Berlebihan</h3>
-        <p class="bmi-values">25.0-29.9 kg/m²</p>
+
+      <div class="bmi-category bmi-overweight">
+        <h3>Lebih Berat Badan</h3>
+        <p class="bmi-values">25.0 - 29.9 kg/m²</p>
+        <p>Peningkatan risiko kesihatan. Pengubahsuaian gaya hidup disyorkan.</p>
       </div>
-      <div class="bmi-category">
+
+      <div class="bmi-category bmi-obese">
         <h3>Obesiti</h3>
         <p class="bmi-values">≥30.0 kg/m²</p>
+        <p>Peningkatan risiko kardiovaskular yang ketara. Penilaian perubatan disyorkan.</p>
       </div>
     </div>
-    <p class="mt-6"><strong>Nota:</strong> BMI adalah alat saringan tetapi tidak sempurna. Ia tidak membezakan antara otot dan lemak. Rujuk pakar klinikal untuk penilaian lengkap.</p>
+
+    <p class="note mt-6">⚠️ <strong>Konteks itu penting:</strong> BMI adalah alat saringan, bukan diagnostik. Umur,
+      jantina, jisim otot, dan etnik menjejaskan tafsiran. Rujuk pakar klinikal anda untuk sasaran peribadi.</p>
   </div>
 </section>
 
+<!-- How Cardio Analytics Uses It -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>Bagaimana Cardio Analytics Menggunakan Data Berat & BMI</h2>
+    <h2>Bagaimana Cardio Analytics Menggunakan Data Berat dan BMI</h2>
     <ul class="feature-list">
-      <li><strong>Jejak berat dari masa ke masa</strong> - Visualisasikan perubahan dan trend</li>
-      <li><strong>Pengiraan BMI automatik</strong> - Dikira dari berat dan tinggi</li>
-      <li><strong>Kategori BMI dengan kod warna</strong> - Lihat julat kesihatan dengan cepat</li>
-      <li><strong>Korelasi ubat</strong> - Lihat bagaimana ubat mempengaruhi berat</li>
-      <li><strong>Menulis balik ke HealthKit</strong> - Input berat manual disegerak ke Apple Health</li>
+      <li><strong>Menjejak aliran berat badan</strong> - Visualisasikan perubahan sepanjang hari, minggu, dan bulan</li>
+      <li><strong>Mengira BMI secara automatik</strong> - Menggunakan ketinggian daripada HealthKit dan berat semasa
+      </li>
+      <li><strong>Menekankan perubahan klinikal yang berkaitan</strong> - Amaran untuk kenaikan/penurunan berat badan
+        yang cepat</li>
+      <li><strong>Korelasi ubat</strong> - Lihat bagaimana ubat-ubatan (cth: diuretik, penyekat beta) mempengaruhi berat
+        badan</li>
+      <li><strong>Korelasi tekanan darah</strong> - Jejak hubungan antara berat badan dan BP</li>
+      <li><strong>Tulis balik ke HealthKit</strong> - Kemasukan berat manual disegerakkan ke Apple Health</li>
     </ul>
   </div>
 </section>
 
+<!-- HealthKit Integration -->
 <section class="content-section">
   <div class="container">
     <h2>Jenis Data HealthKit</h2>
+    <p>Cardio Analytics membaca data berat daripada Apple HealthKit menggunakan pengecam ini:</p>
     <ul class="feature-list">
-      <li><code>bodyMass</code> - Berat badan dalam kilogram</li>
-      <li><code>height</code> - Ketinggian (digunakan untuk pengiraan BMI)</li>
+      <li><code>bodyMass</code> - Berat dalam kilogram (kg) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank"
+          rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>height</code> - Ketinggian dalam meter (m), digunakan untuk mengira BMI</li>
     </ul>
-    <p class="mt-6"><a href="/ms/healthkit/" class="btn btn-secondary">Ketahui Lebih Lanjut Tentang Integrasi HealthKit</a></p>
+
+    <p class="mt-6"><a href="/ms/healthkit/" class="btn btn-secondary">Ketahui Lebih Lanjut Mengenai Integrasi
+        HealthKit</a></p>
   </div>
 </section>
 
+<!-- Tracking Tips -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Petua untuk Penjejakan Berat yang Tepat</h2>
+    <ul class="feature-list">
+      <li><strong>Timbang pada waktu yang sama setiap hari</strong> - Pagi selepas menggunakan bilik air, sebelum makan
+      </li>
+      <li><strong>Gunakan penimbang yang sama</strong> - Penimbang berbeza boleh berbeza sebanyak 1-2 kg</li>
+      <li><strong>Pakaian minimum</strong> - Timbang tanpa kasut untuk ketekalan</li>
+      <li><strong>Jejak aliran, bukan turun naik harian</strong> - Berat berubah 0.5-2 kg sehari disebabkan air,
+        makanan, dsb.</li>
+      <li><strong>Gunakan penimbang bersambung</strong> - Penimbang pintar yang menyegerak ke HealthKit memudahkan
+        penjejakan</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA Section -->
 <section class="cta-section">
   <div class="container">
     <div class="cta-box">
-      <h2>Pantau Berat dan BMI Anda</h2>
-      <p>Muat turun Cardio Analytics untuk menjejak komposisi badan dengan trend terperinci.</p>
+      <h2>Jejak Berat & BMI Anda dengan Cardio Analytics</h2>
+      <p>Pantau aliran berat badan dan BMI dengan korelasi ubat dan tekanan darah.</p>
       <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
         Muat Turun di App Store
       </a>

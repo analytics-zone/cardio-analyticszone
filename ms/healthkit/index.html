@@ -929,80 +929,187 @@ img[width][height] {
 <section class="page-hero">
   <div class="container">
     <h1>Integrasi HealthKit</h1>
-    <p class="lead">Penyegerakan lancar dengan Apple Health untuk pemantauan kardiovaskular yang mudah</p>
+    <p class="lead">Rujukan teknikal lengkap untuk jenis data HealthKit Cardio Analytics dan corak penyegerakan</p>
   </div>
 </section>
 
+<!-- Overview -->
 <section class="content-section">
   <div class="container">
-    <h2>Gambaran Keseluruhan Integrasi HealthKit</h2>
-    <p>Cardio Analytics disepadukan sepenuhnya dengan Apple HealthKit untuk import automatik 11 metrik kardiovaskular dan mobiliti. Semua pemprosesan berlaku secara setempat di peranti anda - tiada pelayan awan, tiada muat naik data.</p>
+    <h2>Jenis Data HealthKit yang Digunakan</h2>
+    <p>Cardio Analytics membaca 11 metrik kardiovaskular dan mobiliti daripada Apple HealthKit menggunakan pengecam
+      pihak pertama:</p>
   </div>
 </section>
 
+<!-- Heart Rate Metrics -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>Jenis Data Disokong</h2>
-    <p>Cardio Analytics menggunakan pengecam HealthKit rasmi untuk semua metrik:</p>
+    <h3>Metrik Kadar Jantung</h3>
     <ul class="feature-list">
-      <li><strong>Kadar Jantung:</strong> heartRate, restingHeartRate, walkingHeartRateAverage</li>
-      <li><strong>Tekanan Darah:</strong> bloodPressureSystolic, bloodPressureDiastolic</li>
-      <li><strong>HRV:</strong> heartRateVariabilitySDNN, heartRateVariabilityRMSSD</li>
-      <li><strong>SpO₂:</strong> oxygenSaturation</li>
-      <li><strong>Berat & BMI:</strong> bodyMass, height</li>
-      <li><strong>ECG:</strong> electrocardiogramType, atrialFibrillationBurden</li>
-      <li><strong>Kecergasan:</strong> vo2Max</li>
-      <li><strong>Mobiliti:</strong> walkingSpeed, walkingAsymmetryPercentage, stairAscentSpeed</li>
+      <li><code>HKQuantityTypeIdentifier.heartRate</code> - Kadar jantung semasa (bilangan/min) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank"
+          rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>restingHeartRate</code> - Garis dasar kadar jantung rehat (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>walkingHeartRateAverage</code> - Purata HR semasa berjalan</li>
     </ul>
   </div>
 </section>
 
+<!-- Cardiovascular Metrics -->
 <section class="content-section">
   <div class="container">
-    <h2>Penyegerakan Latar Belakang</h2>
-    <p>Cardio Analytics menggunakan teknik canggih untuk penyegerakan data yang cekap:</p>
+    <h3>Metrik Kardiovaskular</h3>
     <ul class="feature-list">
-      <li><strong>Pertanyaan Berlabuh:</strong> Hanya mengambil data baharu atau berubah</li>
-      <li><strong>Penghantaran Latar Belakang:</strong> Kemas kini automatik apabila data baharu tersedia</li>
-      <li><strong>Cekap Bateri:</strong> Penyegerakan delta meminimumkan penggunaan kuasa</li>
-      <li><strong>Boleh Dipercayai:</strong> Berfungsi walaupun aplikasi ditutup</li>
+      <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Bacaan BP berpasangan dengan
+        korelasi (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>heartRateVariabilitySDNN</code> - Kebolehubahan HRV keseluruhan (SDNN dalam milisaat)</li>
+      <li><code>heartRateVariabilityRMSSD</code> - Tonus vagal jangka pendek (RMSSD dalam ms, jika tersedia)</li>
+      <li><code>oxygenSaturation</code> - SpO₂ sebagai pecahan (0.0-1.0, dipaparkan sebagai %) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
     </ul>
   </div>
 </section>
 
+<!-- Body Composition -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>Privasi & Kebenaran</h2>
-    <p>Anda mempunyai kawalan penuh ke atas data anda:</p>
+    <h3>Komposisi Badan</h3>
     <ul class="feature-list">
-      <li><strong>Kebenaran Terperinci:</strong> Pilih dengan tepat metrik yang hendak dikongsi</li>
-      <li><strong>Tiada Muat Naik Awan:</strong> Semua data kekal di iPhone anda</li>
-      <li><strong>Batalkan Bila-bila Masa:</strong> Ubah kebenaran dalam Tetapan iOS</li>
-      <li><strong>Menulis Balik:</strong> Input manual boleh disimpan ke HealthKit untuk konsistensi</li>
+      <li><code>bodyMass</code> - Berat dalam kg</li>
+      <li><code>height</code> - Ketinggian dalam meter (digunakan untuk mengira BMI)</li>
     </ul>
   </div>
 </section>
 
+<!-- ECG & AF -->
 <section class="content-section">
   <div class="container">
-    <h2>Keserasian Peranti</h2>
-    <p>Berfungsi dengan semua peranti dan aplikasi yang menulis ke HealthKit:</p>
+    <h3>ECG & Fibrilasi Atrium</h3>
     <ul class="feature-list">
-      <li>Apple Watch (semua metrik kardiovaskular dan mobiliti)</li>
-      <li>Monitor tekanan darah Bluetooth</li>
-      <li>Penimbang pintar</li>
-      <li>Penjejak kecergasan lain</li>
-      <li>Input manual melalui Apple Health</li>
+      <li><code>electrocardiogramType</code> - Rakaman ECG dengan <code>HKElectrocardiogram.Classification</code>
+        termasuk <code>.atrialFibrillation</code> (<a
+          href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>atrialFibrillationBurden</code> - Peratusan beban AF (jika tersedia, watchOS 9+) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
     </ul>
-    <p class="mt-6"><a href="/ms/how-it-works/" class="btn btn-secondary">Ketahui Lebih Lanjut Tentang Cara Ia Berfungsi</a></p>
   </div>
 </section>
 
+<!-- Fitness & Mobility -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h3>Metrik Kecergasan & Mobiliti</h3>
+    <ul class="feature-list">
+      <li><code>vo2Max</code> - Pengambilan oksigen maksimum (mL/kg/min) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank"
+          rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>walkingSpeed</code> - Kelajuan berjalan stabil purata (m/s) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>walkingAsymmetryPercentage</code> - Peratusan ketidakseimbangan gaya berjalan (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingasymmetrypercentage"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>stairAscentSpeed</code> - Kelajuan menaiki tangga (m/s) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/stairascentspeed"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Background Sync Patterns -->
+<section class="content-section">
+  <div class="container">
+    <h2>Corak Penyegerakan Latar Belakang</h2>
+
+    <h3>Pertanyaan Objek Berlabuh</h3>
+    <p><code>HKAnchoredObjectQuery</code> membolehkan penyegerakan delta, dengan mengambil hanya data baharu atau yang
+      telah diubah suai sejak penyegerakan terakhir (<a
+        href="https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery" target="_blank"
+        rel="noopener">Dokumentasi Apple</a>).</p>
+
+    <ul class="feature-list">
+      <li><strong>Penggunaan bateri yang cekap</strong> - Hanya mengambil data yang berubah, bukan keseluruhan set data
+      </li>
+      <li><strong>Sauh berterusan</strong> - Menyimpan titik penyegerakan terakhir untuk disambung semula selepas
+        aplikasi dimulakan semula</li>
+      <li><strong>Mengendalikan pemadaman</strong> - Menerima sampel yang dipadam untuk penyegerakan yang tepat</li>
+    </ul>
+
+    <h3 class="mt-8">Penghantaran Latar Belakang</h3>
+    <p><code>HKHealthStore.enableBackgroundDelivery</code> membolehkan HealthKit mengejutkan aplikasi secara automatik
+      apabila data baharu tersedia (<a
+        href="https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery%28for%3Afrequency%3AwithCompletion%3A%29"
+        target="_blank" rel="noopener">Dokumentasi Apple</a>).</p>
+
+    <ul class="feature-list">
+      <li><strong>Kemas kini segera</strong> - Data kardiovaskular segar tanpa penyegaran manual</li>
+      <li><strong>Cekap bateri</strong> - Kejutan yang diuruskan oleh sistem meminimumkan penggunaan kuasa</li>
+      <li><strong>Penghantaran yang boleh dipercayai</strong> - Berfungsi walaupun aplikasi ditutup</li>
+    </ul>
+
+    <p class="note">📱 <strong>Kelayakan yang diperlukan:</strong>
+      <code>com.apple.developer.healthkit.background-delivery</code> (<a
+        href="https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.healthkit.background-delivery"
+        target="_blank" rel="noopener">Dokumentasi</a>)</p>
+  </div>
+</section>
+
+<!-- Write-Back -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Keupayaan Tulis Balik</h2>
+    <p>Data yang dimasukkan oleh pengguna (berat, tekanan darah) boleh ditulis balik ke HealthKit untuk ketekalan
+      merentas semua aplikasi dan peranti kesihatan.</p>
+
+    <ul class="feature-list">
+      <li><strong>Rekod kesihatan bersatu</strong> - Data yang dimasukkan dalam Cardio Analytics muncul dalam Apple
+        Health</li>
+      <li><strong>Keterlihatan pakar klinikal</strong> - Doktor yang menggunakan sistem yang disambungkan ke HealthKit
+        dapat melihat rekod yang konsisten</li>
+      <li><strong>Keserasian rentas aplikasi</strong> - Aplikasi kesihatan lain boleh mengakses entri Cardio Analytics
+        anda</li>
+      <li><strong>Atribusi peranti</strong> - HealthKit menjejak aplikasi/peranti mana yang merekodkan setiap sampel
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Privacy & Permissions -->
+<section class="content-section">
+  <div class="container">
+    <h2>Privasi & Kebenaran Terperinci</h2>
+    <p>Keizinan HealthKit adalah bersifat terperinci - pengguna meluluskan atau menafikan setiap jenis data secara
+      individu. Cardio Analytics menghormati semua keputusan kebenaran:</p>
+
+    <ul class="feature-list">
+      <li><strong>Kebenaran baca/tulis yang terperinci</strong> - Pengguna memilih metrik mana untuk dikongsi</li>
+      <li><strong>Tiada akses kepada jenis yang tidak dibenarkan</strong> - HealthKit menguatkuasakan sempadan kebenaran
+      </li>
+      <li><strong>Boleh dibatalkan pada bila-bila masa</strong> - Pengguna boleh menukar kebenaran dalam Tetapan iOS →
+        Privasi → Kesihatan</li>
+      <li><strong>Tiada penghantaran pelayan</strong> - Semua data kekal pada peranti; keizinan HealthKit tidak
+        memberikan akses pelayan</li>
+    </ul>
+
+    <p><a href="/ms/privacy/" class="btn btn-secondary mt-6">Baca Polisi Privasi Penuh</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
 <section class="cta-section">
   <div class="container">
     <div class="cta-box">
-      <h2>Alami Penyegerakan HealthKit Lancar</h2>
-      <p>Muat turun Cardio Analytics dan biarkan Apple Health menyegerakkan data kardiovaskular anda secara automatik.</p>
+      <h2>Alami Integrasi HealthKit yang Lancar</h2>
+      <p>Muat turun Cardio Analytics dan sambungkan dengan Apple HealthKit untuk pemantauan kardiovaskular automatik.
+      </p>
       <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
         Muat Turun di App Store
       </a>

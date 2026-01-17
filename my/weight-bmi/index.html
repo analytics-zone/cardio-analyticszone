@@ -643,7 +643,7 @@ img[width][height] {
                 </div>
 
                 
-                <select class="language-selector" id="language-select" aria-label="Select language">
+                <select class="language-selector" id="language-select" aria-label="ဘာသာစကား ရွေးချယ်ပါ">
                     
                     <option value="af" >
                         Afrikaans
@@ -943,11 +943,156 @@ img[width][height] {
     
     <main id="main-content" class="main-content">
         <!-- Weight & BMI Science Page -->
-<section class="page-hero"><div class="container"><h1>ကိုယ်အလေးချိန်နှင့် BMI</h1><p class="lead">ကျန်းမာရေးနှင့်ညီညွတ်သော အကွာအဝေး ညွှန်ပြချက်များဖြင့် ခန္ဓာကိုယ်ဖွဲ့စည်းမှု အတိုင်းအတာများကို ခြေရာခံပါ</p></div></section>
-<section class="content-section"><div class="container"><h2>BMI ဆိုတာ ဘာလဲ?</h2><p>ကိုယ်အလေးချိန် ညွှန်းကိန်း (BMI) သည် အရပ်နှင့် ကိုယ်အလေးချိန်ကို အသုံးပြု၍ တွက်ချက်သော ခန္ဓာကိုယ်ဖွဲ့စည်းမှု၏ အမျိုးအစား ခွဲခြားမှု ဖြစ်သည်။</p></div></section>
-<section class="content-section bg-light"><div class="container"><h2>BMI အမျိုးအစားများ</h2><ul class="feature-list"><li><strong>&lt;18.5 kg/m²</strong> - ကိုယ်အလေးချိန် နည်းခြင်း</li><li><strong>18.5-24.9 kg/m²</strong> - ပုံမှန် ကိုယ်အလေးချိန်</li><li><strong>25.0-29.9 kg/m²</strong> - ကိုယ်အလေးချိန် လွန်ခြင်း</li><li><strong>≥30.0 kg/m²</strong> - အဝလွန်ခြင်း</li></ul></div></section>
-<section class="content-section"><div class="container"><h2>HealthKit ဒေတာ အမျိုးအစားများ</h2><ul class="feature-list"><li><code>bodyMass</code> - ကိုယ်အလေးချိန် (ကီလိုဂရမ်)</li><li><code>bodyMassIndex</code> - BMI (kg/m²)</li></ul><p class="mt-6"><a href="/my/healthkit/" class="btn btn-secondary">HealthKit ပေါင်းစပ်မှုအကြောင်း ပိုမိုလေ့လာပါ</a></p></div></section>
-<section class="cta-section"><div class="container"><div class="cta-box"><h2>Cardio Analytics ဖြင့် ကိုယ်အလေးချိန်နှင့် BMI ကို ခြေရာခံပါ</h2><p>ကျန်းမာရေး အကွာအဝေး ညွှန်ပြချက်များ၊ ခေတ်ရေစီးကြောင်း ခွဲခြမ်းစိတ်ဖြာမှုနှင့် နှလုံးသွေးကြော အန္တရာယ် အကဲဖြတ်မှုဖြင့် သင့်ခန္ဓာကိုယ်ဖွဲ့စည်းမှုကို စောင့်ကြည့်ပါ။</p><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">App Store တွင် ဒေါင်းလုဒ်လုပ်ပါ</a></div></div></section>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>ကိုယ်အလေးချိန်နှင့် BMI ခြေရာခံမှု</h1>
+        <p class="lead">နှလုံးသွေးကြော ကျန်းမာရေးအတွက် ကိုယ်အလေးချိန်နှင့် ကိုယ်အလေးချိန်နှင့် အရပ်အချိုး (BMI) ကို
+            စောင့်ကြည့်ပါ</p>
+    </div>
+</section>
+
+<!-- What It Is -->
+<section class="content-section">
+    <div class="container">
+        <h2>ကိုယ်အလေးချိန်နှင့် BMI ဆိုတာ ဘာလဲ?</h2>
+        <ul class="feature-list">
+            <li><strong>ကိုယ်အလေးချိန်</strong> - ကီလိုဂရမ် (kg) သို့မဟုတ် ပေါင် (lbs) ဖြင့် ဖော်ပြသော သင့်ခန္ဓာကိုယ်၏
+                စုစုပေါင်း ဒြပ်ထု</li>
+            <li><strong>BMI (ကိုယ်အလေးချိန်နှင့် အရပ်အချိုး)</strong> - အလေးချိန်နှင့် အရပ် အချိုးအစား ဖြစ်ပြီး weight
+                (kg) / height² (m²) ဖြင့် တွက်ချက်သည်</li>
+        </ul>
+
+        <p class="mt-6">ဥပမာ- အရပ် ၁.၇၅ မီတာ မြင့်ပြီး ကိုယ်အလေးချိန် ၇၀ ကီလိုဂရမ် ရှိသူတစ်ဦး၏ BMI သည် ၇၀ / (၁.၇၅²) =
+            ၂၂.၉ kg/m² ဖြစ်သည်။</p>
+    </div>
+</section>
+
+<!-- Why It Matters -->
+<section class="content-section bg-light">
+    <div class="container">
+        <h2>နှလုံးသွေးကြော ကျန်းမာရေးအတွက် ကိုယ်အလေးချိန်နှင့် BMI ဘာကြောင့် အရေးကြီးသနည်း</h2>
+        <ul class="feature-list">
+            <li>ကိုယ်အလေးချိန် အလွန်အကျွံ များခြင်းသည် နှလုံးသွေးကြောဆိုင်ရာ ရောဂါ အန္တရာယ်ကို တိုးစေသည်</li>
+            <li>သွေးတိုးရောဂါ၊ ဆီးချိုရောဂါနှင့် သွေးတွင်း အဆီဓာတ် ပုံမှန်မဟုတ်ခြင်း (dyslipidemia) တို့နှင့်
+                ဆက်စပ်နေသည်</li>
+            <li>ကိုယ်အလေးချိန် လျှော့ချခြင်းသည် သွေးဖိအားနှင့် ဇီဝဖြစ်စဉ် ကျန်းမာရေး (metabolic health) ကို တိုးတက်စေသည်
+            </li>
+            <li>ကိုယ်အလေးချိန် လျင်မြန်စွာ ပြောင်းလဲခြင်းသည် ခန္ဓာကိုယ်ထဲတွင် ရေဓာတ်များ စုနေခြင်း (fluid retention)
+                သို့မဟုတ် အခြား ကျန်းမာရေး ပြဿနာများကို ညွှန်ပြနိုင်သည်</li>
+        </ul>
+
+        <p class="note">📊 <strong>BMI ၏ ကန့်သတ်ချက်များ:</strong> BMI သည် ကြွက်သားနှင့် အဆီကို ခွဲခြား မပြနိုင်ပါ။
+            အားကစားသမားများနှင့် ကြွက်သား ထူထပ်သူများသည် ကျန်းမာသော်လည်း BMI "မြင့်" နေနိုင်သည်။ သင့်အတွက် သင့်တော်သော
+            အကွာအဝေးကို ဆရာဝန်နှင့် တိုင်ပင်ပါ။</p>
+    </div>
+</section>
+
+<!-- BMI Categories -->
+<section class="content-section">
+    <div class="container">
+        <h2>BMI အမျိုးအစားများ (CDC)</h2>
+
+        <div class="bmi-categories">
+            <div class="bmi-category bmi-underweight">
+                <h3>အလေးချိန် အလွန်နည်းခြင်း</h3>
+                <p class="bmi-values">&lt;၁၈.၅ kg/m²</p>
+                <p>အာဟာရ ချို့တဲ့ခြင်း သို့မဟုတ် အခြား ကျန်းမာရေး ပြဿနာများကို ညွှန်ပြနိုင်သည်ဟု ဆိုလိုသည်။</p>
+            </div>
+
+            <div class="bmi-category bmi-normal">
+                <h3>ကျန်းမာသော ကိုယ်အလေးချိန်</h3>
+                <p class="bmi-values">၁၈.၅ - ၂၄.၉ kg/m²</p>
+                <p>နှလုံးသွေးကြောဆိုင်ရာ ရောဂါ အန္တရာယ် နည်းခြင်းနှင့် ဆက်စပ်နေသည်။</p>
+            </div>
+
+            <div class="bmi-category bmi-overweight">
+                <h3>ကိုယ်အလေးချိန် များခြင်း</h3>
+                <p class="bmi-values">၂၅.၀ - ၂၉.၉ kg/m²</p>
+                <p>ကျန်းမာရေး အန္တရာယ်များ တိုးလာသည်။ နေထိုင်မှုပုံစံ ပြောင်းလဲရန် လိုအပ်သည်။</p>
+            </div>
+
+            <div class="bmi-category bmi-obese">
+                <h3>အဝလွန်ခြင်း</h3>
+                <p class="bmi-values">≥၃၀.၀ kg/m²</p>
+                <p>နှလုံးသွေးကြော အန္တရာယ် သိသိသာသာ တိုးလာသည်။ ဆေးဘက်ဆိုင်ရာ အကဲဖြတ်မှု ခံယူရန် လိုအပ်သည်။</p>
+            </div>
+        </div>
+
+        <p class="note mt-6">⚠️ <strong>အခြေအနေအပေါ် မူတည်သည်:</strong> BMI သည် စစ်ဆေးမှု ကိရိယာတစ်ခုသာ ဖြစ်ပြီး
+            ရောဂါရှာဖွေမှု မဟုတ်ပါ။ အသက်၊ ကျား/မ၊ ကြွက်သားထုထည်နှင့် လူမျိုးစုတို့က အဓိပ္ပာယ်ဖွင့်ဆိုမှုကို
+            သက်ရောက်စေသည်။ တစ်ဦးချင်း လိုအပ်ချက်အတွက် ဆရာဝန်နှင့် တိုင်ပင်ပါ။</p>
+    </div>
+</section>
+
+<!-- How Cardio Analytics Uses It -->
+<section class="content-section bg-light">
+    <div class="container">
+        <h2>Cardio Analytics သည် ကိုယ်အလေးချိန်နှင့် BMI ဒေတာကို မည်သို့ အသုံးပြုသနည်း</h2>
+        <ul class="feature-list">
+            <li><strong>ကိုယ်အလေးချိန် ခေတ်ရေစီးကြောင်းများကို ခြေရာခံသည်</strong> - နေ့စဉ်၊ အပတ်စဉ်နှင့် လစဉ်
+                ပြောင်းလဲမှုများကို မြင်သာအောင် ပြသသည်</li>
+            <li><strong>BMI ကို အလိုအလျောက် တွက်ချက်သည်</strong> - HealthKit မှ အရပ်နှင့် လက်ရှိ အလေးချိန်ကို
+                အသုံးပြုသည်</li>
+            <li><strong>အရေးကြီးသော အပြောင်းအလဲများကို အလေးပေးသည်</strong> - ကိုယ်အလေးချိန် လျင်မြန်စွာ
+                တိုးလာခြင်း/ကျသွားခြင်းများအတွက် သတိပေးသည်</li>
+            <li><strong>ဆေးဝါး ဆက်စပ်မှုများ</strong> - ဆေးဝါးများ (ဥပမာ- ဆီးဆေး၊ ဘီတာ ဘလော့ကာများ) က
+                ကိုယ်အလေးချိန်အပေါ် မည်သို့ သက်ရောက်သည်ကို ကြည့်ပါ</li>
+            <li><strong>သွေးဖိအား ဆက်စပ်မှုများ</strong> - ကိုယ်အလေးချိန်နှင့် သွေးဖိအား (BP) ကြား ဆက်စပ်မှုကို
+                ခြေရာခံပါ</li>
+            <li><strong>HealthKit ထဲသို့ ပြန်လည်ရေးသားခြင်း</strong> - ကိုယ်တိုင် ထည့်သွင်းထားသော အလေးချိန်များကို Apple
+                Health သို့ ပေးပို့သည်</li>
+        </ul>
+    </div>
+</section>
+
+<!-- HealthKit Integration -->
+<section class="content-section">
+    <div class="container">
+        <h2>HealthKit ဒေတာ အမျိုးအစားများ</h2>
+        <p>Cardio Analytics သည် Apple HealthKit မှ ကိုယ်အလေးချိန် ဒေတာကို ဤ အမှတ်အသား အသုံးပြု၍ ဖတ်သည်:</p>
+        <ul class="feature-list">
+            <li><code>bodyMass</code> - ကီလိုဂရမ် (kg) ဖြင့် ကိုယ်အလေးချိန် (<a
+                    href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank"
+                    rel="noopener">Apple Docs</a>)</li>
+            <li><code>height</code> - BMI တွက်ချက်ရန် အသုံးပြုသည့် မီတာ (m) ဖြင့် အရပ်</li>
+        </ul>
+
+        <p class="mt-6"><a href="/my/healthkit/" class="btn btn-secondary">HealthKit ပေါင်းစပ်မှုအကြောင်း
+                ပိုမိုလေ့လာပါ</a></p>
+    </div>
+</section>
+
+<!-- Tracking Tips -->
+<section class="content-section bg-light">
+    <div class="container">
+        <h2>ကိုယ်အလေးချိန် တိကျစွာ ခြေရာခံရန် အကြံပြုချက်များ</h2>
+        <ul class="feature-list">
+            <li><strong>နေ့စဉ် အချိန်တူ တိုင်းတာပါ</strong> - မနက်ပိုင်း အိမ်သာသွားပြီးနောက်၊ အစာမစားမီ</li>
+            <li><strong>တူညီသော ပေါင်ချိန်စက်ကို အသုံးပြုပါ</strong> - စက်တစ်ခုနှင့်တစ်ခု ၁-၂ ကီလိုဂရမ် ကွာခြားနိုင်သည်
+            </li>
+            <li><strong>အဝတ်အစား အနည်းဆုံး ဝတ်ပါ</strong> - တူညီမှု ရှိစေရန် ဖိနပ်မပါဘဲ ချိန်ပါ</li>
+            <li><strong>နေ့စဉ် အပြောင်းအလဲထက် ခေတ်ရေစီးကြောင်းကို ကြည့်ပါ</strong> - ရေဓာတ်၊ အစားအစာ စသည်တို့ကြောင့်
+                တစ်နေ့နှင့်တစ်နေ့ ၀.၅-၂ ကီလိုဂရမ် ကွဲပြားနိုင်သည်</li>
+            <li><strong>စံမီသော စက်ကို အသုံးပြုပါ</strong> - HealthKit နှင့် ချိတ်ဆက်နိုင်သော Smart ပေါင်ချိန်စက်များက
+                ခြေရာခံမှုကို အလိုအလျောက် လုပ်ဆောင်ပေးသည်</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-box">
+            <h2>Cardio Analytics ဖြင့် သင့်ကိုယ်အလေးချိန်နှင့် BMI ကို ခြေရာခံပါ</h2>
+            <p>ဆေးဝါးနှင့် သွေးဖိအား ဆက်စပ်မှုများနှင့်အတူ ကိုယ်အလေးချိန်နှင့် BMI ခေတ်ရေစီးကြောင်းများကို
+                စောင့်ကြည့်ပါ။</p>
+            <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+                App Store တွင် ဒေါင်းလုဒ်လုပ်ပါ
+            </a>
+        </div>
+    </div>
+</section>
     </main>
 
     

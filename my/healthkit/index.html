@@ -625,7 +625,7 @@ img[width][height] {
                 </div>
 
                 
-                <select class="language-selector" id="language-select" aria-label="Select language">
+                <select class="language-selector" id="language-select" aria-label="ဘာသာစကား ရွေးချယ်ပါ">
                     
                     <option value="af" >
                         Afrikaans
@@ -925,11 +925,205 @@ img[width][height] {
     
     <main id="main-content" class="main-content">
         <!-- HealthKit Integration Page -->
-<section class="page-hero"><div class="container"><h1>HealthKit ပေါင်းစပ်မှု</h1><p class="lead">Apple Health နှင့် ချောမွေ့သော ထပ်တူပြုမှုဖြင့် အလိုအလျောက် နောက်ခံ အပ်ဒိတ်များနှင့် ပြန်ရေးနိုင်စွမ်းများ</p></div></section>
-<section class="content-section"><div class="container"><h2>Cardio Analytics သည် HealthKit နှင့် မည်သို့ အလုပ်လုပ်သနည်း</h2><p>Cardio Analytics သည် Apple HealthKit ဒေတာ အမျိုးအစားများကို အသုံးပြု၍ Apple Health နှင့် နေးတူးစွာ ပေါင်းစပ်သည်:</p><ul class="feature-list"><li><strong>HKAnchoredObjectQuery</strong> - ထိရောက်သော မြှင့်တင်ပြောင်းလဲမှု ထပ်တူပြုမှုများ</li><li><strong>နောက်ခံ ပို့ဆောင်မှု</strong> - အက်ပ်ကို ဖွင့်ထားစရာ မလိုဘဲ ဒေတာ အပ်ဒိတ်များ</li><li><strong>ပြန်ရေးနိုင်စွမ်း</strong> - သွေးပေါင်တင်ချိန်နှင့် ကိုယ်အလေးချိန် ထည့်သွင်းမှုများကို HealthKit သို့ သိမ်းဆည်းပါ</li></ul></div></section>
-<section class="content-section bg-light"><div class="container"><h2>ခွင့်ပြုချက်များနှင့် ကိုယ်ရေးကိုယ်တာလုံခြုံမှု</h2><p>သင်သည် အတိုင်းအတာတစ်ခုချင်းစီအတွက် HealthKit ခွင့်ပြုချက်ကို ထိန်းချုပ်သည်:</p><ul class="feature-list"><li>အသေးစိတ် ဖတ်ရှုခွင့် ပေးသည့် - မည်သည့်ဒေတာ အမျိုးအစားများကို မျှဝေမည်ကို ရွေးချယ်ပါ</li><li>ရွေးချယ်နိုင်သော ရေးခွင့် ပေးသည် - သင် လိုချင်ပါက သာ  BP/ကိုယ်အလေးချိန် သိမ်းဆည်းပါ</li><li>iOS ဆက်တင်များတွင် အချိန်မရွေး ပြောင်းလဲနိုင်သည်</li></ul></div></section>
-<section class="content-section"><div class="container"><h2>ပံ့ပိုးထားသော HealthKit ဒေတာ အမျိုးအစားများ</h2><p>Cardio Analytics သည် ဤ HealthKit အမျိုးအစားများကို အသုံးပြုသည်:</p><ul class="feature-list"><li>နှလုံးခုန်နှုန်း (heartRate, restingHeartRate, walkingHeartRateAverage)</li><li>သွေးပေါင်တင်ချိန် (bloodPressureSystolic, bloodPressureDiastolic)</li><li>HRV (heartRateVariabilitySDNN)</li><li>SpO₂ (oxygenSaturation)</li><li>ECG & AF (HKElectrocardiogram, atrialFibrillationBurden)</li><li>VO₂ Max (vo2Max)</li><li>ရွှေ့လျားမှု (walkingSpeed, walkingAsymmetryPercentage, stairAscentSpeed)</li><li>ကိုယ်အလေးချိန် & BMI (bodyMass, bodyMassIndex)</li></ul><p class="mt-6">📚 <a href="https://developer.apple.com/documentation/healthkit" target="_blank" rel="noopener">Apple HealthKit စာရွက်စာတမ်းများ</a> တွင် ပိုမိုလေ့လာပါ</p></div></section>
-<section class="cta-section"><div class="container"><div class="cta-box"><h2>Cardio Analytics ကို ဒေါင်းလုဒ်လုပ်ပါ</h2><p>ချောမွေ့သော Apple Health ပေါင်းစပ်မှုဖြင့် သင့်နှလုံးကျန်းမာရေးကို စောင့်ကြည့်ပါ။ အလိုအလျောက် ထပ်တူပြုမှု၊ ကိုယ်ရေးကိုယ်တာ အရင်ဆုံး ဗိသုကာလက်ရာနှင့် အထောက်အထားအခြေခံ သတိပေးချက်များ။</p><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">App Store တွင် ဒေါင်းလုဒ်လုပ်ပါ</a></div></div></section>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>HealthKit ပေါင်းစပ်မှု</h1>
+        <p class="lead">Cardio Analytics ၏ HealthKit ဒေတာ အမျိုးအစားများနှင့် ထပ်တူပြုခြင်း နမူနာပုံစံများအတွက်
+            နည်းပညာဆိုင်ရာ ကိုးကားချက် အပြည့်အစုံ</p>
+    </div>
+</section>
+
+<!-- Overview -->
+<section class="content-section">
+    <div class="container">
+        <h2>အသုံးပြုထားသော HealthKit ဒေတာ အမျိုးအစားများ</h2>
+        <p>Cardio Analytics သည် Apple HealthKit မှ နှလုံးသွေးကြောနှင့် ရွှေ့လျားနိုင်စွမ်း အတိုင်းအတာ ၁၁ မျိုးကို
+            တရားဝင် အမှတ်အသားများ အသုံးပြု၍ ဖတ်ရှုသည်:</p>
+    </div>
+</section>
+
+<!-- Heart Rate Metrics -->
+<section class="content-section bg-light">
+    <div class="container">
+        <h3>နှလုံးခုန်နှုန်း အတိုင်းအတာများ</h3>
+        <ul class="feature-list">
+            <li><code>HKQuantityTypeIdentifier.heartRate</code> - လက်ရှိ နှလုံးခုန်နှုန်း (တစ်မိနစ်လျှင် အကြိမ်ရေ) (<a
+                    href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank"
+                    rel="noopener">Apple Docs</a>)</li>
+            <li><code>restingHeartRate</code> - အနားယူချိန် နှလုံးခုန်နှုန်း အခြေခံမျဉ်း (<a
+                    href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate"
+                    target="_blank" rel="noopener">Apple Docs</a>)</li>
+            <li><code>walkingHeartRateAverage</code> - လမ်းလျှောက်ချိန် ပျမ်းမျှ နှလုံးခုန်နှုန်း</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Cardiovascular Metrics -->
+<section class="content-section">
+    <div class="container">
+        <h3>နှလုံးသွေးကြောဆိုင်ရာ အတိုင်းအတာများ</h3>
+        <ul class="feature-list">
+            <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - ဆက်စပ်မှုရှိသော သွေးဖိအား
+                တိုင်းတာချက်များ (<a
+                    href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic"
+                    target="_blank" rel="noopener">Apple Docs</a>)</li>
+            <li><code>heartRateVariabilitySDNN</code> - HRV အပြောင်းအလဲတစ်ခုလုံး (မီလီစက္ကန့်ဖြင့် SDNN)</li>
+            <li><code>heartRateVariabilityRMSSD</code> - ရေတို vagal tone (မီလီစက္ကန့်ဖြင့် RMSSD၊ ရရှိနိုင်သော
+                နေရာများတွင်)</li>
+            <li><code>oxygenSaturation</code> - SpO₂ (ရာခိုင်နှုန်း % ဖြင့် ပြသသည်) (<a
+                    href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation"
+                    target="_blank" rel="noopener">Apple Docs</a>)</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Body Composition -->
+<section class="content-section bg-light">
+    <div class="container">
+        <h3>ခန္ဓာကိုယ် ဖွဲ့စည်းပုံ</h3>
+        <ul class="feature-list">
+            <li><code>bodyMass</code> - ကီလိုဂရမ် (kg) ဖြင့် ကိုယ်အလေးချိန်</li>
+            <li><code>height</code> - BMI တွက်ချက်ရန် အသုံးပြုသည့် မီတာ (m) ဖြင့် အရပ်</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ECG & AF -->
+<section class="content-section">
+    <div class="container">
+        <h3>ECG နှင့် နှလုံးပျက်ခြင်း</h3>
+        <ul class="feature-list">
+            <li><code>electrocardiogramType</code> - <code>.atrialFibrillation</code> အပါအဝင်
+                <code>HKElectrocardiogram.Classification</code> ပါဝင်သော ECG မှတ်တမ်းများ (<a
+                    href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum"
+                    target="_blank" rel="noopener">Apple Docs</a>)</li>
+            <li><code>atrialFibrillationBurden</code> - AF burden ရာခိုင်နှုန်း (ရရှိနိုင်သော နေရာများတွင်၊ watchOS 9+)
+                (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden"
+                    target="_blank" rel="noopener">Apple Docs</a>)</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Fitness & Mobility -->
+<section class="content-section bg-light">
+    <div class="container">
+        <h3>ကြံ့ခိုင်မှုနှင့် ရွှေ့လျားနိုင်စွမ်း အတိုင်းအတာများ</h3>
+        <ul class="feature-list">
+            <li><code>vo2Max</code> - အမြင့်ဆုံး အောက်ဆီဂျင် ရယူနိုင်စွမ်း (mL/kg/min) (<a
+                    href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max"
+                    target="_blank" rel="noopener">Apple Docs</a>)</li>
+            <li><code>walkingSpeed</code> - ပျမ်းမျှ တည်ငြိမ်သော လမ်းလျှောက်အမြန်နှုန်း (m/s) (<a
+                    href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed"
+                    target="_blank" rel="noopener">Apple Docs</a>)</li>
+            <li><code>walkingAsymmetryPercentage</code> - လမ်းလျှောက်မှု ဟန်ချက်ပျက်ခြင်း ရာခိုင်နှုန်း % (<a
+                    href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingasymmetrypercentage"
+                    target="_blank" rel="noopener">Apple Docs</a>)</li>
+            <li><code>stairAscentSpeed</code> - လှေကားတက်အမြန်နှုန်း (m/s) (<a
+                    href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/stairascentspeed"
+                    target="_blank" rel="noopener">Apple Docs</a>)</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Background Sync Patterns -->
+<section class="content-section">
+    <div class="container">
+        <h2>နောက်ကွယ်မှ ထပ်တူပြုခြင်း နမူနာပုံစံများ</h2>
+
+        <h3>Anchored Object Queries</h3>
+        <p><code>HKAnchoredObjectQuery</code> သည် နောက်ဆုံး ထပ်တူပြုချိန်မှစ၍ အသစ်ရရှိသော သို့မဟုတ် ပြောင်းလဲသွားသော
+            ဒေတာများကိုသာ ရယူရန်အတွက် delta ထပ်တူပြုခြင်းကို လုပ်ဆောင်ပေးသည် (<a
+                href="https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery" target="_blank"
+                rel="noopener">Apple Docs</a>)။</p>
+
+        <ul class="feature-list">
+            <li><strong>ထိရောက်သော ဘက်ထရီ အသုံးပြုမှု</strong> - ဒေတာ အားလုံးကို မယူဘဲ ပြောင်းလဲသွားသော ဒေတာများကိုသာ
+                ရယူသည်</li>
+            <li><strong>အမြဲတမ်း ကျောက်ချရပ်နားမှု (Persistent anchor)</strong> - အက်ပ်ကို ပြန်ဖွင့်သောအခါ ယခင်
+                ရပ်နားခဲ့သော နေရာမှ ပြန်လည် စတင်နိုင်ရန် သိမ်းဆည်းပေးသည်</li>
+            <li><strong>ဖျက်လိုက်သော အရာများကို ကိုင်တွယ်ခြင်း</strong> - တိကျသော ထပ်တူပြုမှုအတွက် ဖျက်လိုက်သော
+                ဒေတာများကိုလည်း လက်ခံရရှိသည်</li>
+        </ul>
+
+        <h3 class="mt-8">နောက်ကွယ်မှ ပေးပို့ခြင်း (Background Delivery)</h3>
+        <p><code>HKHealthStore.enableBackgroundDelivery</code> သည် ဒေတာအသစ်များ ရရှိလာသောအခါ အက်ပ်ကို အလိုအလျောက်
+            နှိုးရန် ကျန်းမာရေးစနစ် (HealthKit) ကို ခွင့်ပြုပေးသည် (<a
+                href="https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery%28for%3Afrequency%3AwithCompletion%3A%29"
+                target="_blank" rel="noopener">Apple Docs</a>)။</p>
+
+        <ul class="feature-list">
+            <li><strong>ချက်ချင်း အဆင့်မြှင့်တင်ခြင်း</strong> - ကိုယ်တိုင် ပြန်စစ်ဆေးရန် မလိုဘဲ နှလုံးသွေးကြောဆိုင်ရာ
+                ဒေတာသစ်များ ရယူနိုင်ခြင်း</li>
+            <li><strong>ဘက်ထရီ ချွေတာခြင်း</strong> - စနစ်က စီမံခန့်ခွဲသော နိုးကြားမှုစနစ်ကြောင့် ပါဝါသုံးစွဲမှု
+                အနည်းဆုံး ဖြစ်စေခြင်း</li>
+            <li><strong>စိတ်ချရသော ပေးပို့မှု</strong> - အက်ပ်ကို ပိတ်ထားချိန်တွင်ပင် အလုပ်လုပ်ခြင်း</li>
+        </ul>
+
+        <p class="note">📱 <strong>လိုအပ်သော ခွင့်ပြုချက် (Entitlement):</strong>
+            <code>com.apple.developer.healthkit.background-delivery</code> (<a
+                href="https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.healthkit.background-delivery"
+                target="_blank" rel="noopener">Docs</a>)</p>
+    </div>
+</section>
+
+<!-- Write-Back -->
+<section class="content-section bg-light">
+    <div class="container">
+        <h2>ဒေတာ ပြန်လည် ရေးသားနိုင်စွမ်း</h2>
+        <p>ကျန်းမာရေး အက်ပ်များနှင့် စက်ပစ္စည်းများ အားလုံးတွင် အချက်အလက်များ တည်ငြိမ်မှု ရှိစေရန်အတွက် ကိုယ်တိုင်
+            ထည့်သွင်းထားသော ဒေတာများ (ဥပမာ- ကိုယ်အလေးချိန်၊ သွေးဖိအား) ကို HealthKit ထဲသို့ ပြန်လည် ရေးသားပေးနိုင်သည်။
+        </p>
+
+        <ul class="feature-list">
+            <li><strong>ပေါင်းစပ် ကျန်းမာရေး မှတ်တမ်း</strong> - Cardio Analytics တွင် ထည့်သွင်းလိုက်သော ဒေတာများသည်
+                Apple Health တွင်လည်း ပေါ်လာမည်</li>
+            <li><strong>ဆရာဝန်များ မြင်တွေ့နိုင်စွမ်း</strong> - HealthKit နှင့် ချိတ်ဆက်ထားသော စနစ်များကို အသုံးပြုသည့်
+                ဆရာဝန်များသည် တူညီသော မှတ်တမ်းများကို မြင်တွေ့ရမည်</li>
+            <li><strong>အက်ပ်အချင်းချင်း ကိုက်ညီမှု</strong> - အခြားသော ကျန်းမာရေး အက်ပ်များသည်လည်း Cardio Analytics
+                ထည့်သွင်းချက်များကို ရယူနိုင်မည်</li>
+            <li><strong>စက်ပစ္စည်း သတ်မှတ်ချက်</strong> - မည်သည့် အက်ပ်/စက်ပစ္စည်းက ဒေတာ မှတ်တမ်းတင်ခဲ့သည်ကို HealthKit
+                က ခြေရာခံပေးသည်</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Privacy & Permissions -->
+<section class="content-section">
+    <div class="container">
+        <h2>ကိုယ်ရေးကိုယ်တာနှင့် အသေးစိတ် ခွင့်ပြုချက်များ</h2>
+        <p>HealthKit ခွင့်ပြုချက်သည် အသေးစိတ်ကျသဖြင့် အသုံးပြုသူများသည် အတိုင်းအတာ တစ်ခုချင်းစီအတွက် ခွင့်ပြုရန်
+            သို့မဟုတ် ငြင်းပယ်ရန် ရွေးချယ်နိုင်သည်။ Cardio Analytics သည် ခွင့်ပြုချက် ဆုံးဖြတ်ချက် အားလုံးကို လေးစားသည်:
+        </p>
+
+        <ul class="feature-list">
+            <li><strong>အသေးစိတ် ဖတ်ရှု/ရေးသား ခွင့်ပြုချက်များ</strong> - မည်သည့် အတိုင်းအတာများကို မျှဝေမည်ကို
+                အသုံးပြုသူက ရွေးချယ်သည်</li>
+            <li><strong>ခွင့်မပြုသော ဒေတာများကို ရယူနိုင်ခြင်း မရှိပါ</strong> - HealthKit က ခွင့်ပြုချက် ဘောင်များကို
+                တိကျစွာ ထိန်းချုပ်ထားသည်</li>
+            <li><strong>အချိန်မရွေး ပြန်လည် ရုတ်သိမ်းနိုင်သည်</strong> - iOS ဆက်တင်များ → ကိုယ်ရေးကိုယ်တာ → ကျန်းမာရေး
+                တွင် ခွင့်ပြုချက်များကို အချိန်မရွေး ပြောင်းလဲနိုင်သည်</li>
+            <li><strong>ဆာဗာသို့ ပေးပို့ခြင်း မရှိပါ</strong> - ဒေတာ အားလုံး သင့်စက်ပေါ်တွင်သာ ရှိနေပါမည်၊ HealthKit
+                ခွင့်ပြုချက်သည် ဆာဗာသို့ ဝင်ရောက်ခွင့် မပေးပါ</li>
+        </ul>
+
+        <p><a href="/my/privacy/" class="btn btn-secondary mt-6">ကိုယ်ရေးကိုယ်တာ မူဝါဒကို ဖတ်ရန်</a></p>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-box">
+            <h2>ချောမွေ့သော HealthKit ပေါင်းစပ်မှုကို ခံစားကြည့်ပါ</h2>
+            <p>အလိုအလျောက် နှလုံးသွေးကြော စောင့်ကြည့်ရန်အတွက် Cardio Analytics ကို ဒေါင်းလုဒ်လုပ်ပြီး Apple HealthKit
+                နှင့် ချိတ်ဆက်လိုက်ပါ။</p>
+            <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+                App Store တွင် ဒေါင်းလုဒ်လုပ်ပါ
+            </a>
+        </div>
+    </div>
+</section>
     </main>
 
     

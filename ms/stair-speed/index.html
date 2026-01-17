@@ -942,60 +942,109 @@ img[width][height] {
 
     
     <main id="main-content" class="main-content">
-        <!-- Stair Ascent Speed Page -->
+        <!-- Stair Ascent Speed Science Page -->
 
 <section class="page-hero">
   <div class="container">
     <h1>Kelajuan Menaiki Tangga</h1>
-    <p class="lead">Pantau kapasiti fungsi dan kuasa kaki dengan metrik mendaki tangga</p>
+    <p class="lead">Pantau kapasiti fungsian dan daya kaki dengan metrik menaiki tangga</p>
   </div>
 </section>
 
+<!-- What It Is -->
 <section class="content-section">
   <div class="container">
-    <h2>Apakah Kelajuan Menaiki Tangga?</h2>
-    <p>Kelajuan menaiki tangga mengukur seberapa cepat anda mendaki tangga, biasanya dalam meter sesaat (m/s). Ia mencerminkan kuasa kaki, kecergasan kardiovaskular, dan kapasiti fungsi keseluruhan.</p>
+    <h2>Apakah itu Kelajuan Menaiki Tangga?</h2>
+    <p>Kelajuan menaiki tangga adalah kelajuan purata anda menaiki tangga, diukur dalam meter sesaat (m/s). Apple Watch
+      merekodkan metrik ini secara automatik apabila anda menaiki tangga.</p>
   </div>
 </section>
 
+<!-- Why It Matters -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>Mengapa Kelajuan Tangga Penting</h2>
+    <h2>Mengapa Kelajuan Menaiki Tangga Penting</h2>
+    <p>Keupayaan menaiki tangga adalah penunjuk kuat kapasiti fungsian dan kesihatan keseluruhan:</p>
     <ul class="feature-list">
-      <li>Penunjuk kuat kecergasan kardiovaskular dan kuasa neuromuskular</li>
-      <li>Penurunan boleh menandakan kemerosotan fungsi awal</li>
-      <li>Peka kepada perubahan kesihatan berkaitan usia</li>
-      <li>Berguna untuk memantau pemulihan selepas kecederaan atau penyakit</li>
+      <li><strong>Mencerminkan daya kaki</strong> - Memerlukan kekuatan, keseimbangan, dan kecergasan kardiovaskular
+      </li>
+      <li><strong>Penanda kebebasan fungsian</strong> - Keupayaan menaiki tangga meramalkan keupayaan hidup berdikari
+      </li>
+      <li><strong>Pengesanan awal kemerosotan</strong> - Kelajuan tangga yang perlahan mungkin menunjukkan otot yang
+        lemah atau masalah kardiovaskular</li>
+      <li><strong>Sensitif terhadap perubahan</strong> - Bertindak balas dengan cepat terhadap peningkatan kecergasan
+        atau kemerosotan kesihatan</li>
     </ul>
   </div>
 </section>
 
+<!-- Typical Ranges -->
 <section class="content-section">
   <div class="container">
-    <h2>Bagaimana Cardio Analytics Menggunakan Data Kelajuan Tangga</h2>
+    <h2>Julat Kelajuan Menaiki Tangga</h2>
+
+    <div class="range-card">
+      <h3>Garis Panduan Umum</h3>
+      <ul>
+        <li><strong>&gt;0.4 m/s</strong> - Kapasiti fungsian yang baik</li>
+        <li><strong>0.3-0.4 m/s</strong> - Kapasiti fungsian yang sederhana</li>
+        <li><strong>&lt;0.3 m/s</strong> - Mungkin menunjukkan pengurangan kekuatan kaki atau kecergasan kardiovaskular
+        </li>
+      </ul>
+    </div>
+
+    <div class="range-card mt-6">
+      <h3>Faktor Umur dan Kecergasan</h3>
+      <p>Kelajuan menaiki tangga berbeza mengikut:</p>
+      <ul class="feature-list">
+        <li><strong>Umur</strong> - Menurun secara semula jadi dalam kalangan warga emas</li>
+        <li><strong>Kekuatan kaki</strong> - Kaki yang lebih kuat membolehkan panjatan yang lebih pantas</li>
+        <li><strong>Kecergasan kardiovaskular</strong> - VO₂ Max berkorelasi dengan kelajuan tangga</li>
+        <li><strong>Berat badan</strong> - Individu yang lebih berat mungkin mendaki lebih perlahan</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- How Cardio Analytics Uses It -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Bagaimana Cardio Analytics Menggunakan Data Kelajuan Menaiki Tangga</h2>
     <ul class="feature-list">
-      <li><strong>Jejak trend kelajuan tangga</strong> - Pantau perubahan dari masa ke masa</li>
-      <li><strong>Pengesanan penurunan awal</strong> - Kesan perubahan bermakna dalam kapasiti fungsi</li>
-      <li><strong>Korelasi dengan kecergasan</strong> - Lihat hubungan dengan VO₂ Max dan metrik lain</li>
+      <li><strong>Carta aliran kelajuan mendaki</strong> - Jejak perubahan selama berminggu-minggu dan berbulan-bulan
+      </li>
+      <li><strong>Memaparkan kemerosotan yang bermakna</strong> - Amaran apabila kelajuan menurun dengan ketara</li>
+      <li><strong>Berkorelasi dengan VO₂ Max</strong> - Lihat hubungan antara kecergasan kardio dan keupayaan menaiki
+        tangga</li>
+      <li><strong>Korelasi ubat</strong> - Jejak kesan ubat kardiovaskular terhadap kapasiti fungsian</li>
+      <li><strong>Penilaian mobiliti gabungan</strong> - Gunakan bersama kelajuan berjalan dan asimetri untuk penilaian
+        komprehensif</li>
     </ul>
   </div>
 </section>
 
-<section class="content-section bg-light">
+<!-- HealthKit Integration -->
+<section class="content-section">
   <div class="container">
     <h2>Jenis Data HealthKit</h2>
+    <p>Cardio Analytics membaca data kelajuan menaiki tangga daripada Apple HealthKit menggunakan pengecam ini:</p>
     <ul class="feature-list">
-      <li><code>stairAscentSpeed</code> - Kelajuan mendaki tangga (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/stairascentspeed" target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>stairAscentSpeed</code> - Kelajuan purata menaiki tangga (m/s) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/stairascentspeed"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
     </ul>
-    <p class="mt-6"><a href="/ms/healthkit/" class="btn btn-secondary">Ketahui Lebih Lanjut Tentang Integrasi HealthKit</a></p>
+
+    <p class="mt-6"><a href="/ms/healthkit/" class="btn btn-secondary">Ketahui Lebih Lanjut Mengenai Integrasi
+        HealthKit</a></p>
   </div>
 </section>
 
+<!-- CTA Section -->
 <section class="cta-section">
   <div class="container">
     <div class="cta-box">
-      <h2>Pantau Kapasiti Fungsi Anda</h2>
-      <p>Muat turun Cardio Analytics untuk menjejak kelajuan tangga dan kesan perubahan awal.</p>
+      <h2>Jejak Kelajuan Menaiki Tangga Anda dengan Cardio Analytics</h2>
+      <p>Pantau kapasiti fungsian dan daya kaki dengan metrik menaiki tangga.</p>
       <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
         Muat Turun di App Store
       </a>

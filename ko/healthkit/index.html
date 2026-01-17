@@ -928,27 +928,31 @@ img[width][height] {
 
 <section class="page-hero">
   <div class="container">
-    <h1>HealthKit integracija</h1>
-    <p class="lead">Potpuna tehnička referenca za Cardio Analytics HealthKit tipove podataka i obrasce sinkronizacije</p>
+    <h1>HealthKit 통합</h1>
+    <p class="lead">Cardio Analytics HealthKit 데이터 유형 및 동기화 패턴에 대한 기술 참조</p>
   </div>
 </section>
 
 <!-- Overview -->
 <section class="content-section">
   <div class="container">
-    <h2>Korišteni HealthKit tipovi podataka</h2>
-    <p>Cardio Analytics čita 11 kardiovaskularnih i pokretljivostih metrika iz Apple HealthKit koristeći službene identifikatore:</p>
+    <h2>사용된 HealthKit 데이터 유형</h2>
+    <p>Cardio Analytics는 자사 식별자를 사용하여 Apple HealthKit에서 11가지 심혈관 및 이동성 지표를 읽습니다:</p>
   </div>
 </section>
 
 <!-- Heart Rate Metrics -->
 <section class="content-section bg-light">
   <div class="container">
-    <h3>Metrike otkucaja srca</h3>
+    <h3>심박수 지표</h3>
     <ul class="feature-list">
-      <li><code>HKQuantityTypeIdentifier.heartRate</code> - Trenutni otkucaj srca (otkucaja/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank" rel="noopener">Apple Docs</a>)</li>
-      <li><code>restingHeartRate</code> - Osnovna razina mirnog otkucaja srca (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate" target="_blank" rel="noopener">Apple Docs</a>)</li>
-      <li><code>walkingHeartRateAverage</code> - Prosječni otkucaj srca tijekom hodanja</li>
+      <li><code>HKQuantityTypeIdentifier.heartRate</code> - 현재 심박수 (회/분) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier" target="_blank"
+          rel="noopener">Apple 문서</a>)</li>
+      <li><code>restingHeartRate</code> - 안정 시 심박수 기준치 (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/restingheartrate"
+          target="_blank" rel="noopener">Apple 문서</a>)</li>
+      <li><code>walkingHeartRateAverage</code> - 걷기 중 평균 심박수</li>
     </ul>
   </div>
 </section>
@@ -956,12 +960,16 @@ img[width][height] {
 <!-- Cardiovascular Metrics -->
 <section class="content-section">
   <div class="container">
-    <h3>Kardiovaskularne metrike</h3>
+    <h3>심혈관 지표</h3>
     <ul class="feature-list">
-      <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - Uparena očitanja krvnog tlaka s korelacijom (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic" target="_blank" rel="noopener">Apple Docs</a>)</li>
-      <li><code>heartRateVariabilitySDNN</code> - Ukupna varijabilnost HRV (SDNN u milisekundama)</li>
-      <li><code>heartRateVariabilityRMSSD</code> - Kratkotrajni vagalni tonus (RMSSD u ms, gdje je dostupno)</li>
-      <li><code>oxygenSaturation</code> - SpO₂ kao razlomak (0.0-1.0, prikazano kao postotak) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>bloodPressureSystolic</code> + <code>bloodPressureDiastolic</code> - 상관관계가 포함된 쌍을 이룬 혈압 수치 (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/bloodpressuresystolic"
+          target="_blank" rel="noopener">Apple 문서</a>)</li>
+      <li><code>heartRateVariabilitySDNN</code> - 전반적인 HRV 변동성 (밀리초 단위의 SDNN)</li>
+      <li><code>heartRateVariabilityRMSSD</code> - 단기 미주신경 톤 (사용 가능한 경우 ms 단위의 RMSSD)</li>
+      <li><code>oxygenSaturation</code> - 분수 형태의 SpO₂ (0.0-1.0, %로 표시) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation"
+          target="_blank" rel="noopener">Apple 문서</a>)</li>
     </ul>
   </div>
 </section>
@@ -969,10 +977,10 @@ img[width][height] {
 <!-- Body Composition -->
 <section class="content-section bg-light">
   <div class="container">
-    <h3>Tjelesni sastav</h3>
+    <h3>신체 구성</h3>
     <ul class="feature-list">
-      <li><code>bodyMass</code> - Težina u kg</li>
-      <li><code>height</code> - Visina u metrima (koristi se za izračun ITM)</li>
+      <li><code>bodyMass</code> - kg 단위 체중</li>
+      <li><code>height</code> - m 단위 신장 (BMI 계산에 사용됨)</li>
     </ul>
   </div>
 </section>
@@ -980,10 +988,15 @@ img[width][height] {
 <!-- ECG & AF -->
 <section class="content-section">
   <div class="container">
-    <h3>EKG i atrijska fibrilacija</h3>
+    <h3>심전도(ECG) 및 심방세동</h3>
     <ul class="feature-list">
-      <li><code>electrocardiogramType</code> - EKG snimke s <code>HKElectrocardiogram.Classification</code> uključujući <code>.atrialFibrillation</code> (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum" target="_blank" rel="noopener">Apple Docs</a>)</li>
-      <li><code>atrialFibrillationBurden</code> - Postotak opterećenja AF (gdje je dostupno, watchOS 9+) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>electrocardiogramType</code> - <code>.atrialFibrillation</code>을 포함한
+        <code>HKElectrocardiogram.Classification</code>이 있는 심전도 기록 (<a
+          href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum"
+          target="_blank" rel="noopener">Apple 문서</a>)</li>
+      <li><code>atrialFibrillationBurden</code> - 심방세동 부담 백분율 (사용 가능한 경우, watchOS 9 이상) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden"
+          target="_blank" rel="noopener">Apple 문서</a>)</li>
     </ul>
   </div>
 </section>
@@ -991,12 +1004,20 @@ img[width][height] {
 <!-- Fitness & Mobility -->
 <section class="content-section bg-light">
   <div class="container">
-    <h3>Metrike kondicije i pokretljivosti</h3>
+    <h3>체력 및 이동성 지표</h3>
     <ul class="feature-list">
-      <li><code>vo2Max</code> - Maksimalni primitak kisika (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li>
-      <li><code>walkingSpeed</code> - Prosječna ujednačena brzina hodanja (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
-      <li><code>walkingAsymmetryPercentage</code> - Postotak neravnoteže hoda (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingasymmetrypercentage" target="_blank" rel="noopener">Apple Docs</a>)</li>
-      <li><code>stairAscentSpeed</code> - Brzina penjanja stepenicama (m/s) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/stairascentspeed" target="_blank" rel="noopener">Apple Docs</a>)</li>
+      <li><code>vo2Max</code> - 최대 산소 섭취량 (mL/kg/min) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank"
+          rel="noopener">Apple 문서</a>)</li>
+      <li><code>walkingSpeed</code> - 평균 보행 속도 (m/s) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingspeed"
+          target="_blank" rel="noopener">Apple 문서</a>)</li>
+      <li><code>walkingAsymmetryPercentage</code> - 보행 불균형 백분율 (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/walkingasymmetrypercentage"
+          target="_blank" rel="noopener">Apple 문서</a>)</li>
+      <li><code>stairAscentSpeed</code> - 계단 오르기 속도 (m/s) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/stairascentspeed"
+          target="_blank" rel="noopener">Apple 문서</a>)</li>
     </ul>
   </div>
 </section>
@@ -1004,41 +1025,47 @@ img[width][height] {
 <!-- Background Sync Patterns -->
 <section class="content-section">
   <div class="container">
-    <h2>Obrasci sinkronizacije u pozadini</h2>
+    <h2>백그라운드 동기화 패턴</h2>
 
-    <h3>Usidren upiti objekata</h3>
-    <p><code>HKAnchoredObjectQuery</code> omogućuje delta sinkronizaciju, dohvaćajući samo nove ili izmijenjene podatke od zadnje sinkronizacije (<a href="https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery" target="_blank" rel="noopener">Apple Docs</a>).</p>
-
-    <ul class="feature-list">
-      <li><strong>Učinkovita potrošnja baterije</strong> - Dohvaća samo promijenjene podatke, ne cijele skupove podataka</li>
-      <li><strong>Trajno sidro</strong> - Pohranjuje posljednju točku sinkronizacije za nastavak nakon ponovnog pokretanja aplikacije</li>
-      <li><strong>Rukuje brisanjima</strong> - Prima obrisane uzorke za točnu sinkronizaciju</li>
-    </ul>
-
-    <h3 class="mt-8">Isporuka u pozadini</h3>
-    <p><code>HKHealthStore.enableBackgroundDelivery</code> omogućuje HealthKit da automatski probudi aplikaciju kada postanu dostupni novi podaci (<a href="https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery%28for%3Afrequency%3AwithCompletion%3A%29" target="_blank" rel="noopener">Apple Docs</a>).</p>
+    <h3>고정 개체 쿼리 (Anchored Object Queries)</h3>
+    <p><code>HKAnchoredObjectQuery</code>는 델타 동기화를 가능하게 하여 마지막 동기화 이후의 새 데이터 또는 수정된 데이터만 가져옵니다 (<a
+        href="https://developer.apple.com/documentation/healthkit/hkanchoredobjectquery" target="_blank"
+        rel="noopener">Apple 문서</a>).</p>
 
     <ul class="feature-list">
-      <li><strong>Trenutna ažuriranja</strong> - Svježi kardiovaskularni podaci bez ručnog osvježavanja</li>
-      <li><strong>Učinkovita baterija</strong> - Buđenja upravljana sustavom minimiziraju potrošnju energije</li>
-      <li><strong>Pouzdana isporuka</strong> - Radi čak i kada je aplikacija zatvorena</li>
+      <li><strong>효율적인 배터리 사용</strong> - 전체 데이터 세트가 아닌 변경된 데이터만 가져옵니다</li>
+      <li><strong>영구적인 앵커(Anchor)</strong> - 앱 재시작 후 재개할 수 있도록 마지막 동기화 지점을 저장합니다</li>
+      <li><strong>삭제 처리</strong> - 정확한 동기화를 위해 삭제된 샘플 정보를 수신합니다</li>
     </ul>
 
-    <p class="note">📱 <strong>Potrebno ovlaštenje:</strong> <code>com.apple.developer.healthkit.background-delivery</code> (<a href="https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.healthkit.background-delivery" target="_blank" rel="noopener">Docs</a>)</p>
+    <h3 class="mt-8">백그라운드 전달 (Background Delivery)</h3>
+    <p><code>HKHealthStore.enableBackgroundDelivery</code>를 사용하면 새로운 데이터를 사용할 수 있을 때 HealthKit이 자동으로 앱을 깨울 수 있습니다 (<a
+        href="https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery%28for%3Afrequency%3AwithCompletion%3A%29"
+        target="_blank" rel="noopener">Apple 문서</a>).</p>
+
+    <ul class="feature-list">
+      <li><strong>즉각적인 업데이트</strong> - 수동 새로고침 없이 신선한 심혈관 데이터를 반영합니다</li>
+      <li><strong>배터리 효율성</strong> - 시스템 관리 활성화를 통해 전력 소모를 최소화합니다</li>
+      <li><strong>안정적인 전달</strong> - 앱이 닫혀 있을 때도 작동합니다</li>
+    </ul>
+
+    <p class="note">📱 <strong>필수 권한:</strong> <code>com.apple.developer.healthkit.background-delivery</code> (<a
+        href="https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.healthkit.background-delivery"
+        target="_blank" rel="noopener">문서</a>)</p>
   </div>
 </section>
 
 <!-- Write-Back -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>Mogućnosti povratnog zapisa</h2>
-    <p>Korisnički uneseni podaci (težina, krvni tlak) mogu se vratno zapisati u HealthKit radi dosljednosti u svim zdravstvenim aplikacijama i uređajima.</p>
+    <h2>데이터 쓰기(Write-Back) 기능</h2>
+    <p>사용자가 입력한 데이터(체중, 혈압)는 모든 건강 앱과 기기 간의 일관성을 위해 HealthKit에 다시 기록될 수 있습니다.</p>
 
     <ul class="feature-list">
-      <li><strong>Jedinstveni zdravstveni zapis</strong> - Podaci uneseni u Cardio Analytics pojavljuju se u Apple Health</li>
-      <li><strong>Vidljivost liječniku</strong> - Liječnici koji koriste sustave povezane s HealthKit vide dosljedne zapise</li>
-      <li><strong>Kompatibilnost među aplikacijama</strong> - Druge zdravstvene aplikacije mogu pristupiti vašim Cardio Analytics unosima</li>
-      <li><strong>Atribucija uređaja</strong> - HealthKit prati koja aplikacija/uređaj je zabilježio svaki uzorak</li>
+      <li><strong>통합 건강 기록</strong> - Cardio Analytics에 입력된 데이터가 Apple 건강 앱에 표시됩니다</li>
+      <li><strong>임상의 가시성</strong> - HealthKit 연결 시스템을 사용하는 의사가 일관된 기록을 볼 수 있습니다</li>
+      <li><strong>교차 앱 호환성</strong> - 다른 건강 앱에서 Cardio Analytics 항목에 접근할 수 있습니다</li>
+      <li><strong>기기 속성 추적</strong> - HealthKit은 각 샘플을 기록한 앱/기기를 추적합니다</li>
     </ul>
   </div>
 </section>
@@ -1046,17 +1073,17 @@ img[width][height] {
 <!-- Privacy & Permissions -->
 <section class="content-section">
   <div class="container">
-    <h2>Privatnost i granularne dozvole</h2>
-    <p>HealthKit autorizacija je granularna - korisnici odobravaju ili odbijaju svaki tip podataka pojedinačno. Cardio Analytics poštuje sve odluke o dozvolama:</p>
+    <h2>개인 정보 보호 및 세분화된 권한</h2>
+    <p>HealthKit 권한 부여는 세분화되어 있어 사용자가 각 데이터 유형에 대해 개별적으로 승인하거나 거부합니다. Cardio Analytics는 모든 권한 결정을 존중합니다:</p>
 
     <ul class="feature-list">
-      <li><strong>Granularne dozvole za čitanje/pisanje</strong> - Korisnik bira koje metrike dijeliti</li>
-      <li><strong>Nema pristupa neautoriziranim tipovima</strong> - HealthKit provodi granice dozvola</li>
-      <li><strong>Opozivo bilo kada</strong> - Korisnici mogu promijeniti dozvole u iOS Postavke → Privatnost → Zdravlje</li>
-      <li><strong>Bez prijenosa na poslužitelj</strong> - Svi podaci ostaju na uređaju; HealthKit autorizacija ne daje pristup poslužitelju</li>
+      <li><strong>세분화된 읽기/쓰기 권한</strong> - 사용자가 공유할 지표를 선택합니다</li>
+      <li><strong>승인되지 않은 유형에 대한 접근 금지</strong> - HealthKit이 권한 경계를 강제합니다</li>
+      <li><strong>언제든지 철회 가능</strong> - 사용자는 iOS 설정 → 개인 정보 보호 → 건강에서 권한을 변경할 수 있습니다</li>
+      <li><strong>서버 전송 없음</strong> - 모든 데이터는 기기에 보관되며, HealthKit 권한 부여가 서버 접근 권한을 부여하지는 않습니다</li>
     </ul>
 
-    <p><a href="/ko/privacy/" class="btn btn-secondary mt-6">Pročitajte potpunu politiku privatnosti</a></p>
+    <p><a href="/ko/privacy/" class="btn btn-secondary mt-6">전체 개인 정보 처리 방침 읽기</a></p>
   </div>
 </section>
 
@@ -1064,10 +1091,10 @@ img[width][height] {
 <section class="cta-section">
   <div class="container">
     <div class="cta-box">
-      <h2>Doživite besprijekornu HealthKit integraciju</h2>
-      <p>Preuzmite Cardio Analytics i povežite se s Apple HealthKit za automatsko kardiovaskularno praćenje.</p>
+      <h2>원활한 HealthKit 통합을 경험하세요</h2>
+      <p>Cardio Analytics를 다운로드하고 Apple HealthKit과 연결하여 자동 화 심혈관 모니터링을 시작하세요.</p>
       <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
-        Preuzmite na App Store
+        App Store에서 다운로드
       </a>
     </div>
   </div>

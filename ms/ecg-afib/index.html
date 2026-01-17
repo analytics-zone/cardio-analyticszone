@@ -942,64 +942,161 @@ img[width][height] {
 
     
     <main id="main-content" class="main-content">
-        <!-- ECG & Atrial Fibrillation Page -->
+        <!-- ECG & Atrial Fibrillation Science Page -->
 
 <section class="page-hero">
   <div class="container">
-    <h1>ECG & Fibrilasi Atrium</h1>
-    <p class="lead">Simpan rakaman ECG Apple Watch dan jejak beban fibrilasi atrium</p>
+    <h1>ECG & Pengesanan Fibrilasi Atrium</h1>
+    <p class="lead">ECG Apple Watch yang diluluskan FDA dan penjejakan beban AF</p>
   </div>
 </section>
 
+<!-- What It Is -->
 <section class="content-section">
   <div class="container">
-    <h2>Apakah ECG dan Fibrilasi Atrium?</h2>
-    <p>Elektrokardiogram (ECG atau EKG) merekodkan aktiviti elektrik jantung. Apple Watch boleh mengambil ECG saluran tunggal dan mengesan fibrilasi atrium (AF) - irama jantung tidak teratur yang biasa.</p>
+    <h2>Apakah itu ECG dan Fibrilasi Atrium?</h2>
+    <ul class="feature-list">
+      <li><strong>ECG (Elektrokardiogram)</strong> - Rakaman aktiviti elektrik jantung. Apple Watch menyediakan rakaman
+        ECG saluran tunggal.</li>
+      <li><strong>Fibrilasi Atrium (AF)</strong> - Irama jantung tidak teratur di mana atrium bergetar dan bukannya
+        mengecut secara normal. Boleh meningkatkan risiko strok.</li>
+    </ul>
   </div>
 </section>
 
+<!-- Why It Matters -->
 <section class="content-section bg-light">
   <div class="container">
-    <h2>Mengapa Pengesanan AF Penting</h2>
-    <p>Fibrilasi atrium meningkatkan risiko strok dan komplikasi kardiovaskular lain:</p>
+    <h2>Mengapa Pengesanan ECG dan AF Penting</h2>
+    <p><strong>ECG Apple Watch yang diluluskan FDA boleh mengesan fibrilasi atrium</strong> dengan ketepatan yang
+      tinggi. <strong>Kajian Jantung Apple</strong> (NEJM 2019) menunjukkan bahawa amaran nadi tidak teratur jam tangan
+      pintar boleh mengenal pasti AF (<a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1901183" target="_blank"
+        rel="noopener">NEJM</a>).</p>
+
     <ul class="feature-list">
-      <li>AF meningkatkan risiko strok sebanyak 5 kali ganda</li>
-      <li>Sering tanpa simptom</li>
-      <li>Pengesanan awal membolehkan rawatan pencegahan</li>
-      <li>Apple Watch ECG mempunyai kepekaan dan kekhususan 95% untuk mengesan AF (<a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1901183" target="_blank" rel="noopener">NEJM 2019</a>)</li>
+      <li><strong>AF meningkatkan risiko strok</strong> - Risiko strok iskemik 5 kali ganda lebih tinggi</li>
+      <li><strong>Sering kali tanpa simptom</strong> - Ramai individu dengan AF tidak mempunyai simptom</li>
+      <li><strong>Ketepatan pengesanan tinggi</strong> - Meta-analisis melaporkan ~95% kepekaan dan 95% kekhususan untuk
+        klasifikasi AF ECG Apple Watch (<a href="https://www.jacc.org/doi/10.1016/j.jacadv.2025.102133" target="_blank"
+          rel="noopener">JACC Advances 2025</a>)</li>
+      <li><strong>Pengesanan awal membolehkan rawatan</strong> - Antikoagulasi dan pengurusan irama mengurangkan risiko
+        strok</li>
     </ul>
+
+    <p class="disclaimer mt-6">⚠️ <strong>Cardio Analytics tidak mendiagnosis AF.</strong> Ia memaparkan klasifikasi ECG
+      Apple Watch dan episod AF untuk anda dan pakar klinikal anda semak. Sentiasa rujuk pakar klinikal yang
+      berkelayakan untuk diagnosis perubatan.</p>
   </div>
 </section>
 
+<!-- ECG Classifications -->
 <section class="content-section">
   <div class="container">
-    <h2>Bagaimana Cardio Analytics Menggunakan Data ECG</h2>
+    <h2>Klasifikasi ECG Apple Watch</h2>
+    <p>ECG Apple Watch menyediakan klasifikasi berikut (<a
+        href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum"
+        target="_blank" rel="noopener">Dokumentasi Apple</a>):</p>
+
+    <div class="ecg-classifications">
+      <div class="ecg-classification">
+        <h3>Irama Sinus</h3>
+        <p>Irama jantung normal dan tetap. Tiada tindakan diperlukan.</p>
+      </div>
+
+      <div class="ecg-classification">
+        <h3>Fibrilasi Atrium</h3>
+        <p>Irama tidak teratur dikesan. Rujuk pakar klinikal untuk penilaian.</p>
+      </div>
+
+      <div class="ecg-classification">
+        <h3>Kadar Jantung Rendah/Tinggi</h3>
+        <p>Kadar jantung di luar julat 50-150 dpm semasa ECG. Mungkin memerlukan tindakan susulan.</p>
+      </div>
+
+      <div class="ecg-classification">
+        <h3>Tidak Muktamad</h3>
+        <p>Gagal diklasifikasikan. Ulang semula ECG atau rujuk pakar klinikal jika terdapat simptom.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AF Burden -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2>Penjejakan Beban AF</h2>
+    <p>Apple Watch (watchOS 9+) boleh menganggarkan <strong>Beban AF</strong> - peratusan masa anda berada dalam
+      fibrilasi atrium sepanjang minggu.</p>
+
     <ul class="feature-list">
-      <li><strong>Simpan klasifikasi ECG</strong> - Sinus normal, AF, Tidak muktamad, Kadar rendah/tinggi</li>
-      <li><strong>Jejak beban AF</strong> - Peratusan masa dalam AF (jika tersedia dari watchOS 9+)</li>
-      <li><strong>Pemberitahuan irama tidak teratur</strong> - Log amaran Apple Watch</li>
-      <li><strong>Analisis trend</strong> - Lihat kekerapan episod AF</li>
-      <li><strong>Eksport untuk pakar klinikal</strong> - Kongsi sejarah ECG lengkap dengan doktor</li>
+      <li><strong>Dikira daripada pemberitahuan irama tidak teratur dan rakaman ECG</strong></li>
+      <li><strong>Berguna untuk memantau perkembangan AF</strong> - Adakah AF menjadi lebih kerap?</li>
+      <li><strong>Membantu membimbing keputusan rawatan</strong> - Beban AF yang lebih tinggi mungkin menunjukkan
+        keperluan kawalan irama</li>
+    </ul>
+
+    <p class="note">📊 <strong>Kongsi dengan pakar klinikal anda:</strong> Data beban AF membantu pakar kardiologi
+      menilai tahap keterukan aritmia dan keberkesanan rawatan.</p>
+  </div>
+</section>
+
+<!-- How Cardio Analytics Uses It -->
+<section class="content-section">
+  <div class="container">
+    <h2>Bagaimana Cardio Analytics Menggunakan Data ECG dan AF</h2>
+    <ul class="feature-list">
+      <li><strong>Menyimpan klasifikasi ECG</strong> - Semua rakaman ECG Apple Watch dengan cap masa</li>
+      <li><strong>Menjejak episod AF</strong> - Bilangan dan masa pengesanan AF</li>
+      <li><strong>Merumuskan beban AF</strong> - Peratusan masa dalam AF sepanjang hari/minggu</li>
+      <li><strong>Memaparkan episod untuk tindakan susulan klinikal</strong> - Eksport sejarah AF dalam PDF/CSV untuk
+        pakar kardiologi anda</li>
+      <li><strong>Korelasi ubat</strong> - Jejak hubungan antara ubat antiaritmia dan episod AF</li>
     </ul>
   </div>
 </section>
 
+<!-- HealthKit Integration -->
 <section class="content-section bg-light">
   <div class="container">
     <h2>Jenis Data HealthKit</h2>
+    <p>Cardio Analytics membaca data ECG dan AF daripada Apple HealthKit menggunakan pengecam berikut:</p>
     <ul class="feature-list">
-      <li><code>electrocardiogramType</code> - Rakaman ECG dengan klasifikasi (<a href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram" target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
-      <li><code>atrialFibrillationBurden</code> - Peratusan beban AF (watchOS 9+)</li>
+      <li><code>electrocardiogramType</code> - Rakaman ECG dengan <code>HKElectrocardiogram.Classification</code>
+        termasuk <code>.atrialFibrillation</code> (<a
+          href="https://developer.apple.com/documentation/healthkit/hkelectrocardiogram/classification-swift.enum"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
+      <li><code>atrialFibrillationBurden</code> - Peratusan beban AF (jika tersedia, watchOS 9+) (<a
+          href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/atrialfibrillationburden"
+          target="_blank" rel="noopener">Dokumentasi Apple</a>)</li>
     </ul>
-    <p class="mt-6"><strong>Kelayakan FDA:</strong> Ciri ECG Apple Watch dan pemberitahuan irama tidak teratur diluluskan FDA untuk pengesanan AF.</p>
+
+    <p class="mt-6"><a href="/ms/healthkit/" class="btn btn-secondary">Ketahui Lebih Lanjut Mengenai Integrasi
+        HealthKit</a></p>
   </div>
 </section>
 
+<!-- References -->
+<section class="content-section">
+  <div class="container">
+    <h2>Rujukan Saintifik</h2>
+    <ol class="references-list">
+      <li>Perez MV, et al. <em>Penilaian Skala Besar Jam Tangan Pintar untuk Mengenal Pasti Fibrilasi Atrium.</em> NEJM.
+        2019. <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1901183" target="_blank"
+          rel="noopener">https://www.nejm.org/doi/full/10.1056/NEJMoa1901183</a></li>
+      <li>Barrera N, et al. <em>Ketepatan Jam Tangan Pintar dalam Pengesanan Fibrilasi Atrium.</em> JACC Advances. 2025.
+        <a href="https://www.jacc.org/doi/10.1016/j.jacadv.2025.102133" target="_blank"
+          rel="noopener">https://www.jacc.org/doi/10.1016/j.jacadv.2025.102133</a></li>
+    </ol>
+    <p><a href="/ms/references/" class="btn btn-secondary">Lihat Semua Rujukan</a></p>
+  </div>
+</section>
+
+<!-- CTA Section -->
 <section class="cta-section">
   <div class="container">
     <div class="cta-box">
-      <h2>Jejak Kesihatan Kardiovaskular Anda</h2>
-      <p>Muat turun Cardio Analytics untuk menyimpan rakaman ECG dan memantau fibrilasi atrium.</p>
+      <h2>Jejak ECG & AF dengan Cardio Analytics</h2>
+      <p>Simpan rakaman ECG Apple Watch dan pantau beban AF untuk tindakan susulan klinikal.</p>
       <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
         Muat Turun di App Store
       </a>
