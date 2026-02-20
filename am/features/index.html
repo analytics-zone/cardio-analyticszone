@@ -1,243 +1,61 @@
-<!DOCTYPE html>
-<html lang="am" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Cardio Analytics ባህሪያት - ግላዊ ዳሽቦርድ፣ የመድሃኒት ክትትል</title>
-  <meta name="description" content="11 የልብና የደም ቧንቧ መለኪያዎችን ከግላዊ ዳሽቦርድ፣ የመድሃኒት መታዘዝ፣ በማስረጃ ላይ የተመሰረቱ ማንቂያዎች፣ ምልክት መመዝገብ እና ሊጋሩ የሚችሉ ሪፖርቶች ጋር ይከታተሉ።">
-  <meta name="author" content="AnalyticsZone Team">
-
-  
-  
-  <meta name="keywords" content="የልብ ጤና ዳሽቦርድ, የመድሃኒት ክትትል, የልብና የደም ቧንቧ ማንቂያዎች, ምልክት መመዝገብ, የልብ ጤና ሪፖርቶች, የደም ግፊት ክትትል, HRV ክትትል">
-  
-
-  
-  <link rel="canonical" href="https://cardio.analyticszone.app/am/features/">
-
-  
-  
-  <meta property="article:published_time" content="2024-01-01T10:00:00Z">
-  <meta property="article:modified_time" content="2026-01-02T14:30:00Z">
-  <meta property="article:author" content="AnalyticsZone Team">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://cardio.analyticszone.app/am/features/">
-  <meta property="og:title" content="Cardio Analytics ባህሪያት - ግላዊ ዳሽቦርድ፣ የመድሃኒት ክትትል">
-  <meta property="og:description" content="11 የልብና የደም ቧንቧ መለኪያዎችን ከግላዊ ዳሽቦርድ፣ የመድሃኒት መታዘዝ፣ በማስረጃ ላይ የተመሰረቱ ማንቂያዎች፣ ምልክት መመዝገብ እና ሊጋሩ የሚችሉ ሪፖርቶች ጋር ይከታተሉ።">
-  <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="am_ET">
-  <meta property="og:site_name" content="Cardio Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://cardio.analyticszone.app/am/features/">
-  <meta name="twitter:title" content="Cardio Analytics ባህሪያት - ግላዊ ዳሽቦርድ፣ የመድሃኒት ክትትል">
-  <meta name="twitter:description" content="11 የልብና የደም ቧንቧ መለኪያዎችን ከግላዊ ዳሽቦርድ፣ የመድሃኒት መታዘዝ፣ በማስረጃ ላይ የተመሰረቱ ማንቂያዎች፣ ምልክት መመዝገብ እና ሊጋሩ የሚችሉ ሪፖርቶች ጋር ይከታተሉ።">
-  <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://cardio.analyticszone.app/af/features/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://cardio.analyticszone.app/am/features/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://cardio.analyticszone.app/ar/features/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://cardio.analyticszone.app/bg/features/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://cardio.analyticszone.app/bn/features/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://cardio.analyticszone.app/ca/features/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://cardio.analyticszone.app/cs/features/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://cardio.analyticszone.app/da/features/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://cardio.analyticszone.app/de/features/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://cardio.analyticszone.app/el/features/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://cardio.analyticszone.app/en/features/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://cardio.analyticszone.app/es/features/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://cardio.analyticszone.app/et/features/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://cardio.analyticszone.app/fa/features/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://cardio.analyticszone.app/fi/features/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://cardio.analyticszone.app/fr/features/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://cardio.analyticszone.app/gu/features/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://cardio.analyticszone.app/ha/features/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://cardio.analyticszone.app/he/features/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://cardio.analyticszone.app/hi/features/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://cardio.analyticszone.app/hr/features/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://cardio.analyticszone.app/hu/features/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://cardio.analyticszone.app/id/features/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://cardio.analyticszone.app/is/features/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://cardio.analyticszone.app/it/features/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://cardio.analyticszone.app/ja/features/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://cardio.analyticszone.app/km/features/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://cardio.analyticszone.app/kn/features/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://cardio.analyticszone.app/ko/features/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://cardio.analyticszone.app/lt/features/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://cardio.analyticszone.app/lv/features/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://cardio.analyticszone.app/ms/features/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://cardio.analyticszone.app/my/features/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://cardio.analyticszone.app/nb/features/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://cardio.analyticszone.app/nl/features/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://cardio.analyticszone.app/pl/features/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://cardio.analyticszone.app/pt/features/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://cardio.analyticszone.app/pt-br/features/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://cardio.analyticszone.app/ro/features/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://cardio.analyticszone.app/ru/features/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://cardio.analyticszone.app/sk/features/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://cardio.analyticszone.app/sl/features/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://cardio.analyticszone.app/sr/features/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://cardio.analyticszone.app/sv/features/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://cardio.analyticszone.app/sw/features/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://cardio.analyticszone.app/ta/features/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://cardio.analyticszone.app/te/features/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://cardio.analyticszone.app/th/features/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://cardio.analyticszone.app/tl/features/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://cardio.analyticszone.app/tr/features/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://cardio.analyticszone.app/uk/features/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://cardio.analyticszone.app/ur/features/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://cardio.analyticszone.app/vi/features/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://cardio.analyticszone.app/yo/features/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://cardio.analyticszone.app/zh/features/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://cardio.analyticszone.app/en/features/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  <meta name="robots" content="index, follow">
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6754761648">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="am" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"><title>የካርዲዮ ትንታኔ ባህሪዎች - ዳሽቦርድ እና መድሃኒት</title><meta name="description" content="11 የካርዲዮቫስኩላር መለኪያዎችን በግል በተበጀ ዳሽቦርድ፣ የመድሃኒት ክትትል፣ በማስረጃ ላይ የተመሰረቱ ማንቂያዎችን እና የምልክት ምዝግብ ማስታወሻዎችን ይከታተሉ። ውሂብ በመሣሪያው ላይ ይቆያል።"><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="የልብ ጤና ዳሽቦርድ, የመድሃኒት ክትትል, የልብና የደም ቧንቧ ማንቂያዎች, ምልክት መመዝገብ, የልብ ጤና ሪፖርቶች, የደም ግፊት ክትትል, HRV ክትትል"><link rel="canonical" href="https://cardio.analyticszone.app/am/features/"><meta property="article:published_time" content="2024-01-01T10:00:00Z"><meta property="article:modified_time" content="2026-01-02T14:30:00Z"><meta property="article:author" content="AnalyticsZone Team"><meta property="og:type" content="article"><meta property="og:url" content="https://cardio.analyticszone.app/am/features/"><meta property="og:title" content="የካርዲዮ ትንታኔ ባህሪዎች - ዳሽቦርድ እና መድሃኒት"><meta property="og:description" content="11 የካርዲዮቫስኩላር መለኪያዎችን በግል በተበጀ ዳሽቦርድ፣ የመድሃኒት ክትትል፣ በማስረጃ ላይ የተመሰረቱ ማንቂያዎችን እና የምልክት ምዝግብ ማስታወሻዎችን ይከታተሉ። ውሂብ በመሣሪያው ላይ ይቆያል።"><meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="am_ET"><meta property="og:site_name" content="Cardio Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://cardio.analyticszone.app/am/features/"><meta name="twitter:title" content="የካርዲዮ ትንታኔ ባህሪዎች - ዳሽቦርድ እና መድሃኒት"><meta name="twitter:description" content="11 የካርዲዮቫስኩላር መለኪያዎችን በግል በተበጀ ዳሽቦርድ፣ የመድሃኒት ክትትል፣ በማስረጃ ላይ የተመሰረቱ ማንቂያዎችን እና የምልክት ምዝግብ ማስታወሻዎችን ይከታተሉ። ውሂብ በመሣሪያው ላይ ይቆያል።"><meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg"><link rel="alternate" hreflang="af"
+    href="https://cardio.analyticszone.app/af/features/"><link rel="alternate" hreflang="am"
+    href="https://cardio.analyticszone.app/am/features/"><link rel="alternate" hreflang="ar"
+    href="https://cardio.analyticszone.app/ar/features/"><link rel="alternate" hreflang="bg"
+    href="https://cardio.analyticszone.app/bg/features/"><link rel="alternate" hreflang="bn"
+    href="https://cardio.analyticszone.app/bn/features/"><link rel="alternate" hreflang="ca"
+    href="https://cardio.analyticszone.app/ca/features/"><link rel="alternate" hreflang="cs"
+    href="https://cardio.analyticszone.app/cs/features/"><link rel="alternate" hreflang="da"
+    href="https://cardio.analyticszone.app/da/features/"><link rel="alternate" hreflang="de"
+    href="https://cardio.analyticszone.app/de/features/"><link rel="alternate" hreflang="el"
+    href="https://cardio.analyticszone.app/el/features/"><link rel="alternate" hreflang="en"
+    href="https://cardio.analyticszone.app/en/features/"><link rel="alternate" hreflang="es"
+    href="https://cardio.analyticszone.app/es/features/"><link rel="alternate" hreflang="et"
+    href="https://cardio.analyticszone.app/et/features/"><link rel="alternate" hreflang="fa"
+    href="https://cardio.analyticszone.app/fa/features/"><link rel="alternate" hreflang="fi"
+    href="https://cardio.analyticszone.app/fi/features/"><link rel="alternate" hreflang="fr"
+    href="https://cardio.analyticszone.app/fr/features/"><link rel="alternate" hreflang="gu"
+    href="https://cardio.analyticszone.app/gu/features/"><link rel="alternate" hreflang="ha"
+    href="https://cardio.analyticszone.app/ha/features/"><link rel="alternate" hreflang="he"
+    href="https://cardio.analyticszone.app/he/features/"><link rel="alternate" hreflang="hi"
+    href="https://cardio.analyticszone.app/hi/features/"><link rel="alternate" hreflang="hr"
+    href="https://cardio.analyticszone.app/hr/features/"><link rel="alternate" hreflang="hu"
+    href="https://cardio.analyticszone.app/hu/features/"><link rel="alternate" hreflang="id"
+    href="https://cardio.analyticszone.app/id/features/"><link rel="alternate" hreflang="is"
+    href="https://cardio.analyticszone.app/is/features/"><link rel="alternate" hreflang="it"
+    href="https://cardio.analyticszone.app/it/features/"><link rel="alternate" hreflang="ja"
+    href="https://cardio.analyticszone.app/ja/features/"><link rel="alternate" hreflang="km"
+    href="https://cardio.analyticszone.app/km/features/"><link rel="alternate" hreflang="kn"
+    href="https://cardio.analyticszone.app/kn/features/"><link rel="alternate" hreflang="ko"
+    href="https://cardio.analyticszone.app/ko/features/"><link rel="alternate" hreflang="lt"
+    href="https://cardio.analyticszone.app/lt/features/"><link rel="alternate" hreflang="lv"
+    href="https://cardio.analyticszone.app/lv/features/"><link rel="alternate" hreflang="ms"
+    href="https://cardio.analyticszone.app/ms/features/"><link rel="alternate" hreflang="my"
+    href="https://cardio.analyticszone.app/my/features/"><link rel="alternate" hreflang="nb"
+    href="https://cardio.analyticszone.app/nb/features/"><link rel="alternate" hreflang="nl"
+    href="https://cardio.analyticszone.app/nl/features/"><link rel="alternate" hreflang="pl"
+    href="https://cardio.analyticszone.app/pl/features/"><link rel="alternate" hreflang="pt"
+    href="https://cardio.analyticszone.app/pt/features/"><link rel="alternate" hreflang="pt-br"
+    href="https://cardio.analyticszone.app/pt-br/features/"><link rel="alternate" hreflang="ro"
+    href="https://cardio.analyticszone.app/ro/features/"><link rel="alternate" hreflang="ru"
+    href="https://cardio.analyticszone.app/ru/features/"><link rel="alternate" hreflang="sk"
+    href="https://cardio.analyticszone.app/sk/features/"><link rel="alternate" hreflang="sl"
+    href="https://cardio.analyticszone.app/sl/features/"><link rel="alternate" hreflang="sr"
+    href="https://cardio.analyticszone.app/sr/features/"><link rel="alternate" hreflang="sv"
+    href="https://cardio.analyticszone.app/sv/features/"><link rel="alternate" hreflang="sw"
+    href="https://cardio.analyticszone.app/sw/features/"><link rel="alternate" hreflang="ta"
+    href="https://cardio.analyticszone.app/ta/features/"><link rel="alternate" hreflang="te"
+    href="https://cardio.analyticszone.app/te/features/"><link rel="alternate" hreflang="th"
+    href="https://cardio.analyticszone.app/th/features/"><link rel="alternate" hreflang="tl"
+    href="https://cardio.analyticszone.app/tl/features/"><link rel="alternate" hreflang="tr"
+    href="https://cardio.analyticszone.app/tr/features/"><link rel="alternate" hreflang="uk"
+    href="https://cardio.analyticszone.app/uk/features/"><link rel="alternate" hreflang="ur"
+    href="https://cardio.analyticszone.app/ur/features/"><link rel="alternate" hreflang="vi"
+    href="https://cardio.analyticszone.app/vi/features/"><link rel="alternate" hreflang="yo"
+    href="https://cardio.analyticszone.app/yo/features/"><link rel="alternate" hreflang="zh"
+    href="https://cardio.analyticszone.app/zh/features/"><link rel="alternate" hreflang="x-default"
+    href="https://cardio.analyticszone.app/en/features/"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6754761648"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -496,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../assets/css/main.min.css?v=540c31aabebc">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=983179f8f375"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -540,10 +345,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -552,11 +354,7 @@ img[width][height] {
   "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.",
   "inLanguage": "am"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -571,12 +369,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648"
 }
-</script>
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -605,28 +398,20 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Cardio Analytics ባህሪያት - ግላዊ ዳሽቦርድ፣ የመድሃኒት ክትትል",
-  "description": "11 የልብና የደም ቧንቧ መለኪያዎችን ከግላዊ ዳሽቦርድ፣ የመድሃኒት መታዘዝ፣ በማስረጃ ላይ የተመሰረቱ ማንቂያዎች፣ ምልክት መመዝገብ እና ሊጋሩ የሚችሉ ሪፖርቶች ጋር ይከታተሉ።",
+  "name": "የካርዲዮ ትንታኔ ባህሪዎች - ዳሽቦርድ እና መድሃኒት",
+  "description": "11 የካርዲዮቫስኩላር መለኪያዎችን በግል በተበጀ ዳሽቦርድ፣ የመድሃኒት ክትትል፣ በማስረጃ ላይ የተመሰረቱ ማንቂያዎችን እና የምልክት ምዝግብ ማስታወሻዎችን ይከታተሉ። ውሂብ በመሣሪያው ላይ ይቆያል።",
   "url": "https://cardio.analyticszone.app/am/features/"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Cardio Analytics ባህሪያት - ግላዊ ዳሽቦርድ፣ የመድሃኒት ክትትል",
-  "description": "11 የልብና የደም ቧንቧ መለኪያዎችን ከግላዊ ዳሽቦርድ፣ የመድሃኒት መታዘዝ፣ በማስረጃ ላይ የተመሰረቱ ማንቂያዎች፣ ምልክት መመዝገብ እና ሊጋሩ የሚችሉ ሪፖርቶች ጋር ይከታተሉ።",
+  "headline": "የካርዲዮ ትንታኔ ባህሪዎች - ዳሽቦርድ እና መድሃኒት",
+  "description": "11 የካርዲዮቫስኩላር መለኪያዎችን በግል በተበጀ ዳሽቦርድ፣ የመድሃኒት ክትትል፣ በማስረጃ ላይ የተመሰረቱ ማንቂያዎችን እና የምልክት ምዝግብ ማስታወሻዎችን ይከታተሉ። ውሂብ በመሣሪያው ላይ ይቆያል።",
   "author": {
     "@type": "Person",
     "name": "AnalyticsZone Team"
@@ -646,17 +431,7 @@ img[width][height] {
     "@id": "https://cardio.analyticszone.app/am/features/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -670,1078 +445,354 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">ወደ ይዘት ዝለል</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/am/" class="site-logo">
-                <picture>
-                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../assets/images/logo.png" alt="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App" width="56" height="56">
-                </picture>
-                <span class="logo-text">Cardio Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/am/" 
+  </script></head><body><a href="#main-content" class="skip-link">ወደ ይዘት ዝለል</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/am/" class="site-logo"><picture><source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../assets/images/logo.png" alt="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App" width="56" height="56"></picture><span class="logo-text">Cardio Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/am/" 
                                 aria-current="">
                                 መነሻ
-                            </a>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/am/features/" class="nav-label">መተግበሪያ</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/am/features/" class="active" 
+                            </a></li><li class="has-submenu" ><a href="/am/features/" class="nav-label">መተግበሪያ</a><ul class="submenu"><li><a href="/am/features/" class="active" 
                                         aria-current="page">
                                         ባህሪያት
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/how-it-works/" 
+                                    </a></li><li><a href="/am/how-it-works/" 
                                         aria-current="">
                                         እንዴት እንደሚሰራ
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/privacy/" 
+                                    </a></li><li><a href="/am/privacy/" 
                                         aria-current="">
                                         ግላዊነት
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/am/heart-rate/" class="nav-label">ሳይንስ</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/am/heart-rate/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/am/heart-rate/" class="nav-label">ሳይንስ</a><ul class="submenu"><li><a href="/am/heart-rate/" 
                                         aria-current="">
                                         የልብ ምት
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/blood-pressure/" 
+                                    </a></li><li><a href="/am/blood-pressure/" 
                                         aria-current="">
                                         የደም ግፊት
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/hrv/" 
+                                    </a></li><li><a href="/am/hrv/" 
                                         aria-current="">
                                         HRV
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/spo2/" 
+                                    </a></li><li><a href="/am/spo2/" 
                                         aria-current="">
                                         የኦክሲጅን ሙሌት
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/weight-bmi/" 
+                                    </a></li><li><a href="/am/weight-bmi/" 
                                         aria-current="">
                                         ክብደት እና BMI
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/ecg-afib/" 
+                                    </a></li><li><a href="/am/ecg-afib/" 
                                         aria-current="">
                                         ECG እና Atrial Fibrillation
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/vo2max/" 
+                                    </a></li><li><a href="/am/vo2max/" 
                                         aria-current="">
                                         VO₂ Max
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/walking-speed/" 
+                                    </a></li><li><a href="/am/walking-speed/" 
                                         aria-current="">
                                         የእግር ጉዞ ፍጥነት
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/walking-asymmetry/" 
+                                    </a></li><li><a href="/am/walking-asymmetry/" 
                                         aria-current="">
                                         የእግር ጉዞ ያልተመጣጠነነት
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/stair-speed/" 
+                                    </a></li><li><a href="/am/stair-speed/" 
                                         aria-current="">
                                         የደረጃ መውጣት ፍጥነት
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/healthkit/" 
+                                    </a></li><li><a href="/am/healthkit/" 
                                         aria-current="">
                                         HealthKit ውህደት
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/am/references/" 
+                                    </a></li><li><a href="/am/references/" 
                                         aria-current="">
                                         ማጣቀሻዎች
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/am/support/" 
+                                    </a></li></ul></li><li><a href="/am/support/" 
                                 aria-current="">
                                 ድጋፍ
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="ቋንቋ ይምረጡ">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="ቋንቋ ይምረጡ"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" selected>
+                        </option><option value="am" selected>
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             ភាសាខ្មែរ
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk Bokmål
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Српски
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yoruba
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
-                            </svg>
-                        </a>
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="ምናሌ ቀያይር"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-    <div class="container">
-        <ol>
-            
-            <li>
-                
-                <a href="/am/">መነሻ</a>
-                
-            </li>
-            
-            <li>
-                
-                <a href="/am/features/">መተግበሪያ</a>
-                
-            </li>
-            
-            <li>
-                
-                <span aria-current="page">ባህሪያት</span>
-                
-            </li>
-            
-        </ol>
-    </div>
-</nav>
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <!-- Cardio Analytics Features Page - Amharic -->
-
-<section class="page-hero">
-  <div class="container">
-    <h1>Cardio Analytics ባህሪያት</h1>
-    <p class="lead">ሙሉ የልብና የደም ቧንቧ ጤና ክትትል ከግላዊ ዳሽቦርድ፣ የመድሃኒት መታዘዝ፣ በማስረጃ ላይ የተመሰረቱ ማንቂያዎች እና በንድፍ ግላዊነት ጋር</p>
-  </div>
-</section>
-
-<!-- Personalized Dashboard -->
-<section class="feature-section">
-  <div class="container">
-    <div class="feature-content">
-      <div class="feature-text">
-        <h2>ግላዊ ዳሽቦርድ</h2>
-        <p>ሁሉንም 11 የልብና የደም ቧንቧ እና የእንቅስቃሴ መለኪያዎች በአንድ ወጥ እይታ ይከታተሉ። አዝማሚያዎችን ይመልከቱ፣ ከመመሪያ ክልሎች ጋር ያወዳድሩ እና ለውጦችን በአንድ እይታ ይከታተሉ።</p>
-        <ul class="feature-list">
-          <li><strong>የእረፍት እና የእግር ጉዞ የልብ ምት</strong> - ከመደበኛ ክልል አመልካቾች (60-100 bpm) ጋር የልብና የደም ቧንቧ ሁኔታን ይከታተሉ</li>
-          <li><strong>የደም ግፊት ክትትል</strong> - AHA ምድብ ባንዶች (መደበኛ &lt;120/80፣ ከፍ ያለ፣ ደረጃ 1፣ ደረጃ 2)</li>
-          <li><strong>የልብ ምት ተለዋዋጭነት (HRV)</strong> - ለጭንቀት እና ጤና ግምገማ SDNN እና RMSSD መለኪያዎች</li>
-          <li><strong>የኦክሲጅን ሙሌት (SpO₂)</strong> - ከሃይፖክሲሚያ ማንቂያዎች (&lt;90%) ጋር የመተንፈሻ ጤናን ይከታተሉ</li>
-          <li><strong>ክብደት እና BMI</strong> - ከጤናማ ክልል አመልካቾች (18.5-24.9 kg/m²) ጋር የሰውነት ስብጥር ይከታተሉ</li>
-          <li><strong>ECG ምደባዎች</strong> - Apple Watch ECG ቅጂዎችን እና AF ክስተት ክትትልን ያከማቹ</li>
-          <li><strong>VO₂ Max</strong> - የልብ ብቃት አዝማሚያዎች እና የሞት አደጋ ምልክት</li>
-          <li><strong>የእግር ጉዞ ፍጥነት</strong> - ለተግባራዊ አቅም "ስድስተኛው አስፈላጊ ምልክት" (&lt;0.8 m/s አደጋ ገደብ)</li>
-          <li><strong>የእግር ጉዞ ያልተመጣጠነነት</strong> - የእግር ጉዞ ሚዛን እና የመውደቅ አደጋ ግምገማ</li>
-          <li><strong>የደረጃ መውጣት ፍጥነት</strong> - ተግባራዊ አቅም እና የእግር ጥንካሬ አመልካች</li>
-        </ul>
-        <p><strong>ግላዊ ገደቦች:</strong> በሐኪምዎ ምክሮች መሰረት የመመሪያ ክልሎችን ያስተካክሉ።</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Medication Adherence & Correlations -->
-<section class="feature-section bg-light">
-  <div class="container">
-    <div class="feature-content">
-      <div class="feature-text">
-        <h2>የመድሃኒት መታዘዝ እና ግንኙነቶች</h2>
-        <p>የመድሃኒት መጠኖችን ይከታተሉ እና ከልብና የደም ቧንቧ መለኪያዎችዎ ጋር እንዴት እንደሚዛመዱ ይመልከቱ።</p>
-        <ul class="feature-list">
-          <li><strong>በእጅ መጠን መመዝገብ</strong> - የመድሃኒት መውሰድን ከጊዜ ማህተሞች ጋር ይመዝግቡ</li>
-          <li><strong>HealthKit Medications ማመሳሰል</strong> - ከApple Health የመድሃኒት መዝገቦችን በራስ-ሰር ያስገቡ</li>
-          <li><strong>የመታዘዝ መጠን ስሌት</strong> - የታዘዙ መድሃኒቶችን በምን ያህል ወጥነት እንደሚወስዱ ይከታተሉ</li>
-          <li><strong>የግንኙነት ምስላዊዎች</strong> - መድሃኒቶች BP፣ የልብ ምት፣ HRV እና ክብደትዎን እንዴት እንደሚነኩ ይመልከቱ</li>
-          <li><strong>የአዝማሚያ ትንተና</strong> - በመድሃኒት መታዘዝ እና የጤና ውጤቶች መካከል ቅጦችን ይለዩ</li>
-        </ul>
-        <p class="note">📋 የሕክምና እቅዶችን ለማመቻቸት የመድሃኒት መታዘዝ ሪፖርቶችን ከሐኪምዎ ጋር ያጋሩ።</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Evidence-Based Alerts -->
-<section class="feature-section">
-  <div class="container">
-    <div class="feature-content">
-      <div class="feature-text">
-        <h2>በማስረጃ ላይ የተመሰረቱ ማንቂያዎች</h2>
-        <p>በተከበሩ ክሊኒካዊ መመሪያዎች እና በአቻ-የተገመገመ ምርምር ላይ የተመሰረቱ ብልህ ማንቂያዎች።</p>
-        <ul class="feature-list">
-          <li><strong>AHA የደም ግፊት ምድቦች</strong> - ለከፍ ያለ (120-129/&lt;80)፣ ደረጃ 1 (130-139 ወይም 80-89)፣ ደረጃ 2 (≥140 ወይም ≥90) ማንቂያዎች</li>
-          <li><strong>Mayo Clinic የልብ ምት ገደቦች</strong> - ብራዲካርዲያ (&lt;60 bpm) እና ታኪካርዲያ (&gt;100 bpm) ማወቂያ</li>
-          <li><strong>SpO₂ ሃይፖክሲሚያ ማንቂያዎች</strong> - ለቀጣይ እሴቶች &lt;90% (Mayo Clinic መመሪያዎች) ማስጠንቀቂያዎች</li>
-          <li><strong>Cleveland Clinic HRV ምርምር</strong> - ከመነሻ መስመርዎ አንጻር ዝቅተኛ HRV ማስጠንቀቂያዎች</li>
-          <li><strong>ሊበጁ የሚችሉ ገደቦች</strong> - በሐኪምዎ ምክሮች መሰረት ሁሉንም የማንቂያ ገደቦች ያስተካክሉ</li>
-        </ul>
-        <p class="disclaimer">⚠️ <strong>የሕክምና መሳሪያ አይደለም:</strong> Cardio Analytics ሁኔታዎችን አይመረምርም ወይም አያክምም። ሁልጊዜ ብቁ ሐኪም ያማክሩ።</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Symptom & Care Hub -->
-<section class="feature-section bg-light">
-  <div class="container">
-    <div class="feature-content">
-      <div class="feature-text">
-        <h2>ምልክት እና እንክብካቤ ማዕከል</h2>
-        <p>ከመለኪያዎች ባሻገር ሁሉን አቀፍ የጤና ክትትል። ምልክቶችን ይመዝግቡ፣ የእንክብካቤ ግቦችን ይከታተሉ እና የሕክምና ቀጠሮዎችን ያስተዳድሩ።</p>
-        <ul class="feature-list">
-          <li><strong>ምልክት መመዝገብ</strong> - ምልክቶችን ከክብደት ደረጃዎች እና ጊዜ ማህተሞች ጋር ይመዝግቡ</li>
-          <li><strong>የእንክብካቤ ግብ ክትትል</strong> - የጤና ዓላማዎችን ያዘጋጁ እና ይከታተሉ (ለምሳሌ "BP ወደ &lt;130/80 ዝቅ ማድረግ")</li>
-          <li><strong>የሕክምና ቀጠሮ አስተዳዳሪ</strong> - የሐኪም ጉብኝቶችን እና ክትትሎችን ይከታተሉ</li>
-          <li><strong>ሙያዊ ወጪዎች</strong> - ለሐኪምዎ PDF ወይም CSV ሪፖርቶችን ያመንጩ</li>
-          <li><strong>ሙሉ የጤና ታሪክ</strong> - ሁሉም መለኪያዎች፣ መድሃኒቶች፣ ምልክቶች እና ግቦች በአንድ ሰነድ</li>
-        </ul>
-        <p>📄 ለተሻለ-መረጃ ያለው ክሊኒካዊ ውሳኔዎች ከጤና እንክብካቤ ቡድንዎ ጋር ለማጋራት ሙያዊ ሪፖርቶችን ይላኩ።</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Privacy by Design -->
-<section class="feature-section">
-  <div class="container">
-    <div class="feature-content">
-      <div class="feature-text">
-        <h2>በንድፍ ግላዊነት</h2>
-        <p>የልብና የደም ቧንቧ ውሂብዎ በመሳሪያዎ ላይ ይቆያል። ምን እንደሚያጋሩ እና ከማን ጋር እንደሚያጋሩ እርስዎ ይቆጣጠራሉ።</p>
-        <ul class="feature-list">
-          <li><strong>ዝርዝር HealthKit ፈቃድ</strong> - የትኞቹን የውሂብ ዓይነቶች እንደሚያጋሩ በትክክል ይምረጡ</li>
-          <li><strong>100% የአካባቢ ማከማቻ</strong> - ሁሉም ውሂብ በiPhone ላይ ተቀናብሮ ተከማችቷል</li>
-          <li><strong>ምንም ደመና አገልጋዮች የሉም</strong> - ምንም ውጫዊ የውሂብ ዝውውሮች የሉም፣ ምንም መለያዎች አያስፈልጉም</li>
-          <li><strong>ምንም ክትትል ወይም ትንተና የለም</strong> - የአጠቃቀም ውሂብ ወይም የግል መረጃ አንሰበስብም</li>
-          <li><strong>ምን እንደሚያጋሩ እርስዎ ይወስናሉ</strong> - ሪፖርቶችን ሲመርጡ ብቻ ይላኩ</li>
-        </ul>
-        <p>🔒 <strong>ግላዊነት-ቅድሚያ አርክቴክቸር:</strong> Cardio Analytics ውሂብዎን ማግኘት አይችልም። በመሳሪያዎ ላይ ብቻ ይኖራል።</p>
-        <p><a href="/am/privacy/" class="btn btn-secondary">ሙሉ የግላዊነት ፖሊሲ ያንብቡ</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- How HealthKit Sync Works -->
-<section class="feature-section bg-light">
-  <div class="container">
-    <div class="feature-content">
-      <div class="feature-text">
-        <h2>HealthKit ማመሳሰል እንዴት እንደሚሰራ</h2>
-        <p>ለቀላል የልብና የደም ቧንቧ ክትትል ከApple Health ጋር ያልተቋረጠ ውህደት።</p>
-        <ul class="feature-list">
-          <li><strong>የመጀመሪያ-ወገን HealthKit መለያዎች</strong> - ለሁሉም 11 መለኪያዎች ኦፊሴላዊ Apple የውሂብ ዓይነቶችን ይጠቀማል</li>
-          <li><strong>የጀርባ ዝመናዎች</strong> - ለአዲስ ውሂብ ከጀርባ ማድረስ ጋር HKAnchoredObjectQuery</li>
-          <li><strong>ባትሪ-ቀልጣፋ</strong> - ዴልታ ማመሳሰል ማለት ከቋሚ ፖሊንግ ምንም ባትሪ ማሟጠጥ የለም</li>
-          <li><strong>የመልሶ-መጻፍ ድጋፍ</strong> - የተጠቃሚ ግቤቶች (ክብደት፣ BP) ለወጥነት ወደ HealthKit ሊጻፉ ይችላሉ</li>
-          <li><strong>ከሁሉም መሳሪያዎች ጋር ተኳሃኝ</strong> - ከApple Watch፣ የብቃት ተከታታዮች፣ በእጅ ግቤቶች እና የተገናኙ መሳሪያዎች ጋር ይሰራል</li>
-        </ul>
-        <p><a href="/am/how-it-works/" class="btn btn-secondary">ስለ HealthKit ውህደት የበለጠ ይወቁ</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta-section">
-  <div class="container">
-    <div class="cta-box">
-      <h2>የልብ ጤና ጉዞዎን ዛሬ ይጀምሩ</h2>
-      <p>Cardio Analytics ያውርዱ እና ወደ ልብና የደም ቧንቧ ጤናዎ ሙሉ ታይነት ያግኙ። በማስረጃ ላይ የተመሰረቱ ግንዛቤዎች፣ ሙሉ ግላዊነት፣ ለሐኪምዎ ሙያዊ ሪፖርቶች።</p>
-      <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="ምናሌ ቀያይር"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/am/">መነሻ</a></li><li><a href="/am/features/">መተግበሪያ</a></li><li><span aria-current="page">ባህሪያት</span></li></ol></div></nav><main id="main-content" class="main-content"><section class="page-hero"><div class="container"><h1>Cardio Analytics ባህሪያት</h1><p class="lead">ሙሉ የልብና የደም ቧንቧ ጤና ክትትል ከግላዊ ዳሽቦርድ፣ የመድሃኒት መታዘዝ፣ በማስረጃ ላይ የተመሰረቱ ማንቂያዎች እና በንድፍ ግላዊነት ጋር</p></div></section><section class="feature-section"><div class="container"><div class="feature-content"><div class="feature-text"><h2>ግላዊ ዳሽቦርድ</h2><p>ሁሉንም 11 የልብና የደም ቧንቧ እና የእንቅስቃሴ መለኪያዎች በአንድ ወጥ እይታ ይከታተሉ። አዝማሚያዎችን ይመልከቱ፣ ከመመሪያ ክልሎች ጋር ያወዳድሩ እና ለውጦችን በአንድ እይታ ይከታተሉ።</p><ul class="feature-list"><li><strong>የእረፍት እና የእግር ጉዞ የልብ ምት</strong> - ከመደበኛ ክልል አመልካቾች (60-100 bpm) ጋር የልብና የደም ቧንቧ ሁኔታን ይከታተሉ</li><li><strong>የደም ግፊት ክትትል</strong> - AHA ምድብ ባንዶች (መደበኛ &lt;120/80፣ ከፍ ያለ፣ ደረጃ 1፣ ደረጃ 2)</li><li><strong>የልብ ምት ተለዋዋጭነት (HRV)</strong> - ለጭንቀት እና ጤና ግምገማ SDNN እና RMSSD መለኪያዎች</li><li><strong>የኦክሲጅን ሙሌት (SpO₂)</strong> - ከሃይፖክሲሚያ ማንቂያዎች (&lt;90%) ጋር የመተንፈሻ ጤናን ይከታተሉ</li><li><strong>ክብደት እና BMI</strong> - ከጤናማ ክልል አመልካቾች (18.5-24.9 kg/m²) ጋር የሰውነት ስብጥር ይከታተሉ</li><li><strong>ECG ምደባዎች</strong> - Apple Watch ECG ቅጂዎችን እና AF ክስተት ክትትልን ያከማቹ</li><li><strong>VO₂ Max</strong> - የልብ ብቃት አዝማሚያዎች እና የሞት አደጋ ምልክት</li><li><strong>የእግር ጉዞ ፍጥነት</strong> - ለተግባራዊ አቅም "ስድስተኛው አስፈላጊ ምልክት" (&lt;0.8 m/s አደጋ ገደብ)</li><li><strong>የእግር ጉዞ ያልተመጣጠነነት</strong> - የእግር ጉዞ ሚዛን እና የመውደቅ አደጋ ግምገማ</li><li><strong>የደረጃ መውጣት ፍጥነት</strong> - ተግባራዊ አቅም እና የእግር ጥንካሬ አመልካች</li></ul><p><strong>ግላዊ ገደቦች:</strong> በሐኪምዎ ምክሮች መሰረት የመመሪያ ክልሎችን ያስተካክሉ።</p></div></div></div></section><section class="feature-section bg-light"><div class="container"><div class="feature-content"><div class="feature-text"><h2>የመድሃኒት መታዘዝ እና ግንኙነቶች</h2><p>የመድሃኒት መጠኖችን ይከታተሉ እና ከልብና የደም ቧንቧ መለኪያዎችዎ ጋር እንዴት እንደሚዛመዱ ይመልከቱ።</p><ul class="feature-list"><li><strong>በእጅ መጠን መመዝገብ</strong> - የመድሃኒት መውሰድን ከጊዜ ማህተሞች ጋር ይመዝግቡ</li><li><strong>HealthKit Medications ማመሳሰል</strong> - ከApple Health የመድሃኒት መዝገቦችን በራስ-ሰር ያስገቡ</li><li><strong>የመታዘዝ መጠን ስሌት</strong> - የታዘዙ መድሃኒቶችን በምን ያህል ወጥነት እንደሚወስዱ ይከታተሉ</li><li><strong>የግንኙነት ምስላዊዎች</strong> - መድሃኒቶች BP፣ የልብ ምት፣ HRV እና ክብደትዎን እንዴት እንደሚነኩ ይመልከቱ</li><li><strong>የአዝማሚያ ትንተና</strong> - በመድሃኒት መታዘዝ እና የጤና ውጤቶች መካከል ቅጦችን ይለዩ</li></ul><p class="note">📋 የሕክምና እቅዶችን ለማመቻቸት የመድሃኒት መታዘዝ ሪፖርቶችን ከሐኪምዎ ጋር ያጋሩ።</p></div></div></div></section><section class="feature-section"><div class="container"><div class="feature-content"><div class="feature-text"><h2>በማስረጃ ላይ የተመሰረቱ ማንቂያዎች</h2><p>በተከበሩ ክሊኒካዊ መመሪያዎች እና በአቻ-የተገመገመ ምርምር ላይ የተመሰረቱ ብልህ ማንቂያዎች።</p><ul class="feature-list"><li><strong>AHA የደም ግፊት ምድቦች</strong> - ለከፍ ያለ (120-129/&lt;80)፣ ደረጃ 1 (130-139 ወይም 80-89)፣ ደረጃ 2 (≥140 ወይም ≥90) ማንቂያዎች</li><li><strong>Mayo Clinic የልብ ምት ገደቦች</strong> - ብራዲካርዲያ (&lt;60 bpm) እና ታኪካርዲያ (&gt;100 bpm) ማወቂያ</li><li><strong>SpO₂ ሃይፖክሲሚያ ማንቂያዎች</strong> - ለቀጣይ እሴቶች &lt;90% (Mayo Clinic መመሪያዎች) ማስጠንቀቂያዎች</li><li><strong>Cleveland Clinic HRV ምርምር</strong> - ከመነሻ መስመርዎ አንጻር ዝቅተኛ HRV ማስጠንቀቂያዎች</li><li><strong>ሊበጁ የሚችሉ ገደቦች</strong> - በሐኪምዎ ምክሮች መሰረት ሁሉንም የማንቂያ ገደቦች ያስተካክሉ</li></ul><p class="disclaimer">⚠️ <strong>የሕክምና መሳሪያ አይደለም:</strong> Cardio Analytics ሁኔታዎችን አይመረምርም ወይም አያክምም። ሁልጊዜ ብቁ ሐኪም ያማክሩ።</p></div></div></div></section><section class="feature-section bg-light"><div class="container"><div class="feature-content"><div class="feature-text"><h2>ምልክት እና እንክብካቤ ማዕከል</h2><p>ከመለኪያዎች ባሻገር ሁሉን አቀፍ የጤና ክትትል። ምልክቶችን ይመዝግቡ፣ የእንክብካቤ ግቦችን ይከታተሉ እና የሕክምና ቀጠሮዎችን ያስተዳድሩ።</p><ul class="feature-list"><li><strong>ምልክት መመዝገብ</strong> - ምልክቶችን ከክብደት ደረጃዎች እና ጊዜ ማህተሞች ጋር ይመዝግቡ</li><li><strong>የእንክብካቤ ግብ ክትትል</strong> - የጤና ዓላማዎችን ያዘጋጁ እና ይከታተሉ (ለምሳሌ "BP ወደ &lt;130/80 ዝቅ ማድረግ")</li><li><strong>የሕክምና ቀጠሮ አስተዳዳሪ</strong> - የሐኪም ጉብኝቶችን እና ክትትሎችን ይከታተሉ</li><li><strong>ሙያዊ ወጪዎች</strong> - ለሐኪምዎ PDF ወይም CSV ሪፖርቶችን ያመንጩ</li><li><strong>ሙሉ የጤና ታሪክ</strong> - ሁሉም መለኪያዎች፣ መድሃኒቶች፣ ምልክቶች እና ግቦች በአንድ ሰነድ</li></ul><p>📄 ለተሻለ-መረጃ ያለው ክሊኒካዊ ውሳኔዎች ከጤና እንክብካቤ ቡድንዎ ጋር ለማጋራት ሙያዊ ሪፖርቶችን ይላኩ።</p></div></div></div></section><section class="feature-section"><div class="container"><div class="feature-content"><div class="feature-text"><h2>በንድፍ ግላዊነት</h2><p>የልብና የደም ቧንቧ ውሂብዎ በመሳሪያዎ ላይ ይቆያል። ምን እንደሚያጋሩ እና ከማን ጋር እንደሚያጋሩ እርስዎ ይቆጣጠራሉ።</p><ul class="feature-list"><li><strong>ዝርዝር HealthKit ፈቃድ</strong> - የትኞቹን የውሂብ ዓይነቶች እንደሚያጋሩ በትክክል ይምረጡ</li><li><strong>100% የአካባቢ ማከማቻ</strong> - ሁሉም ውሂብ በiPhone ላይ ተቀናብሮ ተከማችቷል</li><li><strong>ምንም ደመና አገልጋዮች የሉም</strong> - ምንም ውጫዊ የውሂብ ዝውውሮች የሉም፣ ምንም መለያዎች አያስፈልጉም</li><li><strong>ምንም ክትትል ወይም ትንተና የለም</strong> - የአጠቃቀም ውሂብ ወይም የግል መረጃ አንሰበስብም</li><li><strong>ምን እንደሚያጋሩ እርስዎ ይወስናሉ</strong> - ሪፖርቶችን ሲመርጡ ብቻ ይላኩ</li></ul><p>🔒 <strong>ግላዊነት-ቅድሚያ አርክቴክቸር:</strong> Cardio Analytics ውሂብዎን ማግኘት አይችልም። በመሳሪያዎ ላይ ብቻ ይኖራል።</p><p><a href="/am/privacy/" class="btn btn-secondary">ሙሉ የግላዊነት ፖሊሲ ያንብቡ</a></p></div></div></div></section><section class="feature-section bg-light"><div class="container"><div class="feature-content"><div class="feature-text"><h2>HealthKit ማመሳሰል እንዴት እንደሚሰራ</h2><p>ለቀላል የልብና የደም ቧንቧ ክትትል ከApple Health ጋር ያልተቋረጠ ውህደት።</p><ul class="feature-list"><li><strong>የመጀመሪያ-ወገን HealthKit መለያዎች</strong> - ለሁሉም 11 መለኪያዎች ኦፊሴላዊ Apple የውሂብ ዓይነቶችን ይጠቀማል</li><li><strong>የጀርባ ዝመናዎች</strong> - ለአዲስ ውሂብ ከጀርባ ማድረስ ጋር HKAnchoredObjectQuery</li><li><strong>ባትሪ-ቀልጣፋ</strong> - ዴልታ ማመሳሰል ማለት ከቋሚ ፖሊንግ ምንም ባትሪ ማሟጠጥ የለም</li><li><strong>የመልሶ-መጻፍ ድጋፍ</strong> - የተጠቃሚ ግቤቶች (ክብደት፣ BP) ለወጥነት ወደ HealthKit ሊጻፉ ይችላሉ</li><li><strong>ከሁሉም መሳሪያዎች ጋር ተኳሃኝ</strong> - ከApple Watch፣ የብቃት ተከታታዮች፣ በእጅ ግቤቶች እና የተገናኙ መሳሪያዎች ጋር ይሰራል</li></ul><p><a href="/am/how-it-works/" class="btn btn-secondary">ስለ HealthKit ውህደት የበለጠ ይወቁ</a></p></div></div></div></section><section class="cta-section"><div class="container"><div class="cta-box"><h2>የልብ ጤና ጉዞዎን ዛሬ ይጀምሩ</h2><p>Cardio Analytics ያውርዱ እና ወደ ልብና የደም ቧንቧ ጤናዎ ሙሉ ታይነት ያግኙ። በማስረጃ ላይ የተመሰረቱ ግንዛቤዎች፣ ሙሉ ግላዊነት፣ ለሐኪምዎ ሙያዊ ሪፖርቶች።</p><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
         ከApp Store ያውርዱ
-      </a>
-    </div>
-  </div>
-</section>
-    
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Cardio Analytics</h2>
-                <p>Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../assets/images/badge-app-store.svg"
+      </a></div></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Cardio Analytics</h2><p>Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" target="_blank" rel="noopener"
-                        aria-label="Get it on Google Play">
-                        <img src="../../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" target="_blank" rel="noopener"
+                        aria-label="Get it on Google Play"><img src="../../assets/images/badge-google-play.svg"
                             alt="Get it on Google Play" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link active"
+                </a><a href="/am/" class="lang-link active"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yoruba
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Cardio Analytics. ሁሉም መብቶች የተጠበቁ ናቸው
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/am/privacy/">ግላዊነት</a></li>
-                <li><a href="/am/terms/">ውሎች</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>ይህ ድረ-ገጽ ተሞክሮዎን ለማሻሻል ኩኪዎችን ይጠቀማል።</p>
-            <a href="/am/privacy/" class="text-sm">የበለጠ ይወቁ</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">አትቀበል</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">ተቀበል</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../assets/js/core.min.js?v=540c31aabebc" defer></script>
-  <script src="../../assets/js/search.min.js?v=540c31aabebc" defer></script>
-  
-
-  
-  
-  <script src="../../assets/js/analytics.min.js" data-ga-id="G-C7EPKJ2B6Z" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/am/privacy/">ግላዊነት</a></li><li><a href="/am/terms/">ውሎች</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>ይህ ድረ-ገጽ ተሞክሮዎን ለማሻሻል ኩኪዎችን ይጠቀማል።</p><a href="/am/privacy/" class="text-sm">የበለጠ ይወቁ</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">አትቀበል</button><button id="cookie-accept" class="btn btn-primary btn-small">ተቀበል</button></div></div></div><script src="../../assets/js/core.min.js?v=983179f8f375" defer></script><script src="../../assets/js/search.min.js?v=983179f8f375" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-C7EPKJ2B6Z" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>

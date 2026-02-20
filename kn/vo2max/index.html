@@ -1,243 +1,61 @@
-<!DOCTYPE html>
-<html lang="kn" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  
-  <title>VO₂ Max ಟ್ರ್ಯಾಕಿಂಗ್ - ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ &amp; ಮರಣ ಮಾರ್ಕರ್ | Cardio</title>
-  <meta name="description" content="Apple Watch ನಿಂದ VO₂ Max ಪ್ರವೃತ್ತಿಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. ಬಲವಾದ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣ ಮಾರ್ಕರ್. ಲ್ಯಾಬ್ ಪರೀಕ್ಷೆಗೆ ಹೋಲಿಸಿದರೆ ನಿಖರತೆ ಮಿತಿಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ.">
-  <meta name="author" content="AnalyticsZone Team">
-
-  
-  
-  <meta name="keywords" content="VO2 max ಟ್ರ್ಯಾಕಿಂಗ್, ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್, ಏರೋಬಿಕ್ ಸಾಮರ್ಥ್ಯ, ಗರಿಷ್ಠ ಆಮ್ಲಜನಕ ಹೀರಿಕೊಳ್ಳುವಿಕೆ, ಫಿಟ್‌ನೆಸ್ ಪ್ರವೃತ್ತಿಗಳು, ಮರಣ ಅಪಾಯ">
-  
-
-  
-  <link rel="canonical" href="https://cardio.analyticszone.app/kn/vo2max/">
-
-  
-  
-  <meta property="article:published_time" content="2024-01-01T10:00:00Z">
-  <meta property="article:modified_time" content="2026-01-03T14:30:00Z">
-  <meta property="article:author" content="AnalyticsZone Team">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://cardio.analyticszone.app/kn/vo2max/">
-  <meta property="og:title" content="VO₂ Max ಟ್ರ್ಯಾಕಿಂಗ್ - ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ &amp; ಮರಣ ಮಾರ್ಕರ್ | Cardio">
-  <meta property="og:description" content="Apple Watch ನಿಂದ VO₂ Max ಪ್ರವೃತ್ತಿಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. ಬಲವಾದ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣ ಮಾರ್ಕರ್. ಲ್ಯಾಬ್ ಪರೀಕ್ಷೆಗೆ ಹೋಲಿಸಿದರೆ ನಿಖರತೆ ಮಿತಿಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ.">
-  <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="kn_IN">
-  <meta property="og:site_name" content="Cardio Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://cardio.analyticszone.app/kn/vo2max/">
-  <meta name="twitter:title" content="VO₂ Max ಟ್ರ್ಯಾಕಿಂಗ್ - ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ &amp; ಮರಣ ಮಾರ್ಕರ್ | Cardio">
-  <meta name="twitter:description" content="Apple Watch ನಿಂದ VO₂ Max ಪ್ರವೃತ್ತಿಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. ಬಲವಾದ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣ ಮಾರ್ಕರ್. ಲ್ಯಾಬ್ ಪರೀಕ್ಷೆಗೆ ಹೋಲಿಸಿದರೆ ನಿಖರತೆ ಮಿತಿಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ.">
-  <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://cardio.analyticszone.app/af/vo2max/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://cardio.analyticszone.app/am/vo2max/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://cardio.analyticszone.app/ar/vo2max/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://cardio.analyticszone.app/bg/vo2max/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://cardio.analyticszone.app/bn/vo2max/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://cardio.analyticszone.app/ca/vo2max/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://cardio.analyticszone.app/cs/vo2max/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://cardio.analyticszone.app/da/vo2max/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://cardio.analyticszone.app/de/vo2max/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://cardio.analyticszone.app/el/vo2max/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://cardio.analyticszone.app/en/vo2max/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://cardio.analyticszone.app/es/vo2max/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://cardio.analyticszone.app/et/vo2max/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://cardio.analyticszone.app/fa/vo2max/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://cardio.analyticszone.app/fi/vo2max/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://cardio.analyticszone.app/fr/vo2max/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://cardio.analyticszone.app/gu/vo2max/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://cardio.analyticszone.app/ha/vo2max/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://cardio.analyticszone.app/he/vo2max/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://cardio.analyticszone.app/hi/vo2max/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://cardio.analyticszone.app/hr/vo2max/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://cardio.analyticszone.app/hu/vo2max/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://cardio.analyticszone.app/id/vo2max/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://cardio.analyticszone.app/is/vo2max/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://cardio.analyticszone.app/it/vo2max/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://cardio.analyticszone.app/ja/vo2max/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://cardio.analyticszone.app/km/vo2max/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://cardio.analyticszone.app/kn/vo2max/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://cardio.analyticszone.app/ko/vo2max/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://cardio.analyticszone.app/lt/vo2max/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://cardio.analyticszone.app/lv/vo2max/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://cardio.analyticszone.app/ms/vo2max/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://cardio.analyticszone.app/my/vo2max/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://cardio.analyticszone.app/nb/vo2max/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://cardio.analyticszone.app/nl/vo2max/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://cardio.analyticszone.app/pl/vo2max/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://cardio.analyticszone.app/pt/vo2max/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://cardio.analyticszone.app/pt-br/vo2max/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://cardio.analyticszone.app/ro/vo2max/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://cardio.analyticszone.app/ru/vo2max/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://cardio.analyticszone.app/sk/vo2max/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://cardio.analyticszone.app/sl/vo2max/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://cardio.analyticszone.app/sr/vo2max/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://cardio.analyticszone.app/sv/vo2max/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://cardio.analyticszone.app/sw/vo2max/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://cardio.analyticszone.app/ta/vo2max/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://cardio.analyticszone.app/te/vo2max/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://cardio.analyticszone.app/th/vo2max/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://cardio.analyticszone.app/tl/vo2max/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://cardio.analyticszone.app/tr/vo2max/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://cardio.analyticszone.app/uk/vo2max/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://cardio.analyticszone.app/ur/vo2max/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://cardio.analyticszone.app/vi/vo2max/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://cardio.analyticszone.app/yo/vo2max/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://cardio.analyticszone.app/zh/vo2max/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://cardio.analyticszone.app/en/vo2max/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  <meta name="robots" content="index, follow">
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6754761648">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="kn" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"><title>VO2 ಮ್ಯಾಕ್ಸ್ ಟ್ರ್ಯಾಕಿಂಗ್ - ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣ</title><meta name="description" content="Apple Watch ನಿಂದ VO2 ಮ್ಯಾಕ್ಸ್ ಟ್ರೆಂಡ್‌ಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. ಪುರಾವೆ ಆಧಾರಿತ ಒಳನೋಟಗಳೊಂದಿಗೆ ಹೃದಯರಕ್ತನಾಳದ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣದ ಅಪಾಯದ ಈ ಪ್ರಮುಖ ಮಾರ್ಕರ್ ಅನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="VO2 max ಟ್ರ್ಯಾಕಿಂಗ್, ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್, ಏರೋಬಿಕ್ ಸಾಮರ್ಥ್ಯ, ಗರಿಷ್ಠ ಆಮ್ಲಜನಕ ಹೀರಿಕೊಳ್ಳುವಿಕೆ, ಫಿಟ್‌ನೆಸ್ ಪ್ರವೃತ್ತಿಗಳು, ಮರಣ ಅಪಾಯ"><link rel="canonical" href="https://cardio.analyticszone.app/kn/vo2max/"><meta property="article:published_time" content="2024-01-01T10:00:00Z"><meta property="article:modified_time" content="2026-01-03T14:30:00Z"><meta property="article:author" content="AnalyticsZone Team"><meta property="og:type" content="article"><meta property="og:url" content="https://cardio.analyticszone.app/kn/vo2max/"><meta property="og:title" content="VO2 ಮ್ಯಾಕ್ಸ್ ಟ್ರ್ಯಾಕಿಂಗ್ - ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣ"><meta property="og:description" content="Apple Watch ನಿಂದ VO2 ಮ್ಯಾಕ್ಸ್ ಟ್ರೆಂಡ್‌ಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. ಪುರಾವೆ ಆಧಾರಿತ ಒಳನೋಟಗಳೊಂದಿಗೆ ಹೃದಯರಕ್ತನಾಳದ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣದ ಅಪಾಯದ ಈ ಪ್ರಮುಖ ಮಾರ್ಕರ್ ಅನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ."><meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="kn_IN"><meta property="og:site_name" content="Cardio Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://cardio.analyticszone.app/kn/vo2max/"><meta name="twitter:title" content="VO2 ಮ್ಯಾಕ್ಸ್ ಟ್ರ್ಯಾಕಿಂಗ್ - ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣ"><meta name="twitter:description" content="Apple Watch ನಿಂದ VO2 ಮ್ಯಾಕ್ಸ್ ಟ್ರೆಂಡ್‌ಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. ಪುರಾವೆ ಆಧಾರಿತ ಒಳನೋಟಗಳೊಂದಿಗೆ ಹೃದಯರಕ್ತನಾಳದ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣದ ಅಪಾಯದ ಈ ಪ್ರಮುಖ ಮಾರ್ಕರ್ ಅನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ."><meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg"><link rel="alternate" hreflang="af"
+    href="https://cardio.analyticszone.app/af/vo2max/"><link rel="alternate" hreflang="am"
+    href="https://cardio.analyticszone.app/am/vo2max/"><link rel="alternate" hreflang="ar"
+    href="https://cardio.analyticszone.app/ar/vo2max/"><link rel="alternate" hreflang="bg"
+    href="https://cardio.analyticszone.app/bg/vo2max/"><link rel="alternate" hreflang="bn"
+    href="https://cardio.analyticszone.app/bn/vo2max/"><link rel="alternate" hreflang="ca"
+    href="https://cardio.analyticszone.app/ca/vo2max/"><link rel="alternate" hreflang="cs"
+    href="https://cardio.analyticszone.app/cs/vo2max/"><link rel="alternate" hreflang="da"
+    href="https://cardio.analyticszone.app/da/vo2max/"><link rel="alternate" hreflang="de"
+    href="https://cardio.analyticszone.app/de/vo2max/"><link rel="alternate" hreflang="el"
+    href="https://cardio.analyticszone.app/el/vo2max/"><link rel="alternate" hreflang="en"
+    href="https://cardio.analyticszone.app/en/vo2max/"><link rel="alternate" hreflang="es"
+    href="https://cardio.analyticszone.app/es/vo2max/"><link rel="alternate" hreflang="et"
+    href="https://cardio.analyticszone.app/et/vo2max/"><link rel="alternate" hreflang="fa"
+    href="https://cardio.analyticszone.app/fa/vo2max/"><link rel="alternate" hreflang="fi"
+    href="https://cardio.analyticszone.app/fi/vo2max/"><link rel="alternate" hreflang="fr"
+    href="https://cardio.analyticszone.app/fr/vo2max/"><link rel="alternate" hreflang="gu"
+    href="https://cardio.analyticszone.app/gu/vo2max/"><link rel="alternate" hreflang="ha"
+    href="https://cardio.analyticszone.app/ha/vo2max/"><link rel="alternate" hreflang="he"
+    href="https://cardio.analyticszone.app/he/vo2max/"><link rel="alternate" hreflang="hi"
+    href="https://cardio.analyticszone.app/hi/vo2max/"><link rel="alternate" hreflang="hr"
+    href="https://cardio.analyticszone.app/hr/vo2max/"><link rel="alternate" hreflang="hu"
+    href="https://cardio.analyticszone.app/hu/vo2max/"><link rel="alternate" hreflang="id"
+    href="https://cardio.analyticszone.app/id/vo2max/"><link rel="alternate" hreflang="is"
+    href="https://cardio.analyticszone.app/is/vo2max/"><link rel="alternate" hreflang="it"
+    href="https://cardio.analyticszone.app/it/vo2max/"><link rel="alternate" hreflang="ja"
+    href="https://cardio.analyticszone.app/ja/vo2max/"><link rel="alternate" hreflang="km"
+    href="https://cardio.analyticszone.app/km/vo2max/"><link rel="alternate" hreflang="kn"
+    href="https://cardio.analyticszone.app/kn/vo2max/"><link rel="alternate" hreflang="ko"
+    href="https://cardio.analyticszone.app/ko/vo2max/"><link rel="alternate" hreflang="lt"
+    href="https://cardio.analyticszone.app/lt/vo2max/"><link rel="alternate" hreflang="lv"
+    href="https://cardio.analyticszone.app/lv/vo2max/"><link rel="alternate" hreflang="ms"
+    href="https://cardio.analyticszone.app/ms/vo2max/"><link rel="alternate" hreflang="my"
+    href="https://cardio.analyticszone.app/my/vo2max/"><link rel="alternate" hreflang="nb"
+    href="https://cardio.analyticszone.app/nb/vo2max/"><link rel="alternate" hreflang="nl"
+    href="https://cardio.analyticszone.app/nl/vo2max/"><link rel="alternate" hreflang="pl"
+    href="https://cardio.analyticszone.app/pl/vo2max/"><link rel="alternate" hreflang="pt"
+    href="https://cardio.analyticszone.app/pt/vo2max/"><link rel="alternate" hreflang="pt-br"
+    href="https://cardio.analyticszone.app/pt-br/vo2max/"><link rel="alternate" hreflang="ro"
+    href="https://cardio.analyticszone.app/ro/vo2max/"><link rel="alternate" hreflang="ru"
+    href="https://cardio.analyticszone.app/ru/vo2max/"><link rel="alternate" hreflang="sk"
+    href="https://cardio.analyticszone.app/sk/vo2max/"><link rel="alternate" hreflang="sl"
+    href="https://cardio.analyticszone.app/sl/vo2max/"><link rel="alternate" hreflang="sr"
+    href="https://cardio.analyticszone.app/sr/vo2max/"><link rel="alternate" hreflang="sv"
+    href="https://cardio.analyticszone.app/sv/vo2max/"><link rel="alternate" hreflang="sw"
+    href="https://cardio.analyticszone.app/sw/vo2max/"><link rel="alternate" hreflang="ta"
+    href="https://cardio.analyticszone.app/ta/vo2max/"><link rel="alternate" hreflang="te"
+    href="https://cardio.analyticszone.app/te/vo2max/"><link rel="alternate" hreflang="th"
+    href="https://cardio.analyticszone.app/th/vo2max/"><link rel="alternate" hreflang="tl"
+    href="https://cardio.analyticszone.app/tl/vo2max/"><link rel="alternate" hreflang="tr"
+    href="https://cardio.analyticszone.app/tr/vo2max/"><link rel="alternate" hreflang="uk"
+    href="https://cardio.analyticszone.app/uk/vo2max/"><link rel="alternate" hreflang="ur"
+    href="https://cardio.analyticszone.app/ur/vo2max/"><link rel="alternate" hreflang="vi"
+    href="https://cardio.analyticszone.app/vi/vo2max/"><link rel="alternate" hreflang="yo"
+    href="https://cardio.analyticszone.app/yo/vo2max/"><link rel="alternate" hreflang="zh"
+    href="https://cardio.analyticszone.app/zh/vo2max/"><link rel="alternate" hreflang="x-default"
+    href="https://cardio.analyticszone.app/en/vo2max/"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6754761648"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -496,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../assets/css/main.min.css?v=540c31aabebc">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=983179f8f375"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -540,10 +345,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -552,11 +354,7 @@ img[width][height] {
   "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.",
   "inLanguage": "kn"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -571,12 +369,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648"
 }
-</script>
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -605,28 +398,20 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "VO₂ Max ಟ್ರ್ಯಾಕಿಂಗ್ - ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ &amp; ಮರಣ ಮಾರ್ಕರ್ | Cardio",
-  "description": "Apple Watch ನಿಂದ VO₂ Max ಪ್ರವೃತ್ತಿಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. ಬಲವಾದ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣ ಮಾರ್ಕರ್. ಲ್ಯಾಬ್ ಪರೀಕ್ಷೆಗೆ ಹೋಲಿಸಿದರೆ ನಿಖರತೆ ಮಿತಿಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ.",
+  "name": "VO2 ಮ್ಯಾಕ್ಸ್ ಟ್ರ್ಯಾಕಿಂಗ್ - ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣ",
+  "description": "Apple Watch ನಿಂದ VO2 ಮ್ಯಾಕ್ಸ್ ಟ್ರೆಂಡ್‌ಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. ಪುರಾವೆ ಆಧಾರಿತ ಒಳನೋಟಗಳೊಂದಿಗೆ ಹೃದಯರಕ್ತನಾಳದ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣದ ಅಪಾಯದ ಈ ಪ್ರಮುಖ ಮಾರ್ಕರ್ ಅನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ.",
   "url": "https://cardio.analyticszone.app/kn/vo2max/"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "VO₂ Max ಟ್ರ್ಯಾಕಿಂಗ್ - ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ &amp; ಮರಣ ಮಾರ್ಕರ್ | Cardio",
-  "description": "Apple Watch ನಿಂದ VO₂ Max ಪ್ರವೃತ್ತಿಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. ಬಲವಾದ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣ ಮಾರ್ಕರ್. ಲ್ಯಾಬ್ ಪರೀಕ್ಷೆಗೆ ಹೋಲಿಸಿದರೆ ನಿಖರತೆ ಮಿತಿಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಿ.",
+  "headline": "VO2 ಮ್ಯಾಕ್ಸ್ ಟ್ರ್ಯಾಕಿಂಗ್ - ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣ",
+  "description": "Apple Watch ನಿಂದ VO2 ಮ್ಯಾಕ್ಸ್ ಟ್ರೆಂಡ್‌ಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. ಪುರಾವೆ ಆಧಾರಿತ ಒಳನೋಟಗಳೊಂದಿಗೆ ಹೃದಯರಕ್ತನಾಳದ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣದ ಅಪಾಯದ ಈ ಪ್ರಮುಖ ಮಾರ್ಕರ್ ಅನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ.",
   "author": {
     "@type": "Person",
     "name": "AnalyticsZone Team"
@@ -646,17 +431,7 @@ img[width][height] {
     "@id": "https://cardio.analyticszone.app/kn/vo2max/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -670,1067 +445,354 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">ವಿಷಯಕ್ಕೆ ಹೋಗಿ</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/kn/" class="site-logo">
-                <picture>
-                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../assets/images/logo.png" alt="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App" width="56" height="56">
-                </picture>
-                <span class="logo-text">Cardio Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/kn/" 
+  </script></head><body><a href="#main-content" class="skip-link">ವಿಷಯಕ್ಕೆ ಹೋಗಿ</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/kn/" class="site-logo"><picture><source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../assets/images/logo.png" alt="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App" width="56" height="56"></picture><span class="logo-text">Cardio Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/kn/" 
                                 aria-current="">
                                 ಮುಖಪುಟ
-                            </a>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/kn/features/" class="nav-label">ಅಪ್ಲಿಕೇಶನ್</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/kn/features/" 
+                            </a></li><li class="has-submenu" ><a href="/kn/features/" class="nav-label">ಅಪ್ಲಿಕೇಶನ್</a><ul class="submenu"><li><a href="/kn/features/" 
                                         aria-current="">
                                         ವೈಶಿಷ್ಟ್ಯಗಳು
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/how-it-works/" 
+                                    </a></li><li><a href="/kn/how-it-works/" 
                                         aria-current="">
                                         ಇದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/privacy/" 
+                                    </a></li><li><a href="/kn/privacy/" 
                                         aria-current="">
                                         ಗೌಪ್ಯತೆ
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/kn/heart-rate/" class="nav-label">ವಿಜ್ಞಾನ</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/kn/heart-rate/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/kn/heart-rate/" class="nav-label">ವಿಜ್ಞಾನ</a><ul class="submenu"><li><a href="/kn/heart-rate/" 
                                         aria-current="">
                                         ಹೃದಯ ಬಡಿತ
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/blood-pressure/" 
+                                    </a></li><li><a href="/kn/blood-pressure/" 
                                         aria-current="">
                                         ರಕ್ತದೊತ್ತಡ
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/hrv/" 
+                                    </a></li><li><a href="/kn/hrv/" 
                                         aria-current="">
                                         HRV
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/spo2/" 
+                                    </a></li><li><a href="/kn/spo2/" 
                                         aria-current="">
                                         ಆಮ್ಲಜನಕ ಸ್ಯಾಚುರೇಶನ್
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/weight-bmi/" 
+                                    </a></li><li><a href="/kn/weight-bmi/" 
                                         aria-current="">
                                         ತೂಕ ಮತ್ತು BMI
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/ecg-afib/" 
+                                    </a></li><li><a href="/kn/ecg-afib/" 
                                         aria-current="">
                                         ECG ಮತ್ತು ಏಟ್ರಿಯಲ್ ಫೈಬ್ರಿಲೇಶನ್
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/vo2max/" class="active" 
+                                    </a></li><li><a href="/kn/vo2max/" class="active" 
                                         aria-current="page">
                                         VO₂ Max
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/walking-speed/" 
+                                    </a></li><li><a href="/kn/walking-speed/" 
                                         aria-current="">
                                         ನಡಿಗೆ ವೇಗ
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/walking-asymmetry/" 
+                                    </a></li><li><a href="/kn/walking-asymmetry/" 
                                         aria-current="">
                                         ನಡಿಗೆ ಅಸಮಾನತೆ
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/stair-speed/" 
+                                    </a></li><li><a href="/kn/stair-speed/" 
                                         aria-current="">
                                         ಮೆಟ್ಟಿಲು ಏರುವ ವೇಗ
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/healthkit/" 
+                                    </a></li><li><a href="/kn/healthkit/" 
                                         aria-current="">
                                         HealthKit ಏಕೀಕರಣ
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/kn/references/" 
+                                    </a></li><li><a href="/kn/references/" 
                                         aria-current="">
                                         ಉಲ್ಲೇಖಗಳು
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/kn/support/" 
+                                    </a></li></ul></li><li><a href="/kn/support/" 
                                 aria-current="">
                                 ಬೆಂಬಲ
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             ភាសាខ្មែរ
-                        </option>
-                        
-                        <option value="kn" selected>
+                        </option><option value="kn" selected>
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk Bokmål
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Српски
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yoruba
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
-                            </svg>
-                        </a>
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="ಮೆನು ಟಾಗಲ್"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-    <div class="container">
-        <ol>
-            
-            <li>
-                
-                <a href="/kn/">ಮುಖಪುಟ</a>
-                
-            </li>
-            
-            <li>
-                
-                <a href="/kn/heart-rate/">ವಿಜ್ಞಾನ</a>
-                
-            </li>
-            
-            <li>
-                
-                <span aria-current="page">VO₂ Max</span>
-                
-            </li>
-            
-        </ol>
-    </div>
-</nav>
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <!-- VO₂ Max ವಿಜ್ಞಾನ ಪುಟ -->
-
-<section class="page-hero">
-  <div class="container">
-    <h1>VO₂ Max ಟ್ರ್ಯಾಕಿಂಗ್</h1>
-    <p class="lead">ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣ ಅಪಾಯ ಸೂಚಕವನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ</p>
-  </div>
-</section>
-
-<!-- ಇದು ಏನು -->
-<section class="content-section">
-  <div class="container">
-    <h2>VO₂ Max ಎಂದರೇನು?</h2>
-    <p>VO₂ Max (ಗರಿಷ್ಠ ಆಮ್ಲಜನಕ ಹೀರಿಕೆ) ತೀವ್ರ ವ್ಯಾಯಾಮದ ಸಮಯದಲ್ಲಿ ನಿಮ್ಮ ದೇಹವು ಬಳಸಬಹುದಾದ ಗರಿಷ್ಠ ಆಮ್ಲಜನಕದ ಪ್ರಮಾಣವಾಗಿದೆ, ಇದನ್ನು ಪ್ರತಿ ನಿಮಿಷಕ್ಕೆ ದೇಹದ ತೂಕದ ಕಿಲೋಗ್ರಾಂಗೆ ಮಿಲಿಲೀಟರ್‌ಗಳಲ್ಲಿ ಅಳೆಯಲಾಗುತ್ತದೆ (mL/kg/min).</p>
-
-    <p class="mt-6">ಇದನ್ನು ಏರೋಬಿಕ್ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಹೃದಯರಕ್ತನಾಳದ ಸಾಮರ್ಥ್ಯದ ಚಿನ್ನದ ಮಾನದಂಡ ಅಳತೆ ಎಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ.</p>
-  </div>
-</section>
-
-<!-- ಇದು ಏಕೆ ಮುಖ್ಯ -->
-<section class="content-section bg-light">
-  <div class="container">
-    <h2>VO₂ Max ಏಕೆ ಮುಖ್ಯ</h2>
-    <p>VO₂ Max <strong>ಎಲ್ಲಾ-ಕಾರಣ ಮರಣದ ಬಲವಾದ ಮುನ್ಸೂಚಕ</strong> - ಒಟ್ಟಾರೆ ಆರೋಗ್ಯ ಮತ್ತು ದೀರ್ಘಾಯುಷ್ಯದ ಅತ್ಯಂತ ಶಕ್ತಿಶಾಲಿ ಸೂಚಕಗಳಲ್ಲಿ ಒಂದು:</p>
-    <ul class="feature-list">
-      <li>ಹೆಚ್ಚಿನ VO₂ Max ಕಡಿಮೆ ಹೃದಯರಕ್ತನಾಳದ ರೋಗ ಮತ್ತು ಮರಣ ಅಪಾಯದೊಂದಿಗೆ ಸಂಬಂಧಿಸಿದೆ</li>
-      <li>ಶ್ವಾಸಕೋಶಗಳು, ಹೃದಯ, ರಕ್ತನಾಳಗಳು ಮತ್ತು ಸ್ನಾಯುಗಳ ಸಂಯೋಜಿತ ದಕ್ಷತೆಯನ್ನು ಪ್ರತಿಬಿಂಬಿಸುತ್ತದೆ</li>
-      <li>ವಯಸ್ಸು ಮತ್ತು ನಿಷ್ಕ್ರಿಯತೆಯೊಂದಿಗೆ ಕಡಿಮೆಯಾಗುತ್ತದೆ, ಆದರೆ ತರಬೇತಿಯೊಂದಿಗೆ ಸುಧಾರಿಸಬಹುದು</li>
-      <li>ಫಿಟ್‌ನೆಸ್ ಮಟ್ಟವನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡಲು ಮತ್ತು ತರಬೇತಿ ಹೊಂದಾಣಿಕೆಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಬಳಸಲಾಗುತ್ತದೆ</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Apple Watch VO₂ Max ನಿಖರತೆ -->
-<section class="content-section">
-  <div class="container">
-    <h2>Apple Watch VO₂ Max ನಿಖರತೆ</h2>
-    <p><strong>ಮುಖ್ಯ:</strong> ಮಣಿಕಟ್ಟು-ಆಧಾರಿತ VO₂ Max ಅಂದಾಜುಗಳು <strong>ಟ್ರೆಂಡ್‌ಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು</strong> ಉಪಯುಕ್ತವಾಗಿವೆ ಆದರೆ ಪ್ರಯೋಗಾಲಯ-ಅಳೆಯಲಾದ ಮೌಲ್ಯಗಳನ್ನು <strong>ಕಡಿಮೆ ಅಂದಾಜು ಮಾಡಬಹುದು</strong>.</p>
-
-    <p class="mt-6">ಇತ್ತೀಚಿನ ಮಾನ್ಯತೆ ಅಧ್ಯಯನಗಳು (PLOS ONE 2025) Apple Watch VO₂ Max ಅಂದಾಜುಗಳು ಪರೋಕ್ಷ ಕ್ಯಾಲೋರಿಮೆಟ್ರಿ (ಚಿನ್ನದ ಮಾನದಂಡ ಪ್ರಯೋಗಾಲಯ ಪರೀಕ್ಷೆ) ಗೆ ಹೋಲಿಸಿದರೆ ಗಮನಾರ್ಹ ದೋಷವನ್ನು ಹೊಂದಿವೆ ಎಂದು ತೋರಿಸುತ್ತವೆ (<a href="https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0323741" target="_blank" rel="noopener">PLOS ONE 2025</a>).</p>
-
-    <div class="accuracy-note mt-6">
-      <h3>ಇದರ ಅರ್ಥವೇನು:</h3>
-      <ul class="feature-list">
-        <li><strong>ಸಂಪೂರ್ಣ ಮೌಲ್ಯಗಳು ನಿಖರವಾಗಿಲ್ಲದಿರಬಹುದು</strong> - ನಿಮ್ಮ Apple Watch VO₂ ಅಂದಾಜು ಪ್ರಯೋಗಾಲಯ ಪರೀಕ್ಷೆಯಿಂದ ಭಿನ್ನವಾಗಿರಬಹುದು</li>
-        <li><strong>ಟ್ರೆಂಡ್‌ಗಳು ಇನ್ನೂ ಮೌಲ್ಯಯುತ</strong> - ಕಾಲಾನಂತರದಲ್ಲಿ VO₂ Max ನಲ್ಲಿನ ಬದಲಾವಣೆಗಳು ಫಿಟ್‌ನೆಸ್ ಸುಧಾರಣೆಗಳು/ಕುಸಿತಗಳನ್ನು ಪ್ರತಿಬಿಂಬಿಸುತ್ತವೆ</li>
-        <li><strong>ಸಾಪೇಕ್ಷ ಹೋಲಿಕೆಗಳಿಗೆ ಬಳಸಿ</strong> - ಸಂಪೂರ್ಣ ಸಂಖ್ಯೆಗಳನ್ನು ಅಲ್ಲ, ವಾರದಿಂದ ವಾರಕ್ಕೆ ನಿಮ್ಮ ಪ್ರಗತಿಯನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ</li>
-        <li><strong>ತರಬೇತಿ ವಲಯಗಳ ಮೇಲೆ ಗಮನ ಕೇಂದ್ರೀಕರಿಸಿ</strong> - Apple ನ ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮಟ್ಟಗಳು (ಕಡಿಮೆ, ಸರಾಸರಿಗಿಂತ ಕೆಳಗೆ, ಸರಾಸರಿ, ಸರಾಸರಿಗಿಂತ ಮೇಲೆ, ಹೆಚ್ಚು) ತರಬೇತಿ ಮಾರ್ಗದರ್ಶನಕ್ಕೆ ಉಪಯುಕ್ತ</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ಸಾಮಾನ್ಯ ಶ್ರೇಣಿಗಳು -->
-<section class="content-section bg-light">
-  <div class="container">
-    <h2>VO₂ Max ಶ್ರೇಣಿಗಳು (ಸಾಮಾನ್ಯ ಮಾರ್ಗಸೂಚಿಗಳು)</h2>
-    <p>ಮೌಲ್ಯಗಳು ವಯಸ್ಸು, ಲಿಂಗ ಮತ್ತು ತರಬೇತಿ ಸ್ಥಿತಿಯ ಪ್ರಕಾರ ಬದಲಾಗುತ್ತವೆ. ಇವು ವಯಸ್ಕರಿಗೆ ಸಾಮಾನ್ಯ ಶ್ರೇಣಿಗಳು:</p>
-
-    <div class="vo2-ranges">
-      <div class="vo2-range">
-        <h3>ಪುರುಷರು (20-29 ವರ್ಷ)</h3>
-        <ul>
-          <li><strong>&lt;35 mL/kg/min</strong> - ಕಡಿಮೆ</li>
-          <li><strong>35-43</strong> - ಸರಾಸರಿ</li>
-          <li><strong>44-51</strong> - ಉತ್ತಮ</li>
-          <li><strong>&gt;51</strong> - ಅತ್ಯುತ್ತಮ/ಎಲೈಟ್</li>
-        </ul>
-      </div>
-
-      <div class="vo2-range mt-6">
-        <h3>ಮಹಿಳೆಯರು (20-29 ವರ್ಷ)</h3>
-        <ul>
-          <li><strong>&lt;28 mL/kg/min</strong> - ಕಡಿಮೆ</li>
-          <li><strong>28-36</strong> - ಸರಾಸರಿ</li>
-          <li><strong>37-44</strong> - ಉತ್ತಮ</li>
-          <li><strong>&gt;44</strong> - ಅತ್ಯುತ್ತಮ/ಎಲೈಟ್</li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="note mt-6">📉 <strong>ವಯಸ್ಸು-ಹೊಂದಾಣಿಕೆ:</strong> VO₂ Max ವಯಸ್ಸಿನೊಂದಿಗೆ ಸ್ವಾಭಾವಿಕವಾಗಿ ಕಡಿಮೆಯಾಗುತ್ತದೆ. ನಿಖರ ಮೌಲ್ಯಮಾಪನಕ್ಕಾಗಿ ವಯಸ್ಸು-ಹೊಂದಾಣಿಕೆ ಶ್ರೇಣಿಗಳನ್ನು ಬಳಸಿ.</p>
-  </div>
-</section>
-
-<!-- Cardio Analytics ಇದನ್ನು ಹೇಗೆ ಬಳಸುತ್ತದೆ -->
-<section class="content-section">
-  <div class="container">
-    <h2>Cardio Analytics VO₂ Max ಡೇಟಾವನ್ನು ಹೇಗೆ ಬಳಸುತ್ತದೆ</h2>
-    <ul class="feature-list">
-      <li><strong>ಸಾಪ್ತಾಹಿಕ/ಮಾಸಿಕ VO₂ ಟ್ರೆಂಡ್‌ಗಳನ್ನು ತೋರಿಸುತ್ತದೆ</strong> - ಕಾಲಾನಂತರದಲ್ಲಿ ಫಿಟ್‌ನೆಸ್ ಸುಧಾರಣೆಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ</li>
-      <li><strong>Apple ನ ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮಟ್ಟಗಳನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ</strong> - ಕಡಿಮೆ, ಸರಾಸರಿಗಿಂತ ಕೆಳಗೆ, ಸರಾಸರಿ, ಸರಾಸರಿಗಿಂತ ಮೇಲೆ, ಹೆಚ್ಚು</li>
-      <li><strong>ಸುರಕ್ಷಿತ, ಪ್ರಗತಿಶೀಲ ಸುಧಾರಣೆಗಳನ್ನು ಪ್ರೋತ್ಸಾಹಿಸುತ್ತದೆ</strong> - ಕ್ರಮೇಣ VO₂ ಹೆಚ್ಚಳಗಳು ಪರಿಣಾಮಕಾರಿ ತರಬೇತಿಯನ್ನು ಸೂಚಿಸುತ್ತವೆ</li>
-      <li><strong>ಚಟುವಟಿಕೆ ಮಟ್ಟಗಳೊಂದಿಗೆ ಸಂಬಂಧಿಸುತ್ತದೆ</strong> - ತರಬೇತಿ ಪರಿಮಾಣ ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮೇಲೆ ಹೇಗೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ ಎಂಬುದನ್ನು ನೋಡಿ</li>
-    </ul>
-
-    <p class="disclaimer mt-6">⚠️ <strong>ಟ್ರೆಂಡ್‌ಗಳ ಮೇಲೆ ಗಮನ ಕೇಂದ್ರೀಕರಿಸಿ, ಸಂಪೂರ್ಣ ಮೌಲ್ಯಗಳ ಮೇಲೆ ಅಲ್ಲ:</strong> ಪ್ರಕಟಿತ ಮಾನದಂಡಗಳೊಂದಿಗೆ ಹೋಲಿಸುವ ಬದಲು ಫಿಟ್‌ನೆಸ್ ದಿಕ್ಕನ್ನು (ಸುಧಾರಿಸುತ್ತಿದೆ/ಕುಸಿಯುತ್ತಿದೆ) ಟ್ರ್ಯಾಕ್ ಮಾಡಲು VO₂ Max ಅನ್ನು ಬಳಸಿ.</p>
-  </div>
-</section>
-
-<!-- HealthKit ಏಕೀಕರಣ -->
-<section class="content-section bg-light">
-  <div class="container">
-    <h2>HealthKit ಡೇಟಾ ಪ್ರಕಾರಗಳು</h2>
-    <p>Cardio Analytics ಈ ಗುರುತಿಸುವಿಕೆಯನ್ನು ಬಳಸಿಕೊಂಡು Apple HealthKit ನಿಂದ VO₂ Max ಡೇಟಾವನ್ನು ಓದುತ್ತದೆ:</p>
-    <ul class="feature-list">
-      <li><code>vo2Max</code> - ಗರಿಷ್ಠ ಆಮ್ಲಜನಕ ಹೀರಿಕೆ (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li>
-    </ul>
-
-    <p class="mt-6"><a href="/kn/healthkit/" class="btn btn-secondary">HealthKit ಏಕೀಕರಣದ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</a></p>
-  </div>
-</section>
-
-<!-- ಉಲ್ಲೇಖಗಳು -->
-<section class="content-section">
-  <div class="container">
-    <h2>ವೈಜ್ಞಾನಿಕ ಉಲ್ಲೇಖಗಳು</h2>
-    <ol class="references-list">
-      <li>Lambe R, et al. <em>Investigating the accuracy of Apple Watch VO₂ max measurements.</em> PLOS ONE. 2025. <a href="https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0323741" target="_blank" rel="noopener">https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0323741</a></li>
-    </ol>
-    <p><a href="/kn/references/" class="btn btn-secondary">ಎಲ್ಲಾ ಉಲ್ಲೇಖಗಳನ್ನು ವೀಕ್ಷಿಸಿ</a></p>
-  </div>
-</section>
-
-<!-- CTA ವಿಭಾಗ -->
-<section class="cta-section">
-  <div class="container">
-    <div class="cta-box">
-      <h2>Cardio Analytics ನೊಂದಿಗೆ ನಿಮ್ಮ VO₂ Max ಅನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ</h2>
-      <p>VO₂ Max ಟ್ರ್ಯಾಕಿಂಗ್‌ನೊಂದಿಗೆ ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಟ್ರೆಂಡ್‌ಗಳು ಮತ್ತು ತರಬೇತಿ ಹೊಂದಾಣಿಕೆಗಳನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ.</p>
-      <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="ಮೆನು ಟಾಗಲ್"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/kn/">ಮುಖಪುಟ</a></li><li><a href="/kn/heart-rate/">ವಿಜ್ಞಾನ</a></li><li><span aria-current="page">VO₂ Max</span></li></ol></div></nav><main id="main-content" class="main-content"><section class="page-hero"><div class="container"><h1>VO₂ Max ಟ್ರ್ಯಾಕಿಂಗ್</h1><p class="lead">ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಮರಣ ಅಪಾಯ ಸೂಚಕವನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ</p></div></section><section class="content-section"><div class="container"><h2>VO₂ Max ಎಂದರೇನು?</h2><p>VO₂ Max (ಗರಿಷ್ಠ ಆಮ್ಲಜನಕ ಹೀರಿಕೆ) ತೀವ್ರ ವ್ಯಾಯಾಮದ ಸಮಯದಲ್ಲಿ ನಿಮ್ಮ ದೇಹವು ಬಳಸಬಹುದಾದ ಗರಿಷ್ಠ ಆಮ್ಲಜನಕದ ಪ್ರಮಾಣವಾಗಿದೆ, ಇದನ್ನು ಪ್ರತಿ ನಿಮಿಷಕ್ಕೆ ದೇಹದ ತೂಕದ ಕಿಲೋಗ್ರಾಂಗೆ ಮಿಲಿಲೀಟರ್‌ಗಳಲ್ಲಿ ಅಳೆಯಲಾಗುತ್ತದೆ (mL/kg/min).</p><p class="mt-6">ಇದನ್ನು ಏರೋಬಿಕ್ ಫಿಟ್‌ನೆಸ್ ಮತ್ತು ಹೃದಯರಕ್ತನಾಳದ ಸಾಮರ್ಥ್ಯದ ಚಿನ್ನದ ಮಾನದಂಡ ಅಳತೆ ಎಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ.</p></div></section><section class="content-section bg-light"><div class="container"><h2>VO₂ Max ಏಕೆ ಮುಖ್ಯ</h2><p>VO₂ Max <strong>ಎಲ್ಲಾ-ಕಾರಣ ಮರಣದ ಬಲವಾದ ಮುನ್ಸೂಚಕ</strong> - ಒಟ್ಟಾರೆ ಆರೋಗ್ಯ ಮತ್ತು ದೀರ್ಘಾಯುಷ್ಯದ ಅತ್ಯಂತ ಶಕ್ತಿಶಾಲಿ ಸೂಚಕಗಳಲ್ಲಿ ಒಂದು:</p><ul class="feature-list"><li>ಹೆಚ್ಚಿನ VO₂ Max ಕಡಿಮೆ ಹೃದಯರಕ್ತನಾಳದ ರೋಗ ಮತ್ತು ಮರಣ ಅಪಾಯದೊಂದಿಗೆ ಸಂಬಂಧಿಸಿದೆ</li><li>ಶ್ವಾಸಕೋಶಗಳು, ಹೃದಯ, ರಕ್ತನಾಳಗಳು ಮತ್ತು ಸ್ನಾಯುಗಳ ಸಂಯೋಜಿತ ದಕ್ಷತೆಯನ್ನು ಪ್ರತಿಬಿಂಬಿಸುತ್ತದೆ</li><li>ವಯಸ್ಸು ಮತ್ತು ನಿಷ್ಕ್ರಿಯತೆಯೊಂದಿಗೆ ಕಡಿಮೆಯಾಗುತ್ತದೆ, ಆದರೆ ತರಬೇತಿಯೊಂದಿಗೆ ಸುಧಾರಿಸಬಹುದು</li><li>ಫಿಟ್‌ನೆಸ್ ಮಟ್ಟವನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡಲು ಮತ್ತು ತರಬೇತಿ ಹೊಂದಾಣಿಕೆಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಬಳಸಲಾಗುತ್ತದೆ</li></ul></div></section><section class="content-section"><div class="container"><h2>Apple Watch VO₂ Max ನಿಖರತೆ</h2><p><strong>ಮುಖ್ಯ:</strong> ಮಣಿಕಟ್ಟು-ಆಧಾರಿತ VO₂ Max ಅಂದಾಜುಗಳು <strong>ಟ್ರೆಂಡ್‌ಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು</strong> ಉಪಯುಕ್ತವಾಗಿವೆ ಆದರೆ ಪ್ರಯೋಗಾಲಯ-ಅಳೆಯಲಾದ ಮೌಲ್ಯಗಳನ್ನು <strong>ಕಡಿಮೆ ಅಂದಾಜು ಮಾಡಬಹುದು</strong>.</p><p class="mt-6">ಇತ್ತೀಚಿನ ಮಾನ್ಯತೆ ಅಧ್ಯಯನಗಳು (PLOS ONE 2025) Apple Watch VO₂ Max ಅಂದಾಜುಗಳು ಪರೋಕ್ಷ ಕ್ಯಾಲೋರಿಮೆಟ್ರಿ (ಚಿನ್ನದ ಮಾನದಂಡ ಪ್ರಯೋಗಾಲಯ ಪರೀಕ್ಷೆ) ಗೆ ಹೋಲಿಸಿದರೆ ಗಮನಾರ್ಹ ದೋಷವನ್ನು ಹೊಂದಿವೆ ಎಂದು ತೋರಿಸುತ್ತವೆ (<a href="https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0323741" target="_blank" rel="noopener">PLOS ONE 2025</a>).</p><div class="accuracy-note mt-6"><h3>ಇದರ ಅರ್ಥವೇನು:</h3><ul class="feature-list"><li><strong>ಸಂಪೂರ್ಣ ಮೌಲ್ಯಗಳು ನಿಖರವಾಗಿಲ್ಲದಿರಬಹುದು</strong> - ನಿಮ್ಮ Apple Watch VO₂ ಅಂದಾಜು ಪ್ರಯೋಗಾಲಯ ಪರೀಕ್ಷೆಯಿಂದ ಭಿನ್ನವಾಗಿರಬಹುದು</li><li><strong>ಟ್ರೆಂಡ್‌ಗಳು ಇನ್ನೂ ಮೌಲ್ಯಯುತ</strong> - ಕಾಲಾನಂತರದಲ್ಲಿ VO₂ Max ನಲ್ಲಿನ ಬದಲಾವಣೆಗಳು ಫಿಟ್‌ನೆಸ್ ಸುಧಾರಣೆಗಳು/ಕುಸಿತಗಳನ್ನು ಪ್ರತಿಬಿಂಬಿಸುತ್ತವೆ</li><li><strong>ಸಾಪೇಕ್ಷ ಹೋಲಿಕೆಗಳಿಗೆ ಬಳಸಿ</strong> - ಸಂಪೂರ್ಣ ಸಂಖ್ಯೆಗಳನ್ನು ಅಲ್ಲ, ವಾರದಿಂದ ವಾರಕ್ಕೆ ನಿಮ್ಮ ಪ್ರಗತಿಯನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ</li><li><strong>ತರಬೇತಿ ವಲಯಗಳ ಮೇಲೆ ಗಮನ ಕೇಂದ್ರೀಕರಿಸಿ</strong> - Apple ನ ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮಟ್ಟಗಳು (ಕಡಿಮೆ, ಸರಾಸರಿಗಿಂತ ಕೆಳಗೆ, ಸರಾಸರಿ, ಸರಾಸರಿಗಿಂತ ಮೇಲೆ, ಹೆಚ್ಚು) ತರಬೇತಿ ಮಾರ್ಗದರ್ಶನಕ್ಕೆ ಉಪಯುಕ್ತ</li></ul></div></div></section><section class="content-section bg-light"><div class="container"><h2>VO₂ Max ಶ್ರೇಣಿಗಳು (ಸಾಮಾನ್ಯ ಮಾರ್ಗಸೂಚಿಗಳು)</h2><p>ಮೌಲ್ಯಗಳು ವಯಸ್ಸು, ಲಿಂಗ ಮತ್ತು ತರಬೇತಿ ಸ್ಥಿತಿಯ ಪ್ರಕಾರ ಬದಲಾಗುತ್ತವೆ. ಇವು ವಯಸ್ಕರಿಗೆ ಸಾಮಾನ್ಯ ಶ್ರೇಣಿಗಳು:</p><div class="vo2-ranges"><div class="vo2-range"><h3>ಪುರುಷರು (20-29 ವರ್ಷ)</h3><ul><li><strong>&lt;35 mL/kg/min</strong> - ಕಡಿಮೆ</li><li><strong>35-43</strong> - ಸರಾಸರಿ</li><li><strong>44-51</strong> - ಉತ್ತಮ</li><li><strong>&gt;51</strong> - ಅತ್ಯುತ್ತಮ/ಎಲೈಟ್</li></ul></div><div class="vo2-range mt-6"><h3>ಮಹಿಳೆಯರು (20-29 ವರ್ಷ)</h3><ul><li><strong>&lt;28 mL/kg/min</strong> - ಕಡಿಮೆ</li><li><strong>28-36</strong> - ಸರಾಸರಿ</li><li><strong>37-44</strong> - ಉತ್ತಮ</li><li><strong>&gt;44</strong> - ಅತ್ಯುತ್ತಮ/ಎಲೈಟ್</li></ul></div></div><p class="note mt-6">📉 <strong>ವಯಸ್ಸು-ಹೊಂದಾಣಿಕೆ:</strong> VO₂ Max ವಯಸ್ಸಿನೊಂದಿಗೆ ಸ್ವಾಭಾವಿಕವಾಗಿ ಕಡಿಮೆಯಾಗುತ್ತದೆ. ನಿಖರ ಮೌಲ್ಯಮಾಪನಕ್ಕಾಗಿ ವಯಸ್ಸು-ಹೊಂದಾಣಿಕೆ ಶ್ರೇಣಿಗಳನ್ನು ಬಳಸಿ.</p></div></section><section class="content-section"><div class="container"><h2>Cardio Analytics VO₂ Max ಡೇಟಾವನ್ನು ಹೇಗೆ ಬಳಸುತ್ತದೆ</h2><ul class="feature-list"><li><strong>ಸಾಪ್ತಾಹಿಕ/ಮಾಸಿಕ VO₂ ಟ್ರೆಂಡ್‌ಗಳನ್ನು ತೋರಿಸುತ್ತದೆ</strong> - ಕಾಲಾನಂತರದಲ್ಲಿ ಫಿಟ್‌ನೆಸ್ ಸುಧಾರಣೆಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ</li><li><strong>Apple ನ ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮಟ್ಟಗಳನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ</strong> - ಕಡಿಮೆ, ಸರಾಸರಿಗಿಂತ ಕೆಳಗೆ, ಸರಾಸರಿ, ಸರಾಸರಿಗಿಂತ ಮೇಲೆ, ಹೆಚ್ಚು</li><li><strong>ಸುರಕ್ಷಿತ, ಪ್ರಗತಿಶೀಲ ಸುಧಾರಣೆಗಳನ್ನು ಪ್ರೋತ್ಸಾಹಿಸುತ್ತದೆ</strong> - ಕ್ರಮೇಣ VO₂ ಹೆಚ್ಚಳಗಳು ಪರಿಣಾಮಕಾರಿ ತರಬೇತಿಯನ್ನು ಸೂಚಿಸುತ್ತವೆ</li><li><strong>ಚಟುವಟಿಕೆ ಮಟ್ಟಗಳೊಂದಿಗೆ ಸಂಬಂಧಿಸುತ್ತದೆ</strong> - ತರಬೇತಿ ಪರಿಮಾಣ ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಮೇಲೆ ಹೇಗೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ ಎಂಬುದನ್ನು ನೋಡಿ</li></ul><p class="disclaimer mt-6">⚠️ <strong>ಟ್ರೆಂಡ್‌ಗಳ ಮೇಲೆ ಗಮನ ಕೇಂದ್ರೀಕರಿಸಿ, ಸಂಪೂರ್ಣ ಮೌಲ್ಯಗಳ ಮೇಲೆ ಅಲ್ಲ:</strong> ಪ್ರಕಟಿತ ಮಾನದಂಡಗಳೊಂದಿಗೆ ಹೋಲಿಸುವ ಬದಲು ಫಿಟ್‌ನೆಸ್ ದಿಕ್ಕನ್ನು (ಸುಧಾರಿಸುತ್ತಿದೆ/ಕುಸಿಯುತ್ತಿದೆ) ಟ್ರ್ಯಾಕ್ ಮಾಡಲು VO₂ Max ಅನ್ನು ಬಳಸಿ.</p></div></section><section class="content-section bg-light"><div class="container"><h2>HealthKit ಡೇಟಾ ಪ್ರಕಾರಗಳು</h2><p>Cardio Analytics ಈ ಗುರುತಿಸುವಿಕೆಯನ್ನು ಬಳಸಿಕೊಂಡು Apple HealthKit ನಿಂದ VO₂ Max ಡೇಟಾವನ್ನು ಓದುತ್ತದೆ:</p><ul class="feature-list"><li><code>vo2Max</code> - ಗರಿಷ್ಠ ಆಮ್ಲಜನಕ ಹೀರಿಕೆ (mL/kg/min) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/vo2max" target="_blank" rel="noopener">Apple Docs</a>)</li></ul><p class="mt-6"><a href="/kn/healthkit/" class="btn btn-secondary">HealthKit ಏಕೀಕರಣದ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</a></p></div></section><section class="content-section"><div class="container"><h2>ವೈಜ್ಞಾನಿಕ ಉಲ್ಲೇಖಗಳು</h2><ol class="references-list"><li>Lambe R, et al. <em>Investigating the accuracy of Apple Watch VO₂ max measurements.</em> PLOS ONE. 2025. <a href="https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0323741" target="_blank" rel="noopener">https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0323741</a></li></ol><p><a href="/kn/references/" class="btn btn-secondary">ಎಲ್ಲಾ ಉಲ್ಲೇಖಗಳನ್ನು ವೀಕ್ಷಿಸಿ</a></p></div></section><section class="cta-section"><div class="container"><div class="cta-box"><h2>Cardio Analytics ನೊಂದಿಗೆ ನಿಮ್ಮ VO₂ Max ಅನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ</h2><p>VO₂ Max ಟ್ರ್ಯಾಕಿಂಗ್‌ನೊಂದಿಗೆ ಕಾರ್ಡಿಯೋ ಫಿಟ್‌ನೆಸ್ ಟ್ರೆಂಡ್‌ಗಳು ಮತ್ತು ತರಬೇತಿ ಹೊಂದಾಣಿಕೆಗಳನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ.</p><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
         App Store ನಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ
-      </a>
-    </div>
-  </div>
-</section>
-    
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Cardio Analytics</h2>
-                <p>Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../assets/images/badge-app-store.svg"
+      </a></div></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Cardio Analytics</h2><p>Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" target="_blank" rel="noopener"
-                        aria-label="Get it on Google Play">
-                        <img src="../../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" target="_blank" rel="noopener"
+                        aria-label="Get it on Google Play"><img src="../../assets/images/badge-google-play.svg"
                             alt="Get it on Google Play" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a>
-                
-                <a href="/kn/" class="lang-link active"
+                </a><a href="/kn/" class="lang-link active"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yoruba
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Cardio Analytics. ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/kn/privacy/">ಗೌಪ್ಯತೆ</a></li>
-                <li><a href="/kn/terms/">ನಿಯಮಗಳು</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>ಈ ವೆಬ್‌ಸೈಟ್ ನಿಮ್ಮ ಅನುಭವವನ್ನು ಸುಧಾರಿಸಲು ಕುಕೀಗಳನ್ನು ಬಳಸುತ್ತದೆ.</p>
-            <a href="/kn/privacy/" class="text-sm">ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">ನಿರಾಕರಿಸಿ</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">ಸ್ವೀಕರಿಸಿ</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../assets/js/core.min.js?v=540c31aabebc" defer></script>
-  <script src="../../assets/js/search.min.js?v=540c31aabebc" defer></script>
-  
-
-  
-  
-  <script src="../../assets/js/analytics.min.js" data-ga-id="G-C7EPKJ2B6Z" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/kn/privacy/">ಗೌಪ್ಯತೆ</a></li><li><a href="/kn/terms/">ನಿಯಮಗಳು</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>ಈ ವೆಬ್‌ಸೈಟ್ ನಿಮ್ಮ ಅನುಭವವನ್ನು ಸುಧಾರಿಸಲು ಕುಕೀಗಳನ್ನು ಬಳಸುತ್ತದೆ.</p><a href="/kn/privacy/" class="text-sm">ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">ನಿರಾಕರಿಸಿ</button><button id="cookie-accept" class="btn btn-primary btn-small">ಸ್ವೀಕರಿಸಿ</button></div></div></div><script src="../../assets/js/core.min.js?v=983179f8f375" defer></script><script src="../../assets/js/search.min.js?v=983179f8f375" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-C7EPKJ2B6Z" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>

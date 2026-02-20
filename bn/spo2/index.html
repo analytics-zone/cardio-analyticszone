@@ -1,243 +1,61 @@
-<!DOCTYPE html>
-<html lang="bn" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  
-  <title>অক্সিজেন স্যাচুরেশন (SpO₂) ট্র্যাকিং - হাইপোক্সেমিয়া সনাক্তকরণ |</title>
-  <meta name="description" content="Apple Watch থেকে অক্সিজেন স্যাচুরেশন লেভেল ট্র্যাক করুন। স্বাভাবিক পরিসীমা ৯৫-১০০%, &lt;৯০% মানের জন্য সতর্কতা (হাইপোক্সেমিয়া)। শ্বাসযন্ত্র এবং কার্ডিওভাসকুলার স্বাস্থ্য">
-  <meta name="author" content="AnalyticsZone Team">
-
-  
-  
-  <meta name="keywords" content="অক্সিজেন স্যাচুরেশন, SpO2 ট্র্যাকিং, হাইপোক্সেমিয়া, পালস অক্সিমেট্রি, শ্বাসযন্ত্রের স্বাস্থ্য, Apple Watch অক্সিজেন">
-  
-
-  
-  <link rel="canonical" href="https://cardio.analyticszone.app/bn/spo2/">
-
-  
-  
-  <meta property="article:published_time" content="2024-01-01T10:00:00Z">
-  <meta property="article:modified_time" content="2025-11-29T14:30:00Z">
-  <meta property="article:author" content="AnalyticsZone Team">
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://cardio.analyticszone.app/bn/spo2/">
-  <meta property="og:title" content="অক্সিজেন স্যাচুরেশন (SpO₂) ট্র্যাকিং - হাইপোক্সেমিয়া সনাক্তকরণ |">
-  <meta property="og:description" content="Apple Watch থেকে অক্সিজেন স্যাচুরেশন লেভেল ট্র্যাক করুন। স্বাভাবিক পরিসীমা ৯৫-১০০%, &lt;৯০% মানের জন্য সতর্কতা (হাইপোক্সেমিয়া)। শ্বাসযন্ত্র এবং কার্ডিওভাসকুলার স্বাস্থ্য">
-  <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="bn_BD">
-  <meta property="og:site_name" content="Cardio Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://cardio.analyticszone.app/bn/spo2/">
-  <meta name="twitter:title" content="অক্সিজেন স্যাচুরেশন (SpO₂) ট্র্যাকিং - হাইপোক্সেমিয়া সনাক্তকরণ |">
-  <meta name="twitter:description" content="Apple Watch থেকে অক্সিজেন স্যাচুরেশন লেভেল ট্র্যাক করুন। স্বাভাবিক পরিসীমা ৯৫-১০০%, &lt;৯০% মানের জন্য সতর্কতা (হাইপোক্সেমিয়া)। শ্বাসযন্ত্র এবং কার্ডিওভাসকুলার স্বাস্থ্য">
-  <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://cardio.analyticszone.app/af/spo2/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://cardio.analyticszone.app/am/spo2/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://cardio.analyticszone.app/ar/spo2/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://cardio.analyticszone.app/bg/spo2/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://cardio.analyticszone.app/bn/spo2/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://cardio.analyticszone.app/ca/spo2/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://cardio.analyticszone.app/cs/spo2/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://cardio.analyticszone.app/da/spo2/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://cardio.analyticszone.app/de/spo2/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://cardio.analyticszone.app/el/spo2/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://cardio.analyticszone.app/en/spo2/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://cardio.analyticszone.app/es/spo2/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://cardio.analyticszone.app/et/spo2/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://cardio.analyticszone.app/fa/spo2/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://cardio.analyticszone.app/fi/spo2/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://cardio.analyticszone.app/fr/spo2/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://cardio.analyticszone.app/gu/spo2/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://cardio.analyticszone.app/ha/spo2/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://cardio.analyticszone.app/he/spo2/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://cardio.analyticszone.app/hi/spo2/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://cardio.analyticszone.app/hr/spo2/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://cardio.analyticszone.app/hu/spo2/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://cardio.analyticszone.app/id/spo2/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://cardio.analyticszone.app/is/spo2/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://cardio.analyticszone.app/it/spo2/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://cardio.analyticszone.app/ja/spo2/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://cardio.analyticszone.app/km/spo2/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://cardio.analyticszone.app/kn/spo2/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://cardio.analyticszone.app/ko/spo2/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://cardio.analyticszone.app/lt/spo2/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://cardio.analyticszone.app/lv/spo2/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://cardio.analyticszone.app/ms/spo2/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://cardio.analyticszone.app/my/spo2/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://cardio.analyticszone.app/nb/spo2/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://cardio.analyticszone.app/nl/spo2/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://cardio.analyticszone.app/pl/spo2/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://cardio.analyticszone.app/pt/spo2/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://cardio.analyticszone.app/pt-br/spo2/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://cardio.analyticszone.app/ro/spo2/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://cardio.analyticszone.app/ru/spo2/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://cardio.analyticszone.app/sk/spo2/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://cardio.analyticszone.app/sl/spo2/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://cardio.analyticszone.app/sr/spo2/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://cardio.analyticszone.app/sv/spo2/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://cardio.analyticszone.app/sw/spo2/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://cardio.analyticszone.app/ta/spo2/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://cardio.analyticszone.app/te/spo2/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://cardio.analyticszone.app/th/spo2/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://cardio.analyticszone.app/tl/spo2/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://cardio.analyticszone.app/tr/spo2/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://cardio.analyticszone.app/uk/spo2/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://cardio.analyticszone.app/ur/spo2/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://cardio.analyticszone.app/vi/spo2/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://cardio.analyticszone.app/yo/spo2/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://cardio.analyticszone.app/zh/spo2/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://cardio.analyticszone.app/en/spo2/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  <meta name="robots" content="index, follow">
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6754761648">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="bn" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"><title>অক্সিজেন স্যাচুরেশন (SpO2) - হাইপোক্সেমিয়া সনাক্তকরণ</title><meta name="description" content="Apple Watch থেকে রক্তের অক্সিজেন স্যাচুরেশন (SpO2) ট্র্যাক করুন। 90% এর নিচে মানের জন্য সতর্কতা সহ হাইপোক্সেমিয়ার ঝুঁকি নিরীক্ষণ করুন এবং আপনার শ্বাসযন্ত্রের..."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="অক্সিজেন স্যাচুরেশন, SpO2 ট্র্যাকিং, হাইপোক্সেমিয়া, পালস অক্সিমেট্রি, শ্বাসযন্ত্রের স্বাস্থ্য, Apple Watch অক্সিজেন"><link rel="canonical" href="https://cardio.analyticszone.app/bn/spo2/"><meta property="article:published_time" content="2024-01-01T10:00:00Z"><meta property="article:modified_time" content="2025-11-29T14:30:00Z"><meta property="article:author" content="AnalyticsZone Team"><meta property="og:type" content="article"><meta property="og:url" content="https://cardio.analyticszone.app/bn/spo2/"><meta property="og:title" content="অক্সিজেন স্যাচুরেশন (SpO2) - হাইপোক্সেমিয়া সনাক্তকরণ"><meta property="og:description" content="Apple Watch থেকে রক্তের অক্সিজেন স্যাচুরেশন (SpO2) ট্র্যাক করুন। 90% এর নিচে মানের জন্য সতর্কতা সহ হাইপোক্সেমিয়ার ঝুঁকি নিরীক্ষণ করুন এবং আপনার শ্বাসযন্ত্রের..."><meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="bn_BD"><meta property="og:site_name" content="Cardio Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://cardio.analyticszone.app/bn/spo2/"><meta name="twitter:title" content="অক্সিজেন স্যাচুরেশন (SpO2) - হাইপোক্সেমিয়া সনাক্তকরণ"><meta name="twitter:description" content="Apple Watch থেকে রক্তের অক্সিজেন স্যাচুরেশন (SpO2) ট্র্যাক করুন। 90% এর নিচে মানের জন্য সতর্কতা সহ হাইপোক্সেমিয়ার ঝুঁকি নিরীক্ষণ করুন এবং আপনার শ্বাসযন্ত্রের..."><meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg"><link rel="alternate" hreflang="af"
+    href="https://cardio.analyticszone.app/af/spo2/"><link rel="alternate" hreflang="am"
+    href="https://cardio.analyticszone.app/am/spo2/"><link rel="alternate" hreflang="ar"
+    href="https://cardio.analyticszone.app/ar/spo2/"><link rel="alternate" hreflang="bg"
+    href="https://cardio.analyticszone.app/bg/spo2/"><link rel="alternate" hreflang="bn"
+    href="https://cardio.analyticszone.app/bn/spo2/"><link rel="alternate" hreflang="ca"
+    href="https://cardio.analyticszone.app/ca/spo2/"><link rel="alternate" hreflang="cs"
+    href="https://cardio.analyticszone.app/cs/spo2/"><link rel="alternate" hreflang="da"
+    href="https://cardio.analyticszone.app/da/spo2/"><link rel="alternate" hreflang="de"
+    href="https://cardio.analyticszone.app/de/spo2/"><link rel="alternate" hreflang="el"
+    href="https://cardio.analyticszone.app/el/spo2/"><link rel="alternate" hreflang="en"
+    href="https://cardio.analyticszone.app/en/spo2/"><link rel="alternate" hreflang="es"
+    href="https://cardio.analyticszone.app/es/spo2/"><link rel="alternate" hreflang="et"
+    href="https://cardio.analyticszone.app/et/spo2/"><link rel="alternate" hreflang="fa"
+    href="https://cardio.analyticszone.app/fa/spo2/"><link rel="alternate" hreflang="fi"
+    href="https://cardio.analyticszone.app/fi/spo2/"><link rel="alternate" hreflang="fr"
+    href="https://cardio.analyticszone.app/fr/spo2/"><link rel="alternate" hreflang="gu"
+    href="https://cardio.analyticszone.app/gu/spo2/"><link rel="alternate" hreflang="ha"
+    href="https://cardio.analyticszone.app/ha/spo2/"><link rel="alternate" hreflang="he"
+    href="https://cardio.analyticszone.app/he/spo2/"><link rel="alternate" hreflang="hi"
+    href="https://cardio.analyticszone.app/hi/spo2/"><link rel="alternate" hreflang="hr"
+    href="https://cardio.analyticszone.app/hr/spo2/"><link rel="alternate" hreflang="hu"
+    href="https://cardio.analyticszone.app/hu/spo2/"><link rel="alternate" hreflang="id"
+    href="https://cardio.analyticszone.app/id/spo2/"><link rel="alternate" hreflang="is"
+    href="https://cardio.analyticszone.app/is/spo2/"><link rel="alternate" hreflang="it"
+    href="https://cardio.analyticszone.app/it/spo2/"><link rel="alternate" hreflang="ja"
+    href="https://cardio.analyticszone.app/ja/spo2/"><link rel="alternate" hreflang="km"
+    href="https://cardio.analyticszone.app/km/spo2/"><link rel="alternate" hreflang="kn"
+    href="https://cardio.analyticszone.app/kn/spo2/"><link rel="alternate" hreflang="ko"
+    href="https://cardio.analyticszone.app/ko/spo2/"><link rel="alternate" hreflang="lt"
+    href="https://cardio.analyticszone.app/lt/spo2/"><link rel="alternate" hreflang="lv"
+    href="https://cardio.analyticszone.app/lv/spo2/"><link rel="alternate" hreflang="ms"
+    href="https://cardio.analyticszone.app/ms/spo2/"><link rel="alternate" hreflang="my"
+    href="https://cardio.analyticszone.app/my/spo2/"><link rel="alternate" hreflang="nb"
+    href="https://cardio.analyticszone.app/nb/spo2/"><link rel="alternate" hreflang="nl"
+    href="https://cardio.analyticszone.app/nl/spo2/"><link rel="alternate" hreflang="pl"
+    href="https://cardio.analyticszone.app/pl/spo2/"><link rel="alternate" hreflang="pt"
+    href="https://cardio.analyticszone.app/pt/spo2/"><link rel="alternate" hreflang="pt-br"
+    href="https://cardio.analyticszone.app/pt-br/spo2/"><link rel="alternate" hreflang="ro"
+    href="https://cardio.analyticszone.app/ro/spo2/"><link rel="alternate" hreflang="ru"
+    href="https://cardio.analyticszone.app/ru/spo2/"><link rel="alternate" hreflang="sk"
+    href="https://cardio.analyticszone.app/sk/spo2/"><link rel="alternate" hreflang="sl"
+    href="https://cardio.analyticszone.app/sl/spo2/"><link rel="alternate" hreflang="sr"
+    href="https://cardio.analyticszone.app/sr/spo2/"><link rel="alternate" hreflang="sv"
+    href="https://cardio.analyticszone.app/sv/spo2/"><link rel="alternate" hreflang="sw"
+    href="https://cardio.analyticszone.app/sw/spo2/"><link rel="alternate" hreflang="ta"
+    href="https://cardio.analyticszone.app/ta/spo2/"><link rel="alternate" hreflang="te"
+    href="https://cardio.analyticszone.app/te/spo2/"><link rel="alternate" hreflang="th"
+    href="https://cardio.analyticszone.app/th/spo2/"><link rel="alternate" hreflang="tl"
+    href="https://cardio.analyticszone.app/tl/spo2/"><link rel="alternate" hreflang="tr"
+    href="https://cardio.analyticszone.app/tr/spo2/"><link rel="alternate" hreflang="uk"
+    href="https://cardio.analyticszone.app/uk/spo2/"><link rel="alternate" hreflang="ur"
+    href="https://cardio.analyticszone.app/ur/spo2/"><link rel="alternate" hreflang="vi"
+    href="https://cardio.analyticszone.app/vi/spo2/"><link rel="alternate" hreflang="yo"
+    href="https://cardio.analyticszone.app/yo/spo2/"><link rel="alternate" hreflang="zh"
+    href="https://cardio.analyticszone.app/zh/spo2/"><link rel="alternate" hreflang="x-default"
+    href="https://cardio.analyticszone.app/en/spo2/"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6754761648"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -496,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../assets/css/main.min.css?v=540c31aabebc">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=983179f8f375"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -540,10 +345,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -552,11 +354,7 @@ img[width][height] {
   "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.",
   "inLanguage": "bn"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -571,12 +369,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648"
 }
-</script>
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -605,28 +398,20 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "অক্সিজেন স্যাচুরেশন (SpO₂) ট্র্যাকিং - হাইপোক্সেমিয়া সনাক্তকরণ |",
-  "description": "Apple Watch থেকে অক্সিজেন স্যাচুরেশন লেভেল ট্র্যাক করুন। স্বাভাবিক পরিসীমা ৯৫-১০০%, &lt;৯০% মানের জন্য সতর্কতা (হাইপোক্সেমিয়া)। শ্বাসযন্ত্র এবং কার্ডিওভাসকুলার স্বাস্থ্য",
+  "name": "অক্সিজেন স্যাচুরেশন (SpO2) - হাইপোক্সেমিয়া সনাক্তকরণ",
+  "description": "Apple Watch থেকে রক্তের অক্সিজেন স্যাচুরেশন (SpO2) ট্র্যাক করুন। 90% এর নিচে মানের জন্য সতর্কতা সহ হাইপোক্সেমিয়ার ঝুঁকি নিরীক্ষণ করুন এবং আপনার শ্বাসযন্ত্রের...",
   "url": "https://cardio.analyticszone.app/bn/spo2/"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "অক্সিজেন স্যাচুরেশন (SpO₂) ট্র্যাকিং - হাইপোক্সেমিয়া সনাক্তকরণ |",
-  "description": "Apple Watch থেকে অক্সিজেন স্যাচুরেশন লেভেল ট্র্যাক করুন। স্বাভাবিক পরিসীমা ৯৫-১০০%, &lt;৯০% মানের জন্য সতর্কতা (হাইপোক্সেমিয়া)। শ্বাসযন্ত্র এবং কার্ডিওভাসকুলার স্বাস্থ্য",
+  "headline": "অক্সিজেন স্যাচুরেশন (SpO2) - হাইপোক্সেমিয়া সনাক্তকরণ",
+  "description": "Apple Watch থেকে রক্তের অক্সিজেন স্যাচুরেশন (SpO2) ট্র্যাক করুন। 90% এর নিচে মানের জন্য সতর্কতা সহ হাইপোক্সেমিয়ার ঝুঁকি নিরীক্ষণ করুন এবং আপনার শ্বাসযন্ত্রের...",
   "author": {
     "@type": "Person",
     "name": "AnalyticsZone Team"
@@ -646,17 +431,7 @@ img[width][height] {
     "@id": "https://cardio.analyticszone.app/bn/spo2/"
   }
 }
-</script>
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -670,1057 +445,354 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">বিষয়বস্তুতে যান</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/bn/" class="site-logo">
-                <picture>
-                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../assets/images/logo.png" alt="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App" width="56" height="56">
-                </picture>
-                <span class="logo-text">Cardio Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/bn/" 
+  </script></head><body><a href="#main-content" class="skip-link">বিষয়বস্তুতে যান</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/bn/" class="site-logo"><picture><source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../assets/images/logo.png" alt="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App" width="56" height="56"></picture><span class="logo-text">Cardio Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/bn/" 
                                 aria-current="">
                                 হোম
-                            </a>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/bn/features/" class="nav-label">অ্যাপ</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/bn/features/" 
+                            </a></li><li class="has-submenu" ><a href="/bn/features/" class="nav-label">অ্যাপ</a><ul class="submenu"><li><a href="/bn/features/" 
                                         aria-current="">
                                         বৈশিষ্ট্যসমূহ
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/how-it-works/" 
+                                    </a></li><li><a href="/bn/how-it-works/" 
                                         aria-current="">
                                         এটি কীভাবে কাজ করে
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/privacy/" 
+                                    </a></li><li><a href="/bn/privacy/" 
                                         aria-current="">
                                         গোপনীয়তা
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/bn/heart-rate/" class="nav-label">বিজ্ঞান</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/bn/heart-rate/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/bn/heart-rate/" class="nav-label">বিজ্ঞান</a><ul class="submenu"><li><a href="/bn/heart-rate/" 
                                         aria-current="">
                                         হৃদস্পন্দন
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/blood-pressure/" 
+                                    </a></li><li><a href="/bn/blood-pressure/" 
                                         aria-current="">
                                         রক্তচাপ
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/hrv/" 
+                                    </a></li><li><a href="/bn/hrv/" 
                                         aria-current="">
                                         HRV
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/spo2/" class="active" 
+                                    </a></li><li><a href="/bn/spo2/" class="active" 
                                         aria-current="page">
                                         অক্সিজেন স্যাচুরেশন
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/weight-bmi/" 
+                                    </a></li><li><a href="/bn/weight-bmi/" 
                                         aria-current="">
                                         ওজন এবং BMI
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/ecg-afib/" 
+                                    </a></li><li><a href="/bn/ecg-afib/" 
                                         aria-current="">
                                         ECG এবং অ্যাট্রিয়াল ফাইব্রিলেশন
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/vo2max/" 
+                                    </a></li><li><a href="/bn/vo2max/" 
                                         aria-current="">
                                         VO₂ Max
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/walking-speed/" 
+                                    </a></li><li><a href="/bn/walking-speed/" 
                                         aria-current="">
                                         হাঁটার গতি
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/walking-asymmetry/" 
+                                    </a></li><li><a href="/bn/walking-asymmetry/" 
                                         aria-current="">
                                         হাঁটার অসামঞ্জস্যতা
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/stair-speed/" 
+                                    </a></li><li><a href="/bn/stair-speed/" 
                                         aria-current="">
                                         সিঁড়ির গতি
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/healthkit/" 
+                                    </a></li><li><a href="/bn/healthkit/" 
                                         aria-current="">
                                         HealthKit ইন্টিগ্রেশন
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/bn/references/" 
+                                    </a></li><li><a href="/bn/references/" 
                                         aria-current="">
                                         রেফারেন্স
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/bn/support/" 
+                                    </a></li></ul></li><li><a href="/bn/support/" 
                                 aria-current="">
                                 সহায়তা
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Select language">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Select language"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" selected>
+                        </option><option value="bn" selected>
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             ភាសាខ្មែរ
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk Bokmål
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Српски
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" >
+                        </option><option value="sw" >
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yoruba
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
-                            </svg>
-                        </a>
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="মেনু টগল করুন"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-    <div class="container">
-        <ol>
-            
-            <li>
-                
-                <a href="/bn/">হোম</a>
-                
-            </li>
-            
-            <li>
-                
-                <a href="/bn/heart-rate/">বিজ্ঞান</a>
-                
-            </li>
-            
-            <li>
-                
-                <span aria-current="page">অক্সিজেন স্যাচুরেশন</span>
-                
-            </li>
-            
-        </ol>
-    </div>
-</nav>
-
-
-  
-  <main id="main-content" class="main-content">
-    
-    <!-- Oxygen Saturation (SpO₂) Science Page -->
-
-<section class="page-hero">
-  <div class="container">
-    <h1>অক্সিজেন স্যাচুরেশন (SpO₂)</h1>
-    <p class="lead">শ্বাসযন্ত্র এবং কার্ডিওভাসকুলার স্বাস্থ্য মূল্যায়নের জন্য রক্তের অক্সিজেন মাত্রা পর্যবেক্ষণ করুন</p>
-  </div>
-</section>
-
-<!-- What It Is -->
-<section class="content-section">
-  <div class="container">
-    <h2>অক্সিজেন স্যাচুরেশন কী?</h2>
-    <p>অক্সিজেন স্যাচুরেশন (SpO₂) হল আপনার রক্তে অক্সিজেন বহনকারী হিমোগ্লোবিনের শতাংশ। এটি পালস অক্সিমেট্রি ব্যবহার করে পরিমাপ করা হয় (সাধারণত Apple Watch বা নিবেদিত ডিভাইসের মাধ্যমে)।</p>
-
-    <p>98% SpO₂ এর একটি রিডিং মানে আপনার হিমোগ্লোবিন অণুর 98% অক্সিজেন দ্বারা পূর্ণ।</p>
-  </div>
-</section>
-
-<!-- Why It Matters -->
-<section class="content-section bg-light">
-  <div class="container">
-    <h2>কেন অক্সিজেন স্যাচুরেশন গুরুত্বপূর্ণ</h2>
-    <p>SpO₂ প্রতিফলিত করে আপনার ফুসফুস কতটা ভালভাবে রক্তে অক্সিজেন সরবরাহ করছে এবং কতটা কার্যকরভাবে অক্সিজেন টিস্যুতে পৌঁছানো হচ্ছে:</p>
-    <ul class="feature-list">
-      <li>শ্বাসযন্ত্র এবং কার্ডিওভাসকুলার কার্যকারিতা নির্দেশ করে</li>
-      <li>প্রাথমিকভাবে হাইপোক্সেমিয়া (কম রক্তের অক্সিজেন) সনাক্ত করতে পারে</li>
-      <li>দীর্ঘস্থায়ী ফুসফুসের অবস্থা পর্যবেক্ষণের জন্য গুরুত্বপূর্ণ (COPD, হাঁপানি)</li>
-      <li>রাতে পরিমাপ করলে স্লিপ অ্যাপনিয়া নির্দেশ করতে পারে</li>
-      <li>উচ্চ-উচ্চতা অভিযোজন পর্যবেক্ষণের জন্য উপযোগী</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Typical Ranges -->
-<section class="content-section">
-  <div class="container">
-    <h2>অক্সিজেন স্যাচুরেশন পরিসীমা</h2>
-
-    <div class="range-card">
-      <h3>স্বাভাবিক পরিসীমা</h3>
-      <p><strong>95-100%</strong> - বেশিরভাগ সুস্থ প্রাপ্তবয়স্কদের জন্য স্বাভাবিক অক্সিজেন স্যাচুরেশন</p>
-    </div>
-
-    <div class="range-card mt-6 bg-warning">
-      <h3>হাইপোক্সেমিয়া (কম অক্সিজেন)</h3>
-      <p><strong>&lt;90%</strong> - চিকিৎসা মনোযোগ প্রয়োজন এমন কম অক্সিজেন মাত্রা (<a href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" target="_blank" rel="noopener">Mayo Clinic</a>)</p>
-      <p>90% এর নিচে টেকসই রিডিং হাইপোক্সেমিয়া নির্দেশ করে এবং একজন চিকিৎসক দ্বারা মূল্যায়ন করা উচিত।</p>
-    </div>
-
-    <div class="range-card mt-6">
-      <h3>বিশেষ বিবেচনা</h3>
-      <ul class="feature-list">
-        <li><strong>দীর্ঘস্থায়ী ফুসফুসের রোগ</strong> - বেসলাইন SpO₂ 88-92% হতে পারে (লক্ষ্য পরিসীমার জন্য চিকিৎসকের পরামর্শ নিন)</li>
-        <li><strong>উচ্চ উচ্চতা</strong> - উচ্চতায় SpO₂ স্বাভাবিকভাবেই হ্রাস পায় (যেমন, 8,000-10,000 ফুটে 90-95%)</li>
-        <li><strong>ঘুমের সময়</strong> - 88-90% এ সাময়িক হ্রাস স্বাভাবিক হতে পারে; টেকসই কম মান স্লিপ অ্যাপনিয়া নির্দেশ করতে পারে</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- How Cardio Analytics Uses It -->
-<section class="content-section bg-light">
-  <div class="container">
-    <h2>কীভাবে Cardio Analytics SpO₂ ডেটা ব্যবহার করে</h2>
-    <ul class="feature-list">
-      <li><strong>SpO₂ প্রবণতা দেখায়</strong> - সময়ের সাথে অক্সিজেন স্যাচুরেশন ট্র্যাক করুন (দৈনিক, সাপ্তাহিক, মাসিক)</li>
-      <li><strong>টেকসই কম মানের জন্য সতর্কতা</strong> - যখন রিডিং ধারাবাহিকভাবে 90% এর নিচে পড়ে তখন সতর্কতা</li>
-      <li><strong>রাতের পর্যবেক্ষণ</strong> - রাতের ডিস্যাচুরেশন প্যাটার্ন সনাক্ত করুন (সম্ভাব্য স্লিপ অ্যাপনিয়া)</li>
-      <li><strong>সুন্দর অবনমন</strong> - যদি আপনার ডিভাইস SpO₂ রেকর্ড না করে, তবে কার্ডটি স্বয়ংক্রিয়ভাবে লুকানো হয়</li>
-    </ul>
-
-    <p class="note">⚠️ <strong>সমস্ত ডিভাইস SpO₂ সমর্থন করে না:</strong> Apple Watch Series 6 এবং পরবর্তী মডেল রক্তের অক্সিজেন পরিমাপ সমর্থন করে। পুরানো মডেলগুলিতে এই ডেটা থাকবে না।</p>
-  </div>
-</section>
-
-<!-- HealthKit Integration -->
-<section class="content-section">
-  <div class="container">
-    <h2>HealthKit ডেটা প্রকার</h2>
-    <p>Cardio Analytics এই শনাক্তকারী ব্যবহার করে Apple HealthKit থেকে SpO₂ ডেটা পড়ে:</p>
-    <ul class="feature-list">
-      <li><code>oxygenSaturation</code> - একটি ভগ্নাংশ হিসাবে রক্তের অক্সিজেন স্যাচুরেশন (0.0-1.0, শতাংশ হিসাবে প্রদর্শিত) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation" target="_blank" rel="noopener">Apple Docs</a>)</li>
-    </ul>
-
-    <p class="mt-6"><a href="/bn/healthkit/" class="btn btn-secondary">HealthKit ইন্টিগ্রেশন সম্পর্কে আরও জানুন</a></p>
-  </div>
-</section>
-
-<!-- Measurement Tips -->
-<section class="content-section bg-light">
-  <div class="container">
-    <h2>সঠিক SpO₂ পরিমাপের টিপস</h2>
-    <ul class="feature-list">
-      <li><strong>উষ্ণ হাত</strong> - ঠান্ডা আঙ্গুল নির্ভুলতা প্রভাবিত করতে পারে</li>
-      <li><strong>স্থির থাকুন</strong> - নড়াচড়া রিডিং ব্যাহত করতে পারে</li>
-      <li><strong>নেইল পলিশ সরান</strong> - পালস অক্সিমেট্রি সেন্সরে হস্তক্ষেপ করতে পারে</li>
-      <li><strong>সঠিক ঘড়ি ফিট</strong> - Apple Watch আপনার কব্জিতে আরামদায়কভাবে কিন্তু শক্তভাবে থাকা উচিত</li>
-      <li><strong>আপনার বাহু বিশ্রাম করুন</strong> - হৃদয়ের স্তরে বাহু রাখুন, একটি টেবিলে শিথিল</li>
-    </ul>
-  </div>
-</section>
-
-<!-- References -->
-<section class="content-section">
-  <div class="container">
-    <h2>বৈজ্ঞানিক তথ্যসূত্র</h2>
-    <ol class="references-list">
-      <li>Mayo Clinic. <em>Low blood oxygen (hypoxemia).</em> <a href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" target="_blank" rel="noopener">https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930</a></li>
-    </ol>
-    <p><a href="/bn/references/" class="btn btn-secondary">সমস্ত তথ্যসূত্র দেখুন</a></p>
-  </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta-section">
-  <div class="container">
-    <div class="cta-box">
-      <h2>Cardio Analytics দিয়ে আপনার অক্সিজেন স্যাচুরেশন ট্র্যাক করুন</h2>
-      <p>SpO₂ প্রবণতা পর্যবেক্ষণ করুন এবং টেকসই কম অক্সিজেন মাত্রার জন্য সতর্কতা পান।</p>
-      <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="মেনু টগল করুন"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/bn/">হোম</a></li><li><a href="/bn/heart-rate/">বিজ্ঞান</a></li><li><span aria-current="page">অক্সিজেন স্যাচুরেশন</span></li></ol></div></nav><main id="main-content" class="main-content"><section class="page-hero"><div class="container"><h1>অক্সিজেন স্যাচুরেশন (SpO₂)</h1><p class="lead">শ্বাসযন্ত্র এবং কার্ডিওভাসকুলার স্বাস্থ্য মূল্যায়নের জন্য রক্তের অক্সিজেন মাত্রা পর্যবেক্ষণ করুন</p></div></section><section class="content-section"><div class="container"><h2>অক্সিজেন স্যাচুরেশন কী?</h2><p>অক্সিজেন স্যাচুরেশন (SpO₂) হল আপনার রক্তে অক্সিজেন বহনকারী হিমোগ্লোবিনের শতাংশ। এটি পালস অক্সিমেট্রি ব্যবহার করে পরিমাপ করা হয় (সাধারণত Apple Watch বা নিবেদিত ডিভাইসের মাধ্যমে)।</p><p>98% SpO₂ এর একটি রিডিং মানে আপনার হিমোগ্লোবিন অণুর 98% অক্সিজেন দ্বারা পূর্ণ।</p></div></section><section class="content-section bg-light"><div class="container"><h2>কেন অক্সিজেন স্যাচুরেশন গুরুত্বপূর্ণ</h2><p>SpO₂ প্রতিফলিত করে আপনার ফুসফুস কতটা ভালভাবে রক্তে অক্সিজেন সরবরাহ করছে এবং কতটা কার্যকরভাবে অক্সিজেন টিস্যুতে পৌঁছানো হচ্ছে:</p><ul class="feature-list"><li>শ্বাসযন্ত্র এবং কার্ডিওভাসকুলার কার্যকারিতা নির্দেশ করে</li><li>প্রাথমিকভাবে হাইপোক্সেমিয়া (কম রক্তের অক্সিজেন) সনাক্ত করতে পারে</li><li>দীর্ঘস্থায়ী ফুসফুসের অবস্থা পর্যবেক্ষণের জন্য গুরুত্বপূর্ণ (COPD, হাঁপানি)</li><li>রাতে পরিমাপ করলে স্লিপ অ্যাপনিয়া নির্দেশ করতে পারে</li><li>উচ্চ-উচ্চতা অভিযোজন পর্যবেক্ষণের জন্য উপযোগী</li></ul></div></section><section class="content-section"><div class="container"><h2>অক্সিজেন স্যাচুরেশন পরিসীমা</h2><div class="range-card"><h3>স্বাভাবিক পরিসীমা</h3><p><strong>95-100%</strong> - বেশিরভাগ সুস্থ প্রাপ্তবয়স্কদের জন্য স্বাভাবিক অক্সিজেন স্যাচুরেশন</p></div><div class="range-card mt-6 bg-warning"><h3>হাইপোক্সেমিয়া (কম অক্সিজেন)</h3><p><strong>&lt;90%</strong> - চিকিৎসা মনোযোগ প্রয়োজন এমন কম অক্সিজেন মাত্রা (<a href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" target="_blank" rel="noopener">Mayo Clinic</a>)</p><p>90% এর নিচে টেকসই রিডিং হাইপোক্সেমিয়া নির্দেশ করে এবং একজন চিকিৎসক দ্বারা মূল্যায়ন করা উচিত।</p></div><div class="range-card mt-6"><h3>বিশেষ বিবেচনা</h3><ul class="feature-list"><li><strong>দীর্ঘস্থায়ী ফুসফুসের রোগ</strong> - বেসলাইন SpO₂ 88-92% হতে পারে (লক্ষ্য পরিসীমার জন্য চিকিৎসকের পরামর্শ নিন)</li><li><strong>উচ্চ উচ্চতা</strong> - উচ্চতায় SpO₂ স্বাভাবিকভাবেই হ্রাস পায় (যেমন, 8,000-10,000 ফুটে 90-95%)</li><li><strong>ঘুমের সময়</strong> - 88-90% এ সাময়িক হ্রাস স্বাভাবিক হতে পারে; টেকসই কম মান স্লিপ অ্যাপনিয়া নির্দেশ করতে পারে</li></ul></div></div></section><section class="content-section bg-light"><div class="container"><h2>কীভাবে Cardio Analytics SpO₂ ডেটা ব্যবহার করে</h2><ul class="feature-list"><li><strong>SpO₂ প্রবণতা দেখায়</strong> - সময়ের সাথে অক্সিজেন স্যাচুরেশন ট্র্যাক করুন (দৈনিক, সাপ্তাহিক, মাসিক)</li><li><strong>টেকসই কম মানের জন্য সতর্কতা</strong> - যখন রিডিং ধারাবাহিকভাবে 90% এর নিচে পড়ে তখন সতর্কতা</li><li><strong>রাতের পর্যবেক্ষণ</strong> - রাতের ডিস্যাচুরেশন প্যাটার্ন সনাক্ত করুন (সম্ভাব্য স্লিপ অ্যাপনিয়া)</li><li><strong>সুন্দর অবনমন</strong> - যদি আপনার ডিভাইস SpO₂ রেকর্ড না করে, তবে কার্ডটি স্বয়ংক্রিয়ভাবে লুকানো হয়</li></ul><p class="note">⚠️ <strong>সমস্ত ডিভাইস SpO₂ সমর্থন করে না:</strong> Apple Watch Series 6 এবং পরবর্তী মডেল রক্তের অক্সিজেন পরিমাপ সমর্থন করে। পুরানো মডেলগুলিতে এই ডেটা থাকবে না।</p></div></section><section class="content-section"><div class="container"><h2>HealthKit ডেটা প্রকার</h2><p>Cardio Analytics এই শনাক্তকারী ব্যবহার করে Apple HealthKit থেকে SpO₂ ডেটা পড়ে:</p><ul class="feature-list"><li><code>oxygenSaturation</code> - একটি ভগ্নাংশ হিসাবে রক্তের অক্সিজেন স্যাচুরেশন (0.0-1.0, শতাংশ হিসাবে প্রদর্শিত) (<a href="https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/oxygensaturation" target="_blank" rel="noopener">Apple Docs</a>)</li></ul><p class="mt-6"><a href="/bn/healthkit/" class="btn btn-secondary">HealthKit ইন্টিগ্রেশন সম্পর্কে আরও জানুন</a></p></div></section><section class="content-section bg-light"><div class="container"><h2>সঠিক SpO₂ পরিমাপের টিপস</h2><ul class="feature-list"><li><strong>উষ্ণ হাত</strong> - ঠান্ডা আঙ্গুল নির্ভুলতা প্রভাবিত করতে পারে</li><li><strong>স্থির থাকুন</strong> - নড়াচড়া রিডিং ব্যাহত করতে পারে</li><li><strong>নেইল পলিশ সরান</strong> - পালস অক্সিমেট্রি সেন্সরে হস্তক্ষেপ করতে পারে</li><li><strong>সঠিক ঘড়ি ফিট</strong> - Apple Watch আপনার কব্জিতে আরামদায়কভাবে কিন্তু শক্তভাবে থাকা উচিত</li><li><strong>আপনার বাহু বিশ্রাম করুন</strong> - হৃদয়ের স্তরে বাহু রাখুন, একটি টেবিলে শিথিল</li></ul></div></section><section class="content-section"><div class="container"><h2>বৈজ্ঞানিক তথ্যসূত্র</h2><ol class="references-list"><li>Mayo Clinic. <em>Low blood oxygen (hypoxemia).</em><a href="https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930" target="_blank" rel="noopener">https://www.mayoclinic.org/symptoms/hypoxemia/basics/definition/sym-20050930</a></li></ol><p><a href="/bn/references/" class="btn btn-secondary">সমস্ত তথ্যসূত্র দেখুন</a></p></div></section><section class="cta-section"><div class="container"><div class="cta-box"><h2>Cardio Analytics দিয়ে আপনার অক্সিজেন স্যাচুরেশন ট্র্যাক করুন</h2><p>SpO₂ প্রবণতা পর্যবেক্ষণ করুন এবং টেকসই কম অক্সিজেন মাত্রার জন্য সতর্কতা পান।</p><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="btn btn-large btn-accent" target="_blank" rel="noopener">
         App Store-এ ডাউনলোড করুন
-      </a>
-    </div>
-  </div>
-</section>
-    
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Cardio Analytics</h2>
-                <p>Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../assets/images/badge-app-store.svg"
+      </a></div></div></section></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Cardio Analytics</h2><p>Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" target="_blank" rel="noopener"
-                        aria-label="Get it on Google Play">
-                        <img src="../../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" target="_blank" rel="noopener"
+                        aria-label="Get it on Google Play"><img src="../../assets/images/badge-google-play.svg"
                             alt="Get it on Google Play" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link active"
+                </a><a href="/bn/" class="lang-link active"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link"
+                </a><a href="/sw/" class="lang-link"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yoruba
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Cardio Analytics. সর্বস্বত্ব সংরক্ষিত
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/bn/privacy/">গোপনীয়তা</a></li>
-                <li><a href="/bn/terms/">শর্তাবলী</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>এই ওয়েবসাইট আপনার অভিজ্ঞতা উন্নত করতে কুকি ব্যবহার করে।</p>
-            <a href="/bn/privacy/" class="text-sm">আরও জানুন</a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">প্রত্যাখ্যান করুন</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">স্বীকার করুন</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../assets/js/core.min.js?v=540c31aabebc" defer></script>
-  <script src="../../assets/js/search.min.js?v=540c31aabebc" defer></script>
-  
-
-  
-  
-  <script src="../../assets/js/analytics.min.js" data-ga-id="G-C7EPKJ2B6Z" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/bn/privacy/">গোপনীয়তা</a></li><li><a href="/bn/terms/">শর্তাবলী</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>এই ওয়েবসাইট আপনার অভিজ্ঞতা উন্নত করতে কুকি ব্যবহার করে।</p><a href="/bn/privacy/" class="text-sm">আরও জানুন</a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">প্রত্যাখ্যান করুন</button><button id="cookie-accept" class="btn btn-primary btn-small">স্বীকার করুন</button></div></div></div><script src="../../assets/js/core.min.js?v=983179f8f375" defer></script><script src="../../assets/js/search.min.js?v=983179f8f375" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-C7EPKJ2B6Z" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>

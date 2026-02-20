@@ -1,239 +1,61 @@
-<!DOCTYPE html>
-<html lang="sw" dir="ltr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  
-  <title>Sera ya faragha - Cardio Analytics | Faragha kutokana na muundo</title>
-  <meta name="description" content="Cardio Analytics inahifadhi data yote ya afya ndani ya kifaa chako. Uidhinishaji wa kina wa HealthKit, hakuna uhifadhi wa wingu, udhibiti kamili wa data. Faragha">
-  <meta name="author" content="AnalyticsZone Team">
-
-  
-  
-  <meta name="keywords" content="faragha ya data ya afya, faragha ya HealthKit, uhifadhi wa ndani, uzingatiaji wa HIPAA, usalama wa data ya kimatibabu">
-  
-
-  
-  <link rel="canonical" href="https://cardio.analyticszone.app/sw/privacy/">
-
-  
-  
-
-  
-  
-
-  
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://cardio.analyticszone.app/sw/privacy/">
-  <meta property="og:title" content="Sera ya faragha - Cardio Analytics | Faragha kutokana na muundo">
-  <meta property="og:description" content="Cardio Analytics inahifadhi data yote ya afya ndani ya kifaa chako. Uidhinishaji wa kina wa HealthKit, hakuna uhifadhi wa wingu, udhibiti kamili wa data. Faragha">
-  <meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
-  <meta property="og:locale" content="sw_KE">
-  <meta property="og:site_name" content="Cardio Analytics">
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://cardio.analyticszone.app/sw/privacy/">
-  <meta name="twitter:title" content="Sera ya faragha - Cardio Analytics | Faragha kutokana na muundo">
-  <meta name="twitter:description" content="Cardio Analytics inahifadhi data yote ya afya ndani ya kifaa chako. Uidhinishaji wa kina wa HealthKit, hakuna uhifadhi wa wingu, udhibiti kamili wa data. Faragha">
-  <meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg">
-  
-
-  
-  
-  <link rel="alternate" hreflang="af"
-    href="https://cardio.analyticszone.app/af/privacy/">
-  
-  <link rel="alternate" hreflang="am"
-    href="https://cardio.analyticszone.app/am/privacy/">
-  
-  <link rel="alternate" hreflang="ar"
-    href="https://cardio.analyticszone.app/ar/privacy/">
-  
-  <link rel="alternate" hreflang="bg"
-    href="https://cardio.analyticszone.app/bg/privacy/">
-  
-  <link rel="alternate" hreflang="bn"
-    href="https://cardio.analyticszone.app/bn/privacy/">
-  
-  <link rel="alternate" hreflang="ca"
-    href="https://cardio.analyticszone.app/ca/privacy/">
-  
-  <link rel="alternate" hreflang="cs"
-    href="https://cardio.analyticszone.app/cs/privacy/">
-  
-  <link rel="alternate" hreflang="da"
-    href="https://cardio.analyticszone.app/da/privacy/">
-  
-  <link rel="alternate" hreflang="de"
-    href="https://cardio.analyticszone.app/de/privacy/">
-  
-  <link rel="alternate" hreflang="el"
-    href="https://cardio.analyticszone.app/el/privacy/">
-  
-  <link rel="alternate" hreflang="en"
-    href="https://cardio.analyticszone.app/en/privacy/">
-  
-  <link rel="alternate" hreflang="es"
-    href="https://cardio.analyticszone.app/es/privacy/">
-  
-  <link rel="alternate" hreflang="et"
-    href="https://cardio.analyticszone.app/et/privacy/">
-  
-  <link rel="alternate" hreflang="fa"
-    href="https://cardio.analyticszone.app/fa/privacy/">
-  
-  <link rel="alternate" hreflang="fi"
-    href="https://cardio.analyticszone.app/fi/privacy/">
-  
-  <link rel="alternate" hreflang="fr"
-    href="https://cardio.analyticszone.app/fr/privacy/">
-  
-  <link rel="alternate" hreflang="gu"
-    href="https://cardio.analyticszone.app/gu/privacy/">
-  
-  <link rel="alternate" hreflang="ha"
-    href="https://cardio.analyticszone.app/ha/privacy/">
-  
-  <link rel="alternate" hreflang="he"
-    href="https://cardio.analyticszone.app/he/privacy/">
-  
-  <link rel="alternate" hreflang="hi"
-    href="https://cardio.analyticszone.app/hi/privacy/">
-  
-  <link rel="alternate" hreflang="hr"
-    href="https://cardio.analyticszone.app/hr/privacy/">
-  
-  <link rel="alternate" hreflang="hu"
-    href="https://cardio.analyticszone.app/hu/privacy/">
-  
-  <link rel="alternate" hreflang="id"
-    href="https://cardio.analyticszone.app/id/privacy/">
-  
-  <link rel="alternate" hreflang="is"
-    href="https://cardio.analyticszone.app/is/privacy/">
-  
-  <link rel="alternate" hreflang="it"
-    href="https://cardio.analyticszone.app/it/privacy/">
-  
-  <link rel="alternate" hreflang="ja"
-    href="https://cardio.analyticszone.app/ja/privacy/">
-  
-  <link rel="alternate" hreflang="km"
-    href="https://cardio.analyticszone.app/km/privacy/">
-  
-  <link rel="alternate" hreflang="kn"
-    href="https://cardio.analyticszone.app/kn/privacy/">
-  
-  <link rel="alternate" hreflang="ko"
-    href="https://cardio.analyticszone.app/ko/privacy/">
-  
-  <link rel="alternate" hreflang="lt"
-    href="https://cardio.analyticszone.app/lt/privacy/">
-  
-  <link rel="alternate" hreflang="lv"
-    href="https://cardio.analyticszone.app/lv/privacy/">
-  
-  <link rel="alternate" hreflang="ms"
-    href="https://cardio.analyticszone.app/ms/privacy/">
-  
-  <link rel="alternate" hreflang="my"
-    href="https://cardio.analyticszone.app/my/privacy/">
-  
-  <link rel="alternate" hreflang="nb"
-    href="https://cardio.analyticszone.app/nb/privacy/">
-  
-  <link rel="alternate" hreflang="nl"
-    href="https://cardio.analyticszone.app/nl/privacy/">
-  
-  <link rel="alternate" hreflang="pl"
-    href="https://cardio.analyticszone.app/pl/privacy/">
-  
-  <link rel="alternate" hreflang="pt"
-    href="https://cardio.analyticszone.app/pt/privacy/">
-  
-  <link rel="alternate" hreflang="pt-br"
-    href="https://cardio.analyticszone.app/pt-br/privacy/">
-  
-  <link rel="alternate" hreflang="ro"
-    href="https://cardio.analyticszone.app/ro/privacy/">
-  
-  <link rel="alternate" hreflang="ru"
-    href="https://cardio.analyticszone.app/ru/privacy/">
-  
-  <link rel="alternate" hreflang="sk"
-    href="https://cardio.analyticszone.app/sk/privacy/">
-  
-  <link rel="alternate" hreflang="sl"
-    href="https://cardio.analyticszone.app/sl/privacy/">
-  
-  <link rel="alternate" hreflang="sr"
-    href="https://cardio.analyticszone.app/sr/privacy/">
-  
-  <link rel="alternate" hreflang="sv"
-    href="https://cardio.analyticszone.app/sv/privacy/">
-  
-  <link rel="alternate" hreflang="sw"
-    href="https://cardio.analyticszone.app/sw/privacy/">
-  
-  <link rel="alternate" hreflang="ta"
-    href="https://cardio.analyticszone.app/ta/privacy/">
-  
-  <link rel="alternate" hreflang="te"
-    href="https://cardio.analyticszone.app/te/privacy/">
-  
-  <link rel="alternate" hreflang="th"
-    href="https://cardio.analyticszone.app/th/privacy/">
-  
-  <link rel="alternate" hreflang="tl"
-    href="https://cardio.analyticszone.app/tl/privacy/">
-  
-  <link rel="alternate" hreflang="tr"
-    href="https://cardio.analyticszone.app/tr/privacy/">
-  
-  <link rel="alternate" hreflang="uk"
-    href="https://cardio.analyticszone.app/uk/privacy/">
-  
-  <link rel="alternate" hreflang="ur"
-    href="https://cardio.analyticszone.app/ur/privacy/">
-  
-  <link rel="alternate" hreflang="vi"
-    href="https://cardio.analyticszone.app/vi/privacy/">
-  
-  <link rel="alternate" hreflang="yo"
-    href="https://cardio.analyticszone.app/yo/privacy/">
-  
-  <link rel="alternate" hreflang="zh"
-    href="https://cardio.analyticszone.app/zh/privacy/">
-  
-  <link rel="alternate" hreflang="x-default"
-    href="https://cardio.analyticszone.app/en/privacy/">
-
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png">
-  <link rel="manifest" href="../../manifest.json">
-  <meta name="theme-color" content="#2563EB">
-  <meta name="robots" content="index, follow">
-
-  
-  
-  
-  <meta name="apple-itunes-app" content="app-id=6754761648">
-  
-
-  
-  <style>
+<!DOCTYPE html><html lang="sw" dir="ltr"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"><title>Sera ya Faragha - Ufuatiliaji wa Afya wa Uchanganuzi wa Cardio</title><meta name="description" content="Cardio Analytics huhifadhi data yote ya afya ndani ya kifaa chako. Uidhinishaji wa Granular HealthKit na hakuna hifadhi ya wingu huhakikisha faragha kamili kwa muundo."><meta name="author" content="AnalyticsZone Team"><meta name="keywords" content="faragha ya data ya afya, faragha ya HealthKit, uhifadhi wa ndani, uzingatiaji wa HIPAA, usalama wa data ya kimatibabu"><link rel="canonical" href="https://cardio.analyticszone.app/sw/privacy/"><meta property="og:type" content="article"><meta property="og:url" content="https://cardio.analyticszone.app/sw/privacy/"><meta property="og:title" content="Sera ya Faragha - Ufuatiliaji wa Afya wa Uchanganuzi wa Cardio"><meta property="og:description" content="Cardio Analytics huhifadhi data yote ya afya ndani ya kifaa chako. Uidhinishaji wa Granular HealthKit na hakuna hifadhi ya wingu huhakikisha faragha kamili kwa muundo."><meta property="og:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg"><meta property="og:locale" content="sw_KE"><meta property="og:site_name" content="Cardio Analytics"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://cardio.analyticszone.app/sw/privacy/"><meta name="twitter:title" content="Sera ya Faragha - Ufuatiliaji wa Afya wa Uchanganuzi wa Cardio"><meta name="twitter:description" content="Cardio Analytics huhifadhi data yote ya afya ndani ya kifaa chako. Uidhinishaji wa Granular HealthKit na hakuna hifadhi ya wingu huhakikisha faragha kamili kwa muundo."><meta name="twitter:image" content="https://cardio.analyticszone.app/assets/images/og-image.svg"><link rel="alternate" hreflang="af"
+    href="https://cardio.analyticszone.app/af/privacy/"><link rel="alternate" hreflang="am"
+    href="https://cardio.analyticszone.app/am/privacy/"><link rel="alternate" hreflang="ar"
+    href="https://cardio.analyticszone.app/ar/privacy/"><link rel="alternate" hreflang="bg"
+    href="https://cardio.analyticszone.app/bg/privacy/"><link rel="alternate" hreflang="bn"
+    href="https://cardio.analyticszone.app/bn/privacy/"><link rel="alternate" hreflang="ca"
+    href="https://cardio.analyticszone.app/ca/privacy/"><link rel="alternate" hreflang="cs"
+    href="https://cardio.analyticszone.app/cs/privacy/"><link rel="alternate" hreflang="da"
+    href="https://cardio.analyticszone.app/da/privacy/"><link rel="alternate" hreflang="de"
+    href="https://cardio.analyticszone.app/de/privacy/"><link rel="alternate" hreflang="el"
+    href="https://cardio.analyticszone.app/el/privacy/"><link rel="alternate" hreflang="en"
+    href="https://cardio.analyticszone.app/en/privacy/"><link rel="alternate" hreflang="es"
+    href="https://cardio.analyticszone.app/es/privacy/"><link rel="alternate" hreflang="et"
+    href="https://cardio.analyticszone.app/et/privacy/"><link rel="alternate" hreflang="fa"
+    href="https://cardio.analyticszone.app/fa/privacy/"><link rel="alternate" hreflang="fi"
+    href="https://cardio.analyticszone.app/fi/privacy/"><link rel="alternate" hreflang="fr"
+    href="https://cardio.analyticszone.app/fr/privacy/"><link rel="alternate" hreflang="gu"
+    href="https://cardio.analyticszone.app/gu/privacy/"><link rel="alternate" hreflang="ha"
+    href="https://cardio.analyticszone.app/ha/privacy/"><link rel="alternate" hreflang="he"
+    href="https://cardio.analyticszone.app/he/privacy/"><link rel="alternate" hreflang="hi"
+    href="https://cardio.analyticszone.app/hi/privacy/"><link rel="alternate" hreflang="hr"
+    href="https://cardio.analyticszone.app/hr/privacy/"><link rel="alternate" hreflang="hu"
+    href="https://cardio.analyticszone.app/hu/privacy/"><link rel="alternate" hreflang="id"
+    href="https://cardio.analyticszone.app/id/privacy/"><link rel="alternate" hreflang="is"
+    href="https://cardio.analyticszone.app/is/privacy/"><link rel="alternate" hreflang="it"
+    href="https://cardio.analyticszone.app/it/privacy/"><link rel="alternate" hreflang="ja"
+    href="https://cardio.analyticszone.app/ja/privacy/"><link rel="alternate" hreflang="km"
+    href="https://cardio.analyticszone.app/km/privacy/"><link rel="alternate" hreflang="kn"
+    href="https://cardio.analyticszone.app/kn/privacy/"><link rel="alternate" hreflang="ko"
+    href="https://cardio.analyticszone.app/ko/privacy/"><link rel="alternate" hreflang="lt"
+    href="https://cardio.analyticszone.app/lt/privacy/"><link rel="alternate" hreflang="lv"
+    href="https://cardio.analyticszone.app/lv/privacy/"><link rel="alternate" hreflang="ms"
+    href="https://cardio.analyticszone.app/ms/privacy/"><link rel="alternate" hreflang="my"
+    href="https://cardio.analyticszone.app/my/privacy/"><link rel="alternate" hreflang="nb"
+    href="https://cardio.analyticszone.app/nb/privacy/"><link rel="alternate" hreflang="nl"
+    href="https://cardio.analyticszone.app/nl/privacy/"><link rel="alternate" hreflang="pl"
+    href="https://cardio.analyticszone.app/pl/privacy/"><link rel="alternate" hreflang="pt"
+    href="https://cardio.analyticszone.app/pt/privacy/"><link rel="alternate" hreflang="pt-br"
+    href="https://cardio.analyticszone.app/pt-br/privacy/"><link rel="alternate" hreflang="ro"
+    href="https://cardio.analyticszone.app/ro/privacy/"><link rel="alternate" hreflang="ru"
+    href="https://cardio.analyticszone.app/ru/privacy/"><link rel="alternate" hreflang="sk"
+    href="https://cardio.analyticszone.app/sk/privacy/"><link rel="alternate" hreflang="sl"
+    href="https://cardio.analyticszone.app/sl/privacy/"><link rel="alternate" hreflang="sr"
+    href="https://cardio.analyticszone.app/sr/privacy/"><link rel="alternate" hreflang="sv"
+    href="https://cardio.analyticszone.app/sv/privacy/"><link rel="alternate" hreflang="sw"
+    href="https://cardio.analyticszone.app/sw/privacy/"><link rel="alternate" hreflang="ta"
+    href="https://cardio.analyticszone.app/ta/privacy/"><link rel="alternate" hreflang="te"
+    href="https://cardio.analyticszone.app/te/privacy/"><link rel="alternate" hreflang="th"
+    href="https://cardio.analyticszone.app/th/privacy/"><link rel="alternate" hreflang="tl"
+    href="https://cardio.analyticszone.app/tl/privacy/"><link rel="alternate" hreflang="tr"
+    href="https://cardio.analyticszone.app/tr/privacy/"><link rel="alternate" hreflang="uk"
+    href="https://cardio.analyticszone.app/uk/privacy/"><link rel="alternate" hreflang="ur"
+    href="https://cardio.analyticszone.app/ur/privacy/"><link rel="alternate" hreflang="vi"
+    href="https://cardio.analyticszone.app/vi/privacy/"><link rel="alternate" hreflang="yo"
+    href="https://cardio.analyticszone.app/yo/privacy/"><link rel="alternate" hreflang="zh"
+    href="https://cardio.analyticszone.app/zh/privacy/"><link rel="alternate" hreflang="x-default"
+    href="https://cardio.analyticszone.app/en/privacy/"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-touch-icon.png"><link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#2563EB"><meta name="robots" content="index, follow"><meta name="apple-itunes-app" content="app-id=6754761648"><style>
 /* Critical CSS - Above the fold styles for fast LCP */
 :root {
   --color-primary: #0066CC;
@@ -492,20 +314,7 @@ img[width][height] {
     transition-duration: 0.01ms !important;
   }
 }
-</style>
-
-  
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-
-  
-  <link rel="stylesheet" href="../../assets/css/main.min.css?v=540c31aabebc">
-
-  
-  
-
-
-<script type="application/ld+json">
+</style><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="../../assets/css/main.min.css?v=983179f8f375"><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -536,10 +345,7 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -548,11 +354,7 @@ img[width][height] {
   "description": "Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.",
   "inLanguage": "sw"
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -567,12 +369,7 @@ img[width][height] {
   },
   "downloadUrl": "https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648"
 }
-</script>
-
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -601,31 +398,15 @@ img[width][height] {
     
   ]
 }
-</script>
-
-
-
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Sera ya faragha - Cardio Analytics | Faragha kutokana na muundo",
-  "description": "Cardio Analytics inahifadhi data yote ya afya ndani ya kifaa chako. Uidhinishaji wa kina wa HealthKit, hakuna uhifadhi wa wingu, udhibiti kamili wa data. Faragha",
+  "name": "Sera ya Faragha - Ufuatiliaji wa Afya wa Uchanganuzi wa Cardio",
+  "description": "Cardio Analytics huhifadhi data yote ya afya ndani ya kifaa chako. Uidhinishaji wa Granular HealthKit na hakuna hifadhi ya wingu huhakikisha faragha kamili kwa muundo.",
   "url": "https://cardio.analyticszone.app/sw/privacy/"
 }
-</script>
-
-
-
-
-
-
-
-  
-  
-
-  
-  <script>
+</script><script>
     (function () {
       let theme = localStorage.getItem('theme');
       // Older builds could persist a per-subdomain `theme=light` value without a UI
@@ -639,1070 +420,368 @@ img[width][height] {
         document.documentElement.classList.add('dark-mode');
       }
     })();
-  </script>
-</head>
-
-<body>
-  
-  <a href="#main-content" class="skip-link">Ruka kwenda kwa maudhui</a>
-
-  
-  <header class="site-header">
-    <div class="container">
-        <div class="header-inner">
-            
-            <a href="/sw/" class="site-logo">
-                <picture>
-                    <source srcset="../../assets/images/logo-dark.png" type="image/png"
-                        media="(prefers-color-scheme: dark)">
-                    <img src="../../assets/images/logo.png" alt="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App" width="56" height="56">
-                </picture>
-                <span class="logo-text">Cardio Analytics</span>
-            </a>
-
-            
-            <nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation">
-                <div class="nav-group-left">
-                    <ul>
-                        
-                        <li>
-                            
-                            <a href="/sw/" 
+  </script></head><body><a href="#main-content" class="skip-link">Ruka kwenda kwa maudhui</a><header class="site-header"><div class="container"><div class="header-inner"><a href="/sw/" class="site-logo"><picture><source srcset="../../assets/images/logo-dark.png" type="image/png"
+                        media="(prefers-color-scheme: dark)"><img src="../../assets/images/logo.png" alt="Cardio Analytics - Comprehensive Heart Health Tracking | iOS App" width="56" height="56"></picture><span class="logo-text">Cardio Analytics</span></a><nav class="nav-primary" id="nav-primary" role="navigation" aria-label="Main navigation"><div class="nav-group-left"><ul><li><a href="/sw/" 
                                 aria-current="">
                                 Nyumbani
-                            </a>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/sw/features/" class="nav-label">Programu</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/sw/features/" 
+                            </a></li><li class="has-submenu" ><a href="/sw/features/" class="nav-label">Programu</a><ul class="submenu"><li><a href="/sw/features/" 
                                         aria-current="">
                                         Vipengele
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/how-it-works/" 
+                                    </a></li><li><a href="/sw/how-it-works/" 
                                         aria-current="">
                                         Jinsi inavyofanya kazi
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/privacy/" class="active" 
+                                    </a></li><li><a href="/sw/privacy/" class="active" 
                                         aria-current="page">
                                         Faragha
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li class="has-submenu" >
-                            
-                            
-                            <a href="/sw/heart-rate/" class="nav-label">Sayansi</a>
-                            
-                            <ul class="submenu">
-                                
-                                <li>
-                                    <a href="/sw/heart-rate/" 
+                                    </a></li></ul></li><li class="has-submenu" ><a href="/sw/heart-rate/" class="nav-label">Sayansi</a><ul class="submenu"><li><a href="/sw/heart-rate/" 
                                         aria-current="">
                                         Mapigo ya moyo
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/blood-pressure/" 
+                                    </a></li><li><a href="/sw/blood-pressure/" 
                                         aria-current="">
                                         Shinikizo la damu
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/hrv/" 
+                                    </a></li><li><a href="/sw/hrv/" 
                                         aria-current="">
                                         HRV
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/spo2/" 
+                                    </a></li><li><a href="/sw/spo2/" 
                                         aria-current="">
                                         Kiwango cha oksijeni
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/weight-bmi/" 
+                                    </a></li><li><a href="/sw/weight-bmi/" 
                                         aria-current="">
                                         Uzito na BMI
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/ecg-afib/" 
+                                    </a></li><li><a href="/sw/ecg-afib/" 
                                         aria-current="">
                                         ECG na atrial fibrillation
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/vo2max/" 
+                                    </a></li><li><a href="/sw/vo2max/" 
                                         aria-current="">
                                         VO₂ Max
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/walking-speed/" 
+                                    </a></li><li><a href="/sw/walking-speed/" 
                                         aria-current="">
                                         Kasi ya kutembea
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/walking-asymmetry/" 
+                                    </a></li><li><a href="/sw/walking-asymmetry/" 
                                         aria-current="">
                                         Usawa wa kutembea
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/stair-speed/" 
+                                    </a></li><li><a href="/sw/stair-speed/" 
                                         aria-current="">
                                         Kasi ya kupanda ngazi
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/healthkit/" 
+                                    </a></li><li><a href="/sw/healthkit/" 
                                         aria-current="">
                                         Ujumuishaji wa HealthKit
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="/sw/references/" 
+                                    </a></li><li><a href="/sw/references/" 
                                         aria-current="">
                                         Marejeo
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                            
-                            </li>
-                            
-                        <li>
-                            
-                            <a href="/sw/support/" 
+                                    </a></li></ul></li><li><a href="/sw/support/" 
                                 aria-current="">
                                 Msaada
-                            </a>
-                            
-                            </li>
-                            
-                    </ul>
-
-                    
-                    <div class="search-container">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            </a></li></ul><div class="search-container"><svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        <input type="search" id="site-search" class="search-input" aria-expanded="false"
-                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" />
-                        <div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div>
-                    </div>
-
-                    
-                    <select class="language-selector" id="language-select" aria-label="Chagua lugha">
-                        
-                        <option value="af" >
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg><input type="search" id="site-search" class="search-input" aria-expanded="false"
+                            aria-haspopup="listbox" aria-autocomplete="list" autocomplete="off" spellcheck="false" /><div id="search-results" class="search-results hidden" role="region" aria-live="polite"></div></div><select class="language-selector" id="language-select" aria-label="Chagua lugha"><option value="af" >
                             Afrikaans
-                        </option>
-                        
-                        <option value="am" >
+                        </option><option value="am" >
                             አማርኛ
-                        </option>
-                        
-                        <option value="ar" >
+                        </option><option value="ar" >
                             العربية
-                        </option>
-                        
-                        <option value="bg" >
+                        </option><option value="bg" >
                             Български
-                        </option>
-                        
-                        <option value="bn" >
+                        </option><option value="bn" >
                             বাংলা
-                        </option>
-                        
-                        <option value="ca" >
+                        </option><option value="ca" >
                             Català
-                        </option>
-                        
-                        <option value="cs" >
+                        </option><option value="cs" >
                             Čeština
-                        </option>
-                        
-                        <option value="da" >
+                        </option><option value="da" >
                             Dansk
-                        </option>
-                        
-                        <option value="de" >
+                        </option><option value="de" >
                             Deutsch
-                        </option>
-                        
-                        <option value="el" >
+                        </option><option value="el" >
                             Ελληνικά
-                        </option>
-                        
-                        <option value="en" >
+                        </option><option value="en" >
                             English
-                        </option>
-                        
-                        <option value="es" >
+                        </option><option value="es" >
                             Español
-                        </option>
-                        
-                        <option value="et" >
+                        </option><option value="et" >
                             Eesti
-                        </option>
-                        
-                        <option value="fa" >
+                        </option><option value="fa" >
                             فارسی
-                        </option>
-                        
-                        <option value="fi" >
+                        </option><option value="fi" >
                             Suomi
-                        </option>
-                        
-                        <option value="fr" >
+                        </option><option value="fr" >
                             Français
-                        </option>
-                        
-                        <option value="gu" >
+                        </option><option value="gu" >
                             ગુજરાતી
-                        </option>
-                        
-                        <option value="ha" >
+                        </option><option value="ha" >
                             Hausa
-                        </option>
-                        
-                        <option value="he" >
+                        </option><option value="he" >
                             עברית
-                        </option>
-                        
-                        <option value="hi" >
+                        </option><option value="hi" >
                             हिन्दी
-                        </option>
-                        
-                        <option value="hr" >
+                        </option><option value="hr" >
                             Hrvatski
-                        </option>
-                        
-                        <option value="hu" >
+                        </option><option value="hu" >
                             Magyar
-                        </option>
-                        
-                        <option value="id" >
+                        </option><option value="id" >
                             Bahasa Indonesia
-                        </option>
-                        
-                        <option value="is" >
+                        </option><option value="is" >
                             Íslenska
-                        </option>
-                        
-                        <option value="it" >
+                        </option><option value="it" >
                             Italiano
-                        </option>
-                        
-                        <option value="ja" >
+                        </option><option value="ja" >
                             日本語
-                        </option>
-                        
-                        <option value="km" >
+                        </option><option value="km" >
                             ភាសាខ្មែរ
-                        </option>
-                        
-                        <option value="kn" >
+                        </option><option value="kn" >
                             ಕನ್ನಡ
-                        </option>
-                        
-                        <option value="ko" >
+                        </option><option value="ko" >
                             한국어
-                        </option>
-                        
-                        <option value="lt" >
+                        </option><option value="lt" >
                             Lietuvių
-                        </option>
-                        
-                        <option value="lv" >
+                        </option><option value="lv" >
                             Latviešu
-                        </option>
-                        
-                        <option value="ms" >
+                        </option><option value="ms" >
                             Bahasa Melayu
-                        </option>
-                        
-                        <option value="my" >
+                        </option><option value="my" >
                             မြန်မာဘာသာ
-                        </option>
-                        
-                        <option value="nb" >
+                        </option><option value="nb" >
                             Norsk Bokmål
-                        </option>
-                        
-                        <option value="nl" >
+                        </option><option value="nl" >
                             Nederlands
-                        </option>
-                        
-                        <option value="pl" >
+                        </option><option value="pl" >
                             Polski
-                        </option>
-                        
-                        <option value="pt" >
+                        </option><option value="pt" >
                             Português
-                        </option>
-                        
-                        <option value="pt-br" >
+                        </option><option value="pt-br" >
                             Português (Brasil)
-                        </option>
-                        
-                        <option value="ro" >
+                        </option><option value="ro" >
                             Română
-                        </option>
-                        
-                        <option value="ru" >
+                        </option><option value="ru" >
                             Русский
-                        </option>
-                        
-                        <option value="sk" >
+                        </option><option value="sk" >
                             Slovenčina
-                        </option>
-                        
-                        <option value="sl" >
+                        </option><option value="sl" >
                             Slovenščina
-                        </option>
-                        
-                        <option value="sr" >
+                        </option><option value="sr" >
                             Српски
-                        </option>
-                        
-                        <option value="sv" >
+                        </option><option value="sv" >
                             Svenska
-                        </option>
-                        
-                        <option value="sw" selected>
+                        </option><option value="sw" selected>
                             Kiswahili
-                        </option>
-                        
-                        <option value="ta" >
+                        </option><option value="ta" >
                             தமிழ்
-                        </option>
-                        
-                        <option value="te" >
+                        </option><option value="te" >
                             తెలుగు
-                        </option>
-                        
-                        <option value="th" >
+                        </option><option value="th" >
                             ไทย
-                        </option>
-                        
-                        <option value="tl" >
+                        </option><option value="tl" >
                             Tagalog
-                        </option>
-                        
-                        <option value="tr" >
+                        </option><option value="tr" >
                             Türkçe
-                        </option>
-                        
-                        <option value="uk" >
+                        </option><option value="uk" >
                             Українська
-                        </option>
-                        
-                        <option value="ur" >
+                        </option><option value="ur" >
                             اردو
-                        </option>
-                        
-                        <option value="vi" >
+                        </option><option value="vi" >
                             Tiếng Việt
-                        </option>
-                        
-                        <option value="yo" >
+                        </option><option value="yo" >
                             Yoruba
-                        </option>
-                        
-                        <option value="zh" >
+                        </option><option value="zh" >
                             中文
-                        </option>
-                        
-                    </select>
-                </div>
-
-                <div class="nav-group-right">
-                    
-
-
-                    
-                    <div class="header-app-buttons">
-                        
-                        
-                        <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Download on App Store" title="Download on App Store">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
-                            </svg>
-                        </a>
-                        
-
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" class="header-download-btn" target="_blank"
-                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" />
-                            </svg>
-                        </a>
-                        
-                        
-                    </div>
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    <div class="suite-menu-container">
-                        <button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
-                            aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        </option></select></div><div class="nav-group-right"><div class="header-app-buttons"><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Download on App Store" title="Download on App Store"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" /></svg></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" class="header-download-btn" target="_blank"
+                            rel="noopener" aria-label="Get it on Google Play" title="Get it on Google Play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor"><path
+                                    d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg></a></div><div class="suite-menu-container"><button class="suite-menu-toggle" id="suite-menu-toggle" aria-label="See other apps"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg>
-                        </button>
-                        <div class="suite-dropdown hidden" id="suite-dropdown">
-                            <div class="suite-dropdown-header">Other AnalyticsZone Apps</div>
-                            <div class="suite-apps-grid">
-                                
-                                <a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a>
-                                
-                                <a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a>
-                                
-                                <a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a>
-                                
-                                <a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a>
-                                
-                                <a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a>
-                                
-                                <a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a>
-                                
-                                <a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </nav>
-
-            
-            <button class="menu-toggle" id="menu-toggle" aria-label="Badilisha menyu"
-                aria-expanded="false" aria-controls="nav-primary">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-  
-  
-
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-    <div class="container">
-        <ol>
-            
-            <li>
-                
-                <a href="/sw/">Nyumbani</a>
-                
-            </li>
-            
-            <li>
-                
-                <a href="/sw/features/">Programu</a>
-                
-            </li>
-            
-            <li>
-                
-                <span aria-current="page">Faragha</span>
-                
-            </li>
-            
-        </ol>
-    </div>
-</nav>
-
-
-  
-  <main id="main-content" class="main-content">
-    
-<div class="container">
-    <h1>Sera ya faragha</h1>
-    <p><em>Ilisasishwa mwisho: Januari 2025</em></p>
-
-    <section class="privacy-section">
-        <h2>1. Utangulizi</h2>
-        <p>
+                                stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><div class="suite-dropdown hidden" id="suite-dropdown"><div class="suite-dropdown-header">Other AnalyticsZone Apps</div><div class="suite-apps-grid"><a href="https://analyticszone.app" class="suite-app-link">AnalyticsZone</a><a href="https://run.analyticszone.app" class="suite-app-link">Run Analytics</a><a href="https://swim.analyticszone.app" class="suite-app-link">Swim Analytics</a><a href="https://bike.analyticszone.app" class="suite-app-link">Bike Analytics</a><a href="https://walk.analyticszone.app" class="suite-app-link">Walk Analytics</a><a href="https://health.analyticszone.app" class="suite-app-link">Health Analytics</a><a href="https://swimtrainer.analyticszone.app" class="suite-app-link">Swim Trainer</a></div></div></div></div></nav><button class="menu-toggle" id="menu-toggle" aria-label="Badilisha menyu"
+                aria-expanded="false" aria-controls="nav-primary"><span></span><span></span><span></span></button></div></div></header><nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container"><ol><li><a href="/sw/">Nyumbani</a></li><li><a href="/sw/features/">Programu</a></li><li><span aria-current="page">Faragha</span></li></ol></div></nav><main id="main-content" class="main-content"><div class="container"><h1>Sera ya faragha</h1><p><em>Ilisasishwa mwisho: Januari 2025</em></p><section class="privacy-section"><h2>1. Utangulizi</h2><p>
             Karibu Cardio Analytics ("sisi", "yetu" au "sisi"). Faragha yako ni msingi wa falsafa yetu ya muundo. Sera hii ya faragha inaelezea mkakati wetu unaozing atia faragha na jinsi tunavyoshughulikia data yako ya afya.
-        </p>
-        <p>
-            <strong>Kanuni ya msingi: Data yako ya afya inabaki kwenye kifaa chako. Siku zote.</strong>
-        </p>
-    </section>
-
-    <section class="privacy-section">
-        <h2>2. Ukusanyaji na uhifadhi wa data</h2>
-        <h3>2.1 Data ya afya (imehifadhiwa ndani ya kifaa chako)</h3>
-        <p>Cardio Analytics inasoma vipimo vifuatavyo vya mzunguko wa damu na uhamaji kutoka Apple HealthKit kwa ruhusa yako ya wazi:</p>
-        <ul>
-            <li>Mapigo ya moyo (kupumzika, kutembea na ya sasa)</li>
-            <li>Shinikizo la damu (systolic na diastolic)</li>
-            <li>Tofauti ya mapigo ya moyo (SDNN na RMSSD)</li>
-            <li>Kiwango cha oksijeni (SpO₂)</li>
-            <li>Uzito wa mwili na BMI</li>
-            <li>Rekodi za ECG na mzigo wa atrial fibrillation</li>
-            <li>VO₂ Max (uwezo wa mzunguko wa damu)</li>
-            <li>Kasi ya kutembea, usawa wa kutembea na kasi ya kupanda ngazi</li>
-        </ul>
-        <p><strong>Data yote ya afya inachakatwa na kuhifadhiwa pekee kwenye iPhone yako.</strong> Hatuna seva, hifadhidata au miundombinu ya wingu ili kupokea data yako.</p>
-
-        <h3>2.2 Kile HATUKUSANYI</h3>
-        <ul>
-            <li>❌ Hakuna anwani za barua pepe au habari za akaunti (hakuna akaunti zinazohitajika)</li>
-            <li>❌ Hakuna habari za kibinafsi zinazotambulika</li>
-            <li>❌ Hakuna uchanganuzi wa matumizi au data ya ufuatiliaji</li>
-            <li>❌ Hakuna data ya mahali</li>
-            <li>❌ Hakuna vitambulisho vya matangazo</li>
-            <li>❌ Hakuna ripoti za kuanguka zenye data ya kibinafsi</li>
-        </ul>
-    </section>
-
-    <section class="privacy-section">
-        <h2>3. Jinsi tunavyotumia data yako ya afya</h2>
-        <p>Data yako ya afya inatumiwa pekee kwenye kifaa chako ili:</p>
-        <ul>
-            <li>Kuonyesha vipimo vya mzunguko wa damu na uhamaji katika dashibodi ya programu</li>
-            <li>Kutengeneza mwoneko wa mwelekeo na uchanganuzi</li>
-            <li>Kutoa tahadhari zinazotegemea ushahidi vipimo vinavyoanguka nje ya maeneo ya miongozo</li>
-            <li>Kuhusianisha dawa na matokeo ya afya</li>
-            <li>Kuunda ripoti za PDF na CSV zinazoweza kuhamishwa unapochagua kuzizalisha</li>
-        </ul>
-        <p><strong>Uchakataji wote unafanyika ndani ya iPhone yako.</strong> Hakuna data inayohamishwa kwa seva za nje.</p>
-    </section>
-
-    <section class="privacy-section">
-        <h2>4. Kushiriki data</h2>
-        <p>
-            <strong>Hatushiriki, kuuza au kuhamisha data yako ya afya. Kamwe.</strong>
-        </p>
-        <p>
+        </p><p><strong>Kanuni ya msingi: Data yako ya afya inabaki kwenye kifaa chako. Siku zote.</strong></p></section><section class="privacy-section"><h2>2. Ukusanyaji na uhifadhi wa data</h2><h3>2.1 Data ya afya (imehifadhiwa ndani ya kifaa chako)</h3><p>Cardio Analytics inasoma vipimo vifuatavyo vya mzunguko wa damu na uhamaji kutoka Apple HealthKit kwa ruhusa yako ya wazi:</p><ul><li>Mapigo ya moyo (kupumzika, kutembea na ya sasa)</li><li>Shinikizo la damu (systolic na diastolic)</li><li>Tofauti ya mapigo ya moyo (SDNN na RMSSD)</li><li>Kiwango cha oksijeni (SpO₂)</li><li>Uzito wa mwili na BMI</li><li>Rekodi za ECG na mzigo wa atrial fibrillation</li><li>VO₂ Max (uwezo wa mzunguko wa damu)</li><li>Kasi ya kutembea, usawa wa kutembea na kasi ya kupanda ngazi</li></ul><p><strong>Data yote ya afya inachakatwa na kuhifadhiwa pekee kwenye iPhone yako.</strong> Hatuna seva, hifadhidata au miundombinu ya wingu ili kupokea data yako.</p><h3>2.2 Kile HATUKUSANYI</h3><ul><li>❌ Hakuna anwani za barua pepe au habari za akaunti (hakuna akaunti zinazohitajika)</li><li>❌ Hakuna habari za kibinafsi zinazotambulika</li><li>❌ Hakuna uchanganuzi wa matumizi au data ya ufuatiliaji</li><li>❌ Hakuna data ya mahali</li><li>❌ Hakuna vitambulisho vya matangazo</li><li>❌ Hakuna ripoti za kuanguka zenye data ya kibinafsi</li></ul></section><section class="privacy-section"><h2>3. Jinsi tunavyotumia data yako ya afya</h2><p>Data yako ya afya inatumiwa pekee kwenye kifaa chako ili:</p><ul><li>Kuonyesha vipimo vya mzunguko wa damu na uhamaji katika dashibodi ya programu</li><li>Kutengeneza mwoneko wa mwelekeo na uchanganuzi</li><li>Kutoa tahadhari zinazotegemea ushahidi vipimo vinavyoanguka nje ya maeneo ya miongozo</li><li>Kuhusianisha dawa na matokeo ya afya</li><li>Kuunda ripoti za PDF na CSV zinazoweza kuhamishwa unapochagua kuzizalisha</li></ul><p><strong>Uchakataji wote unafanyika ndani ya iPhone yako.</strong> Hakuna data inayohamishwa kwa seva za nje.</p></section><section class="privacy-section"><h2>4. Kushiriki data</h2><p><strong>Hatushiriki, kuuza au kuhamisha data yako ya afya. Kamwe.</strong></p><p>
             Cardio Analytics haina uwezo wa kufikia data yako kwa sababu uchakataji wote unafanyika kwenye kifaa. Wewe unadhibiti ushiriki wa data:
-        </p>
-        <ul>
-            <li><strong>Ruhusa za HealthKit:</strong> Wewe unachagua vipimo gani Cardio Analytics inaweza kusoma. Batilisha ruhusa wakati wowote katika mipangilio ya iOS → Faragha → Afya.</li>
-            <li><strong>Hamisha ripoti:</strong> Tu unapozalisha na kushiriki wazi ripoti ya PDF au CSV data inaondoka kwenye kifaa chako. Wewe unadhibiti nani anayeipokea.</li>
-            <li><strong>Kuandika tena kwa HealthKit:</strong> Mchanganyiko wa mkono (uzito, shinikizo la damu) unaweza kuandikwa kwa Apple Health kwa uthabiti kati ya programu. Hii ni ya hiari na inadhibitiwa na ruhusa za HealthKit.</li>
-        </ul>
-    </section>
-
-    <section class="privacy-section">
-        <h2>5. Usalama wa data</h2>
-        <p>
+        </p><ul><li><strong>Ruhusa za HealthKit:</strong> Wewe unachagua vipimo gani Cardio Analytics inaweza kusoma. Batilisha ruhusa wakati wowote katika mipangilio ya iOS → Faragha → Afya.</li><li><strong>Hamisha ripoti:</strong> Tu unapozalisha na kushiriki wazi ripoti ya PDF au CSV data inaondoka kwenye kifaa chako. Wewe unadhibiti nani anayeipokea.</li><li><strong>Kuandika tena kwa HealthKit:</strong> Mchanganyiko wa mkono (uzito, shinikizo la damu) unaweza kuandikwa kwa Apple Health kwa uthabiti kati ya programu. Hii ni ya hiari na inadhibitiwa na ruhusa za HealthKit.</li></ul></section><section class="privacy-section"><h2>5. Usalama wa data</h2><p>
             Data yako ya afya inalindwa na vipengele vya usalama vya iOS:
-        </p>
-        <ul>
-            <li><strong>Usimbaji fiche wa HealthKit:</strong> Apple inasimba fiche data ya HealthKit iliyopumzika kwenye kifaa chako</li>
-            <li><strong>Hakuna mfunuo wa wingu:</strong> Data haiondoki kamwe kwenye kifaa chako isipokuwa unapohamisha wazi ripoti</li>
-            <li><strong>Ubao wa mchanga wa iOS:</strong> Cardio Analytics inaweza kufikia data tu na ruhusa zako za wazi za HealthKit</li>
-            <li><strong>Hakuna huduma za wahusika wa tatu:</strong> Hatatumii SDK za uchanganuzi, waripotiaji wa kuanguka au mitandao ya matangazo yanayoweza kufikia data yako</li>
-        </ul>
-    </section>
-
-    <section class="privacy-section">
-        <h2>6. Haki zako na udhibiti</h2>
-        <p>Una udhibiti kamili juu ya data yako ya afya:</p>
-        <ul>
-            <li><strong>Ruhusa za kina:</strong> Chagua kwa usahihi vipimo gani vya afya vya kushirikiwa na Cardio Analytics</li>
-            <li><strong>Batilisha upatikanaji wakati wowote:</strong> Badilisha ruhusa za HealthKit katika mipangilio ya iOS → Faragha → Afya → Cardio Analytics</li>
-            <li><strong>Futa data yote:</strong> Kuondoa Cardio Analytics kunaondoa data yote ya programu kutoka kwenye kifaa chako</li>
-            <li><strong>Hamisha data yako:</strong> Zalisha ripoti za PDF au CSV ili kushiriki na mtoa huduma wako wa afya</li>
-            <li><strong>Hakuna kufungwa kwa muuzaji:</strong> Data yako iko katika HealthKit na inapatikana kwa programu nyingine unazoruhusa</li>
-        </ul>
-    </section>
-
-    <section class="privacy-section">
-        <h2>7. Huduma za wahusika wa tatu</h2>
-        <p>
-            <strong>Cardio Analytics haitumii huduma za wahusika wa tatu.</strong> Hakuna SDK za uchanganuzi, hakuna mitandao ya matangazo, hakuna waripotiaji wa kuanguka, hakuna huduma za wingu. Data yako inabaki kwenye kifaa chako.
-        </p>
-    </section>
-
-    <section class="privacy-section">
-        <h2>8. Watoto na watumiaji chini ya miaka 18</h2>
-        <p>
+        </p><ul><li><strong>Usimbaji fiche wa HealthKit:</strong> Apple inasimba fiche data ya HealthKit iliyopumzika kwenye kifaa chako</li><li><strong>Hakuna mfunuo wa wingu:</strong> Data haiondoki kamwe kwenye kifaa chako isipokuwa unapohamisha wazi ripoti</li><li><strong>Ubao wa mchanga wa iOS:</strong> Cardio Analytics inaweza kufikia data tu na ruhusa zako za wazi za HealthKit</li><li><strong>Hakuna huduma za wahusika wa tatu:</strong> Hatatumii SDK za uchanganuzi, waripotiaji wa kuanguka au mitandao ya matangazo yanayoweza kufikia data yako</li></ul></section><section class="privacy-section"><h2>6. Haki zako na udhibiti</h2><p>Una udhibiti kamili juu ya data yako ya afya:</p><ul><li><strong>Ruhusa za kina:</strong> Chagua kwa usahihi vipimo gani vya afya vya kushirikiwa na Cardio Analytics</li><li><strong>Batilisha upatikanaji wakati wowote:</strong> Badilisha ruhusa za HealthKit katika mipangilio ya iOS → Faragha → Afya → Cardio Analytics</li><li><strong>Futa data yote:</strong> Kuondoa Cardio Analytics kunaondoa data yote ya programu kutoka kwenye kifaa chako</li><li><strong>Hamisha data yako:</strong> Zalisha ripoti za PDF au CSV ili kushiriki na mtoa huduma wako wa afya</li><li><strong>Hakuna kufungwa kwa muuzaji:</strong> Data yako iko katika HealthKit na inapatikana kwa programu nyingine unazoruhusa</li></ul></section><section class="privacy-section"><h2>7. Huduma za wahusika wa tatu</h2><p><strong>Cardio Analytics haitumii huduma za wahusika wa tatu.</strong> Hakuna SDK za uchanganuzi, hakuna mitandao ya matangazo, hakuna waripotiaji wa kuanguka, hakuna huduma za wingu. Data yako inabaki kwenye kifaa chako.
+        </p></section><section class="privacy-section"><h2>8. Watoto na watumiaji chini ya miaka 18</h2><p>
             Cardio Analytics imekusudiwa kwa watumiaji wa miaka 18 na zaidi. Hatukusanyi kwa makusudi data ya afya kutoka kwa watoto chini ya miaka 18. Ikiwa wewe ni mzazi au mlezi na unagundua kwamba mtoto wako ametumia programu, wasiliana nasi.
-        </p>
-    </section>
-
-    <section class="privacy-section">
-        <h2>9. Watumiaji wa kimataifa</h2>
-        <p>
+        </p></section><section class="privacy-section"><h2>9. Watumiaji wa kimataifa</h2><p>
             Cardio Analytics inachakata data yote ndani ya kifaa chako. Hakuna uhamisho wa data kuvuka mipaka kwa sababu hatuna seva au huduma za wingu. Data yako iko katika eneo lako ambapo iPhone yako iko.
-        </p>
-    </section>
-
-    <section class="privacy-section">
-        <h2>10. Mabadiliko ya sera hii</h2>
-        <p>
+        </p></section><section class="privacy-section"><h2>10. Mabadiliko ya sera hii</h2><p>
             Tunaweza kusasisha sera hii ya faragha ili kuonyesha mabadiliko katika mazoea yetu au kwa sababu za kisheria. Mabadiliko makubwa yatajulishwa kupitia masasisho ya programu. Matumizi endelevu ya programu baada ya mabadiliko ni kukubali kwa sera iliyosasishwa.
-        </p>
-    </section>
-
-    <section class="privacy-section">
-        <h2>11. Wasiliana nasi</h2>
-        <p>
+        </p></section><section class="privacy-section"><h2>11. Wasiliana nasi</h2><p>
             Maswali kuhusu sera hii ya faragha au usimamizi wa data ya Cardio Analytics? Wasiliana nasi:
-        </p>
-        <p>
-            <strong>Barua pepe:</strong> <a href="mailto:analyticszone@onmedic.org">analyticszone@onmedic.org</a>
-        </p>
-    </section>
-
-    <section class="privacy-section">
-        <h2>12. Kukataa kwa kisheria</h2>
-        <p>
-            <strong>Cardio Analytics si kifaa cha kimatibabu.</strong> Haichunguzi, kuitibu, kuponya au kuzuia ugonjwa wowote. Habari yote inayotolewa ni kwa madhumuni ya habari tu. Siku zote wasiliana na daktari aliyeidhinishwa kwa ushauri wa kimatibabu.
-        </p>
-    </section>
-</div>
-
-  </main>
-
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-top">
-            <div class="footer-brand-section">
-                
-                <h2>Cardio Analytics</h2>
-                <p>Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p>
-                
-            </div>
-
-            
-            <div class="footer-download">
-                <h3 class="footer-heading">Download</h3>
-                <div class="footer-badges">
-                    
-                    <a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" target="_blank" rel="noopener"
-                        aria-label="Download on the App Store">
-                        <img src="../../assets/images/badge-app-store.svg"
+        </p><p><strong>Barua pepe:</strong><a href="mailto:analyticszone@onmedic.org">analyticszone@onmedic.org</a></p></section><section class="privacy-section"><h2>12. Kukataa kwa kisheria</h2><p><strong>Cardio Analytics si kifaa cha kimatibabu.</strong> Haichunguzi, kuitibu, kuponya au kuzuia ugonjwa wowote. Habari yote inayotolewa ni kwa madhumuni ya habari tu. Siku zote wasiliana na daktari aliyeidhinishwa kwa ushauri wa kimatibabu.
+        </p></section></div></main><footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-brand-section"><h2>Cardio Analytics</h2><p>Track 11 cardiovascular and mobility metrics from Apple Health. Heart rate, blood pressure, HRV, SpO₂, ECG, VO₂ Max and more. Privacy-first iOS app.</p></div><div class="footer-download"><h3 class="footer-heading">Download</h3><div class="footer-badges"><a href="https://apps.apple.com/us/app/cardio-analytics-med-tracker/id6754761648" target="_blank" rel="noopener"
+                        aria-label="Download on the App Store"><img src="../../assets/images/badge-app-store.svg"
                             alt="Download on the App Store" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                    
-                    <a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" target="_blank" rel="noopener"
-                        aria-label="Get it on Google Play">
-                        <img src="../../assets/images/badge-google-play.svg"
+                            height="40" loading="lazy"></a><a href="https://play.google.com/store/apps/details?id=com.arnohealth.cardioanalytics" target="_blank" rel="noopener"
+                        aria-label="Get it on Google Play"><img src="../../assets/images/badge-google-play.svg"
                             alt="Get it on Google Play" width="135"
-                            height="40" loading="lazy">
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </div>
-
-        
-        <div class="footer-languages">
-            <h3 class="footer-heading">Available in</h3>
-            <div class="lang-grid">
-                
-                <a href="/af/" class="lang-link"
+                            height="40" loading="lazy"></a></div></div></div><div class="footer-languages"><h3 class="footer-heading">Available in</h3><div class="lang-grid"><a href="/af/" class="lang-link"
                     hreflang="af" >
                     Afrikaans
-                </a>
-                
-                <a href="/am/" class="lang-link"
+                </a><a href="/am/" class="lang-link"
                     hreflang="am" >
                     አማርኛ
-                </a>
-                
-                <a href="/ar/" class="lang-link"
+                </a><a href="/ar/" class="lang-link"
                     hreflang="ar" dir="rtl" >
                     العربية
-                </a>
-                
-                <a href="/bg/" class="lang-link"
+                </a><a href="/bg/" class="lang-link"
                     hreflang="bg" >
                     Български
-                </a>
-                
-                <a href="/bn/" class="lang-link"
+                </a><a href="/bn/" class="lang-link"
                     hreflang="bn" >
                     বাংলা
-                </a>
-                
-                <a href="/ca/" class="lang-link"
+                </a><a href="/ca/" class="lang-link"
                     hreflang="ca" >
                     Català
-                </a>
-                
-                <a href="/cs/" class="lang-link"
+                </a><a href="/cs/" class="lang-link"
                     hreflang="cs" >
                     Čeština
-                </a>
-                
-                <a href="/da/" class="lang-link"
+                </a><a href="/da/" class="lang-link"
                     hreflang="da" >
                     Dansk
-                </a>
-                
-                <a href="/de/" class="lang-link"
+                </a><a href="/de/" class="lang-link"
                     hreflang="de" >
                     Deutsch
-                </a>
-                
-                <a href="/el/" class="lang-link"
+                </a><a href="/el/" class="lang-link"
                     hreflang="el" >
                     Ελληνικά
-                </a>
-                
-                <a href="/en/" class="lang-link"
+                </a><a href="/en/" class="lang-link"
                     hreflang="en" >
                     English
-                </a>
-                
-                <a href="/es/" class="lang-link"
+                </a><a href="/es/" class="lang-link"
                     hreflang="es" >
                     Español
-                </a>
-                
-                <a href="/et/" class="lang-link"
+                </a><a href="/et/" class="lang-link"
                     hreflang="et" >
                     Eesti
-                </a>
-                
-                <a href="/fa/" class="lang-link"
+                </a><a href="/fa/" class="lang-link"
                     hreflang="fa" dir="rtl" >
                     فارسی
-                </a>
-                
-                <a href="/fi/" class="lang-link"
+                </a><a href="/fi/" class="lang-link"
                     hreflang="fi" >
                     Suomi
-                </a>
-                
-                <a href="/fr/" class="lang-link"
+                </a><a href="/fr/" class="lang-link"
                     hreflang="fr" >
                     Français
-                </a>
-                
-                <a href="/gu/" class="lang-link"
+                </a><a href="/gu/" class="lang-link"
                     hreflang="gu" >
                     ગુજરાતી
-                </a>
-                
-                <a href="/ha/" class="lang-link"
+                </a><a href="/ha/" class="lang-link"
                     hreflang="ha" >
                     Hausa
-                </a>
-                
-                <a href="/he/" class="lang-link"
+                </a><a href="/he/" class="lang-link"
                     hreflang="he" dir="rtl" >
                     עברית
-                </a>
-                
-                <a href="/hi/" class="lang-link"
+                </a><a href="/hi/" class="lang-link"
                     hreflang="hi" >
                     हिन्दी
-                </a>
-                
-                <a href="/hr/" class="lang-link"
+                </a><a href="/hr/" class="lang-link"
                     hreflang="hr" >
                     Hrvatski
-                </a>
-                
-                <a href="/hu/" class="lang-link"
+                </a><a href="/hu/" class="lang-link"
                     hreflang="hu" >
                     Magyar
-                </a>
-                
-                <a href="/id/" class="lang-link"
+                </a><a href="/id/" class="lang-link"
                     hreflang="id" >
                     Bahasa Indonesia
-                </a>
-                
-                <a href="/is/" class="lang-link"
+                </a><a href="/is/" class="lang-link"
                     hreflang="is" >
                     Íslenska
-                </a>
-                
-                <a href="/it/" class="lang-link"
+                </a><a href="/it/" class="lang-link"
                     hreflang="it" >
                     Italiano
-                </a>
-                
-                <a href="/ja/" class="lang-link"
+                </a><a href="/ja/" class="lang-link"
                     hreflang="ja" >
                     日本語
-                </a>
-                
-                <a href="/km/" class="lang-link"
+                </a><a href="/km/" class="lang-link"
                     hreflang="km" >
                     ភាសាខ្មែរ
-                </a>
-                
-                <a href="/kn/" class="lang-link"
+                </a><a href="/kn/" class="lang-link"
                     hreflang="kn" >
                     ಕನ್ನಡ
-                </a>
-                
-                <a href="/ko/" class="lang-link"
+                </a><a href="/ko/" class="lang-link"
                     hreflang="ko" >
                     한국어
-                </a>
-                
-                <a href="/lt/" class="lang-link"
+                </a><a href="/lt/" class="lang-link"
                     hreflang="lt" >
                     Lietuvių
-                </a>
-                
-                <a href="/lv/" class="lang-link"
+                </a><a href="/lv/" class="lang-link"
                     hreflang="lv" >
                     Latviešu
-                </a>
-                
-                <a href="/ms/" class="lang-link"
+                </a><a href="/ms/" class="lang-link"
                     hreflang="ms" >
                     Bahasa Melayu
-                </a>
-                
-                <a href="/my/" class="lang-link"
+                </a><a href="/my/" class="lang-link"
                     hreflang="my" >
                     မြန်မာဘာသာ
-                </a>
-                
-                <a href="/nb/" class="lang-link"
+                </a><a href="/nb/" class="lang-link"
                     hreflang="nb" >
                     Norsk Bokmål
-                </a>
-                
-                <a href="/nl/" class="lang-link"
+                </a><a href="/nl/" class="lang-link"
                     hreflang="nl" >
                     Nederlands
-                </a>
-                
-                <a href="/pl/" class="lang-link"
+                </a><a href="/pl/" class="lang-link"
                     hreflang="pl" >
                     Polski
-                </a>
-                
-                <a href="/pt/" class="lang-link"
+                </a><a href="/pt/" class="lang-link"
                     hreflang="pt" >
                     Português
-                </a>
-                
-                <a href="/pt-br/" class="lang-link"
+                </a><a href="/pt-br/" class="lang-link"
                     hreflang="pt-br" >
                     Português (Brasil)
-                </a>
-                
-                <a href="/ro/" class="lang-link"
+                </a><a href="/ro/" class="lang-link"
                     hreflang="ro" >
                     Română
-                </a>
-                
-                <a href="/ru/" class="lang-link"
+                </a><a href="/ru/" class="lang-link"
                     hreflang="ru" >
                     Русский
-                </a>
-                
-                <a href="/sk/" class="lang-link"
+                </a><a href="/sk/" class="lang-link"
                     hreflang="sk" >
                     Slovenčina
-                </a>
-                
-                <a href="/sl/" class="lang-link"
+                </a><a href="/sl/" class="lang-link"
                     hreflang="sl" >
                     Slovenščina
-                </a>
-                
-                <a href="/sr/" class="lang-link"
+                </a><a href="/sr/" class="lang-link"
                     hreflang="sr" >
                     Српски
-                </a>
-                
-                <a href="/sv/" class="lang-link"
+                </a><a href="/sv/" class="lang-link"
                     hreflang="sv" >
                     Svenska
-                </a>
-                
-                <a href="/sw/" class="lang-link active"
+                </a><a href="/sw/" class="lang-link active"
                     hreflang="sw" >
                     Kiswahili
-                </a>
-                
-                <a href="/ta/" class="lang-link"
+                </a><a href="/ta/" class="lang-link"
                     hreflang="ta" >
                     தமிழ்
-                </a>
-                
-                <a href="/te/" class="lang-link"
+                </a><a href="/te/" class="lang-link"
                     hreflang="te" >
                     తెలుగు
-                </a>
-                
-                <a href="/th/" class="lang-link"
+                </a><a href="/th/" class="lang-link"
                     hreflang="th" >
                     ไทย
-                </a>
-                
-                <a href="/tl/" class="lang-link"
+                </a><a href="/tl/" class="lang-link"
                     hreflang="tl" >
                     Tagalog
-                </a>
-                
-                <a href="/tr/" class="lang-link"
+                </a><a href="/tr/" class="lang-link"
                     hreflang="tr" >
                     Türkçe
-                </a>
-                
-                <a href="/uk/" class="lang-link"
+                </a><a href="/uk/" class="lang-link"
                     hreflang="uk" >
                     Українська
-                </a>
-                
-                <a href="/ur/" class="lang-link"
+                </a><a href="/ur/" class="lang-link"
                     hreflang="ur" dir="rtl" >
                     اردو
-                </a>
-                
-                <a href="/vi/" class="lang-link"
+                </a><a href="/vi/" class="lang-link"
                     hreflang="vi" >
                     Tiếng Việt
-                </a>
-                
-                <a href="/yo/" class="lang-link"
+                </a><a href="/yo/" class="lang-link"
                     hreflang="yo" >
                     Yoruba
-                </a>
-                
-                <a href="/zh/" class="lang-link"
+                </a><a href="/zh/" class="lang-link"
                     hreflang="zh" >
                     中文
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        
-        <div class="footer-bottom">
-            <p class="copyright">
+                </a></div></div><div class="footer-divider"></div><div class="footer-bottom"><p class="copyright">
                 &copy; 2026 Cardio Analytics. Haki zote zimehifadhiwa
-            </p>
-            <ul class="footer-legal">
-                <li><a href="/sw/privacy/">Faragha</a></li>
-                <li><a href="/sw/terms/">Masharti</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-  
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <div class="cookie-banner-content">
-        <div>
-            <p>Tovuti hii inatumia vidakuzi ili kuboresha uzoefu wako.</p>
-            <a href="/sw/privacy/" class="text-sm"></a>
-        </div>
-        <div class="cookie-banner-actions">
-            <button id="cookie-decline" class="btn btn-secondary btn-small">Kataa</button>
-            <button id="cookie-accept" class="btn btn-primary btn-small">Kubali</button>
-        </div>
-    </div>
-</div>
-
-  
-  <script src="../../assets/js/core.min.js?v=540c31aabebc" defer></script>
-  <script src="../../assets/js/search.min.js?v=540c31aabebc" defer></script>
-  
-
-  
-  
-  <script src="../../assets/js/analytics.min.js" data-ga-id="G-C7EPKJ2B6Z" defer></script>
-  
-
-  
-  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script>
-</body>
-
-</html>
+            </p><ul class="footer-legal"><li><a href="/sw/privacy/">Faragha</a></li><li><a href="/sw/terms/">Masharti</a></li></ul></div></div></footer><div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite"><div class="cookie-banner-content"><div><p>Tovuti hii inatumia vidakuzi ili kuboresha uzoefu wako.</p><a href="/sw/privacy/" class="text-sm"></a></div><div class="cookie-banner-actions"><button id="cookie-decline" class="btn btn-secondary btn-small">Kataa</button><button id="cookie-accept" class="btn btn-primary btn-small">Kubali</button></div></div></div><script src="../../assets/js/core.min.js?v=983179f8f375" defer></script><script src="../../assets/js/search.min.js?v=983179f8f375" defer></script><script src="../../assets/js/analytics.min.js" data-ga-id="G-C7EPKJ2B6Z" defer></script><script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('../../sw.js') }</script></body></html>
