@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cardio.analyticszone.app/sitemap.xml
+Sitemap: https://cardio.analyticszone.app/sitemap-index.xml
